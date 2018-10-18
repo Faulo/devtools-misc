@@ -1,0 +1,17 @@
+{
+	"name" : "devtools/devtools",
+	"require" : {
+		"composer/composer" : "^1.6",
+		"slothsoft/core" : "*"
+	},
+	"require-dev" : {
+		"phpunit/phpunit" : "^6.5"
+	},
+	"autoload" : {
+		"psr-0" : {
+			"Slothsoft\\Devtools\\" : "src/"
+		}
+	},
+	"minimum-stability" : "dev",
+	"prefer-stable" : true
+}

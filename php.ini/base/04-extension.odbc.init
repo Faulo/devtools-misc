@@ -1,0 +1,5 @@
+[ODBC]
+odbc.allow_persistent = On
+odbc.check_persistent = On
+odbc.max_persistent = -1
+odbc.max_links = -1
