@@ -50,12 +50,16 @@ class FixComposerJson implements UpdateInterface
         
         $this->composer->setName($this->project['composerId']);
         
+        $this->composer->setVersion('');
+        
+        $this->composer->setLicense('WTFPL');
+        
+        $this->composer->setAuthor('Daniel Schulz', 'info.slothsoft@gmail.com');
+        
         if ($this->isServer()) {
-            $this->composer->setVersion('');
+            $this->composer->setHomepage($this->project['homeUrl']);
         } else {
-            if (!$this->composer->getVersion()) {
-                $this->composer->setVersion('1.0.0');
-            }
+            $this->composer->setHomepage('http://farah.slothsoft.net/modules/' . $this->project['name']);
         }
         
         $this->composer->setKeywords($this->getKeywords());

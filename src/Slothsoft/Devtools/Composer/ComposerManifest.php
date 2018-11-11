@@ -32,6 +32,24 @@ class ComposerManifest
             $this->data['version'] = $version;
         }
     }
+    public function setLicense(string $license) {
+        if ($license === '') {
+            unset($this->data['license']);
+        } else {
+            $this->data['license'] = $license;
+        }
+    }
+    public function setHomepage(string $url) {
+        if ($url === '') {
+            unset($this->data['homepage']);
+        } else {
+            $this->data['homepage'] = $url;
+        }
+    }
+    public function setAuthor(string $name, string $email) {
+        $this->data["authors"] = [];
+        $this->data["authors"][] = ['name' => $name, 'email' => $email];
+    }
     public function setKeywords(array $list) {
         $this->data['keywords'] = $list;
     }
