@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:50Z" duration="0,1162759">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:50Z" duration="0.116276" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Lodil/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.100207" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="17260" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.095306" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.087997" total="4" passed="2" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="518577950" result="Passed" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.015804" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1523572675" result="Failed" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.028777" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[Unhandled log message: '[Error] Scene 'HelloWorld' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+              <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestHelloWorldLog>d__8:MoveNext() (at Assets/Tests/Testat01.cs:48)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[Scene 'HelloWorld' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+          </test-case>
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="702730688" result="Failed" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.010214" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  File 'C:\Unity\workspace\2020WS.UnityPP.Lodil\Assets\Scenes\HelloWorld.unity' not found.
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at Tests.Testat01.TestSceneExists () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.Lodil\Assets\Tests\Testat01.cs:34
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="2098728048" result="Passed" start-time="2020-11-10 20:38:49Z" end-time="2020-11-10 20:38:49Z" duration="0.004444" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>
