@@ -9,7 +9,8 @@
 	},
 	"autoload" : {
 		"psr-0" : {
-			"Slothsoft\\Devtools\\" : "src/"
+			"Slothsoft\\Devtools\\" : "src/",
+			"Slothsoft\\Unity\\" : "src/"
 		}
 	},
 	"minimum-stability" : "dev",
