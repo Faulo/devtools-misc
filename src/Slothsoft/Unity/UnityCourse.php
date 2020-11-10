@@ -34,6 +34,16 @@ class UnityCourse {
             $results = $this->resultsFolder . DIRECTORY_SEPARATOR . $name . '.xml';
             $node->setAttribute('path', $path);
             $node->setAttribute('results', $results);
+        }
+    }
+    public function cloneRepositories() {
+        foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
+            $path = $node->getAttribute('path');
+            $href = $node->getAttribute('href');
+            if (!is_dir($path)) {
+                $command = sprintf('git clone %s %s', escapeshellarg($href), escapeshellarg($path));
+                CLI::execute($command);
+            }
             
             $directory = new \RecursiveDirectoryIterator($path);
             $directoryIterator = new \RecursiveIteratorIterator($directory);
@@ -46,16 +56,7 @@ class UnityCourse {
                     }
                 }
             }
-        }
-    }
-    public function cloneRepositories() {
-        foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
-            $path = $node->getAttribute('path');
-            $href = $node->getAttribute('href');
-            if (!is_dir($path)) {
-                $command = sprintf('git clone %s %s', escapeshellarg($href), escapeshellarg($path));
-                CLI::execute($command);
-            }
+            sleep(1);
         }
     }
     public function pullRepositories() {
@@ -63,6 +64,7 @@ class UnityCourse {
             $path = $node->getAttribute('path');
             $git = new GitProject($path);
             $git->pull();
+            sleep(1);
         }
     }
     public function runTests() {
@@ -72,6 +74,7 @@ class UnityCourse {
             
             $project = new UnityProject($this->settings['hub'], $unity);
             $project->runTests($results, 'PlayMode');
+            sleep(1);
         }
     }
 }
