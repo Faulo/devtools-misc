@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:33Z" duration="0,1307593">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:33Z" duration="0.130759" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DerELMO702995/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:33Z" duration="0.116917" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="13024" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:33Z" duration="0.113812" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:33Z" duration="0.108423" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1706055611" result="Passed" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:32Z" duration="0.017121" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="682830406" result="Passed" start-time="2020-11-10 21:16:32Z" end-time="2020-11-10 21:16:33Z" duration="0.062881" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <output><![CDATA[Hallo Welt!
+]]></output>
+          </test-case>
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="295629545" result="Passed" start-time="2020-11-10 21:16:33Z" end-time="2020-11-10 21:16:33Z" duration="0.001484" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1367852768" result="Passed" start-time="2020-11-10 21:16:33Z" end-time="2020-11-10 21:16:33Z" duration="0.000586" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

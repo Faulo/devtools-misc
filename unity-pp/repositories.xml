@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories>
 	<unity hub="C:\Unity" workspace="C:\Unity\workspace" project="2020WS.UnityPP" version="2019.4.12f1"/>
+	<repository name="Faulo" href="https://github.com/Faulo/UnityPP2020"/>
 	<repository name="Lodil" href="https://github.com/Lodil/PP-Unitykurs"/>
 	<repository name="LukeBrose" href="https://github.com/LukeBrose/Testat-01"/>
 	<repository name="Rubycule" href="https://github.com/Rubycule/PPP_1"/>

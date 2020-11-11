@@ -69,6 +69,9 @@ class UnityCourse {
     }
     public function runTests() {
         foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
+            if (!$node->hasAttribute('unity')) {
+                continue;
+            }
             $unity = $node->getAttribute('unity');
             $results = $node->getAttribute('results');
             
