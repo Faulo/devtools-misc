@@ -1,34 +1,1070 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0,1318879">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.131888" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="67" result="Failed(Child)" total="67" passed="6" failed="61" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:47Z" duration="2,3707522">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="67" result="Failed" site="Child" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:47Z" duration="2.370752" total="67" passed="6" failed="61" inconclusive="0" skipped="0" asserts="0">
     <properties />
-    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DerELMO702995/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.118970" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1072" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DerELMO702995/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:47Z" duration="2.139832" total="66" passed="5" failed="61" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="14340" />
+        <property name="_PID" value="18548" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.116200" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1073" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:46Z" duration="1.957081" total="66" passed="5" failed="61" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.112720" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:45Z" duration="0.123826" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="304957138" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.015140" asserts="0">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1232790249" result="Passed" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:44Z" duration="0.014937" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="162635244" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.072472" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1812551184" result="Failed" start-time="2020-11-12 18:27:44Z" end-time="2020-11-12 18:27:45Z" duration="0.079663" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
+            <failure>
+              <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+              <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+            </failure>
             <output><![CDATA[Hallo Welt!
+InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1450057147" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.000640" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="517642329" result="Passed" start-time="2020-11-12 18:27:45Z" end-time="2020-11-12 18:27:45Z" duration="0.001378" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="843102697" result="Passed" start-time="2020-11-12 12:30:45Z" end-time="2020-11-12 12:30:45Z" duration="0.000380" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="338126485" result="Passed" start-time="2020-11-12 18:27:45Z" end-time="2020-11-12 18:27:45Z" duration="0.000702" asserts="0">
             <properties />
           </test-case>
         </test-suite>
+        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Failed" site="Child" start-time="2020-11-12 18:27:45Z" end-time="2020-11-12 18:27:46Z" duration="1.650958" total="62" passed="2" failed="60" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="164207881" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.010666" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+              <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.068825" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2077918623" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.009103" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="580221958" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002638" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1011373873" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006055" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1237425503" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002642" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2093634616" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006593" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1810622905" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.003065" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="590352466" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006043" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="208883445" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002762" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="1780270220" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002892" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+              <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Failed" site="Child" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.402042" total="48" passed="0" failed="48" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="387100956" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006985" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="21403569" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002818" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="999855887" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006633" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1793507035" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002777" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="508508544" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006822" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1156355209" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002798" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1675921087" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.005697" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1629236007" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002778" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="226015593" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006233" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1150285333" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002756" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1169987543" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006282" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="595370808" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002701" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="994312909" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006446" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1455562920" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002775" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2115481862" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006526" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1854828334" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002692" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2110582732" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.007534" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1572434178" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002743" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="473563318" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.004961" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1871743444" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002651" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1858955790" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006828" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="526412484" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.003566" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="866123458" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.003428" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1038567349" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002896" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1249478818" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.005508" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1240304550" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002609" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="952434645" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.007400" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1258099020" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002597" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="243828790" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.007630" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1781475642" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002668" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="763755992" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.005944" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="625213209" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002585" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1993049722" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006879" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="85399425" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002578" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="126988853" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.007215" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="419219991" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002604" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1504364814" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.006205" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2031370901" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002957" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1454812778" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.005816" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="976921997" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.004843" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1919081090" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.004401" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2018394997" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.003642" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1241501511" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.005574" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="54668517" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.007975" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="618483023" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002966" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1592705685" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.011883" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2097626736" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.002825" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="142556923" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.005709" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Exception] InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.Input.get_mousePosition () (at <2db13ba0d52343228aa9892c408fb49a>:0)
+UnityEngine.UI.MultipleDisplayUtilities.GetMousePositionRelativeToMainDisplayResolution () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/MultipleDisplayUtilities.cs:40)
+UnityEngine.EventSystems.BaseInput.get_mousePosition () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/BaseInput.cs:75)
+UnityEngine.EventSystems.StandaloneInputModule.UpdateModule () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/InputModules/StandaloneInputModule.cs:183)
+UnityEngine.EventSystems.EventSystem.TickModules () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:331)
+UnityEngine.EventSystems.EventSystem.Update () (at C:/Unity/2019.4.12f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/EventSystem/EventSystem.cs:344)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="275338813" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.004993" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  Company Name must be a valid e-mail address, but was 'DefaultCompany'
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at Tests.Testat02.TestEmailAddress () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DerELMO702995\Assets\Tests\Testat02.cs:100
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.004731" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="399009137" result="Passed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.000918" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="2017303543" result="Passed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.000458" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="1851841592" result="Failed" start-time="2020-11-12 18:27:46Z" end-time="2020-11-12 18:27:46Z" duration="0.001563" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  File 'C:\Unity\workspace\2020WS.UnityPP.DerELMO702995\Assets\Scenes\InputTest.unity' not found.
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at Tests.Testat02.TestSceneExists () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.DerELMO702995\Assets\Tests\Testat02.cs:107
+]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1076" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DerELMO702995/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-12 18:27:47Z" end-time="2020-11-12 18:27:47Z" duration="0.028776" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="18548" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+      <test-suite type="TestFixture" id="1074" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-12 18:27:47Z" end-time="2020-11-12 18:27:47Z" duration="0.025393" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <output><![CDATA[InvalidOperationException: You are trying to read Input using the UnityEngine.Input class, but you have switched active Input handling to Input System package in Player Settings.
+]]></output>
+        <test-case id="1075" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="1349680090" result="Passed" start-time="2020-11-12 18:27:47Z" end-time="2020-11-12 18:27:47Z" duration="0.022691" asserts="0">
+          <properties>
+            <property name="Category" value="Integration" />
+          </properties>
+        </test-case>
       </test-suite>
     </test-suite>
   </test-suite>
