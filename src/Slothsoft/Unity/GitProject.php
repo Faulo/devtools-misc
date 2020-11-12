@@ -32,9 +32,29 @@ class GitProject {
     public function reset(string $flags = '--hard') {
         $this->execute("reset $flags");
     }
-
+    
     public function clean(string $flags = '-d -f') {
         $this->execute("clean $flags");
+    }
+    
+    public function branch(string $name, bool $checkout = false) {
+        $this->execute("branch $name");
+        if ($checkout) {
+            $this->checkout($name);
+        }
+    }
+    public function checkout(string $name) {
+        $this->execute("checkout $name");
+    }
+    public function branches() : array {
+        $gitArgs = 'branch --sort=-committerdate';
+        $command = sprintf('git -C %s %s', escapeshellarg($this->projectPath), $gitArgs);
+        $output = [];
+        exec($command, $output);
+        foreach ($output as &$line) {
+            $line = substr($line, 2);
+        }
+        return $output;
     }
 
     public function execute($gitArgs) {

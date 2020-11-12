@@ -64,8 +64,8 @@ class UnityCourse {
                 if ($unity = $this->findUnityPath($path)) {
                     $node->setAttribute('unity', $unity);
                 }
+                sleep(1);
             }
-            sleep(1);
         }
     }
     public function pullRepositories() {
@@ -73,7 +73,8 @@ class UnityCourse {
             $path = $node->getAttribute('path');
             $git = new GitProject($path);
             $git->pull();
-            sleep(1);
+            $branches = $git->branches();
+            $git->checkout(reset($branches));
         }
     }
     public function runTests() {
@@ -86,7 +87,6 @@ class UnityCourse {
             
             $project = new UnityProject($this->settings['hub'], $unity);
             $project->runTests($results, 'PlayMode');
-            sleep(1);
         }
     }
     public function writeReport(string $dataFile, string $templateFile, string $outputFile) {
@@ -116,5 +116,41 @@ class UnityCourse {
         
         $dom = new DOMHelper();
         $dom->transformToFile($reportDoc, $templateFile, [], new SplFileInfo($outputFile));
+    }
+    
+    public function requestTest(string $testsFolder, int $testNumber) {
+        $testName = sprintf('Testat%02d', $testNumber);
+        $branchName = "exam/$testName";
+        $testFolder = $testsFolder . DIRECTORY_SEPARATOR . $testName;
+        assert(is_dir($testFolder));
+        $testFolder = realpath($testFolder);
+        
+        foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
+            if (!$node->hasAttribute('unity')) {
+                continue;
+            }
+            $unity = $node->getAttribute('unity');
+            $path = $node->getAttribute('path');
+            
+            $git = new GitProject($path);
+            $git->pull();
+            
+            $git->branch($branchName, true);
+            
+            $directory = new \RecursiveDirectoryIterator($testFolder);
+            $directoryIterator = new \RecursiveIteratorIterator($directory);
+            foreach ($directoryIterator as $file) {
+                if ($file->isFile()) {
+                    $path = $file->getRealPath();
+                    assert(strpos($path, $testFolder) === 0);
+                    $path = substr($path, strlen($testFolder));
+                    echo $path . PHP_EOL;
+                    copy($testFolder . $path, $unity . $path);
+                }
+            }
+            
+            $git->add();
+            $git->commit("Create $testName");
+        }
     }
 }
