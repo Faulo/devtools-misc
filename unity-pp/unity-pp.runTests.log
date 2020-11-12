@@ -1,14 +1,19 @@
+From https://github.com/Faulo/UnityPP2020
+   1da89ab..7bce9fe  master     -> origin/master
 Your configuration specifies to merge with the ref 'refs/heads/master'
 from the remote, but no such ref was fetched.
-debugger-agent: Unable to listen on 3196
-debugger-agent: Unable to listen on 3156
-debugger-agent: Unable to listen on 3184
-debugger-agent: Unable to listen on 3184
-debugger-agent: Unable to listen on 3184
 debugger-agent: Unable to listen on 3188
 debugger-agent: Unable to listen on 3184
 debugger-agent: Unable to listen on 3184
 debugger-agent: Unable to listen on 3184
 debugger-agent: Unable to listen on 3184
-debugger-agent: Unable to listen on 3196
+debugger-agent: Unable to listen on 3184
+debugger-agent: Unable to listen on 3184
+debugger-agent: Unable to listen on 3192
+[1112/133506:ERROR:cookie_monster.cc(1646)] Found 1 duplicate cookies for host='unity3d.com', with {name='unity_version', domain='.unity3d.com', path='/'}
+[1112/133506:ERROR:cookie_monster.cc(1646)] Found 1 duplicate cookies for host='unity3d.com', with {name='unity_version_full', domain='.unity3d.com', path='/'}
+[1112/133506:ERROR:cookie_monster.cc(1646)] Found 1 duplicate cookies for host='unity3d.com', with {name='url_configuration', domain='.unity3d.com', path='/'}
+debugger-agent: Unable to listen on 3184
+debugger-agent: Unable to listen on 3184
+debugger-agent: Unable to listen on 3184
 debugger-agent: Unable to listen on 3184

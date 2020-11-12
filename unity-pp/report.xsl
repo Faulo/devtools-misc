@@ -8,24 +8,31 @@
 			</head>
 			<body>
 				<table border="1">
+					<thead>
+						<tr>
+							<th>Name</th>
+							<th>Testat 01</th>
+							<th>Testat 02</th>
+						</tr>
+					</thead>
 					<tbody>
 						<xsl:for-each select="repository">
 							<xsl:variable name="suits" select=".//test-suite[@type='TestFixture'][contains(@name, 'Testat')]"/>
-							<xsl:variable name="cases" select="$suits/test-case"/>
 							<tr>
 								<td><a href="{@href}"><xsl:value-of select="@name"/></a></td>
-								<td>
-									<xsl:value-of select="count($cases[@result='Passed'])"/>
-									<xsl:text>/</xsl:text>
-									<xsl:value-of select="count($cases)"/>
-								</td>
-								<td>
-									<ul>
-										<xsl:for-each select="$suits[@runstate='NotRunnable']/failure | $cases/failure">
-											<li><pre><xsl:value-of select="message"/></pre></li>
-										</xsl:for-each>
-									</ul>
-								</td>
+								<xsl:for-each select="$suits">
+									<xsl:variable name="cases" select=".//test-case"/>
+									<td>
+										<xsl:value-of select="count($cases[@result='Passed'])"/>
+										<xsl:text>/</xsl:text>
+										<xsl:value-of select="count($cases)"/>
+										<ul>
+											<xsl:for-each select="self::*[@runstate='NotRunnable']/failure | $cases/failure">
+												<li><pre><xsl:value-of select="message"/></pre></li>
+											</xsl:for-each>
+										</ul>
+									</td>
+								</xsl:for-each>
 							</tr>
 						</xsl:for-each>
 					</tbody>

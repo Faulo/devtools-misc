@@ -9,14 +9,12 @@ class UnityCourse {
     private $resultsFolder;
     private $courseDoc;
     private $settings = [];
-    private $reportFile;
-    public function __construct(string $xmlFile, string $resultsFolder, string $reportFile) {
+    public function __construct(string $xmlFile, string $resultsFolder) {
         assert(is_file($xmlFile));
         assert(is_dir($resultsFolder));
         
         $this->resultsFolder = realpath($resultsFolder);
         $this->loadSettings($xmlFile);
-        $this->reportFile = $reportFile;
     }
     private function loadSettings(string $xmlFile) {
         $this->courseDoc = DOMHelper::loadDocument($xmlFile);
@@ -91,7 +89,7 @@ class UnityCourse {
             sleep(1);
         }
     }
-    public function writeReport() {
+    public function writeReport(string $dataFile, string $templateFile, string $outputFile) {
         $reportDoc = new \DOMDocument();
         $rootNode = $reportDoc->createElement('report');
         foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
@@ -109,9 +107,9 @@ class UnityCourse {
             }
         }
         $reportDoc->appendChild($rootNode);
-        $reportDoc->save($this->reportFile);
+        $reportDoc->save($dataFile);
         
         $dom = new DOMHelper();
-        $dom->transformToFile($reportDoc, 'report.xsl', [], new SplFileInfo('report.xhtml'));
+        $dom->transformToFile($reportDoc, $templateFile, [], new SplFileInfo($outputFile));
     }
 }
