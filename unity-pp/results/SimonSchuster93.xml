@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0,1072813">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.107281" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0,0967671">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.096767" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties />
-    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.SimonSchuster93/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.093242" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.SimonSchuster93/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.084081" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="8940" />
+        <property name="_PID" value="10968" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.089983" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.081188" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.085814" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.077597" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="899320269" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.017783" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1182651116" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.015174" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1021587528" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.039424" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="2003185373" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.036868" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1605909421" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.000670" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1653871520" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.000639" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1859360717" result="Passed" start-time="2020-11-12 11:39:00Z" end-time="2020-11-12 11:39:00Z" duration="0.000522" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1622721889" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.000390" asserts="0">
             <properties />
           </test-case>
         </test-suite>
