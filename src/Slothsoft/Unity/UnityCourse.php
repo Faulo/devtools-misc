@@ -92,6 +92,11 @@ class UnityCourse {
     public function writeReport(string $dataFile, string $templateFile, string $outputFile) {
         $reportDoc = new \DOMDocument();
         $rootNode = $reportDoc->createElement('report');
+        foreach (range(1, 13) as $i) {
+            $node = $reportDoc->createElement('test-id');
+            $node->textContent = sprintf('Testat%02d', $i);
+            $rootNode->appendChild($node);
+        }
         foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
             if (!$node->hasAttribute('unity')) {
                 continue;
