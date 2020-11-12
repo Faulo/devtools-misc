@@ -1,34 +1,985 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="4" result="Passed" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0,0967671">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.096767" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="67" result="Failed(Child)" total="67" passed="7" failed="60" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:01Z" duration="1,4379427">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="67" result="Failed" site="Child" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:01Z" duration="1.437943" total="67" passed="7" failed="60" inconclusive="0" skipped="0" asserts="0">
     <properties />
-    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.SimonSchuster93/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.084081" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1072" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.SimonSchuster93/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:00Z" duration="1.298327" total="66" passed="6" failed="60" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="10968" />
+        <property name="_PID" value="16276" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.081188" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1073" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:00Z" duration="1.201449" total="66" passed="6" failed="60" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.077597" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.069932" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1182651116" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.015174" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="246313785" result="Passed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014419" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="2003185373" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.036868" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1387742760" result="Passed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.029606" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1653871520" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.000639" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1849151978" result="Passed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.001348" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1622721889" result="Passed" start-time="2020-11-12 12:36:23Z" end-time="2020-11-12 12:36:23Z" duration="0.000390" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1526195292" result="Passed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.000598" asserts="0">
             <properties />
           </test-case>
         </test-suite>
+        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Failed" site="Child" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:00Z" duration="1.031687" total="62" passed="2" failed="60" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="2049661201" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.009946" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+              <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarExists>d__16:MoveNext() (at Assets/Tests/Testat02.cs:120)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.106356" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1847857664" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.007031" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2023514800" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013543" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="216340305" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014921" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1271635445" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013126" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1416503021" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013080" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1815822432" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.004672" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="229748509" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.006565" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1895586220" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013087" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarInput>d__17:MoveNext() (at Assets/Tests/Testat02.cs:129)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="1596330147" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.016630" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+              <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldExists>d__19:MoveNext() (at Assets/Tests/Testat02.cs:174)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Failed" site="Child" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:00Z" duration="0.771500" total="48" passed="0" failed="48" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2104580575" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.016194" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1916222709" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013838" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="209199772" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014157" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1716333405" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013382" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="618618565" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014578" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="334301956" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013033" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="945712645" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014114" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="536553992" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.013494" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="374389545" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014112" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="628964116" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:49:59Z" duration="0.014153" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="133249022" result="Failed" start-time="2020-11-12 18:49:59Z" end-time="2020-11-12 18:50:00Z" duration="0.014338" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1746164065" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.011504" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="449868779" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014734" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2022064331" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.011406" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1680027127" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013050" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="820762221" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013994" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1539240288" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013238" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2013819700" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013876" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="93578913" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013989" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="381815589" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014055" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="531461607" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013790" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1361049813" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.012828" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1487159430" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014509" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1030268047" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013770" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="32766899" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013367" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="840606282" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013641" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1462640341" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014155" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="612480643" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014223" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2118626453" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014129" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1093690119" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.012092" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="148575873" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014004" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="928985764" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013931" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1736897555" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013692" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="620682970" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014597" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="300143991" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.012796" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2091878776" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013641" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1750623309" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013512" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1510283183" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013607" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="482924738" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013683" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1806291877" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014023" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="139239507" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.012971" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1886341853" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013929" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="365596101" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.014008" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="627590663" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013473" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1113665714" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013829" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1064583773" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.012722" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1375959572" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.013516" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="246941684" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.012886" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[Unhandled log message: '[Error] Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...'. Use UnityEngine.TestTools.LogAssert.Expect]]></message>
+                <stack-trace><![CDATA[UnityEngine.SceneManagement.SceneManager:LoadSceneAsync(String)
+Tests.<TestAvatarSpeedFieldWorks>d__20:MoveNext() (at Assets/Tests/Testat02.cs:187)
+UnityEngine.SetupCoroutine:InvokeMoveNext(IEnumerator, IntPtr)
+
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[Scene 'InputTest' couldn't be loaded because it has not been added to the build settings or the AssetBundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="482743585" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.008096" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  Company Name must be a valid e-mail address, but was 'DefaultCompany'
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at Tests.Testat02.TestEmailAddress () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.SimonSchuster93\Assets\Tests\Testat02.cs:100
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.003338" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="103544302" result="Passed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.000887" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="819962083" result="Passed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.000464" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="195935176" result="Failed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:00Z" duration="0.001117" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  File 'C:\Unity\workspace\2020WS.UnityPP.SimonSchuster93\Assets\Scenes\InputTest.unity' not found.
+  Expected: True
+  But was:  False
+]]></message>
+              <stack-trace><![CDATA[at Tests.Testat02.TestSceneExists () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.SimonSchuster93\Assets\Tests\Testat02.cs:107
+]]></stack-trace>
+            </failure>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1076" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.SimonSchuster93/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:01Z" duration="0.029138" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="16276" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1074" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:01Z" duration="0.027413" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1075" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="182310009" result="Passed" start-time="2020-11-12 18:50:00Z" end-time="2020-11-12 18:50:01Z" duration="0.025884" asserts="0">
+          <properties>
+            <property name="Category" value="Integration" />
+          </properties>
+        </test-case>
       </test-suite>
     </test-suite>
   </test-suite>
