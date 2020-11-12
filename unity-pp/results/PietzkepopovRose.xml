@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-10 21:14:46Z" end-time="2020-11-10 21:14:47Z" duration="0,1386674">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 21:14:46Z" end-time="2020-11-10 21:14:47Z" duration="0.138667" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0,1263922">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.126392" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
     <properties />
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.PietzkepopovRose/UnityPP.Projektskelett/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 21:14:46Z" end-time="2020-11-10 21:14:47Z" duration="0.123478" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1006" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.PietzkepopovRose/UnityPP.Projektskelett/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.111639" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="23376" />
+        <property name="_PID" value="4716" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 21:14:46Z" end-time="2020-11-10 21:14:47Z" duration="0.119325" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1007" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.107578" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
         <properties />
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-10 21:14:46Z" end-time="2020-11-10 21:14:47Z" duration="0.114151" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.102853" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
           <properties />
           <failure>
             <message><![CDATA[One or more child tests had errors]]></message>
           </failure>
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="41055433" result="Failed" start-time="2020-11-10 21:14:47Z" end-time="2020-11-10 21:14:47Z" duration="0.025470" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="221421344" result="Failed" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.025631" asserts="0">
             <properties />
             <failure>
               <message><![CDATA[  Directory 'C:\Unity\workspace\2020WS.UnityPP.PietzkepopovRose\UnityPP.Projektskelett\.git' not found. Did you initialize git?
@@ -35,17 +35,17 @@
 ]]></stack-trace>
             </failure>
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="2091689639" result="Passed" start-time="2020-11-10 21:14:47Z" end-time="2020-11-10 21:14:47Z" duration="0.057930" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="674205329" result="Passed" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.047760" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1186314800" result="Passed" start-time="2020-11-10 21:14:47Z" end-time="2020-11-10 21:14:47Z" duration="0.000801" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1089363094" result="Passed" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.000777" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1179839643" result="Passed" start-time="2020-11-10 21:14:47Z" end-time="2020-11-10 21:14:47Z" duration="0.000409" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="167424613" result="Passed" start-time="2020-11-12 11:39:58Z" end-time="2020-11-12 11:39:58Z" duration="0.000465" asserts="0">
             <properties />
           </test-case>
         </test-suite>

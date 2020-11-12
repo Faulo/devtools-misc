@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <repositories>
 	<unity hub="C:\Unity" workspace="C:\Unity\workspace" project="2020WS.UnityPP" version="2019.4.12f1"/>
+	<repository name="64Megabyte" href="https://github.com/64Megabyte/Programmierpraktikum-WS20"/>
+	<repository name="Ann-droids" href="https://github.com/Ann-droids/Testat1"/>
+	<repository name="BenediktLieb" href="https://github.com/BenediktLieb/Testat-01"/>
+	<repository name="DeliaSchimann" href="https://github.com/DeliaSchimann/GitTest"/>
+	<repository name="DerELMO702995" href="https://github.com/DerELMO702995/Programmierpraktikum"/>
 	<repository name="Faulo" href="https://github.com/Faulo/UnityPP2020"/>
+	<repository name="klasing-jan" href="https://github.com/klasing-jan/Uni-Bayreuth-Programmierpraktikum"/>
+	<repository name="LauraWue" href="https://github.com/LauraWue/Testat01"/>
 	<repository name="Lodil" href="https://github.com/Lodil/PP-Unitykurs"/>
 	<repository name="LukeBrose" href="https://github.com/LukeBrose/Testat-01"/>
-	<repository name="Rubycule" href="https://github.com/Rubycule/PPP_1"/>
-	<repository name="DeliaSchimann" href="https://github.com/DeliaSchimann/GitTest"/>
-	<repository name="64Megabyte" href="https://github.com/64Megabyte/Programmierpraktikum-WS20"/>
-	<repository name="klasing-jan" href="https://github.com/klasing-jan/Uni-Bayreuth-Programmierpraktikum"/>
-	<repository name="BenediktLieb" href="https://github.com/BenediktLieb/Testat-01"/>
-	<repository name="Ann-droids" href="https://github.com/Ann-droids/Testat1"/>
-	<repository name="SimonSchuster93" href="https://github.com/SimonSchuster93/PP_SimonSchuster_1577430"/>
-	<repository name="LauraWue" href="https://github.com/LauraWue/Testat01"/>
 	<repository name="PietzkepopovRose" href="https://github.com/PietzkepopovRose/ProgrammierPraktikum"/>
-	<repository name="DerELMO702995" href="https://github.com/DerELMO702995/Programmierpraktikum"/>
+	<repository name="Rubycule" href="https://github.com/Rubycule/PPP_1"/>
+	<repository name="SimonSchuster93" href="https://github.com/SimonSchuster93/PP_SimonSchuster_1577430"/>
 </repositories>

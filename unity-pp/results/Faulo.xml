@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="5" result="Failed(Child)" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:39Z" duration="0,4265868">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="5" result="Failed" site="Child" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:39Z" duration="0.426587" total="5" passed="5" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <properties />
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1011" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Faulo/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.214058" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="2488" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1012" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.203836" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.185980" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="2000826273" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.040265" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1964861781" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.080150" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <output><![CDATA[Hallo Welt!
+]]></output>
+          </test-case>
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="621320885" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.001948" asserts="0">
+            <properties />
+          </test-case>
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="681138109" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.002377" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1010" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="NotRunnable" testcasecount="0" result="Failed" label="Invalid" site="SetUp" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:38Z" duration="0.002467" total="0" passed="0" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="_SKIPREASON" value="An exception was thrown while loading the test.&#xD;&#xA;System.NullReferenceException: Object reference not set to an instance of an object&#xD;&#xA;  at Tests.Testat02.get_MOVEMENT_DIRECTIONS () [0x00007] in C:\Unity\workspace\2020WS.UnityPP.Faulo\Assets\Tests\Testat02.cs:44 &#xD;&#xA;  at System.Reflection.MonoProperty.StaticGetterAdapterFrame[R] (System.Reflection.MonoProperty+StaticGetter`1[R] getter, System.Object obj) [0x00000] in &lt;9577ac7a62ef43179789031239ba8798&gt;:0 &#xD;&#xA;  at System.Reflection.MonoProperty.GetValue (System.Object obj, System.Object[] index) [0x0005f] in &lt;9577ac7a62ef43179789031239ba8798&gt;:0 " />
+          </properties>
+          <failure>
+            <message><![CDATA[An exception was thrown while loading the test.
+System.NullReferenceException: Object reference not set to an instance of an object
+  at Tests.Testat02.get_MOVEMENT_DIRECTIONS () [0x00007] in C:\Unity\workspace\2020WS.UnityPP.Faulo\Assets\Tests\Testat02.cs:44 
+  at System.Reflection.MonoProperty.StaticGetterAdapterFrame[R] (System.Reflection.MonoProperty+StaticGetter`1[R] getter, System.Object obj) [0x00000] in <9577ac7a62ef43179789031239ba8798>:0 
+  at System.Reflection.MonoProperty.GetValue (System.Object obj, System.Object[] index) [0x0005f] in <9577ac7a62ef43179789031239ba8798>:0 ]]></message>
+          </failure>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+    <test-suite type="Assembly" id="1015" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Faulo/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:39Z" duration="0.165870" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <properties>
+        <property name="_PID" value="2488" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+      </properties>
+      <test-suite type="TestFixture" id="1013" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:39Z" duration="0.139377" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <test-case id="1014" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="1006537398" result="Passed" start-time="2020-11-12 11:34:38Z" end-time="2020-11-12 11:34:39Z" duration="0.134814" asserts="0">
+          <properties>
+            <property name="Category" value="Integration" />
+          </properties>
+        </test-case>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

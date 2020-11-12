@@ -5,6 +5,4 @@ require_once __DIR__ . '/../vendor/autoload.php';
 
 $course = new UnityCourse('repositories.xml', 'results', 'report.xml');
 
-$course->cloneRepositories();
-$course->pullRepositories();
-$course->runTests();
+$course->writeReport();

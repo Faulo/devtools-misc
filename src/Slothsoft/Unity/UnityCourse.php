@@ -3,17 +3,20 @@ namespace Slothsoft\Unity;
 
 use Slothsoft\Devtools\CLI;
 use Slothsoft\Core\DOMHelper;
+use SplFileInfo;
 
 class UnityCourse {
     private $resultsFolder;
     private $courseDoc;
     private $settings = [];
-    public function __construct(string $xmlFile, string $resultsFolder) {
+    private $reportFile;
+    public function __construct(string $xmlFile, string $resultsFolder, string $reportFile) {
         assert(is_file($xmlFile));
         assert(is_dir($resultsFolder));
         
         $this->resultsFolder = realpath($resultsFolder);
         $this->loadSettings($xmlFile);
+        $this->reportFile = $reportFile;
     }
     private function loadSettings(string $xmlFile) {
         $this->courseDoc = DOMHelper::loadDocument($xmlFile);
@@ -34,7 +37,24 @@ class UnityCourse {
             $results = $this->resultsFolder . DIRECTORY_SEPARATOR . $name . '.xml';
             $node->setAttribute('path', $path);
             $node->setAttribute('results', $results);
+            
+            if ($unity = $this->findUnityPath($path)) {
+                $node->setAttribute('unity', $unity);
+            }
         }
+    }
+    private function findUnityPath(string $path) {
+        $directory = new \RecursiveDirectoryIterator($path);
+        $directoryIterator = new \RecursiveIteratorIterator($directory);
+        foreach ($directoryIterator as $directory) {
+            if ($directory->isDir()) {
+                $unity = $directory->getRealPath();
+                if (basename($unity) === 'Assets') {
+                    return dirname($unity);
+                }
+            }
+        }
+        return null;
     }
     public function cloneRepositories() {
         foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
@@ -43,17 +63,8 @@ class UnityCourse {
             if (!is_dir($path)) {
                 $command = sprintf('git clone %s %s', escapeshellarg($href), escapeshellarg($path));
                 CLI::execute($command);
-            }
-            
-            $directory = new \RecursiveDirectoryIterator($path);
-            $directoryIterator = new \RecursiveIteratorIterator($directory);
-            foreach ($directoryIterator as $directory) {
-                if ($directory->isDir()) {
-                    $unity = $directory->getRealPath();
-                    if (basename($unity) === 'Assets') {
-                        $node->setAttribute('unity', dirname($unity));
-                        break;
-                    }
+                if ($unity = $this->findUnityPath($path)) {
+                    $node->setAttribute('unity', $unity);
                 }
             }
             sleep(1);
@@ -79,5 +90,28 @@ class UnityCourse {
             $project->runTests($results, 'PlayMode');
             sleep(1);
         }
+    }
+    public function writeReport() {
+        $reportDoc = new \DOMDocument();
+        $rootNode = $reportDoc->createElement('report');
+        foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
+            if (!$node->hasAttribute('unity')) {
+                continue;
+            }
+            $results = $node->getAttribute('results');
+            
+            if (is_file($results)) {
+                if ($resultsDoc = DOMHelper::loadDocument($results)) {
+                    $resultsNode = $reportDoc->importNode($node, true);
+                    $resultsNode->appendChild($reportDoc->importNode($resultsDoc->documentElement, true));
+                    $rootNode->appendChild($resultsNode);
+                }
+            }
+        }
+        $reportDoc->appendChild($rootNode);
+        $reportDoc->save($this->reportFile);
+        
+        $dom = new DOMHelper();
+        $dom->transformToFile($reportDoc, 'report.xsl', [], new SplFileInfo('report.xhtml'));
     }
 }
