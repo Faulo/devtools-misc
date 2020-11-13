@@ -66,16 +66,16 @@ class UnityProject {
 
         return CLI::execute($command);
     }
-    
+
     public function runTests(string $resultsFile, string $testPlatform = 'EditMode') {
-        //..\2019.4.12f1\Editor\Unity.exe -runTests -batchmode -projectPath 2020WS.UnityPP.Lodil -testResults results.xml -testPlatform PlayMode
+        // ..\2019.4.12f1\Editor\Unity.exe -runTests -batchmode -projectPath 2020WS.UnityPP.Lodil -testResults results.xml -testPlatform PlayMode
         $args = [];
         $args[] = escapeshellarg($this->unityFile);
         $args[] = escapeshellarg($this->projectPath);
         $args[] = escapeshellarg($resultsFile);
         $args[] = escapeshellarg($testPlatform);
         $command = vsprintf('%s -runTests -accept-apiupdate -batchmode -nographics -projectPath %s -testResults %s -testPlatform %s', $args);
-        
+
         return CLI::execute($command);
     }
 }
