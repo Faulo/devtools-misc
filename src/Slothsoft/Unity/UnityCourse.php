@@ -83,8 +83,10 @@ class UnityCourse {
             $path = $node->getAttribute('path');
             $git = new GitProject($path);
             $git->pull();
-            $branches = $git->branches();
-            $git->checkout(reset($branches));
+            $git->reset();
+            $branch = $git->branches()[0];
+            // git checkout -B master --track origin/master
+            $git->execute("checkout -B $branch --track origin/$branch");
         }
     }
 
@@ -162,7 +164,7 @@ class UnityCourse {
             }
 
             $git->add();
-            $git->commit("Create $testName");
+            $git->commit("Fix $testName");
         }
     }
 }

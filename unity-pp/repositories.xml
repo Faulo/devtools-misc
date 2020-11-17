@@ -6,10 +6,10 @@
 	<repository name="BenediktLieb" href="https://github.com/BenediktLieb/Testat-01"/>
 	<repository name="DeliaSchimann" href="https://github.com/DeliaSchimann/GitTest"/>
 	<repository name="DerELMO702995" href="https://github.com/DerELMO702995/Programmierpraktikum"/>
-	<repository name="Faulo-Empty" href="https://github.com/Faulo/UnityPP2020-Empty"/>
-	<repository name="Faulo-Master" href="https://github.com/Faulo/UnityPP2020"/>
-	<repository name="klasing-jan" href="https://github.com/klasing-jan/Uni-Bayreuth-Programmierpraktikum"/>
-	<repository name="klasing-jan-2" href="https://github.com/klasing-jan/Programmier-Praktikum-Uni-Bayreuth-Jan-Klasing-Version-2"/>
+	<repository name="Faulo-Empty" href="https://github.com/Faulo/UnityPP2020-Empty" master=""/>
+	<repository name="Faulo-Master" href="https://github.com/Faulo/UnityPP2020" master=""/>
+	<repository name="julehe1702" href="https://github.com/julehe1702/Git-Repository_Programmierpraktikum"/>
+	<repository name="klasing-jan" href="https://github.com/klasing-jan/Programmier-Praktikum-Uni-Bayreuth-Jan-Klasing-Version-2"/>
 	<repository name="LauraWue" href="https://github.com/LauraWue/Testat01"/>
 	<repository name="Lodil" href="https://github.com/Lodil/PP-Unitykurs"/>
 	<repository name="LukeBrose" href="https://github.com/LukeBrose/Testat-01"/>

@@ -49,14 +49,18 @@ class GitProject {
     }
 
     public function branches(): array {
-        $gitArgs = 'branch --sort=-committerdate';
+        $gitArgs = 'branch --sort=-committerdate -r';
         $command = sprintf('git -C %s %s', escapeshellarg($this->projectPath), $gitArgs);
         $output = [];
         exec($command, $output);
-        foreach ($output as &$line) {
-            $line = substr($line, 2);
+        $ret = [];
+        foreach ($output as $line) {
+            $match = [];
+            if (preg_match('~^\s*origin/([^\s]+)$~', $line, $match)) {
+                $ret[] = $match[1];
+            }
         }
-        return $output;
+        return $ret;
     }
 
     public function execute($gitArgs) {
