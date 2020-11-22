@@ -111,19 +111,51 @@ class UnityCourse {
             $node->textContent = sprintf('Testat%02d', $i);
             $rootNode->appendChild($node);
         }
+        $storage = [];
+        $duplicates = [];
         foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
             if (! $node->hasAttribute('unity')) {
                 continue;
+            }
+            $unity = $node->getAttribute('unity');
+            $name = $node->getAttribute('name');
+            $project = new UnityProject($this->settings['hub'], $unity);
+            foreach ($project->getAssetFiles() as $file) {
+                if ($file->getExtension() === 'cs') {
+                    $path = $file->getRealPath();
+                    $location = substr($path, strlen($unity) + 1);
+                    $hash = md5_file($path);
+                    if (isset($storage[$hash])) {
+                        if (!isset($duplicates[$hash])) {
+                            $duplicates[$hash] = file_get_contents($path);
+                        }
+                    } else {
+                        $storage[$hash] = [];
+                    }
+                    $storage[$hash][$name] = $location;
+                }
             }
             $results = $node->getAttribute('results');
 
             if (is_file($results)) {
                 if ($resultsDoc = DOMHelper::loadDocument($results)) {
                     $resultsNode = $reportDoc->importNode($node, true);
+                    $resultsNode->setAttribute('company', $project->companyName);
                     $resultsNode->appendChild($reportDoc->importNode($resultsDoc->documentElement, true));
                     $rootNode->appendChild($resultsNode);
                 }
             }
+        }
+        foreach ($duplicates as $hash => $content) {
+            $fileNode = $reportDoc->createElement('duplicate');
+            $fileNode->setAttribute('content', $content);
+            foreach ($storage[$hash] as $author => $location) {
+                $node = $reportDoc->createElement('file');
+                $node->setAttribute('author', $author);
+                $node->setAttribute('location', $location);
+                $fileNode->appendChild($node);
+            }
+            $rootNode->appendChild($fileNode);
         }
         $reportDoc->appendChild($rootNode);
         $reportDoc->save($dataFile);

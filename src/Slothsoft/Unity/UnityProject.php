@@ -8,6 +8,8 @@ class UnityProject {
     const FILE_UNITY = '%s/%s/Editor/Unity.exe';
 
     const FILE_VERSION = '/ProjectSettings/ProjectVersion.txt';
+    
+    const FILE_PROJECT = '/ProjectSettings/ProjectSettings.asset';
 
     const FILE_PACKAGES = '/Packages/packages-lock.json';
 
@@ -16,6 +18,8 @@ class UnityProject {
     private $unityVersion;
 
     private $unityPath;
+    
+    public $companyName;
 
     public $packages = [];
 
@@ -29,15 +33,22 @@ class UnityProject {
     }
 
     private function loadProject() {
-        $contents = $this->loadFile($this->projectPath . self::FILE_VERSION);
         $match = [];
+        
+        $contents = $this->loadFile($this->projectPath . self::FILE_VERSION);
         if (preg_match('~m_EditorVersion: (.+)~', $contents, $match)) {
             $this->unityVersion = trim($match[1]);
-
+            
             $unityFile = sprintf(self::FILE_UNITY, $this->unityPath, $this->unityVersion);
             assert(is_file($unityFile), "File $unityFile not found");
             $this->unityFile = realpath($unityFile);
         }
+        
+        $contents = $this->loadFile($this->projectPath . self::FILE_PROJECT);
+        if (preg_match('~companyName: (.+)~', $contents, $match)) {
+            $this->companyName = trim($match[1]);
+        }
+        
         $tmp = json_decode($this->loadFile($this->projectPath . self::FILE_PACKAGES), true);
         if (is_array($tmp) and isset($tmp['dependencies'])) {
             $this->packages = $tmp['dependencies'];
@@ -77,6 +88,17 @@ class UnityProject {
         $command = vsprintf('%s -runTests -accept-apiupdate -batchmode -nographics -projectPath %s -testResults %s -testPlatform %s', $args);
 
         return CLI::execute($command);
+    }
+    
+    public function getAssetFiles() : iterable {
+        $path = $this->projectPath . DIRECTORY_SEPARATOR . 'Assets';
+        $directory = new \RecursiveDirectoryIterator($path);
+        $directoryIterator = new \RecursiveIteratorIterator($directory);
+        foreach ($directoryIterator as $file) {
+            if ($file->isFile()) {
+                yield $file;
+            }
+        }
     }
 }
 

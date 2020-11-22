@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="67" result="Failed(Child)" total="67" passed="33" failed="34" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:08Z" duration="3,7827088">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="67" result="Failed" site="Child" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:08Z" duration="3.782709" total="67" passed="33" failed="34" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="86" result="Failed(Child)" total="86" passed="33" failed="53" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:49Z" duration="4,4385033">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="86" result="Failed" site="Child" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:49Z" duration="4.438503" total="86" passed="33" failed="53" inconclusive="0" skipped="0" asserts="0">
     <properties />
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="Assembly" id="1072" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.LauraWue/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:08Z" duration="3.673938" total="66" passed="32" failed="34" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1095" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.LauraWue/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="85" result="Failed" site="Child" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:48Z" duration="4.248685" total="85" passed="32" failed="53" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="9556" />
+        <property name="_PID" value="892" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestSuite" id="1073" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="66" result="Failed" site="Child" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:08Z" duration="3.601904" total="66" passed="32" failed="34" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1096" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="85" result="Failed" site="Child" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:48Z" duration="4.110171" total="85" passed="32" failed="53" inconclusive="0" skipped="0" asserts="0">
         <properties />
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.091961" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.145778" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="2050826984" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.016462" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="736368313" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.016186" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1851965367" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.047008" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="61875503" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.098310" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
@@ -33,90 +33,90 @@ The referenced script on this Behaviour (Game Object 'Directional Light') is mis
 Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1155206013" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.000823" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1946236922" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.001837" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1077669043" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.000506" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1153240503" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.000559" asserts="0">
             <properties />
           </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Failed" site="Child" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:08Z" duration="3.433221" total="62" passed="28" failed="34" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Failed" site="Child" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:48Z" duration="3.400458" total="62" passed="28" failed="34" inconclusive="0" skipped="0" asserts="0">
           <properties />
           <failure>
             <message><![CDATA[One or more child tests had errors]]></message>
           </failure>
-          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="1304289094" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.065347" asserts="0">
+          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="1030959637" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.056926" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:05Z" duration="0.609504" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:45Z" duration="0.622835" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
-            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="987866531" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:04Z" duration="0.079561" asserts="0">
+            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="324229845" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.089919" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1491526495" result="Passed" start-time="2020-11-16 21:27:04Z" end-time="2020-11-16 21:27:05Z" duration="0.075565" asserts="0">
+            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="554693668" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:44Z" duration="0.071395" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2048859496" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.072072" asserts="0">
+            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="177890217" result="Passed" start-time="2020-11-21 23:53:44Z" end-time="2020-11-21 23:53:45Z" duration="0.072263" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="493889521" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.071191" asserts="0">
+            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1053545644" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.073643" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="851295115" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.076445" asserts="0">
+            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="672490391" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.076864" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2114674147" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.073928" asserts="0">
+            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="650529163" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.075186" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1107928401" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.073687" asserts="0">
+            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2091160381" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.076189" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1924721041" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.071998" asserts="0">
+            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1992648495" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.073183" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
           </test-suite>
-          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="53949361" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.016917" asserts="0">
+          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="296493709" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.011227" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Failed" site="Child" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:08Z" duration="2.647974" total="48" passed="14" failed="34" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Failed" site="Child" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:48Z" duration="2.596132" total="48" passed="14" failed="34" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <failure>
               <message><![CDATA[One or more child tests had errors]]></message>
             </failure>
-            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1419358824" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.020776" asserts="0">
+            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="460538343" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.019809" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="953034446" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.063799" asserts="0">
+            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1367607565" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.050098" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -130,7 +130,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="574107379" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.085471" asserts="0">
+            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1122644209" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.080162" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.1, 0.0)
@@ -144,7 +144,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="606042043" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.020716" asserts="0">
+            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="287259737" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.018271" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -158,7 +158,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="614403790" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.045594" asserts="0">
+            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1547183668" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.046283" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.2, 0.0), but was (0.0, 0.1, 0.0)
@@ -172,7 +172,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1263240054" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.093219" asserts="0">
+            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="699964898" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.089369" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.4, 0.0), but was (0.0, 0.1, 0.0)
@@ -186,7 +186,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1726040068" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.020937" asserts="0">
+            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2144650600" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.020829" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -200,12 +200,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="274056758" result="Passed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:05Z" duration="0.043367" asserts="0">
+            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="607136153" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.043807" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="19741801" result="Failed" start-time="2020-11-16 21:27:05Z" end-time="2020-11-16 21:27:06Z" duration="0.094718" asserts="0">
+            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1832171226" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.095199" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -219,12 +219,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="797610435" result="Passed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.018958" asserts="0">
+            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1683197300" result="Passed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.025037" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="593332682" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.046581" asserts="0">
+            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="863777804" result="Failed" start-time="2020-11-21 23:53:45Z" end-time="2020-11-21 23:53:45Z" duration="0.044674" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, -0.2, 0.0), but was (0.0, 0.0, 0.0)
@@ -238,7 +238,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="48224369" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.091994" asserts="0">
+            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="678465579" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.090974" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, -0.4, 0.0), but was (0.0, 0.0, 0.0)
@@ -252,12 +252,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="745855010" result="Passed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.020461" asserts="0">
+            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="74963098" result="Passed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.022435" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1715271235" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.047195" asserts="0">
+            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1977153563" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.045228" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -271,7 +271,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1256649403" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.091533" asserts="0">
+            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="756410125" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.092321" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-0.1, 0.0, 0.0)
@@ -285,7 +285,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2000528207" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.019736" asserts="0">
+            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1255186780" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.019583" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -299,7 +299,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1520490201" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.048388" asserts="0">
+            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="907069394" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.046336" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.2, 0.0, 0.0), but was (-0.1, 0.0, 0.0)
@@ -313,7 +313,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1262034603" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.095013" asserts="0">
+            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1473816341" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.092020" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.4, 0.0, 0.0), but was (-0.1, 0.0, 0.0)
@@ -327,7 +327,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="855967784" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.022194" asserts="0">
+            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1291650627" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.017179" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -341,12 +341,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1260662896" result="Passed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.040661" asserts="0">
+            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2063584240" result="Passed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.044592" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1699231406" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.094591" asserts="0">
+            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="449570994" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.092536" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -360,12 +360,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1169572452" result="Passed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.022971" asserts="0">
+            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1828254735" result="Passed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.017671" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="68090767" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.043847" asserts="0">
+            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="735865477" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.047699" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.2, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -379,7 +379,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2143546267" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.093305" asserts="0">
+            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2119641137" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.091850" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.4, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -393,12 +393,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="509612633" result="Passed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.017941" asserts="0">
+            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1422266208" result="Passed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.018144" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="204790613" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.048587" asserts="0">
+            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="893273789" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.046380" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -412,12 +412,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1816932147" result="Passed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:06Z" duration="0.094575" asserts="0">
+            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2088331884" result="Passed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.090030" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="161036619" result="Failed" start-time="2020-11-16 21:27:06Z" end-time="2020-11-16 21:27:07Z" duration="0.020318" asserts="0">
+            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="331476463" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.017532" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -431,7 +431,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1213161067" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.045821" asserts="0">
+            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1210974891" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:46Z" duration="0.044671" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.1, 0.1, 0.0), but was (0.0, 0.0, 0.0)
@@ -445,7 +445,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1262381694" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.091970" asserts="0">
+            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1747063994" result="Failed" start-time="2020-11-21 23:53:46Z" end-time="2020-11-21 23:53:47Z" duration="0.090481" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.3, 0.3, 0.0), but was (0.0, 0.0, 0.0)
@@ -459,12 +459,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="658551847" result="Passed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.017472" asserts="0">
+            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="705339249" result="Passed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.017409" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1779387322" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.047900" asserts="0">
+            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2133251578" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.046539" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -478,12 +478,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1788101212" result="Passed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.088809" asserts="0">
+            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1171729918" result="Passed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.091577" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1891133931" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.020216" asserts="0">
+            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1874165371" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.018189" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -497,7 +497,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="498393862" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.047693" asserts="0">
+            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1366855772" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.045552" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.1, -0.1, 0.0), but was (0.0, 0.0, 0.0)
@@ -511,7 +511,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1454195508" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.091501" asserts="0">
+            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="317160694" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.091689" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.3, -0.3, 0.0), but was (0.0, 0.0, 0.0)
@@ -525,12 +525,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1066270288" result="Passed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.021197" asserts="0">
+            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1222878164" result="Passed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.018042" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="158642016" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.045134" asserts="0">
+            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1138853793" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.045367" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -544,12 +544,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="624579145" result="Passed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.090726" asserts="0">
+            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="286521486" result="Passed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.090687" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1159937823" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.018681" asserts="0">
+            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1074155728" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.016789" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -563,7 +563,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1672727049" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.046336" asserts="0">
+            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1952110100" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.044685" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.1, 0.1, 0.0), but was (0.0, 0.0, 0.0)
@@ -577,7 +577,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="819690578" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.091806" asserts="0">
+            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1318563673" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.092644" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input upArrow+leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.3, 0.3, 0.0), but was (0.0, 0.0, 0.0)
@@ -591,12 +591,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1163535973" result="Passed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.023212" asserts="0">
+            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="722033049" result="Passed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.024796" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1903186560" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.045012" asserts="0">
+            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1825566706" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.045430" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -610,12 +610,12 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1270527964" result="Passed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.091529" asserts="0">
+            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1893354304" result="Passed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.088455" asserts="0">
               <properties />
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1086723123" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:07Z" duration="0.022567" asserts="0">
+            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1596790948" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.023873" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (0.0, 0.0, 0.0)
@@ -629,7 +629,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1618934273" result="Failed" start-time="2020-11-16 21:27:07Z" end-time="2020-11-16 21:27:08Z" duration="0.046790" asserts="0">
+            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1285258881" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:47Z" duration="0.050957" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.1, -0.1, 0.0), but was (0.0, 0.0, 0.0)
@@ -643,7 +643,7 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
               <output><![CDATA[Hallo Welt!
 ]]></output>
             </test-case>
-            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="4689319" result="Failed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.092940" asserts="0">
+            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1867368335" result="Failed" start-time="2020-11-21 23:53:47Z" end-time="2020-11-21 23:53:48Z" duration="0.090552" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  With input downArrow+leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.3, -0.3, 0.0), but was (0.0, 0.0, 0.0)
@@ -658,33 +658,330 @@ at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C
 ]]></output>
             </test-case>
           </test-suite>
-          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="2031688397" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.001612" asserts="0">
+          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="93054081" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.002410" asserts="0">
             <properties />
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.004771" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.005758" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="194397760" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.000984" asserts="0">
+            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="831977428" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.000951" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="207558380" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.000557" asserts="0">
+            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="116145493" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.000753" asserts="0">
               <properties />
             </test-case>
           </test-suite>
-          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="2143464832" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.000619" asserts="0">
+          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="259859286" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.000894" asserts="0">
             <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Failed" site="Child" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.431863" total="19" passed="0" failed="19" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="2132309219" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.005466" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarGravityWhenFalling>d__25.MoveNext () [0x00049] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:112
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="1378633991" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.016628" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Platform.prefab>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiatePlatform (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:266
+at Tests.Testat03+<TestAvatarGravityWhenGrounded>d__27.MoveNext () [0x00049] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:167
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.159754" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1001781978" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.014401" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1874992615" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.016971" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="2064846132" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.016625" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1847042660" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.017516" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="652097700" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.017088" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="477031121" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.019494" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1200321275" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.015518" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="668413658" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.016697" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:255
+at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:137
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1953913304" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.006863" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.TestAvatarPrefab () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:100
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.152569" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="472231482" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.086022" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  No git tags found!
+  Expected: not equal to <string.Empty>
+  But was:  <string.Empty>
+]]></message>
+                <stack-trace><![CDATA[at Tests.Testat03.TestGitTagExists (System.String tag) [0x0001d] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:67
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="209927784" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.062172" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  No git tags found!
+  Expected: not equal to <string.Empty>
+  But was:  <string.Empty>
+]]></message>
+                <stack-trace><![CDATA[at Tests.Testat03.TestGitTagExists (System.String tag) [0x0001d] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:67
+]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="166279926" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.009649" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Platform.prefab>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.InstantiatePlatform (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:266
+at Tests.Testat03+<TestPlatformGravity>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:89
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1087428469" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.002065" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Platform.prefab>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03.TestPlatformPrefab () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:79
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.007638" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="370235910" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.001952" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Avatar.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.Testat03.TestPrefabExists (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:74
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="2055320469" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.001216" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Platform.prefab>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.Testat03.TestPrefabExists (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:74
+]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="1034348643" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.020550" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Prefabs/Platform.prefab>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\TestUtils.cs:89
+at Tests.Testat03+<TestPrefabInstancesExistInScene>d__29.MoveNext () [0x0006f] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:198
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="1814596684" result="Failed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.002625" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  Expected: file exists
+  But was:  <./Assets/Scenes/PlatformTest.unity>
+]]></message>
+              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.Testat03.TestSceneExists () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.LauraWue\Assets\Tests\Testat03.cs:191
+]]></stack-trace>
+            </failure>
           </test-case>
         </test-suite>
       </test-suite>
     </test-suite>
-    <test-suite type="Assembly" id="1076" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.LauraWue/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.025814" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1099" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.LauraWue/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.036854" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="9556" />
+        <property name="_PID" value="892" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestFixture" id="1074" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.022504" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1097" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.029339" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-case id="1075" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="317987218" result="Passed" start-time="2020-11-16 21:27:08Z" end-time="2020-11-16 21:27:08Z" duration="0.020358" asserts="0">
+        <test-case id="1098" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="1461959854" result="Passed" start-time="2020-11-21 23:53:48Z" end-time="2020-11-21 23:53:48Z" duration="0.026437" asserts="0">
           <properties>
             <property name="Category" value="Integration" />
           </properties>

@@ -29,8 +29,11 @@ pre {
 table {
 	margin: 1em auto;
 }
-th:first-child {
+th:nth-child(1) {
     width: 10em;
+}
+th:nth-child(2) {
+    width: 15em;
 }
 th {
     width: 5em;
@@ -45,6 +48,19 @@ th {
 				<xsl:call-template name="table">
 					<xsl:with-param name="repositories" select="repository[not(@master)]" />
 				</xsl:call-template>
+				<hr/>
+				<xsl:for-each select="duplicate[not(file/@author = 'Faulo-Master')]">
+					<details>
+						<summary><xsl:value-of select="count(file)"/> duplicates: <xsl:value-of select="file/@location"/></summary>
+						<dl>
+							<xsl:for-each select="file">
+								<dt><xsl:value-of select="@author"/></dt>
+								<dd><xsl:value-of select="@location"/></dd>
+							</xsl:for-each>
+						</dl>
+						<pre><xsl:value-of select="@content"/></pre>
+					</details>
+				</xsl:for-each>
 			</body>
 		</html>
 	</xsl:template>
@@ -55,7 +71,8 @@ th {
 		<table border="1">
 			<thead>
 				<tr>
-					<th>Name</th>
+					<th>Repository</th>
+					<th>Author</th>
 					<xsl:for-each select="$ids">
 						<th>
 							<xsl:value-of select="." />
@@ -65,6 +82,7 @@ th {
 			</thead>
 			<tfoot>
 				<tr>
+					<th/>
 					<th>Total</th>
 					<xsl:for-each select="$ids">
 						<xsl:variable name="suits" select="$repositories//test-suite[@name = current()]" />
@@ -82,7 +100,9 @@ th {
 				</tr>
 			</tfoot>
 			<tbody>
-				<xsl:apply-templates select="$repositories" />
+				<xsl:apply-templates select="$repositories">
+					<xsl:sort select="@company"/>
+				</xsl:apply-templates>
 			</tbody>
 		</table>
 	</xsl:template>
@@ -94,6 +114,9 @@ th {
 				<a href="{@href}">
 					<xsl:value-of select="@name" />
 				</a>
+			</td>
+			<td>
+				<xsl:value-of select="@company" />
 			</td>
 			<xsl:for-each select="$ids">
 				<td>
