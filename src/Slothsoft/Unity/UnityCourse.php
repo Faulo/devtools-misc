@@ -102,6 +102,33 @@ class UnityCourse {
             $project->runTests($results, 'PlayMode');
         }
     }
+    
+    public function deleteFolder(string $folder) {
+        foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
+            if (! $node->hasAttribute('unity')) {
+                continue;
+            }
+            $unity = $node->getAttribute('unity');
+            $directory = new \SplFileInfo($unity . DIRECTORY_SEPARATOR . $folder);
+            if ($directory->isDir()) {
+                $this->rrmdir($directory->getRealPath());
+            }
+        }
+    }
+    private function rrmdir($dir) {
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (is_dir($dir. DIRECTORY_SEPARATOR .$object) && !is_link($dir."/".$object))
+                        rrmdir($dir. DIRECTORY_SEPARATOR .$object);
+                        else
+                            unlink($dir. DIRECTORY_SEPARATOR .$object);
+                }
+            }
+            rmdir($dir);
+        }
+    }
 
     public function writeReport(string $dataFile, string $templateFile, string $outputFile) {
         $reportDoc = new \DOMDocument();
@@ -164,7 +191,7 @@ class UnityCourse {
         $dom->transformToFile($reportDoc, $templateFile, [], new SplFileInfo($outputFile));
     }
 
-    public function requestTest(string $testsFolder, int $testNumber) {
+    public function requestTest(string $testsFolder, int $testNumber, string $commitMessage) {
         $testName = sprintf('Testat%02d', $testNumber);
         $branchName = "exam/$testName";
         $testFolder = $testsFolder . DIRECTORY_SEPARATOR . $testName;
@@ -191,12 +218,16 @@ class UnityCourse {
                     assert(strpos($path, $testFolder) === 0);
                     $path = substr($path, strlen($testFolder));
                     echo $path . PHP_EOL;
+                    if (!is_dir(dirname($unity . $path))) {
+                        mkdir(dirname($unity . $path), 0777, true);
+                    }
                     copy($testFolder . $path, $unity . $path);
                 }
             }
 
             $git->add();
-            $git->commit("Fix $testName");
+            $git->commit($commitMessage);
+            $git->push("--set-upstream origin $branchName");
         }
     }
 }

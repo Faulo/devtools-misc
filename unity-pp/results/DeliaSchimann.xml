@@ -1,950 +1,574 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="86" result="Failed(Child)" total="86" passed="9" failed="77" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:59Z" duration="2,1498066">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="86" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:59Z" duration="2.149807" total="86" passed="9" failed="77" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="98" result="Failed(Child)" total="98" passed="89" failed="9" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:19Z" duration="8,3355764">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="98" result="Failed" site="Child" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:19Z" duration="8.335576" total="98" passed="89" failed="9" inconclusive="0" skipped="0" asserts="0">
     <properties />
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="Assembly" id="1095" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DeliaSchimann/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="85" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:59Z" duration="1.963146" total="85" passed="8" failed="77" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1112" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DeliaSchimann/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="97" result="Failed" site="Child" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:19Z" duration="8.222043" total="97" passed="88" failed="9" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="14756" />
+        <property name="_PID" value="13060" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestSuite" id="1096" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="85" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:58Z" duration="1.805252" total="85" passed="8" failed="77" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1113" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="97" result="Failed" site="Child" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:19Z" duration="8.144849" total="97" passed="88" failed="9" inconclusive="0" skipped="0" asserts="0">
         <properties />
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.139713" total="4" passed="3" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.120189" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1693056245" result="Passed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.017374" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="873866279" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.023020" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1068726921" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.082519" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="384448153" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.069499" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
-            <failure>
-              <message><![CDATA[  Expected is <System.String[1]>, actual is <System.Collections.Generic.List`1[System.String]> with 2 elements
-  Values differ at index [1]
-  Extra:    < "Hallo Welt!" >]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.CollectionAssert.AreEqual (System.Collections.IEnumerable expected, System.Collections.IEnumerable actual, System.String message, System.Object[] args) [0x00008] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.CollectionAssert.AreEqual (System.Collections.IEnumerable expected, System.Collections.IEnumerable actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat01+<TestHelloWorldLog>d__8.MoveNext () [0x000ab] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat01.cs:53
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
             <output><![CDATA[Hallo Welt!
-Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1413186128" result="Passed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.001471" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="567015263" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.001456" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1536201700" result="Passed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.000988" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="617508554" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.001123" asserts="0">
             <properties />
           </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:58Z" duration="1.134335" total="62" passed="4" failed="58" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:16Z" duration="4.808846" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="1065884238" result="Passed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.049384" asserts="0">
+          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="506319391" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.090851" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.164737" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:12Z" duration="0.798414" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1329348664" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.094827" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2030533409" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.099493" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="469812341" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.099618" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="57284633" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.099147" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="473295213" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:11Z" duration="0.099419" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1519495266" result="Passed" start-time="2020-12-01 20:32:11Z" end-time="2020-12-01 20:32:12Z" duration="0.099598" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="20807213" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.099125" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1326820810" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.099605" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="475061791" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.034933" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:16Z" duration="3.840651" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1941852492" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.037163" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="842027964" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.069143" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2105757041" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.119378" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="859940970" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.039772" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2023708001" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.078667" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1157672301" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.119705" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="589296904" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.039100" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="982293560" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:12Z" duration="0.079468" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="139881861" result="Passed" start-time="2020-12-01 20:32:12Z" end-time="2020-12-01 20:32:13Z" duration="0.119457" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="966377151" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.039119" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1719819190" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.079578" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="888443773" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.119722" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1113786571" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.038920" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="324377765" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.079537" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="388454861" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.119998" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1204166069" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.038351" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="73279691" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.080387" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1985497022" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.118021" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="515300671" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.039302" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1303679417" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:13Z" duration="0.079292" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1833899057" result="Passed" start-time="2020-12-01 20:32:13Z" end-time="2020-12-01 20:32:14Z" duration="0.119606" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="321658936" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.038509" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="323066627" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.079115" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="890391674" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.118749" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="732622584" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.038923" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="720716153" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.079089" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1827313242" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.119313" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="565119813" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.038670" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1281300622" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.078817" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1129238057" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.119311" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="462421568" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.038075" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1189817730" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.079762" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1282414572" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:14Z" duration="0.118277" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="401552127" result="Passed" start-time="2020-12-01 20:32:14Z" end-time="2020-12-01 20:32:15Z" duration="0.039798" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1629909238" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.078886" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1671503267" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.118556" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="350317465" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.037638" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="883662410" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.079799" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="97981732" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.118415" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="764458224" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.039468" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1404554788" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.079207" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1419042915" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.119226" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1706527594" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.039303" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1068627563" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.079365" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1010958327" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.119260" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1716119878" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:15Z" duration="0.039225" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1823489173" result="Passed" start-time="2020-12-01 20:32:15Z" end-time="2020-12-01 20:32:16Z" duration="0.079550" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="945445730" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.119273" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="1776321659" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.001817" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.007908" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="1098859973" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.001114" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="1159466323" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.004806" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="223239826" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.002055" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:19Z" duration="2.922850" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="1380001362" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.225581" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <output><![CDATA[hallo
+tschüss
+]]></output>
+          </test-case>
+          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="1997617154" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.240975" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <output><![CDATA[hallo
+True
+True
+True
+True
+True
+True
+True
+True
+True
+True
+False
+tschüss
+]]></output>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:17Z" duration="1.154324" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1148961972" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:16Z" duration="0.085365" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1862195286" result="Passed" start-time="2020-12-01 20:32:16Z" end-time="2020-12-01 20:32:17Z" duration="0.209865" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1467179740" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.088063" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="2133864271" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.209780" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="951337408" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.075366" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="2117675802" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.192958" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1131705762" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.089763" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="507473634" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.193965" asserts="0">
+              <properties />
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1492077336" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.007137" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:18Z" duration="0.159399" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="1128607994" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:17Z" duration="0.102346" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="1872772057" result="Passed" start-time="2020-12-01 20:32:17Z" end-time="2020-12-01 20:32:18Z" duration="0.054362" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="494185248" result="Passed" start-time="2020-12-01 20:32:18Z" end-time="2020-12-01 20:32:18Z" duration="0.219711" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1827541586" result="Passed" start-time="2020-12-01 20:32:18Z" end-time="2020-12-01 20:32:18Z" duration="0.001628" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:32:18Z" end-time="2020-12-01 20:32:18Z" duration="0.006350" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="358049584" result="Passed" start-time="2020-12-01 20:32:18Z" end-time="2020-12-01 20:32:18Z" duration="0.001492" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="1433712013" result="Passed" start-time="2020-12-01 20:32:18Z" end-time="2020-12-01 20:32:18Z" duration="0.002045" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="483282518" result="Passed" start-time="2020-12-01 20:32:18Z" end-time="2020-12-01 20:32:19Z" duration="0.890130" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <output><![CDATA[hallo
+True
+True
+False
+True
+tschüss
+]]></output>
+          </test-case>
+          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="2045748423" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.001659" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1095" name="Testat04" fullname="Tests.Testat04" classname="Tests.Testat04" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.224437" total="12" passed="3" failed="9" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="ParameterizedMethod" id="1109" name="TestAvatarColor" fullname="Tests.Testat04.TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.066274" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <failure>
               <message><![CDATA[One or more child tests had errors]]></message>
             </failure>
-            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="229810679" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.021035" asserts="0">
+            <test-case id="1107" name="TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="480540601" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.043276" asserts="0">
               <properties />
               <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="417440110" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015828" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1648396410" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.024296" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1256137633" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.019171" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="596708420" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.016274" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="879737206" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.016799" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1553127085" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015530" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="946512320" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015026" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Must not move avatar when no input is happening.
-  Expected: (0.0, 0.0, 0.0)
-  But was:  (0.0, 1.0, -10.0)
-]]></message>
-                <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarInput>d__17.MoveNext () [0x000ed] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:136
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-          </test-suite>
-          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="764070313" result="Failed" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.010370" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  There must be exactly 1 field with the name of 'movementSpeed' in GameObject 'Avatar'!
+                <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
   Expected: 1
   But was:  0
 ]]></message>
-              <stack-trace><![CDATA[at Tests.Testat02+<TestAvatarSpeedFieldExists>d__19.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:181
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:52
+at Tests.Testat04.InstantiateAvatar (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:240
+at Tests.Testat04+<TestAvatarColor>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:157
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+            <test-case id="1108" name="TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="1446280527" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.015516" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:52
+at Tests.Testat04.InstantiateAvatar (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:240
+at Tests.Testat04+<TestAvatarColor>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:157
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+              <output><![CDATA[hallo
+tschüss
+]]></output>
+            </test-case>
+          </test-suite>
+          <test-case id="1106" name="TestAvatarPrefab" fullname="Tests.Testat04.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat04" runstate="Runnable" seed="175442824" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.002933" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
+]]></message>
+              <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:52
+at Tests.Testat04.TestAvatarPrefab () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:146
 ]]></stack-trace>
             </failure>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Failed" site="Child" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:58Z" duration="0.791452" total="48" passed="0" failed="48" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1101" name="TestMaterialsExists" fullname="Tests.Testat04.TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.012014" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1099" name="TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="104233010" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.002581" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Materials/Avatar.mat>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestSuite.LoadAsset[T] (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestSuite.cs:55
+at Tests.Testat04.TestMaterialsExists (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:114
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1100" name="TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="1818294060" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.002593" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  Expected: file exists
+  But was:  <Assets/Materials/Platform.mat>
+]]></message>
+                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
+at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
+at Tests.TestSuite.LoadAsset[T] (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestSuite.cs:55
+at Tests.Testat04.TestMaterialsExists (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:114
+]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1105" name="TestPlatformColor" fullname="Tests.Testat04.TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.049218" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <failure>
               <message><![CDATA[One or more child tests had errors]]></message>
             </failure>
-            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1892812807" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.011890" asserts="0">
+            <test-case id="1103" name="TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="900262288" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.022653" asserts="0">
               <properties />
               <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1815767874" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014476" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1416869826" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014255" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1005348093" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014399" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1658575259" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015679" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="322403664" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014347" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1885549877" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014471" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1693635853" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014668" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1110414171" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015029" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="483635353" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014750" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1016208735" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015204" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2074236503" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015865" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1130885834" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014437" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="406655697" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014902" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="355524495" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.015251" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1263140024" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.013915" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="590557291" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014037" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1505070946" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.013987" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="558437738" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014244" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1665017822" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014015" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2112902290" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014373" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1011793732" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014814" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1983036303" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014218" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="205123194" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014470" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="226148395" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014082" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1824054954" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014620" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="609436966" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014343" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="283782900" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014019" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="94650344" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014558" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1612178618" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014217" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="741940075" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014396" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1675533396" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014310" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="336191301" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:57Z" duration="0.014158" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="339606607" result="Failed" label="Error" start-time="2020-11-21 23:50:57Z" end-time="2020-11-21 23:50:58Z" duration="0.013735" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="612658063" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014183" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1169515933" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014755" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1939568457" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014359" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1622721872" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014422" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2143328051" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014491" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1257024426" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.013878" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="493895682" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014638" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1502970993" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014701" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1321029567" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014608" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="930541978" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.013860" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="74780395" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.015927" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="438369438" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014735" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="333028370" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.014536" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="176659357" result="Failed" label="Error" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.015076" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[System.InvalidOperationException : Sequence contains no elements]]></message>
-                <stack-trace><![CDATA[  at System.Linq.Enumerable.First[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x00010] in <351e49e2a5bf4fd6beabb458ce2255f3>:0 
-  at Tests.Testat02+<TestAvatarSpeedFieldWorks>d__20.MoveNext () [0x00099] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:192 
-  at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36 ]]></stack-trace>
-              </failure>
-            </test-case>
-          </test-suite>
-          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="1857729127" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.006695" asserts="0">
-            <properties />
-            <failure>
-              <message><![CDATA[  Company Name must be a valid e-mail address, but was 'bt717793@uni.bayreuth.de'
-  Expected: True
-  But was:  False
+                <message><![CDATA[  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-              <stack-trace><![CDATA[at Tests.Testat02.TestEmailAddress () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat02.cs:100
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.009543" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="1625554969" result="Passed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.001018" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="1026871419" result="Passed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.000547" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="2103821219" result="Passed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.000593" asserts="0">
-            <properties />
-          </test-case>
-        </test-suite>
-        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Failed" site="Child" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.395359" total="19" passed="1" failed="18" inconclusive="0" skipped="0" asserts="0">
-          <properties />
-          <failure>
-            <message><![CDATA[One or more child tests had errors]]></message>
-          </failure>
-          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="591817743" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.017200" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarGravityWhenFalling>d__25.MoveNext () [0x00049] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:112
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="949739029" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.016058" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiatePlatform (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:266
-at Tests.Testat03+<TestAvatarGravityWhenGrounded>d__27.MoveNext () [0x00049] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:167
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.163030" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-            </failure>
-            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1360232469" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.015550" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+PlatformBridge..ctor (UnityEngine.GameObject gameObject) [0x00009] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:84
+at Tests.Testat04.InstantiatePlatform (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:251
+at Tests.Testat04+<TestPlatformColor>d__21.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:131
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 ]]></stack-trace>
               </failure>
             </test-case>
-            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1423872137" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.016844" asserts="0">
+            <test-case id="1104" name="TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="1996269975" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.017574" asserts="0">
               <properties />
               <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
+                <message><![CDATA[  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="992302648" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.017521" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="392444791" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.017805" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1536374858" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.017438" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="465427022" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.017967" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1863724678" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.018499" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="835974990" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.019011" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:137
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+PlatformBridge..ctor (UnityEngine.GameObject gameObject) [0x00009] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:84
+at Tests.Testat04.InstantiatePlatform (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:251
+at Tests.Testat04+<TestPlatformColor>d__21.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:131
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 ]]></stack-trace>
               </failure>
             </test-case>
           </test-suite>
-          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="227576047" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.001584" asserts="0">
+          <test-case id="1102" name="TestPlatformPrefab" fullname="Tests.Testat04.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat04" runstate="Runnable" seed="1548016620" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.002740" asserts="0">
             <properties />
             <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
+              <message><![CDATA[  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.TestAvatarPrefab () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:100
+              <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+PlatformBridge..ctor (UnityEngine.GameObject gameObject) [0x00009] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:84
+at Tests.Testat04.TestPlatformPrefab () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:121
 ]]></stack-trace>
             </failure>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.130419" total="2" passed="1" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1098" name="TestPrefabExists" fullname="Tests.Testat04.TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.004903" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-            </failure>
-            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="2069773187" result="Passed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.077215" asserts="0">
+            <test-case id="1096" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="997120298" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.001306" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="1937397834" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.048616" asserts="0">
+            <test-case id="1097" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="193860084" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.001046" asserts="0">
               <properties />
-              <failure>
-                <message><![CDATA[  Expected: collection containing "Tx02"
-  But was:  < "Tx01", <string.Empty> >
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.CollectionAssert.Contains (System.Collections.IEnumerable collection, System.Object actual, System.String message, System.Object[] args) [0x00008] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.CollectionAssert.Contains (System.Collections.IEnumerable collection, System.Object actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestGitTagExists (System.String tag) [0x00033] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:68
-]]></stack-trace>
-              </failure>
             </test-case>
           </test-suite>
-          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="841368944" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.011000" asserts="0">
+          <test-case id="1111" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat04.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat04" runstate="Runnable" seed="1556732180" result="Failed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.050735" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
+              <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiatePlatform (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:266
-at Tests.Testat03+<TestPlatformGravity>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:89
+              <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:52
+at Tests.Testat04+<>c.<TestPrefabInstancesExistInScene>b__25_0 (UnityEngine.GameObject obj) [0x00000] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:185
+at System.Linq.Enumerable+WhereSelectArrayIterator`2[TSource,TResult].ToArray () [0x00030] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+at System.Linq.Enumerable.ToArray[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+at Tests.Testat04+<TestPrefabInstancesExistInScene>d__25.MoveNext () [0x000a6] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat04.cs:184
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 ]]></stack-trace>
             </failure>
+            <output><![CDATA[hallo
+tschüss
+]]></output>
           </test-case>
-          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1514444164" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.001596" asserts="0">
+          <test-case id="1110" name="TestSceneExists" fullname="Tests.Testat04.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat04" runstate="Runnable" seed="1544194482" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.001783" asserts="0">
             <properties />
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.TestPlatformPrefab () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:79
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.006558" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <failure>
-              <message><![CDATA[One or more child tests had errors]]></message>
-            </failure>
-            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="35599662" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.001505" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestPrefabExists (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:74
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="1043851417" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.001041" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestPrefabExists (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:74
-]]></stack-trace>
-              </failure>
-            </test-case>
-          </test-suite>
-          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="1484156833" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.004497" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03+<TestPrefabInstancesExistInScene>d__29.MoveNext () [0x0006f] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:198
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="2047848059" result="Failed" start-time="2020-11-21 23:50:58Z" end-time="2020-11-21 23:50:58Z" duration="0.001211" asserts="0">
-            <properties />
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <./Assets/Scenes/PlatformTest.unity>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestSceneExists () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.DeliaSchimann\Assets\Tests\Testat03.cs:191
-]]></stack-trace>
-            </failure>
           </test-case>
         </test-suite>
       </test-suite>
     </test-suite>
-    <test-suite type="Assembly" id="1099" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DeliaSchimann/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-21 23:50:59Z" end-time="2020-11-21 23:50:59Z" duration="0.029455" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1116" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.DeliaSchimann/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.025023" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="14756" />
+        <property name="_PID" value="13060" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestFixture" id="1097" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-21 23:50:59Z" end-time="2020-11-21 23:50:59Z" duration="0.026306" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1114" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.022770" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-case id="1098" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="853778705" result="Passed" start-time="2020-11-21 23:50:59Z" end-time="2020-11-21 23:50:59Z" duration="0.024398" asserts="0">
+        <test-case id="1115" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="1752894705" result="Passed" start-time="2020-12-01 20:32:19Z" end-time="2020-12-01 20:32:19Z" duration="0.021064" asserts="0">
           <properties>
             <property name="Category" value="Integration" />
           </properties>

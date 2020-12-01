@@ -1,538 +1,517 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="86" result="Failed(Child)" total="86" passed="69" failed="17" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:09Z" duration="3,9488006">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="86" result="Failed" site="Child" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:09Z" duration="3.948801" total="86" passed="69" failed="17" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="98" result="Failed(Child)" total="98" passed="89" failed="9" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:24Z" duration="9,6782415">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="98" result="Failed" site="Child" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:24Z" duration="9.678242" total="98" passed="89" failed="9" inconclusive="0" skipped="0" asserts="0">
     <properties />
     <failure>
       <message><![CDATA[One or more child tests had errors]]></message>
     </failure>
-    <test-suite type="Assembly" id="1095" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Faulo-Empty/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="85" result="Failed" site="Child" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:09Z" duration="3.852847" total="85" passed="68" failed="17" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1112" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Faulo-Empty/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="97" result="Failed" site="Child" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:24Z" duration="9.579991" total="97" passed="88" failed="9" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="4540" />
+        <property name="_PID" value="15544" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
       <failure>
         <message><![CDATA[One or more child tests had errors]]></message>
       </failure>
-      <test-suite type="TestSuite" id="1096" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="85" result="Failed" site="Child" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:09Z" duration="3.789774" total="85" passed="68" failed="17" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1113" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="97" result="Failed" site="Child" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:24Z" duration="9.517834" total="97" passed="88" failed="9" inconclusive="0" skipped="0" asserts="0">
         <properties />
         <failure>
           <message><![CDATA[One or more child tests had errors]]></message>
         </failure>
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.084167" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.118615" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1375203223" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.014930" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="1574270224" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.017335" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1747333520" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.044268" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="327447839" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.074617" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1388326014" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.000725" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="2007355349" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.001178" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="597939107" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.000470" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1771804440" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.000903" asserts="0">
             <properties />
           </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:08Z" duration="3.226800" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:19Z" duration="4.765533" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="1479667889" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.030967" asserts="0">
+          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="1835979480" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.054749" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.591940" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:15Z" duration="0.796123" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
-            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2050514922" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.078175" asserts="0">
+            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1215505455" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:14Z" duration="0.092713" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1481068531" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.070844" asserts="0">
+            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1975883695" result="Passed" start-time="2020-12-01 20:28:14Z" end-time="2020-12-01 20:28:15Z" duration="0.099521" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="542375432" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.074418" asserts="0">
+            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="452546055" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.099110" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2012677484" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.071343" asserts="0">
+            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="544307011" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.099391" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="747315944" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.071905" asserts="0">
+            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1567674844" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.099697" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1468106491" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.070434" asserts="0">
+            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="546808038" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.099377" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1519802464" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.070922" asserts="0">
+            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="2014121347" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.099385" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="704991617" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.071488" asserts="0">
+            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1870684547" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.099705" asserts="0">
               <properties />
             </test-case>
           </test-suite>
-          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="1759769951" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:05Z" duration="0.010355" asserts="0">
+          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="813894590" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.035398" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:08Z" duration="2.544815" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:19Z" duration="3.840466" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
-            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="885082138" result="Passed" start-time="2020-11-21 23:48:05Z" end-time="2020-11-21 23:48:06Z" duration="0.018211" asserts="0">
+            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="480613595" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.034506" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="167985752" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.039190" asserts="0">
+            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2090137049" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.072219" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1047720309" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.090865" asserts="0">
+            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1217195010" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.119455" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1420012128" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.016097" asserts="0">
+            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="215487749" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:15Z" duration="0.039322" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1308161815" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.047635" asserts="0">
+            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="673658939" result="Passed" start-time="2020-12-01 20:28:15Z" end-time="2020-12-01 20:28:16Z" duration="0.079478" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1380688863" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.091588" asserts="0">
+            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="734294461" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.119355" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="612292505" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.014864" asserts="0">
+            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="647349532" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.039648" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1928088761" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.045953" asserts="0">
+            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="509560544" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.079306" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="989165668" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.090055" asserts="0">
+            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1817233952" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.119346" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2007412287" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.015654" asserts="0">
+            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1679753111" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.039220" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="889523295" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.047376" asserts="0">
+            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="61049430" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.079549" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="654820085" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.090737" asserts="0">
+            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1639282696" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.119215" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1520479008" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.014291" asserts="0">
+            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="427526210" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.039334" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="908306058" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.046072" asserts="0">
+            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="749288877" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.079611" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1749614683" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.091021" asserts="0">
+            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1735964365" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.119248" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="712437277" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.015355" asserts="0">
+            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="185568650" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:16Z" duration="0.039270" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="88265262" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.046520" asserts="0">
+            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1655441906" result="Passed" start-time="2020-12-01 20:28:16Z" end-time="2020-12-01 20:28:17Z" duration="0.079745" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="193574198" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.089975" asserts="0">
+            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="833561286" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.119270" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2053212490" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.018348" asserts="0">
+            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1176128715" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.039118" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1934343930" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:06Z" duration="0.046831" asserts="0">
+            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1626995586" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.079890" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1702740350" result="Passed" start-time="2020-11-21 23:48:06Z" end-time="2020-11-21 23:48:07Z" duration="0.094527" asserts="0">
+            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1036627609" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.119426" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1440956622" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.017623" asserts="0">
+            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="817213517" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.038845" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1070090871" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.049347" asserts="0">
+            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="242215857" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.086159" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="130947239" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.092843" asserts="0">
+            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2142409792" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.113236" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1563949843" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.015181" asserts="0">
+            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="469962422" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.048059" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1930857898" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.047498" asserts="0">
+            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1729982825" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.069795" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="924667956" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.091488" asserts="0">
+            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="956766209" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.119132" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="633643673" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.015383" asserts="0">
+            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="544947070" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.039521" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="695397167" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.046218" asserts="0">
+            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1663590913" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:17Z" duration="0.079599" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1401826043" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.090572" asserts="0">
+            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="46337775" result="Passed" start-time="2020-12-01 20:28:17Z" end-time="2020-12-01 20:28:18Z" duration="0.119201" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1017221968" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.023587" asserts="0">
+            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1576339652" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.039317" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="123676830" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.047315" asserts="0">
+            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="709868726" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.079442" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1451230585" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.090778" asserts="0">
+            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2069946228" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.119065" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1180831814" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.017784" asserts="0">
+            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1102382419" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.039483" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="291360338" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.050090" asserts="0">
+            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="624119929" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.079431" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="34166088" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.094170" asserts="0">
+            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="645982357" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.119439" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1940085068" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.018701" asserts="0">
+            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="35769008" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.039229" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1253373859" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:07Z" duration="0.049469" asserts="0">
+            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1062755194" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.079430" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="626926854" result="Passed" start-time="2020-11-21 23:48:07Z" end-time="2020-11-21 23:48:08Z" duration="0.092245" asserts="0">
+            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="23034151" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.119264" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="523922737" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.017401" asserts="0">
+            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1386922844" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.039351" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1577044203" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.050284" asserts="0">
+            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1913117665" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:18Z" duration="0.080444" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="534295123" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.095952" asserts="0">
+            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="960800884" result="Passed" start-time="2020-12-01 20:28:18Z" end-time="2020-12-01 20:28:19Z" duration="0.118190" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="289648482" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.018691" asserts="0">
+            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="26228847" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.039283" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1207696624" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.046242" asserts="0">
+            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="540161998" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.079406" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="250109982" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.092431" asserts="0">
+            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1086237925" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.119477" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1974712724" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.017187" asserts="0">
+            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1064565769" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.039296" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="71811597" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.046265" asserts="0">
+            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1020323784" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.079538" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="960863162" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.091261" asserts="0">
+            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1191217266" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.119304" asserts="0">
               <properties />
             </test-case>
           </test-suite>
-          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="1566770191" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.002120" asserts="0">
+          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="1860743298" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.001999" asserts="0">
             <properties />
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.003836" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.004451" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties />
-            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="723648775" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.000882" asserts="0">
+            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="429523970" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.001258" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="1693040251" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.000469" asserts="0">
+            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="852990920" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.001194" asserts="0">
               <properties />
             </test-case>
           </test-suite>
-          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="1041508731" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.000768" asserts="0">
+          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="832232152" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.001131" asserts="0">
             <properties />
           </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Failed" site="Child" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.409678" total="19" passed="2" failed="17" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:24Z" duration="4.400904" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="1010798713" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:19Z" duration="0.221465" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="568618679" result="Passed" start-time="2020-12-01 20:28:19Z" end-time="2020-12-01 20:28:20Z" duration="0.213795" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:21Z" duration="1.119076" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="609262517" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.075732" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1254211229" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.199373" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="327928700" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.079706" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="444637824" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.199206" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1933268458" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.079532" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="105307007" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.199330" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1147493367" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:20Z" duration="0.079459" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="2036762563" result="Passed" start-time="2020-12-01 20:28:20Z" end-time="2020-12-01 20:28:21Z" duration="0.199343" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="719031446" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.007304" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.116654" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="1910229699" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.063817" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="467511998" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.050377" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="621376637" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.210020" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1140593329" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.001468" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.004043" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="206895141" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.001081" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="1669290799" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:21Z" duration="0.000861" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="2136923820" result="Passed" start-time="2020-12-01 20:28:21Z" end-time="2020-12-01 20:28:24Z" duration="2.491690" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="768112244" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.001071" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1095" name="Testat04" fullname="Tests.Testat04" classname="Tests.Testat04" runstate="Runnable" testcasecount="12" result="Failed" site="Child" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.169421" total="12" passed="3" failed="9" inconclusive="0" skipped="0" asserts="0">
           <properties />
           <failure>
             <message><![CDATA[One or more child tests had errors]]></message>
           </failure>
-          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="370199774" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.031406" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarGravityWhenFalling>d__25.MoveNext () [0x00049] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:112
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="1158914637" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.003863" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiatePlatform (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:266
-at Tests.Testat03+<TestAvatarGravityWhenGrounded>d__27.MoveNext () [0x00049] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:167
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Failed" site="Child" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.160206" total="8" passed="0" failed="8" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1109" name="TestAvatarColor" fullname="Tests.Testat04.TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.031654" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <failure>
               <message><![CDATA[One or more child tests had errors]]></message>
             </failure>
-            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1153254793" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.015246" asserts="0">
+            <test-case id="1107" name="TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="1163673028" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.015149" asserts="0">
               <properties />
               <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
+                <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:52
+at Tests.Testat04.InstantiateAvatar (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:240
+at Tests.Testat04+<TestAvatarColor>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:157
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 ]]></stack-trace>
               </failure>
             </test-case>
-            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1539503290" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.017634" asserts="0">
+            <test-case id="1108" name="TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="963382961" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.010291" asserts="0">
               <properties />
               <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
+                <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1970572049" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.018048" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="875388516" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.020043" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1207555422" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.015099" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="238269398" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.017409" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1354696203" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.017508" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-              </failure>
-            </test-case>
-            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1086560742" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.017757" asserts="0">
-              <properties />
-              <failure>
-                <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
-]]></message>
-                <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiateAvatar (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:255
-at Tests.Testat03+<TestAvatarMovement>d__26.MoveNext () [0x0004f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:137
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:52
+at Tests.Testat04.InstantiateAvatar (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:240
+at Tests.Testat04+<TestAvatarColor>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:157
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 ]]></stack-trace>
               </failure>
             </test-case>
           </test-suite>
-          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1046819183" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.001972" asserts="0">
+          <test-case id="1106" name="TestAvatarPrefab" fullname="Tests.Testat04.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat04" runstate="Runnable" seed="17722956" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.002524" asserts="0">
             <properties />
             <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
+              <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.TestAvatarPrefab () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:100
+              <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:52
+at Tests.Testat04.TestAvatarPrefab () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:146
 ]]></stack-trace>
             </failure>
           </test-case>
-          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.139792" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="2123890428" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.080952" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="39871378" result="Passed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.056353" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="2096823068" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.013702" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.InstantiatePlatform (UnityEngine.Vector3 position) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:266
-at Tests.Testat03+<TestPlatformGravity>d__23.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:89
-at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="766119004" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.002052" asserts="0">
-            <properties />
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03.TestPlatformPrefab () [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:79
-]]></stack-trace>
-            </failure>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.005779" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1101" name="TestMaterialsExists" fullname="Tests.Testat04.TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.008685" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
             <properties />
             <failure>
               <message><![CDATA[One or more child tests had errors]]></message>
             </failure>
-            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="203220135" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.001120" asserts="0">
+            <test-case id="1099" name="TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="1881342452" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.002666" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Avatar.prefab>
+  But was:  <Assets/Materials/Avatar.mat>
 ]]></message>
                 <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
 at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestPrefabExists (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:74
+at Tests.TestSuite.LoadAsset[T] (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestSuite.cs:55
+at Tests.Testat04.TestMaterialsExists (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:114
 ]]></stack-trace>
               </failure>
             </test-case>
-            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="1360709295" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.000903" asserts="0">
+            <test-case id="1100" name="TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="1553252613" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.001621" asserts="0">
               <properties />
               <failure>
                 <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
+  But was:  <Assets/Materials/Platform.mat>
 ]]></message>
                 <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
 at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestPrefabExists (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:74
+at Tests.TestSuite.LoadAsset[T] (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestSuite.cs:55
+at Tests.Testat04.TestMaterialsExists (System.String path) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:114
 ]]></stack-trace>
               </failure>
             </test-case>
           </test-suite>
-          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="1071850015" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.005488" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1105" name="TestPlatformColor" fullname="Tests.Testat04.TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Failed" site="Child" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.036990" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <Assets/Prefabs/Platform.prefab>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-case id="1103" name="TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="126653656" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.013582" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
 ]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.TestUtils.LoadPrefab (System.String path) [0x00008] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\TestUtils.cs:89
-at Tests.Testat03+<TestPrefabInstancesExistInScene>d__29.MoveNext () [0x0006f] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:198
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+PlatformBridge..ctor (UnityEngine.GameObject gameObject) [0x00009] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:84
+at Tests.Testat04.InstantiatePlatform (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:251
+at Tests.Testat04+<TestPlatformColor>d__21.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:131
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+            <test-case id="1104" name="TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="1869512560" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.017323" asserts="0">
+              <properties />
+              <failure>
+                <message><![CDATA[  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
+]]></message>
+                <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+PlatformBridge..ctor (UnityEngine.GameObject gameObject) [0x00009] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:84
+at Tests.Testat04.InstantiatePlatform (UnityEngine.Vector3 position) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:251
+at Tests.Testat04+<TestPlatformColor>d__21.MoveNext () [0x00046] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:131
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
+]]></stack-trace>
+              </failure>
+            </test-case>
+          </test-suite>
+          <test-case id="1102" name="TestPlatformPrefab" fullname="Tests.Testat04.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat04" runstate="Runnable" seed="324913695" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.002166" asserts="0">
+            <properties />
+            <failure>
+              <message><![CDATA[  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
+]]></message>
+              <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+PlatformBridge..ctor (UnityEngine.GameObject gameObject) [0x00009] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:84
+at Tests.Testat04.TestPlatformPrefab () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:121
+]]></stack-trace>
+            </failure>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1098" name="TestPrefabExists" fullname="Tests.Testat04.TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.004574" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1096" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="1128912022" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.000987" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1097" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="36534037" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.001285" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1111" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat04.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat04" runstate="Runnable" seed="1613436106" result="Failed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.056861" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <failure>
+              <message><![CDATA[  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  0
+]]></message>
+              <stack-trace><![CDATA[at Tests.FieldBridge`1[T]..ctor (UnityEngine.GameObject obj, System.String name) [0x0001b] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\FieldBridge.cs:28
+at Tests.GameObjectBridge.FindField[T] (System.String name) [0x00001] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\GameObjectBridge.cs:32
+at Tests.Testat04+AvatarBridge..ctor (UnityEngine.GameObject gameObject, System.Boolean isInstance) [0x0001a] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:52
+at Tests.Testat04+<>c.<TestPrefabInstancesExistInScene>b__25_0 (UnityEngine.GameObject obj) [0x00000] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:185
+at System.Linq.Enumerable+WhereSelectArrayIterator`2[TSource,TResult].ToArray () [0x00030] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+at System.Linq.Enumerable.ToArray[TSource] (System.Collections.Generic.IEnumerable`1[T] source) [0x0001f] in <351e49e2a5bf4fd6beabb458ce2255f3>:0
+at Tests.Testat04+<TestPrefabInstancesExistInScene>d__25.MoveNext () [0x000a6] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat04.cs:184
 at UnityEngine.TestTools.TestEnumerator+<Execute>d__6.MoveNext () [0x0004c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Library\PackageCache\com.unity.test-framework@1.1.18\UnityEngine.TestRunner\NUnitExtensions\Attributes\TestEnumerator.cs:36
 ]]></stack-trace>
             </failure>
           </test-case>
-          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="1486514394" result="Failed" start-time="2020-11-21 23:48:08Z" end-time="2020-11-21 23:48:08Z" duration="0.001240" asserts="0">
+          <test-case id="1110" name="TestSceneExists" fullname="Tests.Testat04.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat04" runstate="Runnable" seed="1788900731" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.001287" asserts="0">
             <properties />
-            <failure>
-              <message><![CDATA[  Expected: file exists
-  But was:  <./Assets/Scenes/PlatformTest.unity>
-]]></message>
-              <stack-trace><![CDATA[at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual, System.String message, System.Object[] args) [0x0000c] in <59819be142c34115ade688f6962021f1>:0
-at NUnit.Framework.FileAssert.Exists (System.IO.FileInfo actual) [0x00001] in <59819be142c34115ade688f6962021f1>:0
-at Tests.Testat03.TestSceneExists () [0x0000c] in C:\Unity\workspace\2020WS.UnityPP.Faulo-Empty\Assets\Tests\Testat03.cs:191
-]]></stack-trace>
-            </failure>
           </test-case>
         </test-suite>
       </test-suite>
     </test-suite>
-    <test-suite type="Assembly" id="1099" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Faulo-Empty/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-21 23:48:09Z" end-time="2020-11-21 23:48:09Z" duration="0.019694" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1116" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Faulo-Empty/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.024108" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="4540" />
+        <property name="_PID" value="15544" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestFixture" id="1097" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-11-21 23:48:09Z" end-time="2020-11-21 23:48:09Z" duration="0.017168" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1114" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.022391" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-case id="1098" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="699113526" result="Passed" start-time="2020-11-21 23:48:09Z" end-time="2020-11-21 23:48:09Z" duration="0.015662" asserts="0">
+        <test-case id="1115" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="493496972" result="Passed" start-time="2020-12-01 20:28:24Z" end-time="2020-12-01 20:28:24Z" duration="0.020869" asserts="0">
           <properties>
             <property name="Category" value="Integration" />
           </properties>
