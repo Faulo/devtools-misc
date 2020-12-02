@@ -1,8 +1,8 @@
 <?php
 namespace Slothsoft\Devtools\Update;
 
-interface UpdateInterface
-{
+interface UpdateInterface {
+
     public function runOn(array $project);
 }
 

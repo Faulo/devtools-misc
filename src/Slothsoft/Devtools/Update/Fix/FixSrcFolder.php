@@ -7,12 +7,13 @@ use RecursiveIteratorIterator;
 use RecursiveRegexIterator;
 use RegexIterator;
 
-class FixSrcFolder implements UpdateInterface
-{
+class FixSrcFolder implements UpdateInterface {
 
-    public function runOn(array $project)
-    {
-        foreach ([$project['sourceDir'], $project['testsDir']] as $sourceDir) {
+    public function runOn(array $project) {
+        foreach ([
+            $project['sourceDir'],
+            $project['testsDir']
+        ] as $sourceDir) {
             if (is_dir($sourceDir)) {
                 $directory = new RecursiveDirectoryIterator($sourceDir);
                 $directoryIterator = new RecursiveIteratorIterator($directory);
@@ -28,11 +29,11 @@ class FixSrcFolder implements UpdateInterface
                         }
                     }
                     $source = preg_replace('/' . preg_quote('declare(ticks') . '\s*=\s*\d+' . preg_quote(');') . '/', '', $source);
-                    
+
                     if (strpos($source, 'declare(ticks') !== false) {
                         throw new \RuntimeException("declare(ticks in $sourceFile?!");
                     }
-                    
+
                     if ($source !== $backup) {
                         echo $sourceFile . PHP_EOL;
                         file_put_contents($sourceFile, $source);

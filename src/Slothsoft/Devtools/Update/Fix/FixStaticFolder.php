@@ -6,24 +6,22 @@ use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use Slothsoft\Devtools\Composer\ComposerManifest;
 
+class FixStaticFolder implements UpdateInterface {
 
-class FixStaticFolder implements UpdateInterface
-{
-    private function getDeprecatedFiles(array $project) : array {
-        return [
-            //$project['workspaceDir'] . 'composer.phar',
-            //$project['workspaceDir'] . 'run-tests.launch',
-            //$project['slothsoftDir']
+    private function getDeprecatedFiles(array $project): array {
+        return [ // $project['workspaceDir'] . 'composer.phar',
+        // $project['workspaceDir'] . 'run-tests.launch',
+        // $project['slothsoftDir']
         ];
     }
-    private function getDirectCopyFiles() : array {
+
+    private function getDirectCopyFiles(): array {
         return [
-            'composer.phar',
+            'composer.phar'
         ];
     }
-    
-    public function runOn(array $project)
-    {
+
+    public function runOn(array $project) {
         if (isset($project['standalone'])) {
             return;
         }
@@ -36,26 +34,26 @@ class FixStaticFolder implements UpdateInterface
         } else {
             $args[] = $project['name'];
         }
-        
+
         $directCopyFiles = $this->getDirectCopyFiles();
-        
+
         $files = $this->getStaticFiles($project);
         foreach ($files as $source => $target) {
-            if (is_dir($source))  {
-                if (!is_dir($target)) {
+            if (is_dir($source)) {
+                if (! is_dir($target)) {
                     echo $target . PHP_EOL;
                     mkdir($target, 0777, true);
                 }
             } else {
                 if (in_array(basename($source), $directCopyFiles)) {
-                    if (!file_exists($target) or md5_file($source) !== md5_file($target)) {
+                    if (! file_exists($target) or md5_file($source) !== md5_file($target)) {
                         echo $target . PHP_EOL;
                         copy($source, $target);
                     }
                 } else {
                     $contents = file_get_contents($source);
                     $contents = vsprintf($contents, $args);
-                    if (!file_exists($target) or $contents !== file_get_contents($target)) {
+                    if (! file_exists($target) or $contents !== file_get_contents($target)) {
                         echo $target . PHP_EOL;
                         file_put_contents($target, $contents);
                     }
@@ -69,25 +67,25 @@ class FixStaticFolder implements UpdateInterface
             }
         }
     }
-    
-    private function getStaticFiles(array $project) : array {
+
+    private function getStaticFiles(array $project): array {
         $composer = new ComposerManifest($project['composerFile']);
         $composer->load();
         $typeList = $composer->getKeywords();
-        
+
         $ret = [];
-        
+
         foreach ($typeList as $type) {
             $baseDirectory = $project['staticDir'] . $type;
             $baseDirectory = realpath($baseDirectory);
-            
-            if (!$baseDirectory) {
+
+            if (! $baseDirectory) {
                 continue;
             }
-            
+
             $projectDirectory = realpath($project['workspaceDir']);
             assert((bool) $projectDirectory);
-            
+
             $iterator = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($baseDirectory));
             foreach ($iterator as $file) {
                 $path = $file->getPathname();

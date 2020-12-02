@@ -3,11 +3,9 @@ namespace Slothsoft\Devtools\Update\Composer;
 
 use Slothsoft\Devtools\Update\UpdateInterface;
 
+class UpdateUsingCLI implements UpdateInterface {
 
-class UpdateUsingCLI implements UpdateInterface
-{
-    public function runOn(array $project)
-    {
+    public function runOn(array $project) {
         $command = 'composer update -n';
         echo $command . PHP_EOL;
         passthru($command);

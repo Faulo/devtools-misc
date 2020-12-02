@@ -1,387 +1,387 @@
 <?xml version="1.0" encoding="utf-8"?>
-<test-run id="2" testcasecount="98" result="Passed" total="98" passed="98" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:44Z" duration="9,7176113">
-  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="98" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:44Z" duration="9.717611" total="98" passed="98" failed="0" inconclusive="0" skipped="0" asserts="0">
+<test-run id="2" testcasecount="98" result="Passed" total="98" passed="98" failed="0" inconclusive="0" skipped="0" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:46Z" duration="9,6555622">
+  <test-suite type="TestSuite" id="1000" name="2020WS.UnityPP" fullname="2020WS.UnityPP" runstate="Runnable" testcasecount="98" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:46Z" duration="9.655562" total="98" passed="98" failed="0" inconclusive="0" skipped="0" asserts="0">
     <properties />
-    <test-suite type="Assembly" id="1112" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Rubycule/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="97" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:44Z" duration="9.630918" total="97" passed="97" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1112" name="Tests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Rubycule/Library/ScriptAssemblies/Tests.dll" runstate="Runnable" testcasecount="97" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:46Z" duration="9.574784" total="97" passed="97" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="15772" />
+        <property name="_PID" value="1364" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestSuite" id="1113" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="97" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:44Z" duration="9.572642" total="97" passed="97" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestSuite" id="1113" name="Tests" fullname="Tests" runstate="Runnable" testcasecount="97" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:45Z" duration="9.529281" total="97" passed="97" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.103876" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1001" name="Testat01" fullname="Tests.Testat01" classname="Tests.Testat01" runstate="Runnable" testcasecount="4" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.112213" total="4" passed="4" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="340965398" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.017724" asserts="0">
+          <test-case id="1003" name="TestGitInitialized" fullname="Tests.Testat01.TestGitInitialized" methodname="TestGitInitialized" classname="Tests.Testat01" runstate="Runnable" seed="198957025" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.016961" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="1766988546" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.058561" asserts="0">
+          <test-case id="1005" name="TestHelloWorldLog" fullname="Tests.Testat01.TestHelloWorldLog" methodname="TestHelloWorldLog" classname="Tests.Testat01" runstate="Runnable" seed="821962084" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.068806" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
             <output><![CDATA[Hallo Welt!
 ]]></output>
           </test-case>
-          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1553754275" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.001309" asserts="0">
+          <test-case id="1004" name="TestSceneExists" fullname="Tests.Testat01.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat01" runstate="Runnable" seed="1720164005" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.001424" asserts="0">
             <properties />
           </test-case>
-          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="2015679056" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.000962" asserts="0">
-            <properties />
-          </test-case>
-        </test-suite>
-        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:39Z" duration="4.765939" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
-          <properties />
-          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="2089234909" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.055049" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:35Z" duration="0.792158" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="258489959" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:34Z" duration="0.088632" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="995798682" result="Passed" start-time="2020-12-01 20:38:34Z" end-time="2020-12-01 20:38:35Z" duration="0.099167" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="850335609" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.099331" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1344145946" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.099715" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1293365123" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.099551" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="716237552" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.099057" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="296137204" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.099294" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="646741089" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.099558" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="1030877770" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.034762" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:39Z" duration="3.840844" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1753041532" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.036331" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1345934310" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.069967" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="959021831" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.119408" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1128216715" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:35Z" duration="0.039254" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1363142587" result="Passed" start-time="2020-12-01 20:38:35Z" end-time="2020-12-01 20:38:36Z" duration="0.079742" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2042476436" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.119290" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1297526593" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.038865" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1444741408" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.079452" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1850215246" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.119420" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1787144935" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.039054" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1796561939" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.079462" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1371164752" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.119780" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="908206167" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.039303" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2099127043" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.078723" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="407795819" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.119357" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1231796943" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.039082" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="627055411" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:36Z" duration="0.079248" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2019781017" result="Passed" start-time="2020-12-01 20:38:36Z" end-time="2020-12-01 20:38:37Z" duration="0.119093" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="461046375" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.039234" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1739476373" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.079141" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1188842526" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.119159" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="594768381" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.039841" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1990704745" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.079095" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="947216321" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.119305" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1829128878" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.038925" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="280747795" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.079504" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="225134003" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.119299" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="396648274" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.039104" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="416485272" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:37Z" duration="0.079668" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="506541452" result="Passed" start-time="2020-12-01 20:38:37Z" end-time="2020-12-01 20:38:38Z" duration="0.119088" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2140701920" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.039032" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="636411528" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.079035" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1371731040" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.119500" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="368308813" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.039144" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="849185678" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.079726" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2017555898" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.119080" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="547939742" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.039301" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1444945179" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.079096" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="459392172" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.119032" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2033405154" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.039474" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="416719188" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:38Z" duration="0.079302" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1087665128" result="Passed" start-time="2020-12-01 20:38:38Z" end-time="2020-12-01 20:38:39Z" duration="0.119407" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1341809920" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.039250" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1829141666" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.079053" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1719901412" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.119338" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1471417653" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.038806" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1998974764" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.079498" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1024619111" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.118901" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="362988113" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.002158" asserts="0">
-            <properties />
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.008502" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="823843962" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.001367" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="2082987196" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.005060" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="2093584510" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.001278" asserts="0">
+          <test-case id="1002" name="TestUnityVersion" fullname="Tests.Testat01.TestUnityVersion" methodname="TestUnityVersion" classname="Tests.Testat01" runstate="Runnable" seed="1903219768" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.001200" asserts="0">
             <properties />
           </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:43Z" duration="3.665008" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1006" name="Testat02" fullname="Tests.Testat02" classname="Tests.Testat02" runstate="Runnable" testcasecount="62" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:41Z" duration="4.758804" total="62" passed="62" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="999464970" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:39Z" duration="0.235975" asserts="0">
+          <test-case id="1012" name="TestAvatarExists" fullname="Tests.Testat02.TestAvatarExists" methodname="TestAvatarExists" classname="Tests.Testat02" runstate="Runnable" seed="564406107" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.055316" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
           </test-case>
-          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="65391527" result="Passed" start-time="2020-12-01 20:38:39Z" end-time="2020-12-01 20:38:40Z" duration="0.217215" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1021" name="TestAvatarInput" fullname="Tests.Testat02.TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:37Z" duration="0.787471" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:41Z" duration="1.119767" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="498191313" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.076136" asserts="0">
+            <test-case id="1013" name="TestAvatarInput(upArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="882279786" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.084295" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="123316789" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.199445" asserts="0">
+            <test-case id="1014" name="TestAvatarInput(downArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="132195317" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.099325" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1977870831" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.079347" asserts="0">
+            <test-case id="1015" name="TestAvatarInput(leftArrow)" fullname="Tests.Testat02.TestAvatarInput(leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="760990424" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:36Z" duration="0.099647" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1966938601" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.199496" asserts="0">
+            <test-case id="1016" name="TestAvatarInput(rightArrow)" fullname="Tests.Testat02.TestAvatarInput(rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="880078791" result="Passed" start-time="2020-12-02 19:56:36Z" end-time="2020-12-02 19:56:37Z" duration="0.099192" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1824851105" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.079391" asserts="0">
+            <test-case id="1017" name="TestAvatarInput(upArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1275513556" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.099465" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1415302610" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.199365" asserts="0">
+            <test-case id="1018" name="TestAvatarInput(downArrow+rightArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+rightArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1207323454" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.099761" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1314218462" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:40Z" duration="0.079629" asserts="0">
+            <test-case id="1019" name="TestAvatarInput(upArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(upArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="1492265412" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.098625" asserts="0">
               <properties />
             </test-case>
-            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="539388530" result="Passed" start-time="2020-12-01 20:38:40Z" end-time="2020-12-01 20:38:41Z" duration="0.199109" asserts="0">
+            <test-case id="1020" name="TestAvatarInput(downArrow+leftArrow)" fullname="Tests.Testat02.TestAvatarInput(downArrow+leftArrow)" methodname="TestAvatarInput" classname="Tests.Testat02" runstate="Runnable" seed="833944546" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.099606" asserts="0">
               <properties />
             </test-case>
           </test-suite>
-          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1902609741" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.002691" asserts="0">
-            <properties />
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.117401" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="277718995" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.066439" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="912288265" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.048762" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="328837457" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.213926" asserts="0">
+          <test-case id="1022" name="TestAvatarSpeedFieldExists" fullname="Tests.Testat02.TestAvatarSpeedFieldExists" methodname="TestAvatarSpeedFieldExists" classname="Tests.Testat02" runstate="Runnable" seed="752590007" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.035210" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
           </test-case>
-          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="671886360" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.002060" asserts="0">
-            <properties />
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.004298" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="1365477635" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.001127" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="441618401" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:41Z" duration="0.000944" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="1824315295" result="Passed" start-time="2020-12-01 20:38:41Z" end-time="2020-12-01 20:38:43Z" duration="1.732501" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1071" name="TestAvatarSpeedFieldWorks" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" testcasecount="48" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:41Z" duration="3.840820" total="48" passed="48" failed="0" inconclusive="0" skipped="0" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
+            <test-case id="1023" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="787768737" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.034845" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1024" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="346149673" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.072259" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1025" name="TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="369734084" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.119265" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1026" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2060916928" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.039236" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1027" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1937081238" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.079502" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1028" name="TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="490625784" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.119405" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1029" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1896440485" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:37Z" duration="0.039356" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1030" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1645542710" result="Passed" start-time="2020-12-02 19:56:37Z" end-time="2020-12-02 19:56:38Z" duration="0.079461" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1031" name="TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1380858112" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.119328" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1032" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1144236669" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.039424" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1033" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1658091934" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.079388" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1034" name="TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="991086773" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.119187" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1035" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1194141727" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.039463" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1036" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1469299931" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.079396" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1037" name="TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1184582695" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.119468" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1038" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="42268298" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.039219" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1039" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1267409711" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.079482" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1040" name="TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1353029051" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.119507" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1041" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1992756487" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:38Z" duration="0.039086" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1042" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1923811146" result="Passed" start-time="2020-12-02 19:56:38Z" end-time="2020-12-02 19:56:39Z" duration="0.079465" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1043" name="TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="900116502" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.119378" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1044" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1589119187" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.039200" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1045" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1814729988" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.079613" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1046" name="TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1567763802" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.119162" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1047" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1057088414" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.039383" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1048" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1790237629" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.079430" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1049" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1466963828" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.119246" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1050" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1030097724" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.039368" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1051" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="625949554" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.079439" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1052" name="TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="773727182" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.119210" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1053" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="824666177" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.039470" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1054" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="469626801" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:39Z" duration="0.079232" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1055" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1820594293" result="Passed" start-time="2020-12-02 19:56:39Z" end-time="2020-12-02 19:56:40Z" duration="0.120155" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1056" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="84053685" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.038396" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1057" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="269541517" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.079449" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1058" name="TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="59728883" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.119256" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1059" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1154648951" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.039308" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1060" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="832407884" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.079447" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1061" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1154065547" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.119213" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1062" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="324016812" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.039459" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1063" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="686852867" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.079308" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1064" name="TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1128654621" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.119389" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1065" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="918765638" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.039158" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1066" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="726479474" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:40Z" duration="0.079479" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1067" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1944895552" result="Passed" start-time="2020-12-02 19:56:40Z" end-time="2020-12-02 19:56:41Z" duration="0.119415" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1068" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1187167827" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.039285" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1069" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="1722802662" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.079427" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1070" name="TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" fullname="Tests.Testat02.TestAvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)" methodname="TestAvatarSpeedFieldWorks" classname="Tests.Testat02" runstate="Runnable" seed="2010803390" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.119204" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1010" name="TestEmailAddress" fullname="Tests.Testat02.TestEmailAddress" methodname="TestEmailAddress" classname="Tests.Testat02" runstate="Runnable" seed="961910916" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.002050" asserts="0">
+            <properties />
           </test-case>
-          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="1282552088" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.003899" asserts="0">
+          <test-suite type="ParameterizedMethod" id="1009" name="TestGitFiles" fullname="Tests.Testat02.TestGitFiles" classname="Tests.Testat02" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.006047" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1007" name="TestGitFiles(&quot;./.gitignore&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitignore&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="1622208864" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.001815" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1008" name="TestGitFiles(&quot;./.gitattributes&quot;)" fullname="Tests.Testat02.TestGitFiles(&quot;./.gitattributes&quot;)" methodname="TestGitFiles" classname="Tests.Testat02" runstate="Runnable" seed="2129002198" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.001702" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1011" name="TestSceneExists" fullname="Tests.Testat02.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat02" runstate="Runnable" seed="1464986733" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.001312" asserts="0">
             <properties />
           </test-case>
         </test-suite>
-        <test-suite type="TestFixture" id="1095" name="Testat04" fullname="Tests.Testat04" classname="Tests.Testat04" runstate="Runnable" testcasecount="12" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:44Z" duration="0.975232" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+        <test-suite type="TestFixture" id="1072" name="Testat03" fullname="Tests.Testat03" classname="Tests.Testat03" runstate="Runnable" testcasecount="19" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:45Z" duration="3.661927" total="19" passed="19" failed="0" inconclusive="0" skipped="0" asserts="0">
           <properties />
-          <test-suite type="ParameterizedMethod" id="1109" name="TestAvatarColor" fullname="Tests.Testat04.TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.127830" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <test-case id="1107" name="TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="1109071304" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.061701" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1108" name="TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="1395050854" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.059246" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1106" name="TestAvatarPrefab" fullname="Tests.Testat04.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat04" runstate="Runnable" seed="1887658479" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.007577" asserts="0">
-            <properties />
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1101" name="TestMaterialsExists" fullname="Tests.Testat04.TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.008324" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1099" name="TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="432624103" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.002420" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1100" name="TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="570939966" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.001982" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-suite type="ParameterizedMethod" id="1105" name="TestPlatformColor" fullname="Tests.Testat04.TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.118921" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties>
-              <property name="_JOINTYPE" value="UnityCombinatorial" />
-            </properties>
-            <test-case id="1103" name="TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="827615523" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.055470" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1104" name="TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="724308605" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.059481" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1102" name="TestPlatformPrefab" fullname="Tests.Testat04.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat04" runstate="Runnable" seed="534583092" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.004004" asserts="0">
-            <properties />
-          </test-case>
-          <test-suite type="ParameterizedMethod" id="1098" name="TestPrefabExists" fullname="Tests.Testat04.TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.007511" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
-            <properties />
-            <test-case id="1096" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="775055284" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.001712" asserts="0">
-              <properties />
-            </test-case>
-            <test-case id="1097" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="873959522" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:43Z" duration="0.001635" asserts="0">
-              <properties />
-            </test-case>
-          </test-suite>
-          <test-case id="1111" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat04.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat04" runstate="Runnable" seed="644638938" result="Passed" start-time="2020-12-01 20:38:43Z" end-time="2020-12-01 20:38:44Z" duration="0.680308" asserts="0">
+          <test-case id="1082" name="TestAvatarGravityWhenFalling" fullname="Tests.Testat03.TestAvatarGravityWhenFalling" methodname="TestAvatarGravityWhenFalling" classname="Tests.Testat03" runstate="Runnable" seed="1065926999" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.234906" asserts="0">
             <properties>
               <property name="_JOINTYPE" value="UnityCombinatorial" />
             </properties>
           </test-case>
-          <test-case id="1110" name="TestSceneExists" fullname="Tests.Testat04.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat04" runstate="Runnable" seed="1920768261" result="Passed" start-time="2020-12-01 20:38:44Z" end-time="2020-12-01 20:38:44Z" duration="0.001524" asserts="0">
+          <test-case id="1092" name="TestAvatarGravityWhenGrounded" fullname="Tests.Testat03.TestAvatarGravityWhenGrounded" methodname="TestAvatarGravityWhenGrounded" classname="Tests.Testat03" runstate="Runnable" seed="2006203979" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.217809" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1091" name="TestAvatarMovement" fullname="Tests.Testat03.TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" testcasecount="8" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:42Z" duration="1.118778" total="8" passed="8" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1083" name="TestAvatarMovement(rightArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1858259935" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:41Z" duration="0.074596" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1084" name="TestAvatarMovement(rightArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="2066676357" result="Passed" start-time="2020-12-02 19:56:41Z" end-time="2020-12-02 19:56:42Z" duration="0.198287" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1085" name="TestAvatarMovement(rightArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1624043570" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.079234" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1086" name="TestAvatarMovement(rightArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(rightArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="172507866" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.199441" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1087" name="TestAvatarMovement(leftArrow,0.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1103465780" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.079412" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1088" name="TestAvatarMovement(leftArrow,0.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,0.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="1314721375" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.199330" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1089" name="TestAvatarMovement(leftArrow,5.0f,2)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,2)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="546554915" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.079386" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1090" name="TestAvatarMovement(leftArrow,5.0f,8)" fullname="Tests.Testat03.TestAvatarMovement(leftArrow,5.0f,8)" methodname="TestAvatarMovement" classname="Tests.Testat03" runstate="Runnable" seed="684260521" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.199440" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1081" name="TestAvatarPrefab" fullname="Tests.Testat03.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat03" runstate="Runnable" seed="1377785383" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:42Z" duration="0.002706" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1075" name="TestGitTagExists" fullname="Tests.Testat03.TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:43Z" duration="0.121493" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1073" name="TestGitTagExists(&quot;Tx01&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx01&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="2078318089" result="Passed" start-time="2020-12-02 19:56:42Z" end-time="2020-12-02 19:56:43Z" duration="0.066229" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1074" name="TestGitTagExists(&quot;Tx02&quot;)" fullname="Tests.Testat03.TestGitTagExists(&quot;Tx02&quot;)" methodname="TestGitTagExists" classname="Tests.Testat03" runstate="Runnable" seed="83539341" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:43Z" duration="0.052396" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1080" name="TestPlatformGravity" fullname="Tests.Testat03.TestPlatformGravity" methodname="TestPlatformGravity" classname="Tests.Testat03" runstate="Runnable" seed="1707887721" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:43Z" duration="0.209916" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1079" name="TestPlatformPrefab" fullname="Tests.Testat03.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat03" runstate="Runnable" seed="790819829" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:43Z" duration="0.001561" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1078" name="TestPrefabExists" fullname="Tests.Testat03.TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:43Z" duration="0.004167" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1076" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="629721496" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:43Z" duration="0.001089" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1077" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat03.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat03" runstate="Runnable" seed="2070433632" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:43Z" duration="0.000857" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1094" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat03.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat03" runstate="Runnable" seed="981971456" result="Passed" start-time="2020-12-02 19:56:43Z" end-time="2020-12-02 19:56:45Z" duration="1.732651" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1093" name="TestSceneExists" fullname="Tests.Testat03.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat03" runstate="Runnable" seed="140266337" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.002279" asserts="0">
+            <properties />
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1095" name="Testat04" fullname="Tests.Testat04" classname="Tests.Testat04" runstate="Runnable" testcasecount="12" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.942489" total="12" passed="12" failed="0" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <test-suite type="ParameterizedMethod" id="1109" name="TestAvatarColor" fullname="Tests.Testat04.TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.118224" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1107" name="TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="1915954856" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.055146" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1108" name="TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestAvatarColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestAvatarColor" classname="Tests.Testat04" runstate="Runnable" seed="96560279" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.059808" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1106" name="TestAvatarPrefab" fullname="Tests.Testat04.TestAvatarPrefab" methodname="TestAvatarPrefab" classname="Tests.Testat04" runstate="Runnable" seed="1710771886" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.007913" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1101" name="TestMaterialsExists" fullname="Tests.Testat04.TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.014121" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1099" name="TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Avatar.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="1758912371" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.004091" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1100" name="TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" fullname="Tests.Testat04.TestMaterialsExists(&quot;Assets/Materials/Platform.mat&quot;)" methodname="TestMaterialsExists" classname="Tests.Testat04" runstate="Runnable" seed="154524624" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.004618" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-suite type="ParameterizedMethod" id="1105" name="TestPlatformColor" fullname="Tests.Testat04.TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.113303" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+            <test-case id="1103" name="TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="234008817" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.049660" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1104" name="TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" fullname="Tests.Testat04.TestPlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))" methodname="TestPlatformColor" classname="Tests.Testat04" runstate="Runnable" seed="1521507377" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.059807" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1102" name="TestPlatformPrefab" fullname="Tests.Testat04.TestPlatformPrefab" methodname="TestPlatformPrefab" classname="Tests.Testat04" runstate="Runnable" seed="1255720251" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.002098" asserts="0">
+            <properties />
+          </test-case>
+          <test-suite type="ParameterizedMethod" id="1098" name="TestPrefabExists" fullname="Tests.Testat04.TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" testcasecount="2" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.004591" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="0">
+            <properties />
+            <test-case id="1096" name="TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Avatar.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="49138627" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.001221" asserts="0">
+              <properties />
+            </test-case>
+            <test-case id="1097" name="TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" fullname="Tests.Testat04.TestPrefabExists(&quot;Assets/Prefabs/Platform.prefab&quot;)" methodname="TestPrefabExists" classname="Tests.Testat04" runstate="Runnable" seed="402840148" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.001031" asserts="0">
+              <properties />
+            </test-case>
+          </test-suite>
+          <test-case id="1111" name="TestPrefabInstancesExistInScene" fullname="Tests.Testat04.TestPrefabInstancesExistInScene" methodname="TestPrefabInstancesExistInScene" classname="Tests.Testat04" runstate="Runnable" seed="1593742066" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.668171" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+            </properties>
+          </test-case>
+          <test-case id="1110" name="TestSceneExists" fullname="Tests.Testat04.TestSceneExists" methodname="TestSceneExists" classname="Tests.Testat04" runstate="Runnable" seed="1941948278" result="Passed" start-time="2020-12-02 19:56:45Z" end-time="2020-12-02 19:56:45Z" duration="0.001381" asserts="0">
             <properties />
           </test-case>
         </test-suite>
       </test-suite>
     </test-suite>
-    <test-suite type="Assembly" id="1116" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Rubycule/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-01 20:38:44Z" end-time="2020-12-01 20:38:44Z" duration="0.021795" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+    <test-suite type="Assembly" id="1116" name="Unity.InputSystem.IntegrationTests.dll" fullname="C:/Unity/workspace/2020WS.UnityPP.Rubycule/Library/ScriptAssemblies/Unity.InputSystem.IntegrationTests.dll" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-02 19:56:46Z" end-time="2020-12-02 19:56:46Z" duration="0.022506" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
       <properties>
-        <property name="_PID" value="15772" />
+        <property name="_PID" value="1364" />
         <property name="_APPDOMAIN" value="Unity Child Domain" />
         <property name="platform" value="PlayMode" />
       </properties>
-      <test-suite type="TestFixture" id="1114" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-01 20:38:44Z" end-time="2020-12-01 20:38:44Z" duration="0.020007" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
+      <test-suite type="TestFixture" id="1114" name="IntegrationTests" fullname="IntegrationTests" classname="IntegrationTests" runstate="Runnable" testcasecount="1" result="Passed" start-time="2020-12-02 19:56:46Z" end-time="2020-12-02 19:56:46Z" duration="0.020739" total="1" passed="1" failed="0" inconclusive="0" skipped="0" asserts="0">
         <properties />
-        <test-case id="1115" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="1576580710" result="Passed" start-time="2020-12-01 20:38:44Z" end-time="2020-12-01 20:38:44Z" duration="0.018452" asserts="0">
+        <test-case id="1115" name="Integration_CanSendAndReceiveEvents" fullname="IntegrationTests.Integration_CanSendAndReceiveEvents" methodname="Integration_CanSendAndReceiveEvents" classname="IntegrationTests" runstate="Runnable" seed="257236146" result="Passed" start-time="2020-12-02 19:56:46Z" end-time="2020-12-02 19:56:46Z" duration="0.018952" asserts="0">
           <properties>
             <property name="Category" value="Integration" />
           </properties>

@@ -5,97 +5,103 @@ use Slothsoft\Devtools\Composer\ComposerManifest;
 use Slothsoft\Devtools\Update\UpdateInterface;
 use Slothsoft\Core\FileSystem;
 
-class FixComposerJson implements UpdateInterface
-{
+class FixComposerJson implements UpdateInterface {
+
     private $project;
+
     private $composer;
+
     private $prodModules;
+
     private $devModules;
-    
+
     private function getAutoloadFiles() {
         return [
             'config.php',
             'src/autoload.php',
-            'src/registerModule.php',
+            'src/registerModule.php'
         ];
     }
-    private function getDeprecatedModules() : array {
+
+    private function getDeprecatedModules(): array {
         return [
             'slothsoft/dbms',
             'slothsoft/pt',
             'slothsoft/extensions',
-            'slothsoft/',
+            'slothsoft/'
         ];
     }
-    private function getDefaultProdModules() : array {
+
+    private function getDefaultProdModules(): array {
         return [
-            'php' => '^7.2',
+            'php' => '^7.2'
         ];
     }
-    private function getDefaultDevModules() : array {
+
+    private function getDefaultDevModules(): array {
         return [
-            'phpunit/phpunit' => '^6.5',
+            'phpunit/phpunit' => '^6.5'
         ];
     }
-    private function getDefaultLicence() : string {
+
+    private function getDefaultLicence(): string {
         return '';
     }
-    
-    public function runOn(array $project)
-    {
+
+    public function runOn(array $project) {
         $this->project = $project;
         $this->composer = new ComposerManifest($this->project['composerFile']);
-        
+
         $this->composer->load();
-        
+
         $this->composer->setName($this->project['composerId']);
-        
+
         $this->composer->setVersion('');
-        
+
         $this->composer->setLicense('WTFPL');
-        
+
         $this->composer->setAuthor('Daniel Schulz', 'info.slothsoft@gmail.com');
-        
+
         if ($this->isServer()) {
             $this->composer->setHomepage($this->project['homeUrl']);
         } else {
             $this->composer->setHomepage('http://farah.slothsoft.net/modules/' . $this->project['name']);
         }
-        
+
         $this->composer->setKeywords($this->getKeywords());
-        
+
         $this->composer->setRequireProd($this->getProdModules());
-        
+
         $this->composer->setRequireDev($this->getDevModules());
-        
+
         $this->composer->setAutoloadingProd($this->getProdAutoloading());
-        
+
         $this->composer->setAutoloadingDev($this->getDevAutoloading());
-        
+
         $this->composer->setOptimizeAutoloader($this->isServer());
-        
+
         $this->composer->setAllowDevMaster(false);
-        
+
         $this->composer->setScripts($this->getScripts());
-        
+
         $this->composer->save();
     }
-    
-    
+
     private function getProdModules() {
         $this->prodModules = [];
         $this->addProdModules($this->composer->getRequireProd());
         $this->addProdModules($this->getDefaultProdModules());
-        
+
         $this->removeProdModule(...$this->getDeprecatedModules());
         $this->removeProdModule($this->project['composerId']);
-        
+
         ksort($this->prodModules);
-        
+
         return $this->prodModules;
     }
-    private function getKeywords() : array {
-        //$ret = $this->composer->getKeywords();
+
+    private function getKeywords(): array {
+        // $ret = $this->composer->getKeywords();
         $ret = [];
         $ret[] = 'slothsoft';
         if (is_file($this->project['assetsFile'])) {
@@ -107,13 +113,15 @@ class FixComposerJson implements UpdateInterface
         if (count(FileSystem::scanDir($this->project['workspaceDir'] . 'src', FileSystem::SCANDIR_EXCLUDE_FILES))) {
             $ret[] = 'docs';
         }
-        //$ret = array_unique($ret);
-        //sort($ret);
+        // $ret = array_unique($ret);
+        // sort($ret);
         return $ret;
     }
-    private function isServer() : bool {
+
+    private function isServer(): bool {
         return in_array('farah-server', $this->composer->getKeywords());
     }
+
     private function addProdModules(array $moduleList) {
         foreach ($moduleList as $module => $version) {
             if ($this->isSlothsoftModule($module)) {
@@ -123,55 +131,63 @@ class FixComposerJson implements UpdateInterface
             }
         }
     }
-    private function removeProdModule(string... $moduleList) {
+
+    private function removeProdModule(string ...$moduleList) {
         foreach ($moduleList as $module) {
             if (isset($this->prodModules[$module])) {
                 unset($this->prodModules[$module]);
             }
         }
     }
-    
-    
-    private function getDevModules() : array {
+
+    private function getDevModules(): array {
         $this->devModules = [];
         $this->addDevModules($this->composer->getRequireDev());
         if (is_dir($this->project['slothsoftDir'])) {
-            foreach (array_diff(scandir($this->project['slothsoftDir']), ['.', '..']) as $module) {
-                $this->addDevModules(["slothsoft/$module" => '*']);
+            foreach (array_diff(scandir($this->project['slothsoftDir']), [
+                '.',
+                '..'
+            ]) as $module) {
+                $this->addDevModules([
+                    "slothsoft/$module" => '*'
+                ]);
             }
         }
         $this->addDevModules($this->getDefaultDevModules());
-        
+
         $this->removeDevModule(...$this->getDeprecatedModules());
         $this->removeDevModule($this->project['composerId']);
-        
+
         ksort($this->devModules);
-        
+
         return $this->devModules;
     }
+
     private function addDevModules(array $moduleList) {
         foreach ($moduleList as $module => $version) {
             if ($this->isSlothsoftModule($module)) {
-                //$this->devModules[$module] = 'dev-master';
+                // $this->devModules[$module] = 'dev-master';
             } else {
                 $this->devModules[$module] = $version;
             }
         }
     }
-    private function removeDevModule(string... $moduleList) {
+
+    private function removeDevModule(string ...$moduleList) {
         foreach ($moduleList as $module) {
             if (isset($this->devModules[$module])) {
                 unset($this->devModules[$module]);
             }
         }
     }
-    private function isSlothsoftModule(string $module) : bool {
+
+    private function isSlothsoftModule(string $module): bool {
         return explode('/', $module)[0] === 'slothsoft';
     }
-    
-    private function getProdAutoloading() : array {
+
+    private function getProdAutoloading(): array {
         $ret = [];
-        
+
         $autoloading = [];
         $autoloading += $this->composer->getAutoloadingProdPsr4();
         $autoloading += $this->composer->getAutoloadingProdPsr0();
@@ -179,13 +195,11 @@ class FixComposerJson implements UpdateInterface
             $val = 'src/';
         }
         unset($val);
-        
+
         if (count($autoloading)) {
             $ret['psr-0'] = $autoloading;
         }
-        
-        
-        
+
         $files = [];
         foreach ($this->getAutoloadFiles() as $path) {
             if (is_file($this->project['workspaceDir'] . $path)) {
@@ -195,21 +209,23 @@ class FixComposerJson implements UpdateInterface
         if (count($files)) {
             $ret['files'] = $files;
         }
-        
+
         return $ret;
     }
-    
-    private function getDevAutoloading() : array {
+
+    private function getDevAutoloading(): array {
         return [
             'classmap' => [
-                'tests/',
+                'tests/'
             ]
         ];
     }
-    
-    private function getScripts() : array {
+
+    private function getScripts(): array {
         if ($this->isServer()) {
-            return ['post-autoload-dump' => 'Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory'];
+            return [
+                'post-autoload-dump' => 'Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory'
+            ];
         } else {
             return [];
         }

@@ -102,7 +102,7 @@ class UnityCourse {
             $project->runTests($results, 'PlayMode');
         }
     }
-    
+
     public function deleteFolder(string $folder) {
         foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
             if (! $node->hasAttribute('unity')) {
@@ -115,15 +115,16 @@ class UnityCourse {
             }
         }
     }
+
     private function rrmdir($dir) {
         if (is_dir($dir)) {
             $objects = scandir($dir);
             foreach ($objects as $object) {
                 if ($object != "." && $object != "..") {
-                    if (is_dir($dir. DIRECTORY_SEPARATOR .$object) && !is_link($dir."/".$object))
-                        rrmdir($dir. DIRECTORY_SEPARATOR .$object);
-                        else
-                            unlink($dir. DIRECTORY_SEPARATOR .$object);
+                    if (is_dir($dir . DIRECTORY_SEPARATOR . $object) && ! is_link($dir . "/" . $object))
+                        rrmdir($dir . DIRECTORY_SEPARATOR . $object);
+                    else
+                        unlink($dir . DIRECTORY_SEPARATOR . $object);
                 }
             }
             rmdir($dir);
@@ -153,7 +154,7 @@ class UnityCourse {
                     $location = substr($path, strlen($unity) + 1);
                     $hash = md5_file($path);
                     if (isset($storage[$hash])) {
-                        if (!isset($duplicates[$hash])) {
+                        if (! isset($duplicates[$hash])) {
                             $duplicates[$hash] = file_get_contents($path);
                         }
                     } else {
@@ -218,7 +219,7 @@ class UnityCourse {
                     assert(strpos($path, $testFolder) === 0);
                     $path = substr($path, strlen($testFolder));
                     echo $path . PHP_EOL;
-                    if (!is_dir(dirname($unity . $path))) {
+                    if (! is_dir(dirname($unity . $path))) {
                         mkdir(dirname($unity . $path), 0777, true);
                     }
                     copy($testFolder . $path, $unity . $path);

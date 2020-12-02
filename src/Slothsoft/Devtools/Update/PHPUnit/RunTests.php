@@ -3,11 +3,9 @@ namespace Slothsoft\Devtools\Update\PHPUnit;
 
 use Slothsoft\Devtools\Update\UpdateInterface;
 
+class RunTests implements UpdateInterface {
 
-class RunTests implements UpdateInterface
-{
-    public function runOn(array $project)
-    {
+    public function runOn(array $project) {
         $command = 'phpunit';
         echo $command . PHP_EOL;
         passthru($command, $return);
