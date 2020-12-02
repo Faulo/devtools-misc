@@ -1,5 +1,5 @@
 {
-	"name" : "devtools/devtools",
+	"name" : "slothsoft/devtools",
 	"require" : {
 		"composer/composer" : "^1.6",
 		"slothsoft/core" : "*"
@@ -12,7 +12,5 @@
 			"Slothsoft\\Devtools\\" : "src/",
 			"Slothsoft\\Unity\\" : "src/"
 		}
-	},
-	"minimum-stability" : "dev",
-	"prefer-stable" : true
+	}
 }
