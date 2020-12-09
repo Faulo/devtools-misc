@@ -67,11 +67,6 @@
 			<location>C:/Webserver/apache-2.4</location>
 		</link>
 		<link>
-			<name>vendor/slothsoft</name>
-			<type>2</type>
-			<locationURI>virtual:/virtual</locationURI>
-		</link>
-		<link>
 			<name>StardewValley/ErrorLogs/SMAPI-latest.txt</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/Users/Faulo/AppData/Roaming/StardewValley/ErrorLogs/SMAPI-latest.txt</locationURI>
