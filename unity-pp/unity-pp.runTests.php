@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\Unity;
+namespace Slothsoft\Devtools\Unity;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
