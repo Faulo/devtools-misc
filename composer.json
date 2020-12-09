@@ -1,16 +1,17 @@
 {
 	"name" : "slothsoft/devtools",
+	"description" : "Slothsoft Development Tools",
 	"require" : {
 		"composer/composer" : "^1.6",
-		"slothsoft/core" : "*"
+		"slothsoft/core" : "*",
+		"symfony/process" : "*"
 	},
 	"require-dev" : {
 		"phpunit/phpunit" : "^6.5"
 	},
 	"autoload" : {
 		"psr-0" : {
-			"Slothsoft\\Devtools\\" : "src/",
-			"Slothsoft\\Unity\\" : "src/"
+			"Slothsoft\\Devtools\\" : "src/"
 		}
 	}
 }
