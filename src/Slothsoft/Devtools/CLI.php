@@ -12,11 +12,9 @@ class CLI {
 
         foreach ($process as $type => $data) {
             if ($type === $process::OUT) {
-                // stdout
-                echo $data;
+                fwrite(STDOUT, $data);
             } else {
-                // stderr
-                echo $data;
+                fwrite(STDERR, $data);
             }
         }
 
