@@ -10,8 +10,8 @@ class FixStaticFolder implements UpdateInterface {
 
     private function getDeprecatedFiles(array $project): array {
         return [ // $project['workspaceDir'] . 'composer.phar',
-        // $project['workspaceDir'] . 'run-tests.launch',
-        // $project['slothsoftDir']
+                  // $project['workspaceDir'] . 'run-tests.launch',
+                  // $project['slothsoftDir']
         ];
     }
 
@@ -29,6 +29,7 @@ class FixStaticFolder implements UpdateInterface {
         $args[] = $project['vendor'];
         $args[] = $project['name'];
         $args[] = $project['homeUrl'];
+        $match = [];
         if (preg_match('~[a-z0-9]+~', $project['name'], $match)) {
             $args[] = $match[0];
         } else {

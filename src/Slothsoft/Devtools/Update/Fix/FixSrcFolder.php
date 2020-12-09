@@ -23,6 +23,7 @@ class FixSrcFolder implements UpdateInterface {
                     $source = file_get_contents($sourceFile);
                     $backup = $source;
                     if (strpos($source, 'declare(strict_types = 1);') === false) {
+                        $count = 0;
                         $source = str_replace('<?php', '<?php' . PHP_EOL . 'declare(strict_types = 1);', $source, $count);
                         if ($count !== 1) {
                             throw new \RuntimeException("what's up with $sourceFile?!");

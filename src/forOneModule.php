@@ -1,5 +1,5 @@
 <?php
-use Slothsoft\Devtools\ModuleManager;
+namespace Slothsoft\Devtools;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
@@ -14,4 +14,4 @@ foreach (include ('modules.php') as $module) {
     }
 }
 
-throw new Exception("Module '$moduleName' not found.");
+throw new \Exception("Module '$moduleName' not found.");

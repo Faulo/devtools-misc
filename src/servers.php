@@ -1,4 +1,5 @@
 <?php
+namespace Slothsoft\Devtools;
 
 return [
     [

@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\Unity;
+namespace Slothsoft\Devtools\Unity;
 
 use Slothsoft\Devtools\CLI;
 

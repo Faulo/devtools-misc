@@ -10,6 +10,7 @@ class FlowInit implements UpdateInterface {
     }
 
     private function exec(string $command) {
+        $status = 0;
         passthru($command, $status);
         if ($status !== 0) {
             echo "ERROR running command '$command'." . PHP_EOL;

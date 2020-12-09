@@ -127,7 +127,7 @@ class ComposerManifest {
 
     public function getRelatedProjects(): array {
         $ret = [];
-        foreach ($this->getRequireProd() as $module => $version) {
+        foreach (array_keys($this->getRequireProd()) as $module) {
             if (strpos($module, 'slothsoft/') === 0) {
                 $ret[] = '/' . str_replace('/', '-', $module);
             }

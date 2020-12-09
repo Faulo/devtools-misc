@@ -1,4 +1,5 @@
 <?php
+namespace Slothsoft\Devtools;
 
 return array(
     0 => array(

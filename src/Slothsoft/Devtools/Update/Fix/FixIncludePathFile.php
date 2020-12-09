@@ -16,7 +16,7 @@ class FixIncludePathFile implements UpdateInterface {
 
         $composerData = json_decode(file_get_contents($project['composerFile']), true);
         assert($composerData);
-        foreach ($composerData['require'] as $module => $version) {
+        foreach (array_keys($composerData['require']) as $module) {
             if (strpos($module, 'slothsoft/') === 0) {
                 $buildpathEntries[] = '/' . str_replace('/', '-', $module);
             }

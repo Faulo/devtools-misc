@@ -1,5 +1,5 @@
 <?php
-namespace Slothsoft\Unity;
+namespace Slothsoft\Devtools\Unity;
 
 use Slothsoft\Devtools\CLI;
 use Slothsoft\Core\DOMHelper;
@@ -100,6 +100,17 @@ class UnityCourse {
 
             $project = new UnityProject($this->settings['hub'], $unity);
             $project->runTests($results, 'PlayMode');
+        }
+    }
+
+    public function resetRepositories() {
+        foreach ($this->courseDoc->getElementsByTagName('repository') as $node) {
+            if (! $node->hasAttribute('unity')) {
+                continue;
+            }
+            $path = $node->getAttribute('path');
+            $git = new GitProject($path);
+            $git->reset();
         }
     }
 
