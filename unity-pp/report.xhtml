@@ -1,12 +1,21 @@
 <?xml version="1.0"?>
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:html="http://www.w3.org/1999/xhtml"><head><style type="text/css">
-pre {
-	width: 80ch;
+dl {
 	white-space: pre-wrap;
-	border-top: 1px solid gray;
+	font-family: monospace;
 	margin: 0 0 0 0;
+}
+dt {
+	font-weight: bold;
+	margin: 0 0 0 0;
+}
+dd {
+	width: 80ch;
+	margin: 0 0 0 0;
+	border-top: 1px solid gray;
 	padding: 0.5em 0;
 }
+
 .summary {
 	text-align: right;
 	font-family: monospace;
@@ -31,245 +40,383 @@ th {
     width: 5em;
 }
 				
-				</style></head><body><table border="1"><thead><tr><th>Repository</th><th>Author</th><th>Testat01</th><th>Testat02</th><th>Testat03</th><th>Testat04</th><th>Testat05</th><th>Testat06</th><th>Testat07</th><th>Testat08</th><th>Testat09</th><th>Testat10</th><th>Testat11</th><th>Testat12</th><th>Testat13</th></tr></thead><tfoot><tr><th/><th>Total</th><td><div class="summary">2/2</div></td><td><div class="summary">2/2</div></td><td><div class="summary">2/2</div></td><td><div class="summary">1/2</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td></tr></tfoot><tbody><tr><td><a href="https://github.com/Faulo/UnityPP2020">Faulo-Master</a></td><td>bt709175@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/Faulo/UnityPP2020-Empty">Faulo-Empty</a></td><td>bt@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="failure"><details><summary class="summary">3/12</summary><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
+				</style></head><body><table border="1"><thead><tr><th>Repository</th><th>Author</th><th>Testat01</th><th>Testat02</th><th>Testat03</th><th>Testat04</th><th>Testat05</th><th>Testat06</th><th>Testat07</th><th>Testat08</th><th>Testat09</th><th>Testat10</th><th>Testat11</th><th>Testat12</th><th>Testat13</th></tr></thead><tfoot><tr><th/><th>Total</th><td><div class="summary">3/3</div></td><td><div class="summary">3/3</div></td><td><div class="summary">3/3</div></td><td><div class="summary">3/3</div></td><td><div class="summary">3/3</div></td><td><div class="summary">2/3</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td></tr></tfoot><tbody><tr><td><a href="https://github.com/Faulo/UnityPP2020">Faulo-Master</a></td><td>bt709175@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="failure"><details><summary class="summary">13/19</summary><dl><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Ice.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  When spawning Mario at (0.0, 2.0, 0.0) and Platform 'Assets/Prefabs/Platform_Ice.prefab' at (0.0, 0.0, 0.0) in empty scene, they should have collided, but didn't!
+  Expected: not null
+  But was:  null
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Ice.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  When spawning Mario at (1.4, 1.0, 0.0) and Platform 'Assets/Prefabs/Platform_Ice.prefab' at (1.2, -1.0, 0.0) in empty scene, they should have collided, but didn't!
+  Expected: not null
+  But was:  null
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Metal.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  When spawning Mario at (0.0, 2.0, 0.0) and Platform 'Assets/Prefabs/Platform_Metal.prefab' at (0.0, 0.0, 0.0) in empty scene, they should have collided, but didn't!
+  Expected: not null
+  But was:  null
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Metal.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  When spawning Mario at (1.4, 1.0, 0.0) and Platform 'Assets/Prefabs/Platform_Metal.prefab' at (1.2, -1.0, 0.0) in empty scene, they should have collided, but didn't!
+  Expected: not null
+  But was:  null
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Dirt.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  When spawning Mario at (0.0, 2.0, 0.0) and Platform 'Assets/Prefabs/Platform_Dirt.prefab' at (0.0, 0.0, 0.0) in empty scene, they should have collided, but didn't!
+  Expected: not null
+  But was:  null
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Dirt.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  When spawning Mario at (1.4, 1.0, 0.0) and Platform 'Assets/Prefabs/Platform_Dirt.prefab' at (1.2, -1.0, 0.0) in empty scene, they should have collided, but didn't!
+  Expected: not null
+  But was:  null
+</dd></dl></details></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/Faulo/UnityPP2020-Empty">Faulo-Empty</a></td><td>bt@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/KaddaStrophe/unity-pp">KaddaStrophe</a></td><td>s9kabros@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr></tbody></table><table border="1"><thead><tr><th>Repository</th><th>Author</th><th>Testat01</th><th>Testat02</th><th>Testat03</th><th>Testat04</th><th>Testat05</th><th>Testat06</th><th>Testat07</th><th>Testat08</th><th>Testat09</th><th>Testat10</th><th>Testat11</th><th>Testat12</th><th>Testat13</th></tr></thead><tfoot><tr><th/><th>Total</th><td><div class="summary">12/12</div></td><td><div class="summary">11/12</div></td><td><div class="summary">10/12</div></td><td><div class="summary">9/12</div></td><td><div class="summary">5/12</div></td><td><div class="summary">10/12</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td></tr></tfoot><tbody><tr><td><a href="https://github.com/Lodil/PP-Unitykurs">Lodil</a></td><td>bt702729@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="failure"><details><summary class="summary">15/16</summary><dl><dt>T07b_PrefabInstancesExistInScene</dt><dd>System.NullReferenceException : Object reference not set to an instance of an object</dd></dl></details></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/BenediktLieb/Testat-01">BenediktLieb</a></td><td>bt702893@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="failure"><details><summary class="summary">14/16</summary><dl><dt>T03_MarioMovement(rightArrow, 10m/s², 5m/s)</dt><dd>  In freefall and with acceleration of 10m/s², Mario must never exceed his maximum speed of 5m/s!
+  Expected: 5.0f
+  But was:  5.39999723f
+</dd><dt>T03_MarioMovement(leftArrow, 15m/s², 10m/s)</dt><dd>  In freefall and with acceleration of 15m/s², Mario must never exceed his maximum speed of -10m/s!
+  Expected: -10.0f
+  But was:  -10.7999945f
+</dd></dl></details></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/DerELMO702995/Programmierpraktikum">DerELMO702995</a></td><td>bt702995@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/SimonSchuster93/PP_SimonSchuster_1577430">SimonSchuster93</a></td><td>bt706685@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/LauraWue/Testat01">LauraWue</a></td><td>bt716290@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="failure"><details><summary class="summary">9/16</summary><dl><dt>T02_MarioPrefab</dt><dd>  Mario's Renderer should be on its own GameObject, as a child of Mario's prefab!
+  Expected: not equal to &lt;Mario (UnityEngine.GameObject)&gt;
+  But was:  &lt;Mario (UnityEngine.GameObject)&gt;
+</dd><dt>T03_MarioMovement(rightArrow, 10m/s², 5m/s)</dt><dd>  Mario's speed must increase each frame!
+  Expected: greater than 0.0f
+  But was:  0.0f
+</dd><dt>T03_MarioMovement(leftArrow, 15m/s², 10m/s)</dt><dd>  Mario's speed must increase each frame!
+  Expected: greater than 0.0f
+  But was:  0.0f
+</dd><dt>T04_PlatformPrefab((Assets/Prefabs/Platform_Ice.prefab, Assets/PhysicsMaterials/Icy.physicsMaterial2D))</dt><dd>  Platform Platform_Ice (UnityEngine.GameObject) should use physics material Icy (UnityEngine.PhysicsMaterial2D)!
+  Expected: &lt;Icy (UnityEngine.PhysicsMaterial2D)&gt;
+  But was:  null
+</dd><dt>T04_PlatformPrefab((Assets/Prefabs/Platform_Metal.prefab, Assets/PhysicsMaterials/Default.physicsMaterial2D))</dt><dd>  Platform Platform_Metal (UnityEngine.GameObject) should use physics material Default (UnityEngine.PhysicsMaterial2D)!
+  Expected: &lt;Default (UnityEngine.PhysicsMaterial2D)&gt;
+  But was:  null
+</dd><dt>T04_PlatformPrefab((Assets/Prefabs/Platform_Dirt.prefab, Assets/PhysicsMaterials/Sticky.physicsMaterial2D))</dt><dd>  Platform Platform_Dirt (UnityEngine.GameObject) should have an allowedAcceleration &gt; 0!
+  Expected: greater than 0.0f
+  But was:  0.0f
+</dd><dt>T07b_PrefabInstancesExistInScene</dt><dd>  There must be exactly 1 component of type of type 'UnityEngine.Renderer' in GameObject 'Mario (UnityEngine.GameObject)' (or its children)!
   Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  Expected: file exists
-  But was:  &lt;Assets/Materials/Avatar.mat&gt;
-</pre><pre>  Expected: file exists
-  But was:  &lt;Assets/Materials/Platform.mat&gt;
-</pre><pre>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre></details></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr></tbody></table><table border="1"><thead><tr><th>Repository</th><th>Author</th><th>Testat01</th><th>Testat02</th><th>Testat03</th><th>Testat04</th><th>Testat05</th><th>Testat06</th><th>Testat07</th><th>Testat08</th><th>Testat09</th><th>Testat10</th><th>Testat11</th><th>Testat12</th><th>Testat13</th></tr></thead><tfoot><tr><th/><th>Total</th><td><div class="summary">13/13</div></td><td><div class="summary">12/13</div></td><td><div class="summary">11/13</div></td><td><div class="summary">11/13</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td><td><div class="summary">0/0</div></td></tr></tfoot><tbody><tr><td><a href="https://github.com/Lodil/PP-Unitykurs">Lodil</a></td><td>bt702729@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/BenediktLieb/Testat-01">BenediktLieb</a></td><td>bt702893@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/DerELMO702995/Programmierpraktikum">DerELMO702995</a></td><td>bt702995@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/SimonSchuster93/PP_SimonSchuster_1577430">SimonSchuster93</a></td><td>bt706685@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/LauraWue/Testat01">LauraWue</a></td><td>bt716290@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/Ann-droids/Testat1">Ann-droids</a></td><td>bt716589@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="failure"><details><summary class="summary">6/62</summary><pre>  Must not move avatar when no input is happening.
+  But was:  2
+</dd></dl></details></td><td class="failure"><details><summary class="summary">4/19</summary><dl><dt>T01_PrefabExists("Assets/Prefabs/ContactParticles.prefab")</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T02_ContactParticlesPrefab</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03a_MarioPrefab</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Ice.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Ice.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Metal.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Metal.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Dirt.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Dirt.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Ice.prefab",((0.0, 1.0, 0.0), False))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Ice.prefab",((0.0, -1.0, 0.0), True))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Metal.prefab",((0.0, 1.0, 0.0), False))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Metal.prefab",((0.0, -1.0, 0.0), True))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Dirt.prefab",((0.0, 1.0, 0.0), False))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Dirt.prefab",((0.0, -1.0, 0.0), True))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/Prefabs/ContactParticles.prefab&gt;
+</dd></dl></details></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/Ann-droids/Testat1">Ann-droids</a></td><td>bt716589@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="failure"><details><summary class="summary">6/62</summary><dl><dt>T03c_AvatarInput(upArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(downArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(leftArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(rightArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(upArrow+rightArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(downArrow+rightArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(upArrow+leftArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  Must not move avatar when no input is happening.
+</dd><dt>T03c_AvatarInput(downArrow+leftArrow)</dt><dd>  Must not move avatar when no input is happening.
   Expected: (0.0, 0.0, 0.0)
   But was:  (-1.6, -3.8, -2.0)
-</pre><pre>  With input upArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow,0.0f,0)</dt><dd>  With input upArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow,0.0f,2)</dt><dd>  With input upArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow,0.0f,4)</dt><dd>  With input upArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.7, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow,5.0f,0)</dt><dd>  With input upArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.2, 0.0), but was (-1.6, -3.5, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow,5.0f,2)</dt><dd>  With input upArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.2, 0.0), but was (-1.6, -3.6, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.4, 0.0), but was (-1.6, -3.3, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow,5.0f,4)</dt><dd>  With input upArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.4, 0.0), but was (-1.6, -3.4, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow,0.0f,0)</dt><dd>  With input downArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow,0.0f,2)</dt><dd>  With input downArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow,0.0f,4)</dt><dd>  With input downArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow,5.0f,0)</dt><dd>  With input downArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, -0.2, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow,5.0f,2)</dt><dd>  With input downArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, -0.2, 0.0), but was (-1.6, -4.0, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, -0.4, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow,5.0f,4)</dt><dd>  With input downArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, -0.4, 0.0), but was (-1.6, -4.2, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input leftArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(leftArrow,0.0f,0)</dt><dd>  With input leftArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(leftArrow,0.0f,2)</dt><dd>  With input leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(leftArrow,0.0f,4)</dt><dd>  With input leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.7, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(leftArrow,5.0f,0)</dt><dd>  With input leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.2, 0.0, 0.0), but was (-1.9, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(leftArrow,5.0f,2)</dt><dd>  With input leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.2, 0.0, 0.0), but was (-1.8, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.4, 0.0, 0.0), but was (-2.1, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(leftArrow,5.0f,4)</dt><dd>  With input leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.4, 0.0, 0.0), but was (-2.0, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(rightArrow,0.0f,0)</dt><dd>  With input rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(rightArrow,0.0f,2)</dt><dd>  With input rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(rightArrow,0.0f,4)</dt><dd>  With input rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(rightArrow,5.0f,0)</dt><dd>  With input rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.2, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(rightArrow,5.0f,2)</dt><dd>  With input rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.2, 0.0, 0.0), but was (-1.4, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.4, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(rightArrow,5.0f,4)</dt><dd>  With input rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.4, 0.0, 0.0), but was (-1.2, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,0)</dt><dd>  With input upArrow+rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,2)</dt><dd>  With input upArrow+rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+rightArrow,0.0f,4)</dt><dd>  With input upArrow+rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,0)</dt><dd>  With input upArrow+rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.1, 0.1, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,2)</dt><dd>  With input upArrow+rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.1, 0.1, 0.0), but was (-1.5, -3.7, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.3, 0.3, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+rightArrow,5.0f,4)</dt><dd>  With input upArrow+rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.3, 0.3, 0.0), but was (-1.3, -3.5, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,0)</dt><dd>  With input downArrow+rightArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,2)</dt><dd>  With input downArrow+rightArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+rightArrow,0.0f,4)</dt><dd>  With input downArrow+rightArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,0)</dt><dd>  With input downArrow+rightArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.1, -0.1, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,2)</dt><dd>  With input downArrow+rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.1, -0.1, 0.0), but was (-1.5, -4.0, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.3, -0.3, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+rightArrow,5.0f,4)</dt><dd>  With input downArrow+rightArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.3, -0.3, 0.0), but was (-1.3, -4.1, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+leftArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,0)</dt><dd>  With input upArrow+leftArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,2)</dt><dd>  With input upArrow+leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+leftArrow,0.0f,4)</dt><dd>  With input upArrow+leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,0)</dt><dd>  With input upArrow+leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.1, 0.1, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,2)</dt><dd>  With input upArrow+leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.1, 0.1, 0.0), but was (-1.7, -3.7, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input upArrow+leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.3, 0.3, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(upArrow+leftArrow,5.0f,4)</dt><dd>  With input upArrow+leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.3, 0.3, 0.0), but was (-1.9, -3.5, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+leftArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,0)</dt><dd>  With input downArrow+leftArrow, speed 0m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,2)</dt><dd>  With input downArrow+leftArrow, speed 0m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+leftArrow,0.0f,4)</dt><dd>  With input downArrow+leftArrow, speed 0m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,0)</dt><dd>  With input downArrow+leftArrow, speed 5m/s and waiting 0 FixedUpdate frames, avatar should have arrived at position (0.0, 0.0, 0.0), but was (-1.6, -3.8, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.1, -0.1, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,2)</dt><dd>  With input downArrow+leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at position (-0.1, -0.1, 0.0), but was (-1.7, -4.0, -2.0)
   Expected: True
   But was:  False
-</pre><pre>  With input downArrow+leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.3, -0.3, 0.0), but was (-1.6, -3.8, -2.0)
+</dd><dt>T04b_AvatarSpeedFieldWorks(downArrow+leftArrow,5.0f,4)</dt><dd>  With input downArrow+leftArrow, speed 5m/s and waiting 4 FixedUpdate frames, avatar should have arrived at position (-0.3, -0.3, 0.0), but was (-1.9, -4.1, -2.0)
   Expected: True
   But was:  False
-</pre></details></td><td class="failure"><details><summary class="summary">15/19</summary><pre>  With input rightArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at X=0,1, but was at X=-0,09999999!
-  Expected: True
-  But was:  False
-</pre><pre>  With input rightArrow, speed 5m/s and waiting 8 FixedUpdate frames, avatar should have arrived at X=0,8, but was at X=0!
-  Expected: True
-  But was:  False
-</pre><pre>  With input leftArrow, speed 5m/s and waiting 2 FixedUpdate frames, avatar should have arrived at X=-0,1, but was at X=0,09999999!
-  Expected: True
-  But was:  False
-</pre><pre>  With input leftArrow, speed 5m/s and waiting 8 FixedUpdate frames, avatar should have arrived at X=-0,8, but was at X=0!
-  Expected: True
-  But was:  False
-</pre></details></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/LukeBrose/Testat-01">LukeBrose</a></td><td>bt716757@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="failure"><details><summary class="summary">6/12</summary><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
+</dd></dl></details></td><td class="failure"><details><summary class="summary">18/19</summary><dl><dt>T06b_PrefabInstancesExistInScene</dt><dd>  Scene PlatformTest must have exactly 1 instance(s) of prefab Avatar (UnityEngine.GameObject)!
   Expected: 1
   But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar(Clone) (UnityEngine.GameObject)'!
+</dd></dl></details></td><td class="failure"><details><summary class="summary">11/12</summary><dl><dt>T07b_PrefabInstancesExistInScene</dt><dd>  Scene PlatformTest must have exactly 1 instance(s) of prefab Avatar (UnityEngine.GameObject)!
   Expected: 1
   But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'avatarColor' in GameObject 'Avatar (UnityEngine.GameObject)'!
+</dd></dl></details></td><td class="failure"><details><summary class="summary">12/16</summary><dl><dt>T02_MarioPrefab</dt><dd>  The method 'GetCurrentAcceleration' in GameObject 'Mario (UnityEngine.GameObject)' must have exactly 0 parameters!
+  Expected: 0
+  But was:  1
+</dd><dt>T03_MarioMovement(rightArrow, 10m/s², 5m/s)</dt><dd>  The method 'GetCurrentAcceleration' in GameObject 'Mario(Clone) (UnityEngine.GameObject)' must have exactly 0 parameters!
+  Expected: 0
+  But was:  1
+</dd><dt>T03_MarioMovement(leftArrow, 15m/s², 10m/s)</dt><dd>  The method 'GetCurrentAcceleration' in GameObject 'Mario(Clone) (UnityEngine.GameObject)' must have exactly 0 parameters!
+  Expected: 0
+  But was:  1
+</dd><dt>T07b_PrefabInstancesExistInScene</dt><dd>  The method 'GetCurrentAcceleration' in GameObject 'Mario (UnityEngine.GameObject)' must have exactly 0 parameters!
+  Expected: 0
+  But was:  1
+</dd></dl></details></td><td class="failure"><details><summary class="summary">7/19</summary><dl><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Ice.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  When spawning Mario at (0.0, 2.0, 0.0) and Platform 'Assets/Prefabs/Platform_Ice.prefab' at (0.0, 0.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Ice.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  When spawning Mario at (1.4, 1.0, 0.0) and Platform 'Assets/Prefabs/Platform_Ice.prefab' at (1.2, -1.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Metal.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  When spawning Mario at (0.0, 2.0, 0.0) and Platform 'Assets/Prefabs/Platform_Metal.prefab' at (0.0, 0.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Metal.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  When spawning Mario at (1.4, 1.0, 0.0) and Platform 'Assets/Prefabs/Platform_Metal.prefab' at (1.2, -1.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Dirt.prefab",((0.0, 0.0, 0.0), (0.0, 2.0, 0.0)))</dt><dd>  When spawning Mario at (0.0, 2.0, 0.0) and Platform 'Assets/Prefabs/Platform_Dirt.prefab' at (0.0, 0.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T03b_ContactParticleSpawn("Assets/Prefabs/Platform_Dirt.prefab",((1.2, -1.0, 0.0), (1.4, 1.0, 0.0)))</dt><dd>  When spawning Mario at (1.4, 1.0, 0.0) and Platform 'Assets/Prefabs/Platform_Dirt.prefab' at (1.2, -1.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Ice.prefab",((0.0, 1.0, 0.0), False))</dt><dd>  When spawning Mario at (0.0, 0.0, 0.0) and Platform 'Assets/Prefabs/Platform_Ice.prefab' at (0.0, 1.0, 0.0) in empty scene, Mario should not have become grounded, but did!
+  Expected: False
+  But was:  True
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Ice.prefab",((0.0, -1.0, 0.0), True))</dt><dd>  When spawning Mario at (0.0, 0.0, 0.0) and Platform 'Assets/Prefabs/Platform_Ice.prefab' at (0.0, -1.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Metal.prefab",((0.0, 1.0, 0.0), False))</dt><dd>  When spawning Mario at (0.0, 0.0, 0.0) and Platform 'Assets/Prefabs/Platform_Metal.prefab' at (0.0, 1.0, 0.0) in empty scene, Mario should not have become grounded, but did!
+  Expected: False
+  But was:  True
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Metal.prefab",((0.0, -1.0, 0.0), True))</dt><dd>  When spawning Mario at (0.0, 0.0, 0.0) and Platform 'Assets/Prefabs/Platform_Metal.prefab' at (0.0, -1.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Dirt.prefab",((0.0, 1.0, 0.0), False))</dt><dd>  When spawning Mario at (0.0, 0.0, 0.0) and Platform 'Assets/Prefabs/Platform_Dirt.prefab' at (0.0, 1.0, 0.0) in empty scene, Mario should not have become grounded, but did!
+  Expected: False
+  But was:  True
+</dd><dt>T04_PlatformBug("Assets/Prefabs/Platform_Dirt.prefab",((0.0, -1.0, 0.0), True))</dt><dd>  When spawning Mario at (0.0, 0.0, 0.0) and Platform 'Assets/Prefabs/Platform_Dirt.prefab' at (0.0, -1.0, 0.0) in empty scene, Mario should have become grounded, but didn't!
+  Expected: True
+  But was:  False
+</dd></dl></details></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/LukeBrose/Testat-01">LukeBrose</a></td><td>bt716757@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="failure"><details><summary class="summary">17/19</summary><dl><dt>T05d_AvatarGravityWhenGrounded</dt><dd>Unhandled log message: '[Exception] UnassignedReferenceException: The variable contactParticlesPrefab of AvatarController has not been assigned.
+You probably need to assign the contactParticlesPrefab variable of the AvatarController script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</dd><dt>T06b_PrefabInstancesExistInScene</dt><dd>Unhandled log message: '[Exception] UnassignedReferenceException: The variable contactParticlesPrefab of AvatarController has not been assigned.
+You probably need to assign the contactParticlesPrefab variable of the AvatarController script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</dd></dl></details></td><td class="failure"><details><summary class="summary">11/12</summary><dl><dt>T07b_PrefabInstancesExistInScene</dt><dd>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform (1) (UnityEngine.GameObject)'!
+  Expected: 1
+  But was:  2
+</dd></dl></details></td><td class="failure"><details><summary class="summary">6/16</summary><dl><dt>T03_MarioMovement(rightArrow, 10m/s², 5m/s)</dt><dd>  Mario's speed must increase each frame!
+  Expected: greater than 0.0f
+  But was:  0.0f
+</dd><dt>T03_MarioMovement(leftArrow, 15m/s², 10m/s)</dt><dd>  Mario's speed must increase each frame!
+  Expected: greater than 0.0f
+  But was:  0.0f
+</dd><dt>T04_PlatformPrefab((Assets/Prefabs/Platform_Ice.prefab, Assets/PhysicsMaterials/Icy.physicsMaterial2D))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Icy.physicsMaterial2D&gt;
+</dd><dt>T04_PlatformPrefab((Assets/Prefabs/Platform_Metal.prefab, Assets/PhysicsMaterials/Default.physicsMaterial2D))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Default.physicsMaterial2D&gt;
+</dd><dt>T04_PlatformPrefab((Assets/Prefabs/Platform_Dirt.prefab, Assets/PhysicsMaterials/Sticky.physicsMaterial2D))</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Sticky.physicsMaterial2D&gt;
+</dd><dt>T05a_PhysicsMaterialExists("Assets/PhysicsMaterials/Icy.physicsMaterial2D")</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Icy.physicsMaterial2D&gt;
+</dd><dt>T05a_PhysicsMaterialExists("Assets/PhysicsMaterials/Default.physicsMaterial2D")</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Default.physicsMaterial2D&gt;
+</dd><dt>T05a_PhysicsMaterialExists("Assets/PhysicsMaterials/Sticky.physicsMaterial2D")</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Sticky.physicsMaterial2D&gt;
+</dd><dt>T05b_PhysicsMaterialsFriction</dt><dd>  Expected: file exists
+  But was:  &lt;Assets/PhysicsMaterials/Icy.physicsMaterial2D&gt;
+</dd><dt>T07b_PrefabInstancesExistInScene</dt><dd>  There must be exactly 1 field with the name of 'isGrounded' in GameObject 'Marios Body (UnityEngine.GameObject)'!
   Expected: 1
   But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform(Clone) (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre><pre>  There must be exactly 1 field with the name of 'platformColor' in GameObject 'Platform (UnityEngine.GameObject)'!
-  Expected: 1
-  But was:  0
-</pre></details></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/64Megabyte/Programmierpraktikum-WS20">64Megabyte</a></td><td>bt717183@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/klasing-jan/Programmier-Praktikum-Uni-Bayreuth-Jan-Klasing-Version-2">klasing-jan</a></td><td>bt717227@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/Rubycule/PPP_1">Rubycule</a></td><td>bt717503@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/DeliaSchimann/GitTest">DeliaSchimann</a></td><td>bt717793@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="failure"><details><summary class="summary">8/19</summary><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable PlatformRenderer of PlattformFarbe has not been assigned.
-You probably need to assign the PlatformRenderer variable of the PlattformFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable PlatformRenderer of PlattformFarbe has not been assigned.
-You probably need to assign the PlatformRenderer variable of the PlattformFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre></details></td><td class="failure"><details><summary class="summary">8/12</summary><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable attachedRenderer of AvatarFarbe has not been assigned.
-You probably need to assign the attachedRenderer variable of the AvatarFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable PlatformRenderer of PlattformFarbe has not been assigned.
-You probably need to assign the PlatformRenderer variable of the PlattformFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre><pre>Unhandled log message: '[Exception] UnassignedReferenceException: The variable PlatformRenderer of PlattformFarbe has not been assigned.
-You probably need to assign the PlatformRenderer variable of the PlattformFarbe script in the inspector.'. Use UnityEngine.TestTools.LogAssert.Expect</pre></details></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/PietzkepopovRose/ProgrammierPraktikum">PietzkepopovRose</a></td><td>s4rolach@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/KaddaStrophe/unity-pp">KaddaStrophe</a></td><td>s9kabros@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td/><td/><td/><td/><td/><td/><td/><td/><td/></tr></tbody></table><hr/><details><summary>2 duplicates: Assets\Scripts\SampleScript.cs</summary><dl><dt>Lodil</dt><dd>Assets\Scripts\SampleScript.cs</dd><dt>LukeBrose</dt><dd>Assets\Scripts\SampleScript.cs</dd></dl><pre>﻿using UnityEngine;&#13;
+</dd></dl></details></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/64Megabyte/Programmierpraktikum-WS20">64Megabyte</a></td><td>bt717183@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/klasing-jan/Programmier-Praktikum-Uni-Bayreuth-Jan-Klasing-Version-2">klasing-jan</a></td><td>bt717227@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="failure"><details><summary class="summary">13/16</summary><dl><dt>T03_MarioMovement(rightArrow, 10m/s², 5m/s)</dt><dd>  In freefall and with acceleration of 10m/s², Mario must never exceed his maximum speed of 5m/s!
+  Expected: 5.0f
+  But was:  25.0f
+</dd><dt>T03_MarioMovement(leftArrow, 15m/s², 10m/s)</dt><dd>  In freefall and with acceleration of 15m/s², Mario must never exceed his maximum speed of -10m/s!
+  Expected: -10.0f
+  But was:  -50.0f
+</dd><dt>T05b_PhysicsMaterialsFriction</dt><dd>  Friction of Icy (UnityEngine.PhysicsMaterial2D) must be lower than friction of Default (UnityEngine.PhysicsMaterial2D)!
+  Expected: less than 0.0f
+  But was:  0.0f
+</dd></dl></details></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/Rubycule/PPP_1">Rubycule</a></td><td>bt717503@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/DeliaSchimann/GitTest">DeliaSchimann</a></td><td>bt717793@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="success"><div class="summary">12/12</div></td><td class="success"><div class="summary">16/16</div></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr><tr><td><a href="https://github.com/PietzkepopovRose/ProgrammierPraktikum">PietzkepopovRose</a></td><td>s4rolach@uni-bayreuth.de</td><td class="success"><div class="summary">4/4</div></td><td class="success"><div class="summary">62/62</div></td><td class="success"><div class="summary">19/19</div></td><td class="failure"><details><summary class="summary">10/12</summary><dl><dt>T05_PlatformColor(RGBA(0.000, 1.000, 0.000, 1.000))</dt><dd>  Platform renderer's color should have been set to RGBA(0.000, 1.000, 0.000, 1.000)!
+  Expected: RGBA(0.000, 1.000, 0.000, 1.000)
+  But was:  RGBA(0.747, 1.000, 0.741, 1.000)
+</dd><dt>T05_PlatformColor(RGBA(1.000, 0.000, 1.000, 1.000))</dt><dd>  Platform renderer's color should have been set to RGBA(1.000, 0.000, 1.000, 1.000)!
+  Expected: RGBA(1.000, 0.000, 1.000, 1.000)
+  But was:  RGBA(0.747, 1.000, 0.741, 1.000)
+</dd></dl></details></td><td class="failure"><details><summary class="summary">15/16</summary><dl><dt>T07b_PrefabInstancesExistInScene</dt><dd>System.NullReferenceException : Object reference not set to an instance of an object</dd></dl></details></td><td class="success"><div class="summary">19/19</div></td><td/><td/><td/><td/><td/><td/><td/></tr></tbody></table><hr/><details><summary>2 duplicates: Assets\Scripts\InputTest.cs</summary><dl><dt>Faulo-Empty</dt><dd>Assets\Scripts\InputTest.cs</dd><dt>LauraWue</dt><dd>Assets\Scripts\InputTest.cs</dd></dl><pre>﻿using UnityEngine;&#13;
+using UnityEngine.InputSystem;&#13;
+&#13;
+public class InputTest : MonoBehaviour&#13;
+{&#13;
+    public float movementSpeed = 5;&#13;
+    private void Start()&#13;
+    {&#13;
+&#13;
+    }&#13;
+&#13;
+    private void FixedUpdate()&#13;
+    {&#13;
+        var direction = Vector3.zero;&#13;
+        if (Keyboard.current.upArrowKey.isPressed)&#13;
+        {&#13;
+            direction += Vector3.up;&#13;
+        }&#13;
+        if (Keyboard.current.downArrowKey.isPressed)&#13;
+        {&#13;
+            direction += Vector3.down;&#13;
+        }&#13;
+        if (Keyboard.current.leftArrowKey.isPressed)&#13;
+        {&#13;
+            direction += Vector3.left;&#13;
+        }&#13;
+        if (Keyboard.current.rightArrowKey.isPressed)&#13;
+        {&#13;
+            direction += Vector3.right;&#13;
+        }&#13;
+        if (direction != Vector3.zero)&#13;
+        {&#13;
+            transform.position += direction.normalized * movementSpeed * Time.deltaTime;&#13;
+        }&#13;
+    }&#13;
+}&#13;
+</pre></details><details><summary>2 duplicates: Assets\Scripts\SampleScript.cs</summary><dl><dt>Lodil</dt><dd>Assets\Scripts\SampleScript.cs</dd><dt>LukeBrose</dt><dd>Assets\Scripts\SampleScript.cs</dd></dl><pre>﻿using UnityEngine;&#13;
 &#13;
 public class SampleScript : MonoBehaviour&#13;
 {&#13;

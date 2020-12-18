@@ -8,13 +8,22 @@
 		<html>
 			<head>
 				<style type="text/css"><![CDATA[
-pre {
-	width: 80ch;
+dl {
 	white-space: pre-wrap;
-	border-top: 1px solid gray;
+	font-family: monospace;
 	margin: 0 0 0 0;
+}
+dt {
+	font-weight: bold;
+	margin: 0 0 0 0;
+}
+dd {
+	width: 80ch;
+	margin: 0 0 0 0;
+	border-top: 1px solid gray;
 	padding: 0.5em 0;
 }
+
 .summary {
 	text-align: right;
 	font-family: monospace;
@@ -144,11 +153,16 @@ th {
 									<summary class="summary">
 										<xsl:value-of select="$summary" />
 									</summary>
-									<xsl:for-each select="$failures">
-										<pre>
-											<xsl:value-of select="message" />
-										</pre>
-									</xsl:for-each>
+									<dl>
+										<xsl:for-each select="$failures">
+											<dt>
+												<xsl:value-of select="ancestor::test-case/@name"/>
+											</dt>
+											<dd>
+												<xsl:value-of select="message" />
+											</dd>
+										</xsl:for-each>
+									</dl>
 								</details>
 							</xsl:otherwise>
 						</xsl:choose>
