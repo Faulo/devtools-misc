@@ -3,8 +3,13 @@ namespace Slothsoft\Devtools\Unity;
 
 require_once __DIR__ . '/../vendor/autoload.php';
 
+$testatId = 6;
+$testatMessage = "Fix Testat 01-06 (fix sometimes not finding prefab instances)";
+
 $course = new UnityCourse('repositories.xml', 'results');
 
-$course->resetRepositories();
-$course->deleteFolder('Assets/Tests');
-$course->requestTest('tests', 5, "Fix Testat 05 (improve movement test messages)");
+foreach ($course->getStudents(true) as $student) {
+    $student->git->reset();
+    $student->unity->deleteFolder('Assets/Tests');
+}
+$course->requestTest('tests', $testatId, $testatMessage);
