@@ -100,5 +100,28 @@ class UnityProject {
             }
         }
     }
+
+    public function deleteFolder(string $folder) {
+        $directory = new \SplFileInfo($this->projectPath . DIRECTORY_SEPARATOR . $folder);
+        if ($directory->isDir()) {
+            $this->rrmdir($directory->getRealPath());
+        }
+    }
+
+    private function rrmdir($dir) {
+        if (is_dir($dir)) {
+            $objects = scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (is_dir($dir . DIRECTORY_SEPARATOR . $object) && ! is_link($dir . "/" . $object)) {
+                        rrmdir($dir . DIRECTORY_SEPARATOR . $object);
+                    } else {
+                        unlink($dir . DIRECTORY_SEPARATOR . $object);
+                    }
+                }
+            }
+            rmdir($dir);
+        }
+    }
 }
 
