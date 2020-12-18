@@ -47,6 +47,11 @@ class GitProject {
     public function checkout(string $name) {
         $this->execute("checkout $name");
     }
+    
+    public function checkoutLatest() {
+        $branch = $this->branches()[0];
+        $this->checkout("-B $branch --track origin/$branch");
+    }
 
     public function branches(): array {
         $gitArgs = 'branch --sort=-committerdate -r';

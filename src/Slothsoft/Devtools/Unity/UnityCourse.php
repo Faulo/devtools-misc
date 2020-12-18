@@ -71,10 +71,9 @@ class UnityCourse {
     // Git stuff
     public function pullRepositories() {
         foreach ($this->getGitProjects(true) as $git) {
-            $git->pull();
             $git->reset();
-            $branch = $git->branches()[0];
-            $git->execute("checkout -B $branch --track origin/$branch");
+            $git->pull();
+            $git->checkoutLatest();
         }
     }
 
