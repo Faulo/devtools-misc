@@ -126,11 +126,11 @@ class UnityCourse {
                     $storage[$hash][$name] = $location;
                 }
             }
-            $results = $node->getAttribute('results');
+            $results = $student->node->getAttribute('results');
 
             if (is_file($results)) {
                 if ($resultsDoc = DOMHelper::loadDocument($results)) {
-                    $resultsNode = $reportDoc->importNode($node, true);
+                    $resultsNode = $reportDoc->importNode($student->node, true);
                     $resultsNode->setAttribute('company', $student->unity->companyName);
                     $resultsNode->appendChild($reportDoc->importNode($resultsDoc->documentElement, true));
                     $rootNode->appendChild($resultsNode);
