@@ -47,10 +47,19 @@ class GitProject {
     public function checkout(string $name) {
         $this->execute("checkout $name");
     }
-    
+
     public function checkoutLatest() {
         $branch = $this->branches()[0];
         $this->checkout("-B $branch --track origin/$branch");
+    }
+
+    public function merge(string $name) {
+        $this->execute("merge $name");
+    }
+
+    public function mergeLatest() {
+        $branch = $this->branches()[0];
+        $this->merge("origin/$branch");
     }
 
     public function branches(): array {

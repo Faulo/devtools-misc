@@ -5,6 +5,7 @@ use Slothsoft\Core\DOMHelper;
 use SplFileInfo;
 
 class UnityCourse {
+
     public $resultsFolder;
 
     private $courseDoc;
@@ -45,12 +46,12 @@ class UnityCourse {
     }
 
     // Student stuff
-    public function getStudents($cloneIfNeeded = false): iterable {
+    public function getStudents($cloneIfNeeded = false, $includeInvalid = false): iterable {
         foreach ($this->students as $student) {
             if ($cloneIfNeeded and (! $student->git or ! $student->unity)) {
                 $student->download();
             }
-            if ($student->git and $student->unity) {
+            if ($includeInvalid or ($student->git and $student->unity)) {
                 yield $student;
             }
         }
@@ -86,7 +87,7 @@ class UnityCourse {
 
     // Unity stuff
     public function runTests() {
-        foreach ($this->getStudents(true) as $student) {
+        foreach ($this->getStudents(false, true) as $student) {
             $student->runTests();
         }
     }
@@ -97,44 +98,54 @@ class UnityCourse {
         }
     }
 
-    public function writeReport(string $dataFile, string $templateFile, string $outputFile) {
+    public function writeReport(string $dataFile, string $templateFile, string $outputFile, $checkForDuplicates = false) {
         $reportDoc = new \DOMDocument();
         $rootNode = $reportDoc->createElement('report');
         foreach (range(1, 13) as $i) {
             $node = $reportDoc->createElement('test-id');
-            $node->textContent = sprintf('Testat%02d', $i);
+            $node->textContent = sprintf('Test%02d', $i);
             $rootNode->appendChild($node);
         }
         $storage = [];
         $duplicates = [];
-        foreach ($this->getStudents(true) as $student) {
+        $classes = [];
+        foreach ($this->getStudents(true, true) as $student) {
+            $classes[] = $student->node->getAttribute('class');
             $name = $student->node->getAttribute('name');
-            $unity = $student->node->getAttribute('unity');
-            foreach ($student->unity->getAssetFiles() as $file) {
-                if ($file->getExtension() === 'cs') {
-                    $path = $file->getRealPath();
-                    $location = substr($path, strlen($unity) + 1);
-                    $hash = md5_file($path);
-                    if (isset($storage[$hash])) {
-                        if (! isset($duplicates[$hash])) {
-                            $duplicates[$hash] = file_get_contents($path);
+
+            if ($checkForDuplicates and $student->unity) {
+                $unity = $student->node->getAttribute('unity');
+                foreach ($student->unity->getAssetFiles() as $file) {
+                    if ($file->getExtension() === 'cs') {
+                        $path = $file->getRealPath();
+                        $location = substr($path, strlen($unity) + 1);
+                        $hash = md5_file($path);
+                        if (isset($storage[$hash])) {
+                            if (! isset($duplicates[$hash])) {
+                                $duplicates[$hash] = file_get_contents($path);
+                            }
+                        } else {
+                            $storage[$hash] = [];
                         }
-                    } else {
-                        $storage[$hash] = [];
+                        $storage[$hash][$name] = $location;
                     }
-                    $storage[$hash][$name] = $location;
                 }
             }
+
             $results = $student->node->getAttribute('results');
 
             if (is_file($results)) {
                 if ($resultsDoc = DOMHelper::loadDocument($results)) {
                     $resultsNode = $reportDoc->importNode($student->node, true);
-                    $resultsNode->setAttribute('company', $student->unity->companyName);
                     $resultsNode->appendChild($reportDoc->importNode($resultsDoc->documentElement, true));
                     $rootNode->appendChild($resultsNode);
                 }
             }
+        }
+        foreach (array_unique($classes) as $class) {
+            $node = $reportDoc->createElement('class');
+            $node->textContent = $class;
+            $rootNode->appendChild($node);
         }
         foreach ($duplicates as $hash => $content) {
             $fileNode = $reportDoc->createElement('duplicate');
@@ -156,18 +167,26 @@ class UnityCourse {
 
     public function requestTest(string $testsFolder, int $testNumber, string $commitMessage) {
         $testName = sprintf('Testat%02d', $testNumber);
-        $branchName = "exam/$testName";
+        $branchName = "exam";
         $testFolder = $testsFolder . DIRECTORY_SEPARATOR . $testName;
         assert(is_dir($testFolder));
         $testFolder = realpath($testFolder);
 
         foreach ($this->getStudents(true) as $student) {
+            if (! $student->unity) {
+                trigger_error("Student {$student->node->getAttribute('name')} does not a valid Unity project, what's up?", E_USER_WARNING);
+                continue;
+            }
+            if ($student->node->hasAttribute('master')) {
+                continue;
+            }
             $unity = $student->node->getAttribute('unity');
             $path = $student->node->getAttribute('path');
 
             $student->git->pull();
 
             $student->git->branch($branchName, true);
+            $student->git->mergeLatest();
 
             $directory = new \RecursiveDirectoryIterator($testFolder);
             $directoryIterator = new \RecursiveIteratorIterator($directory);

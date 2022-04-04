@@ -30,6 +30,15 @@ abstract class ProjectManager {
             $project['sourceDir'] = $project['workspaceDir'] . 'src' . DIRECTORY_SEPARATOR;
             $project['docsDir'] = $project['workspaceDir'] . 'docs' . DIRECTORY_SEPARATOR;
             $project['testsDir'] = $project['workspaceDir'] . 'tests' . DIRECTORY_SEPARATOR;
+
+            $project['composer'] = null;
+            $project['namespace'] = null;
+            if (is_file($project['composerFile'])) {
+                $project['composer'] = json_decode(file_get_contents($project['composerFile']), true);
+                if (isset($project['composer']['autoload']['psr-4'])) {
+                    $project['namespace'] = array_keys($project['composer']['autoload']['psr-4'])[0];
+                }
+            }
         }
     }
 
