@@ -1,13 +1,15 @@
 {
-	"name" : "slothsoft/devtools",
+	"name" : "slothsoft/devtools-php",
 	"description" : "Slothsoft Development Tools",
+	"scripts" : {
+		"tdd.create-test-stubs" : "@php scripts/tdd.create-test-stubs.php"
+	},
 	"require" : {
+		"php" : "7.2 - 8.1",
+		"ext-xsl" : "*",
 		"composer/composer" : "^1.6",
 		"slothsoft/core" : "*",
 		"symfony/process" : "*"
-	},
-	"require-dev" : {
-		"phpunit/phpunit" : "^6.5"
 	},
 	"autoload" : {
 		"psr-0" : {

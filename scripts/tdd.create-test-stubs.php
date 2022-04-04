@@ -1,11 +1,18 @@
 <?php
 declare(strict_types = 1);
-require_once __DIR__ . '/../vendor/autoload.php';
+namespace Slothsoft\Devtools;
 
-use Slothsoft\Devtools\ModuleManager;
-use Slothsoft\Devtools\Update\Fix\FixTestsCreate;
+foreach ([
+    __DIR__ . '/../../../autoload.php',
+    __DIR__ . '/../vendor/autoload.php'
+] as $file) {
+    if (file_exists($file)) {
+        require_once $file;
+        break;
+    }
+}
 
 $modules = ModuleManager::createSlothsoftModules('farah', 'blob', 'core', 'w3c');
 $manager = new ModuleManager(__DIR__ . '/../../', $modules);
 
-$manager->run(new FixTestsCreate());
+$manager->run(new Update\Fix\FixTestsCreate());
