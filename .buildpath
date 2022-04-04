@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <buildpath>
+	<buildpathentry kind="src" path="scripts"/>
 	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/COM"/>
 	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/DS"/>
 	<buildpathentry kind="con" path="org.eclipse.dltk.USER_LIBRARY/Saxon"/>
@@ -215,6 +216,11 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/slothsoft/core/scripts">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/slothsoft/core/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
@@ -226,6 +232,11 @@
 		</attributes>
 	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/symfony/console">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/symfony/deprecation-contracts">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>
