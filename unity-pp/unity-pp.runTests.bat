@@ -1,1 +1,0 @@
-php unity-pp.runTests.php 1>unity-pp.runTests.log 2>unity-pp.runTests.err

@@ -1,1 +1,0 @@
-php unity-pp.writeReport.php 1>unity-pp.writeReport.log 2>unity-pp.writeReport.err

@@ -1,1 +1,0 @@
-php unity-pp.pullRepositories.php 1>unity-pp.pullRepositories.log 2>unity-pp.pullRepositories.err
