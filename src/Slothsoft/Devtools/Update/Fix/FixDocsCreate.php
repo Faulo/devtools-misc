@@ -8,7 +8,7 @@ class FixDocsCreate implements UpdateInterface {
 
     public function runOn(array $project) {
         if (is_file($project['workspaceDir'] . 'phpdoc.dist.xml')) {
-            CLI::execute('phpDocumentor run');
+            CLI::execute('phpDocumentor --no-interaction run');
         }
     }
 }
