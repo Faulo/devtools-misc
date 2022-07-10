@@ -11,8 +11,7 @@ class FixDocsCreate implements UpdateInterface {
         // $version = '2.9.0';
         // $version = '3.0.0-alpha1';
         if (is_file($project['workspaceDir'] . 'phpdoc.dist.xml')) {
-            $command = sprintf('php %s run', escapeshellarg(realpath("../devtools/bin/phpDocumentor-$version.phar")));
-            CLI::execute($command);
+            CLI::execute('phpDocumentor run');
         }
     }
 }

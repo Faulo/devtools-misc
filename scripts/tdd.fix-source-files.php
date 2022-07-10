@@ -22,4 +22,4 @@ if (!count($_SERVER['argv'])) {
 $modules = ModuleManager::createSlothsoftModules(...$_SERVER['argv']);
 $manager = new ModuleManager(__DIR__ . '/../../', $modules);
 
-$manager->run(new Update\Fix\FixTestsCreate());
+$manager->run(new Update\Fix\FixSrcFolder());

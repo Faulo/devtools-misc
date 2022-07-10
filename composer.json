@@ -2,7 +2,9 @@
 	"name" : "slothsoft/devtools-php",
 	"description" : "Slothsoft Development Tools",
 	"scripts" : {
-		"tdd.create-test-stubs" : "@php scripts/tdd.create-test-stubs.php"
+		"tdd.create-test-stubs" : "@php scripts/tdd.create-test-stubs.php",
+		"tdd.fix-source-files" : "@php scripts/tdd.fix-source-files.php",
+		"tdd.update-docs" : "@php scripts/tdd.update-docs.php"
 	},
 	"require" : {
 		"php" : "7.2 - 8.1",
