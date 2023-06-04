@@ -949,16 +949,16 @@
         },
         {
             "name": "slothsoft/core",
-            "version": "1.5.4",
+            "version": "1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-core.git",
-                "reference": "8524c09fe18d9bb14b2d1210473d3dfd0412c598"
+                "reference": "a5a65aad106a0aec64e9f346490f7c7d03d6b1ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/8524c09fe18d9bb14b2d1210473d3dfd0412c598",
-                "reference": "8524c09fe18d9bb14b2d1210473d3dfd0412c598",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-core/zipball/a5a65aad106a0aec64e9f346490f7c7d03d6b1ca",
+                "reference": "a5a65aad106a0aec64e9f346490f7c7d03d6b1ca",
                 "shasum": ""
             },
             "require": {
@@ -980,7 +980,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-develop": "1.5.x-dev"
+                    "dev-develop": "1.6.x-dev"
                 }
             },
             "autoload": {
@@ -993,7 +993,7 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "WTFPL"
+                "MIT"
             ],
             "authors": [
                 {
@@ -1009,9 +1009,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-core/issues",
-                "source": "https://github.com/Faulo/slothsoft-core/tree/1.5.4"
+                "source": "https://github.com/Faulo/slothsoft-core/tree/1.6.0"
             },
-            "time": "2022-06-29T18:44:07+00:00"
+            "time": "2022-07-10T14:26:56+00:00"
         },
         {
             "name": "slothsoft/w3c",
