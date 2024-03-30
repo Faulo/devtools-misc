@@ -15,3 +15,6 @@ $RECYCLE.BIN/
 /.phpunit.result.cache
 *.log
 *.err
+
+# == Amiga ==
+/Aminet/
