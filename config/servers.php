@@ -42,5 +42,4 @@ $servers = [
     ]
 ];
 
-$manager = new ServerManager('server', 'R:\\Eclipse\\workspace', $servers);
-ProjectDatabase::instance()->registerGroup($manager);
+ProjectDatabase::instance()->groups[] = new ServerManager('server', 'R:\\Eclipse\\workspace', $servers);

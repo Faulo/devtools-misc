@@ -285,5 +285,4 @@ $modules = array(
     )
 );
 
-$manager = new ModuleManager('module', 'R:\\Eclipse\\workspace', $modules);
-ProjectDatabase::instance()->registerGroup($manager);
+ProjectDatabase::instance()->groups[] = new ModuleManager('module', 'R:\\Eclipse\\workspace', $modules);

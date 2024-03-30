@@ -47,4 +47,4 @@ foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);
 }
 
-ProjectDatabase::instance()->registerGroup($manager);
+ProjectDatabase::instance()->groups[] = $manager;
