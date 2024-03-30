@@ -3,6 +3,8 @@
 	"version" : "1.0.0",
 	"description" : "Slothsoft Development Tools",
 	"scripts" : {
+		"aminet" : "@php scripts/aminet.php",
+		"foreach" : "@php scripts/foreach.php",
 		"tdd" : "@php scripts/tdd.php",
 		"tdd.create-test-stubs" : "@php scripts/tdd.create-test-stubs.php",
 		"tdd.fix-source-files" : "@php scripts/tdd.fix-source-files.php",
@@ -18,6 +20,12 @@
 	"autoload" : {
 		"psr-4" : {
 			"Slothsoft\\Devtools\\Misc\\" : "src"
-		}
+		},
+		"files" : [
+			"config/modules.php",
+			"config/servers.php",
+			"config/unity.php",
+			"config/ulisses.php"
+		]
 	}
 }

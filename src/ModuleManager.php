@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Devtools\Misc;
 
-class ModuleManager extends ProjectManager {
+class ModuleManager extends PHPProjectManager {
 
     public static function createSlothsoftModules(...$names): array {
         $modules = [];

@@ -1,7 +1,8 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Devtools;
+namespace Slothsoft\Devtools\Misc;
 
+use Slothsoft\Devtools\Misc\ProjectDatabase;
 foreach ([
     __DIR__ . '/../../../autoload.php',
     __DIR__ . '/../vendor/autoload.php'
@@ -13,17 +14,20 @@ foreach ([
 }
 
 array_shift($_SERVER['argv']);
-$_SERVER['argc']--;
+$_SERVER['argc'] --;
 
-if (count($_SERVER['argv']) !== 2) {
+if (count($_SERVER['argv']) < 1) {
     throw new \InvalidArgumentException('Needs project identifier and stuff to do!');
 }
 
-$ids = array_shift($_SERVER['argv']);
-$workloads = array_shift($_SERVER['argv']);
+$ids = CLI::tokenize(array_shift($_SERVER['argv']));
+$workloads = CLI::tokenize(array_shift($_SERVER['argv']));
 
-var_dump($ids);
-var_dump($workloads);
+$database = ProjectDatabase::instance();
+
+foreach ($database->getProjects(...$ids) as $project) {
+    echo $project . PHP_EOL;
+}
 
 //$modules = ModuleManager::createSlothsoftModules(...$_SERVER['argv']);
 //$manager = new ModuleManager(__DIR__ . '/../../', $modules);

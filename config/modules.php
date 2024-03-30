@@ -1,7 +1,10 @@
 <?php
-namespace Slothsoft\Devtools;
+declare(strict_types = 1);
 
-return array(
+use Slothsoft\Devtools\Misc\ModuleManager;
+use Slothsoft\Devtools\Misc\ProjectDatabase;
+
+$modules = array(
     0 => array(
         'vendor' => 'slothsoft',
         'name' => 'amber',
@@ -281,3 +284,6 @@ return array(
         'packagistUrl' => 'https://packagist.org/packages/slothsoft/blob'
     )
 );
+
+$manager = new ModuleManager('module', 'R:\\Eclipse\\workspace', $modules);
+ProjectDatabase::instance()->registerGroup($manager);

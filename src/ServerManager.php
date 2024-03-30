@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Devtools\Misc;
 
-class ServerManager extends ProjectManager {
+class ServerManager extends PHPProjectManager {
 
     protected function loadProject(array &$server) {
         $server['vendor'] = 'slothsoft';

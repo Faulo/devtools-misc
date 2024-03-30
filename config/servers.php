@@ -1,7 +1,10 @@
 <?php
-namespace Slothsoft\Devtools;
+declare(strict_types = 1);
 
-return [
+use Slothsoft\Devtools\Misc\ProjectDatabase;
+use Slothsoft\Devtools\Misc\ServerManager;
+
+$servers = [
     [
         'name' => 'daniel-schulz.slothsoft.net',
         'githubUrl' => 'https://github.com/Faulo/server-daniel-schulz.slothsoft.net',
@@ -38,3 +41,6 @@ return [
         'homeUrl' => 'http://amber.slothsoft.net'
     ]
 ];
+
+$manager = new ServerManager('server', 'R:\\Eclipse\\workspace', $servers);
+ProjectDatabase::instance()->registerGroup($manager);
