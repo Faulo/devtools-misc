@@ -1,0 +1,23 @@
+{
+	"name" : "slothsoft/devtools-misc",
+	"version" : "1.0.0",
+	"description" : "Slothsoft Development Tools",
+	"scripts" : {
+		"tdd" : "@php scripts/tdd.php",
+		"tdd.create-test-stubs" : "@php scripts/tdd.create-test-stubs.php",
+		"tdd.fix-source-files" : "@php scripts/tdd.fix-source-files.php",
+		"tdd.update-docs" : "@php scripts/tdd.update-docs.php"
+	},
+	"require" : {
+		"php" : "7.2 - 8.1",
+		"ext-xsl" : "*",
+		"composer/composer" : "^1.6",
+		"slothsoft/core" : "*",
+		"symfony/process" : "*"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Slothsoft\\Devtools\\Misc\\" : "src"
+		}
+	}
+}
