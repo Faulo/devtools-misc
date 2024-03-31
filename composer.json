@@ -3,6 +3,7 @@
 	"version" : "1.0.0",
 	"description" : "Slothsoft Development Tools",
 	"scripts" : {
+		"php-ini" : "@php scripts/php-ini.php",
 		"aminet" : "@php scripts/aminet.php",
 		"foreach" : "@php scripts/foreach.php",
 		"tdd" : "@php scripts/tdd.php",
@@ -15,6 +16,7 @@
 		"ext-xsl" : "*",
 		"composer/composer" : "*",
 		"slothsoft/core" : "*",
+		"slothsoft/unity" : "*",
 		"symfony/process" : "*"
 	},
 	"autoload" : {

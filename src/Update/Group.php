@@ -21,14 +21,19 @@ class Group {
     }
 
     public function run(string ...$updates) {
+        $cwd = realpath(getcwd()) or die('missing cwd');
+
         foreach ($this->projects as $project) {
             echo "# $project" . PHP_EOL;
             foreach ($updates as $update) {
                 $update = $project->manager->getUpdate($update);
                 printf('Running %s...%s', basename(get_class($update)), PHP_EOL);
+                chdir($cwd);
                 $update->runOn($project);
             }
         }
         printf('...done!');
+
+        chdir($cwd);
     }
 }

@@ -4,6 +4,7 @@ declare(strict_types = 1);
 use Slothsoft\Core\FileSystem;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
+use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 
 $thirdPartyPackages = [
     'com.acegikmo.shapes',
@@ -92,6 +93,7 @@ $groups = [
 ];
 
 $manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
+$manager->updateFactories[] = new UnityUpdateFactory();
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);
