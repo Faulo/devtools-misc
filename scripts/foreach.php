@@ -27,6 +27,5 @@ $projects = ProjectDatabase::instance()->getProjects(...$projects);
 
 $updates = array_shift($_SERVER['argv']);
 $updates = CLI::tokenize($updates);
-$updates = UpdateDatabase::instance()->getUpdates(...$updates);
 
 $projects->run(...$updates);

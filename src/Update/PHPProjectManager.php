@@ -34,7 +34,7 @@ abstract class PHPProjectManager extends ProjectManager {
                 }
             }
 
-            $this->projects[] = new Project($project['name'], $project);
+            $this->projects[] = $this->createProject($project);
         }
     }
 

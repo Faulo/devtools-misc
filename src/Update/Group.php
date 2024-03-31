@@ -20,24 +20,13 @@ class Group {
         return $this->id;
     }
 
-    public function run(UpdateInterface ...$updates) {
-        if (count($updates) === 1) {
+    public function run(string ...$updates) {
+        foreach ($this->projects as $project) {
+            echo "# $project" . PHP_EOL;
             foreach ($updates as $update) {
+                $update = $project->manager->getUpdate($update);
                 printf('Running %s...%s', basename(get_class($update)), PHP_EOL);
-                foreach ($this->projects as $project) {
-                    echo $project . '...' . PHP_EOL;
-                    chdir($project->info['workspaceDir']);
-                    $update->runOn($project);
-                }
-            }
-        } else {
-            foreach ($this->projects as $project) {
-                echo $project . '...' . PHP_EOL;
-                foreach ($updates as $update) {
-                    printf('Running %s...%s', basename(get_class($update)), PHP_EOL);
-                    chdir($project->info['workspaceDir']);
-                    $update->runOn($project);
-                }
+                $update->runOn($project);
             }
         }
         printf('...done!');

@@ -6,15 +6,18 @@ use Slothsoft\Devtools\Misc\CLI;
 
 class Project {
 
+    public ProjectManager $manager;
+
     public string $name;
 
     public string $id;
 
     public array $info;
 
-    public function __construct(string $name, array $info) {
-        $this->name = $name;
-        $this->id = CLI::toId($name);
+    public function __construct(ProjectManager $manager, array $info) {
+        $this->manager = $manager;
+        $this->name = $info['name'];
+        $this->id = CLI::toId($info['name']);
         $this->info = $info;
     }
 

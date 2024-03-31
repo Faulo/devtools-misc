@@ -42,6 +42,7 @@ $groups = [
 ];
 
 $manager = new UnityProjectManager('unity', 'R:\\Unity');
+$manager->vc = 'git';
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);
