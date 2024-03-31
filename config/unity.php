@@ -3,7 +3,6 @@ declare(strict_types = 1);
 
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
-use Slothsoft\Devtools\Misc\Update\Git\GitUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 
 $gameJams = [

@@ -6,6 +6,11 @@ use Slothsoft\Devtools\Misc\Update\ServerManager;
 
 $servers = [
     [
+        'name' => 'cursedcreations.slothsoft.net',
+        'githubUrl' => 'https://github.com/Cursed-Creations/server-cursedcreations.slothsoft.net',
+        'homeUrl' => 'http://cursedcreations.slothsoft.net'
+    ],
+    [
         'name' => 'daniel-schulz.slothsoft.net',
         'githubUrl' => 'https://github.com/Faulo/server-daniel-schulz.slothsoft.net',
         'homeUrl' => 'http://daniel-schulz.slothsoft.net'
