@@ -23,9 +23,5 @@ class UnityProjectManager extends ProjectManager {
 
         $this->groups[] = $group;
     }
-
-    protected function createUpdate(string $id): ?UpdateInterface {
-        return parent::createUpdate($id);
-    }
 }
 

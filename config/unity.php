@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
+use Slothsoft\Devtools\Misc\Update\Git\GitUpdateFactory;
 
 $gameJams = [
     'GameJam.BackToTheChicken',
@@ -41,8 +42,7 @@ $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('unity', 'R:\\Unity');
-$manager->vc = 'git';
+$manager = new UnityProjectManager('unity', 'R:\\Unity', 'git');
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);

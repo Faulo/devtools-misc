@@ -2,10 +2,16 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
+use Slothsoft\Devtools\Misc\Update\Composer\ComposerUpdateFactory;
+use Slothsoft\Devtools\Misc\Update\PHP\PHPUpdateFactory;
+
 abstract class PHPProjectManager extends ProjectManager {
 
     public function __construct(string $id, string $workspaceDir, array $projects) {
-        parent::__construct($id, $workspaceDir);
+        parent::__construct($id, $workspaceDir, 'git');
+
+        $this->updateFactories[] = new ComposerUpdateFactory();
+        $this->updateFactories[] = new PHPUpdateFactory();
 
         foreach ($projects as &$project) {
             $this->loadProject($project);
@@ -39,14 +45,5 @@ abstract class PHPProjectManager extends ProjectManager {
     }
 
     protected abstract function loadProject(array &$project);
-
-    protected function createUpdate(string $id): ?UpdateInterface {
-        switch ($id) {
-            case 'update':
-                return new Composer\UpdateUsingCLI();
-        }
-
-        return parent::createUpdate($id);
-    }
 }
 

@@ -91,8 +91,7 @@ $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses');
-$manager->vc = 'plastic';
+$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);

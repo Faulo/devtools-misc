@@ -2,15 +2,30 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
-class ProjectManager extends Group {
+use Slothsoft\Devtools\Misc\Update\Analysis\AnalysisUpdateFactory;
+use Slothsoft\Devtools\Misc\Update\Git\GitUpdateFactory;
+use Slothsoft\Devtools\Misc\Update\Plastic\PlasticUpdateFactory;
 
-    public string $vc = '';
+class ProjectManager extends Group {
 
     protected $workspaceDir;
 
-    public function __construct(string $id, string $workspaceDir) {
+    public array $updateFactories = [];
+
+    public function __construct(string $id, string $workspaceDir, string $versionControl = '') {
         parent::__construct($id);
         $this->workspaceDir = realpath($workspaceDir) . DIRECTORY_SEPARATOR;
+
+        $this->updateFactories[] = new AnalysisUpdateFactory();
+
+        switch ($versionControl) {
+            case 'git':
+                $this->updateFactories[] = new GitUpdateFactory();
+                break;
+            case 'plastic':
+                $this->updateFactories[] = new PlasticUpdateFactory();
+                break;
+        }
     }
 
     private array $updates = [];
@@ -33,25 +48,12 @@ class ProjectManager extends Group {
     }
 
     protected function createUpdate(string $id): ?UpdateInterface {
-        switch ($id) {
-            case 'echo':
-                return new Analysis\EchoProject();
-            case 'pull':
-                switch ($this->vc) {
-                    case 'git':
-                        return new Git\Pull();
-                    case 'plastic':
-                        return new Plastic\Pull();
-                }
-            case 'reset':
-                switch ($this->vc) {
-                    case 'git':
-                        return new Git\Reset();
-                    case 'plastic':
-                        return new Plastic\Reset();
-                }
+        foreach ($this->updateFactories as $factory) {
+            $update = $factory->createUpdate($id);
+            if ($update !== null) {
+                return $update;
+            }
         }
-
         return null;
     }
 }
