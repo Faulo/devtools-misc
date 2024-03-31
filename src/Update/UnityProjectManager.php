@@ -1,5 +1,8 @@
 <?php
-namespace Slothsoft\Devtools\Misc;
+declare(strict_types = 1);
+namespace Slothsoft\Devtools\Misc\Update;
+
+use Slothsoft\Devtools\Misc\CLI;
 
 class UnityProjectManager extends ProjectManager {
 

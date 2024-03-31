@@ -22,6 +22,7 @@
 			"Slothsoft\\Devtools\\Misc\\" : "src"
 		},
 		"files" : [
+			"config/updates.php",
 			"config/modules.php",
 			"config/servers.php",
 			"config/unity.php",

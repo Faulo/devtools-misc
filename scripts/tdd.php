@@ -1,6 +1,9 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Devtools;
+
+use Slothsoft\Devtools\Misc\Update\ModuleManager;
+use Slothsoft\Devtools\Misc\Update\Fix\FixDocsCreate;
+use Slothsoft\Devtools\Misc\Update\Fix\FixTestsCreate;
 
 foreach ([
     __DIR__ . '/../../../autoload.php',
@@ -13,13 +16,13 @@ foreach ([
 }
 
 array_shift($_SERVER['argv']);
-$_SERVER['argc']--;
+$_SERVER['argc'] --;
 
-if (!count($_SERVER['argv'])) {
+if (! count($_SERVER['argv'])) {
     throw new \InvalidArgumentException('Needs at least 1 module name!');
 }
 
 $modules = ModuleManager::createSlothsoftModules(...$_SERVER['argv']);
 $manager = new ModuleManager(__DIR__ . '/../../', $modules);
 
-$manager->run(new Update\Fix\FixTestsCreate(), new Update\Fix\FixSrcFolder(), new Update\Fix\FixDocsCreate());
+$manager->run(new FixTestsCreate(), new FixTestsCreate(), new FixDocsCreate());

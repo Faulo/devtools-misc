@@ -1,6 +1,8 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Devtools\Misc;
+namespace Slothsoft\Devtools\Misc\Update;
+
+use Slothsoft\Devtools\Misc\CLI;
 
 class Project {
 

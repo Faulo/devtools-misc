@@ -1,17 +1,23 @@
 <?php
-namespace Slothsoft\Devtools\Misc;
+declare(strict_types = 1);
+namespace Slothsoft\Devtools\Misc\Update;
 
-use Slothsoft\Devtools\Misc\Update\UpdateInterface;
+use Slothsoft\Devtools\Misc\CLI;
 
-class ProjectManager extends Group {
+class Group {
 
-    protected $workspaceDir;
+    public string $id;
+
+    public array $projects = [];
 
     public array $groups = [];
 
-    public function __construct(string $id, string $workspaceDir) {
-        parent::__construct($id);
-        $this->workspaceDir = realpath($workspaceDir) . DIRECTORY_SEPARATOR;
+    public function __construct(string $id) {
+        $this->id = CLI::normalize($id);
+    }
+
+    public function __toString(): string {
+        return $this->id;
     }
 
     public function run(UpdateInterface ...$updates) {
@@ -19,17 +25,17 @@ class ProjectManager extends Group {
             foreach ($updates as $update) {
                 printf('Running %s...%s', basename(get_class($update)), PHP_EOL);
                 foreach ($this->projects as $project) {
-                    echo $project['homeUrl'] . '...' . PHP_EOL;
-                    chdir($project['workspaceDir']);
+                    echo $project . '...' . PHP_EOL;
+                    chdir($project->info['workspaceDir']);
                     $update->runOn($project);
                 }
             }
         } else {
             foreach ($this->projects as $project) {
-                echo $project['homeUrl'] . '...' . PHP_EOL;
+                echo $project . '...' . PHP_EOL;
                 foreach ($updates as $update) {
                     printf('Running %s...%s', basename(get_class($update)), PHP_EOL);
-                    chdir($project['workspaceDir']);
+                    chdir($project->info['workspaceDir']);
                     $update->runOn($project);
                 }
             }
@@ -37,4 +43,3 @@ class ProjectManager extends Group {
         printf('...done!');
     }
 }
-

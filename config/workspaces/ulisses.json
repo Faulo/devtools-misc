@@ -1,9 +1,0 @@
-{
-	"third-party" : [
-        "com.acegikmo.shapes",
-        "com.arongranberg.astar",
-        "com.kronnect.volumetric-fog-mist-2",
-        "com.longbunnylabs.boing-kit",
-        "jp.magicasoft.magicacloth",
-	],
-}

@@ -1,8 +1,8 @@
 <?php
 declare(strict_types = 1);
 
-use Slothsoft\Devtools\Misc\ModuleManager;
-use Slothsoft\Devtools\Misc\ProjectDatabase;
+use Slothsoft\Devtools\Misc\Update\ModuleManager;
+use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 
 $modules = array(
     0 => array(

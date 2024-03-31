@@ -1,8 +1,8 @@
 <?php
 declare(strict_types = 1);
 
-use Slothsoft\Devtools\Misc\ProjectDatabase;
-use Slothsoft\Devtools\Misc\UnityProjectManager;
+use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
+use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 
 $gameJams = [
     'GameJam.BackToTheChicken',

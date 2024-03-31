@@ -1,8 +1,9 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Devtools\Misc;
 
-use Slothsoft\Devtools\Misc\ProjectDatabase;
+use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
+use Slothsoft\Devtools\Misc\Update\UpdateDatabase;
 foreach ([
     __DIR__ . '/../../../autoload.php',
     __DIR__ . '/../vendor/autoload.php'
@@ -20,16 +21,12 @@ if (count($_SERVER['argv']) < 1) {
     throw new \InvalidArgumentException('Needs project identifier and stuff to do!');
 }
 
-$ids = CLI::tokenize(array_shift($_SERVER['argv']));
-$workloads = CLI::tokenize(array_shift($_SERVER['argv']));
+$projects = array_shift($_SERVER['argv']);
+$projects = CLI::tokenize($projects);
+$projects = ProjectDatabase::instance()->getProjects(...$projects);
 
-$database = ProjectDatabase::instance();
+$updates = array_shift($_SERVER['argv']);
+$updates = CLI::tokenize($updates);
+$updates = UpdateDatabase::instance()->getUpdates(...$updates);
 
-foreach ($database->getProjects(...$ids) as $project) {
-    echo $project . PHP_EOL;
-}
-
-//$modules = ModuleManager::createSlothsoftModules(...$_SERVER['argv']);
-//$manager = new ModuleManager(__DIR__ . '/../../', $modules);
-
-//$manager->run(new Update\Fix\FixTestsCreate(), new Update\Fix\FixSrcFolder(), new Update\Fix\FixDocsCreate());
+$projects->run(...$updates);

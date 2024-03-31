@@ -1,6 +1,5 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Devtools\Misc;
 
 use Slothsoft\Core\Storage;
 use Slothsoft\Core\Calendar\Seconds;

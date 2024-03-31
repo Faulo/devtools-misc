@@ -1,6 +1,6 @@
 <?php
 declare(strict_types = 1);
-namespace Slothsoft\Devtools\Misc;
+namespace Slothsoft\Devtools\Misc\Update;
 
 class ProjectDatabase extends Group {
 
@@ -48,7 +48,7 @@ class ProjectDatabase extends Group {
         }
     }
 
-    public function getProjects(string ...$ids): iterable {
+    public function getProjects(string ...$ids): Group {
         $set = [];
 
         foreach ($this->getAllProjects() as $project) {
@@ -66,6 +66,9 @@ class ProjectDatabase extends Group {
             }
         }
 
-        return array_unique($set);
+        $group = new Group(implode('|', $ids));
+        $group->projects = array_unique($set);
+
+        return $group;
     }
 }
