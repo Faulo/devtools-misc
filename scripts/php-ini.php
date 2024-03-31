@@ -42,6 +42,7 @@ if ($serverPath = realpath($serverPath)) {
 
         if ($versionPath = realpath($serverPath . DIRECTORY_SEPARATOR . $version)) {
             echo $versionPath . PHP_EOL;
+            chdir($versionPath);
 
             foreach ($sapiFiles as $sapiFile) {
                 $sapi = pathinfo($sapiFile, PATHINFO_FILENAME);
@@ -64,7 +65,7 @@ if ($serverPath = realpath($serverPath)) {
                 $ini .= ";$sapi" . PHP_EOL;
                 $ini .= file_get_contents($sapiFile) . PHP_EOL;
                 $ini .= PHP_EOL;
-                
+
                 $versionSapi = "$version-$sapi";
                 $versionSapiFile = $versionSapiPath . DIRECTORY_SEPARATOR . "$versionSapi.ini";
                 if (file_exists($versionSapiFile)) {
@@ -84,6 +85,8 @@ if ($serverPath = realpath($serverPath)) {
                 }
                 file_put_contents($iniFile, $ini);
             }
+
+            passthru('php --version');
         }
     }
 }
