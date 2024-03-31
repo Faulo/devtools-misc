@@ -39,5 +39,14 @@ abstract class PHPProjectManager extends ProjectManager {
     }
 
     protected abstract function loadProject(array &$project);
+
+    protected function createUpdate(string $id): ?UpdateInterface {
+        switch ($id) {
+            case 'update':
+                return new Composer\UpdateUsingCLI();
+        }
+
+        return parent::createUpdate($id);
+    }
 }
 

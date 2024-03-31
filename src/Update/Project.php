@@ -12,13 +12,20 @@ class Project {
 
     public string $id;
 
+    public string $workspace;
+
     public array $info;
 
     public function __construct(ProjectManager $manager, array $info) {
         $this->manager = $manager;
         $this->name = $info['name'];
-        $this->id = CLI::toId($info['name']);
+        $this->id = CLI::toId($this->name);
+        $this->workspace = $info['workspaceDir'];
         $this->info = $info;
+    }
+
+    public function chdir(): bool {
+        return is_dir($this->workspace) and chdir($this->workspace);
     }
 
     public function __toString(): string {

@@ -7,8 +7,7 @@ use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 class Pull implements UpdateInterface {
 
     public function runOn(Project $project) {
-        if (is_dir($project->info['workspaceDir'])) {
-            chdir($project->info['workspaceDir']);
+        if ($project->chdir()) {
             passthru('git pull');
         }
     }

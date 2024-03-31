@@ -20,7 +20,22 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/composer/class-map-generator/src">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/composer/composer/src/Composer">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/composer/metadata-minifier/src">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/composer/pcre/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>
@@ -35,7 +50,7 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
-	<buildpathentry excluding="ca-bundle/|composer/|semver/|spdx-licenses/|xdebug-handler/" kind="src" path="vendor/composer">
+	<buildpathentry excluding="ca-bundle/|class-map-generator/|composer/|metadata-minifier/|pcre/|semver/|spdx-licenses/|xdebug-handler/" kind="src" path="vendor/composer">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>
@@ -80,12 +95,22 @@
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/react/promise/src">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/seld/jsonlint/src/Seld/JsonLint">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>
 	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/seld/phar-utils/src">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/seld/signal-handler/src">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>
@@ -166,6 +191,16 @@
 		</attributes>
 	</buildpathentry>
 	<buildpathentry kind="src" path="vendor/symfony/polyfill-php80/Resources/stubs">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry excluding="Resources/stubs/" kind="src" path="vendor/symfony/polyfill-php81">
+		<attributes>
+			<attribute name="composer" value="vendor"/>
+		</attributes>
+	</buildpathentry>
+	<buildpathentry kind="src" path="vendor/symfony/polyfill-php81/Resources/stubs">
 		<attributes>
 			<attribute name="composer" value="vendor"/>
 		</attributes>

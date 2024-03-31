@@ -13,7 +13,7 @@
 	"require" : {
 		"php" : "7.2 - 8.1",
 		"ext-xsl" : "*",
-		"composer/composer" : "^1.6",
+		"composer/composer" : "*",
 		"slothsoft/core" : "*",
 		"symfony/process" : "*"
 	},
@@ -22,7 +22,6 @@
 			"Slothsoft\\Devtools\\Misc\\" : "src"
 		},
 		"files" : [
-			"config/updates.php",
 			"config/modules.php",
 			"config/servers.php",
 			"config/unity.php",

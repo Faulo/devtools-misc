@@ -6,8 +6,6 @@ use Slothsoft\Devtools\Misc\CLI;
 
 class UnityProjectManager extends ProjectManager {
 
-    public string $vc = '';
-
     public function addGroup(string $id, array $projects): void {
         $group = new Group("$this->id.$id");
 
@@ -26,18 +24,8 @@ class UnityProjectManager extends ProjectManager {
         $this->groups[] = $group;
     }
 
-    protected function createUpdate($id): ?UpdateInterface {
-        switch ($id) {
-            case 'pull':
-                switch ($this->vc) {
-                    case 'git':
-                        return new Git\Pull();
-                    case 'plastic':
-                        return new Plastic\Pull();
-                }
-        }
-
-        return null;
+    protected function createUpdate(string $id): ?UpdateInterface {
+        return parent::createUpdate($id);
     }
 }
 

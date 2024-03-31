@@ -4,6 +4,8 @@ namespace Slothsoft\Devtools\Misc\Update;
 
 class ProjectManager extends Group {
 
+    public string $vc = '';
+
     protected $workspaceDir;
 
     public function __construct(string $id, string $workspaceDir) {
@@ -30,10 +32,24 @@ class ProjectManager extends Group {
         return new Project($this, $info);
     }
 
-    protected function createUpdate($id): ?UpdateInterface {
+    protected function createUpdate(string $id): ?UpdateInterface {
         switch ($id) {
             case 'echo':
-                return new Misc\EchoProject();
+                return new Analysis\EchoProject();
+            case 'pull':
+                switch ($this->vc) {
+                    case 'git':
+                        return new Git\Pull();
+                    case 'plastic':
+                        return new Plastic\Pull();
+                }
+            case 'reset':
+                switch ($this->vc) {
+                    case 'git':
+                        return new Git\Reset();
+                    case 'plastic':
+                        return new Plastic\Reset();
+                }
         }
 
         return null;
