@@ -3,7 +3,7 @@ namespace Slothsoft\Devtools\Misc;
 
 use Symfony\Component\Process\Process;
 
-class CLI {
+class Utils {
 
     public static function copyDirectory(string $source, string $target): void {
         $command = sprintf('xcopy %s %s /c /e /i /h /r /k /y', escapeshellarg($source), escapeshellarg($target));

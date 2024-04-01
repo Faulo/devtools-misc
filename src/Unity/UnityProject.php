@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Devtools\Misc\Unity;
 
-use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Utils;
 
 class UnityProject {
 
@@ -75,7 +75,7 @@ class UnityProject {
         $args[] = escapeshellarg($target);
         $command = vsprintf('%s -quit -accept-apiupdate -batchmode -nographics -projectPath %s -executeMethod %s %s', $args);
 
-        return CLI::execute($command);
+        return Utils::execute($command);
     }
 
     public function runTests(string $resultsFile, string $testPlatform = 'EditMode') {
@@ -87,7 +87,7 @@ class UnityProject {
         $args[] = escapeshellarg($testPlatform);
         $command = vsprintf('%s -runTests -accept-apiupdate -batchmode -nographics -projectPath %s -testResults %s -testPlatform %s', $args);
 
-        return CLI::execute($command);
+        return Utils::execute($command);
     }
 
     public function getAssetFiles(): iterable {

@@ -2,7 +2,7 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
-use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Utils;
 
 class Group {
 
@@ -13,7 +13,7 @@ class Group {
     public array $groups = [];
 
     public function __construct(string $id) {
-        $this->id = CLI::normalize($id);
+        $this->id = Utils::normalize($id);
     }
 
     public function __toString(): string {

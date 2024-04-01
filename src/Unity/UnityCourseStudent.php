@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Devtools\Misc\Unity;
 
-use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Core\DOMHelper;
 use DOMElement;
 use Throwable;
@@ -70,7 +70,7 @@ class UnityCourseStudent {
         if (! is_dir($path)) {
             $href = $this->node->getAttribute('href');
             $command = sprintf('git clone %s %s', escapeshellarg($href), escapeshellarg($path));
-            CLI::execute($command);
+            Utils::execute($command);
             sleep(1);
             $this->init();
         }

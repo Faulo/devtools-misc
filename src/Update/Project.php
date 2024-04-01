@@ -2,7 +2,7 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
-use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Utils;
 
 class Project {
 
@@ -19,7 +19,7 @@ class Project {
     public function __construct(ProjectManager $manager, array $info) {
         $this->manager = $manager;
         $this->name = $info['name'];
-        $this->id = $info['id'] ?? CLI::toId($this->name);
+        $this->id = $info['id'] ?? Utils::toId($this->name);
         $this->workspace = $info['workspaceDir'];
         $this->info = $info;
     }

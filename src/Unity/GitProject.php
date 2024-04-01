@@ -1,7 +1,7 @@
 <?php
 namespace Slothsoft\Devtools\Misc\Unity;
 
-use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Utils;
 
 class GitProject {
 
@@ -79,7 +79,7 @@ class GitProject {
 
     public function execute($gitArgs) {
         $command = sprintf('git -C %s %s', escapeshellarg($this->projectPath), $gitArgs);
-        CLI::execute($command);
+        Utils::execute($command);
     }
 }
 
