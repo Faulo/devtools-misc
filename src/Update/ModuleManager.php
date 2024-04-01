@@ -12,6 +12,7 @@ class ModuleManager extends PHPProjectManager {
         $module['homeUrl'] ??= "http://farah.slothsoft.net/modules/$module[name]";
         $module['packagistUrl'] ??= "https://packagist.org/packages/$module[composerId]";
         $module['workspaceId'] ??= "$module[vendor]-$module[name]";
+        $module['id'] ??= $module['composerId'];
     }
 }
 

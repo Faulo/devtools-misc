@@ -19,7 +19,7 @@ class Project {
     public function __construct(ProjectManager $manager, array $info) {
         $this->manager = $manager;
         $this->name = $info['name'];
-        $this->id = CLI::toId($this->name);
+        $this->id = $info['id'] ?? CLI::toId($this->name);
         $this->workspace = $info['workspaceDir'];
         $this->info = $info;
     }
