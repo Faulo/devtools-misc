@@ -15,11 +15,11 @@ class Release implements UpdateInterface {
     public function runOn(array $project) {
         $status = `git status`;
         $good = <<<EOT
-On branch develop
-Your branch is up to date with 'origin/develop'.
-
-nothing to commit, working tree clean
-EOT;
+        On branch develop
+        Your branch is up to date with 'origin/develop'.
+        
+        nothing to commit, working tree clean
+        EOT;
         if (preg_replace('~\s+~', '', $status) !== preg_replace('~\s+~', '', $good)) {
             echo 'ERROR: Must be on develop and have committed all files.' . PHP_EOL;
             echo $status;

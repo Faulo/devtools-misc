@@ -10,70 +10,70 @@ use RegexIterator;
 class FixTestsCreate implements UpdateInterface {
 
     const TEST_STUB_CLASS = <<<'EOF'
-<?php
-declare(strict_types = 1);
-namespace %1$s;
-
-use PHPUnit\Framework\TestCase;
-
-/**
- * %2$s
- *
- * @see %3$s
- *
- * @todo auto-generated
- */
-class %2$s extends TestCase {
-
-    public function testClassExists(): void {
-        $this->assertTrue(class_exists(%3$s::class), "Failed to load class '%1$s\%3$s'!");
+    <?php
+    declare(strict_types = 1);
+    namespace %1$s;
+    
+    use PHPUnit\Framework\TestCase;
+    
+    /**
+     * %2$s
+     *
+     * @see %3$s
+     *
+     * @todo auto-generated
+     */
+    class %2$s extends TestCase {
+    
+        public function testClassExists(): void {
+            $this->assertTrue(class_exists(%3$s::class), "Failed to load class '%1$s\%3$s'!");
+        }
     }
-}
-EOF;
+    EOF;
 
     const TEST_STUB_INTERFACE = <<<'EOF'
-<?php
-declare(strict_types = 1);
-namespace %1$s;
-
-use PHPUnit\Framework\TestCase;
-
-/**
- * %2$s
- *
- * @see %3$s
- *
- * @todo auto-generated
- */
-class %2$s extends TestCase {
-
-    public function testInterfaceExists(): void {
-        $this->assertTrue(interface_exists(%3$s::class), "Failed to load interface '%1$s\%3$s'!");
+    <?php
+    declare(strict_types = 1);
+    namespace %1$s;
+    
+    use PHPUnit\Framework\TestCase;
+    
+    /**
+     * %2$s
+     *
+     * @see %3$s
+     *
+     * @todo auto-generated
+     */
+    class %2$s extends TestCase {
+    
+        public function testInterfaceExists(): void {
+            $this->assertTrue(interface_exists(%3$s::class), "Failed to load interface '%1$s\%3$s'!");
+        }
     }
-}
-EOF;
+    EOF;
 
     const TEST_STUB_TRAIT = <<<'EOF'
-<?php
-declare(strict_types = 1);
-namespace %1$s;
-
-use PHPUnit\Framework\TestCase;
-
-/**
- * %2$s
- *
- * @see %3$s
- *
- * @todo auto-generated
- */
-class %2$s extends TestCase {
-
-    public function testTraitExists(): void {
-        $this->assertTrue(trait_exists(%3$s::class), "Failed to load trait '%1$s\%3$s'!");
+    <?php
+    declare(strict_types = 1);
+    namespace %1$s;
+    
+    use PHPUnit\Framework\TestCase;
+    
+    /**
+     * %2$s
+     *
+     * @see %3$s
+     *
+     * @todo auto-generated
+     */
+    class %2$s extends TestCase {
+    
+        public function testTraitExists(): void {
+            $this->assertTrue(trait_exists(%3$s::class), "Failed to load trait '%1$s\%3$s'!");
+        }
     }
-}
-EOF;
+    EOF;
 
     public function runOn(array $project) {
         if (! is_dir($project['sourceDir']) or ! is_dir($project['sourceDir']) or ! $project['namespace']) {

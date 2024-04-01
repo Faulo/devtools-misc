@@ -32,14 +32,14 @@ class FixProjectFile implements UpdateInterface {
 
         if ($doc->getElementsByTagName('linkedResources')->length === 0) {
             $xml = <<<EOT
-<linkedResources>
-    <link>
-        <name>vendor/slothsoft</name>
-        <type>2</type>
-        <locationURI>virtual:/virtual</locationURI>
-    </link>
-</linkedResources>
-EOT;
+            <linkedResources>
+                <link>
+                    <name>vendor/slothsoft</name>
+                    <type>2</type>
+                    <locationURI>virtual:/virtual</locationURI>
+                </link>
+            </linkedResources>
+            EOT;
             $fragment = $doc->createDocumentFragment();
             $fragment->appendXML($xml);
             $doc->documentElement->appendChild($fragment);

@@ -2,19 +2,14 @@
 namespace Slothsoft\Devtools\Misc\Update\Git;
 
 use Slothsoft\Devtools\Misc\Update\UpdateInterface;
+use Slothsoft\Devtools\Misc\Update\Project;
 
 class FlowInit implements UpdateInterface {
 
-    public function runOn(array $project) {
-        $this->exec('git flow init -d');
-    }
-
-    private function exec(string $command) {
-        $status = 0;
-        passthru($command, $status);
-        if ($status !== 0) {
-            echo "ERROR running command '$command'." . PHP_EOL;
-            die();
+    public function runOn(Project $project) {
+        if ($project->chdir()) {
+            passthru('git flow init -d -f');
+            passthru('git merge master');
         }
     }
 }

@@ -5,6 +5,11 @@ use Symfony\Component\Process\Process;
 
 class CLI {
 
+    public static function copyDirectory(string $source, string $target): void {
+        $command = sprintf('xcopy %s %s /c /e /i /h /r /k /y', escapeshellarg($source), escapeshellarg($target));
+        passthru($command);
+    }
+
     public static function normalize(string $id): string {
         $id = strtolower($id);
         $id = preg_replace('~\s+~', ' ', $id);

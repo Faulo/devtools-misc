@@ -13,6 +13,14 @@ class GitUpdateFactory extends UpdateFactory {
                 return new Pull();
             case 'reset':
                 return new Reset();
+            case 'commit':
+                return new Commit('build: update files');
+            case 'push':
+                return new Push();
+            case 'flow-init':
+                return new FlowInit();
+            case 'flow-patch':
+                return new FlowPatch();
         }
 
         return null;

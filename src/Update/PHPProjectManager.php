@@ -4,6 +4,7 @@ namespace Slothsoft\Devtools\Misc\Update;
 
 use Slothsoft\Devtools\Misc\Update\Composer\ComposerUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\PHP\PHPUpdateFactory;
+use Slothsoft\Devtools\Misc\Update\Fix\FixUpdateFactory;
 
 abstract class PHPProjectManager extends ProjectManager {
 
@@ -12,6 +13,7 @@ abstract class PHPProjectManager extends ProjectManager {
 
         $this->updateFactories[] = new ComposerUpdateFactory();
         $this->updateFactories[] = new PHPUpdateFactory();
+        $this->updateFactories[] = new FixUpdateFactory();
 
         foreach ($projects as &$project) {
             $this->loadProject($project);

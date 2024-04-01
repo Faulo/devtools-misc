@@ -4,6 +4,7 @@ namespace Slothsoft\Devtools\Misc\Update\Composer;
 use Composer\Console\Application;
 use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 use Symfony\Component\Console\Input\ArrayInput;
+use Slothsoft\Devtools\Misc\Update\Project;
 
 class DumpAutoloader implements UpdateInterface {
 
@@ -11,10 +12,10 @@ class DumpAutoloader implements UpdateInterface {
         ini_set('memory_limit', '5G');
     }
 
-    public function runOn(array $project) {
+    public function runOn(Project $project) {
         $args = [];
         $args['command'] = 'dump-autoload';
-        $args['-d'] = $project['workspaceDir'];
+        $args['-d'] = $project->workspace;
 
         $composer = new Application();
         $composer->setAutoExit(false);

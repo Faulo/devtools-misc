@@ -27,12 +27,14 @@ class Group {
             echo "# $project" . PHP_EOL;
             foreach ($updates as $update) {
                 $update = $project->manager->getUpdate($update);
-                printf('Running %s...%s', basename(get_class($update)), PHP_EOL);
+                printf('## %s%s', basename(get_class($update)), PHP_EOL);
                 chdir($cwd);
                 $update->runOn($project);
+                echo PHP_EOL;
             }
         }
-        printf('...done!');
+        echo '...done!';
+        echo PHP_EOL;
 
         chdir($cwd);
     }

@@ -11,6 +11,8 @@ class ComposerUpdateFactory extends UpdateFactory {
         switch ($id) {
             case 'update':
                 return new UpdateUsingCLI();
+            case 'dump-autoloader':
+                return new DumpAutoloader();
         }
 
         return null;

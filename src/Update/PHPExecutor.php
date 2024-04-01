@@ -9,9 +9,9 @@ class PHPExecutor {
 
     private const CONFIG_QUERY = 'string(//*[@facet="php.component"]/@version)';
 
-    private string $version = '7.4';
+    public string $version = '7.4';
 
-    private string $executable = '/Webserver/php-7.4/php.exe';
+    public string $executable = '/Webserver/php-7.4/php.exe';
 
     public function __construct(?string $workspace = null) {
         if (! $workspace) {
