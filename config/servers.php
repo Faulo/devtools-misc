@@ -51,9 +51,9 @@ $servers = [
         'homeUrl' => 'http://schema.slothsoft.net'
     ],
     [
-        'name' => 'slothsoft.net',
+        'name' => 'test.slothsoft.net',
         'githubUrl' => 'https://github.com/Faulo/server-slothsoft.net',
-        'homeUrl' => 'http://slothsoft.net'
+        'homeUrl' => 'http://test.slothsoft.net'
     ],
     [
         'name' => 'trialoftwo.slothsoft.net',

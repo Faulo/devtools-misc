@@ -1,9 +1,8 @@
 <?php
 declare(strict_types = 1);
 
-use Slothsoft\Devtools\Misc\CLI;
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
-use Slothsoft\Devtools\Misc\Update\UpdateDatabase;
 foreach ([
     __DIR__ . '/../../../autoload.php',
     __DIR__ . '/../vendor/autoload.php'
@@ -22,10 +21,10 @@ if (count($_SERVER['argv']) < 1) {
 }
 
 $projects = array_shift($_SERVER['argv']);
-$projects = CLI::tokenize($projects);
+$projects = Utils::tokenize($projects);
 $projects = ProjectDatabase::instance()->getProjects(...$projects);
 
 $updates = array_shift($_SERVER['argv']);
-$updates = CLI::tokenize($updates);
+$updates = Utils::tokenize($updates);
 
 $projects->run(...$updates);

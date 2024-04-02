@@ -1,9 +1,9 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Core\DOMHelper;
 use Slothsoft\Core\Storage;
 use Slothsoft\Core\Calendar\Seconds;
-use Slothsoft\Core\DOMHelper;
 foreach ([
     __DIR__ . '/../../../autoload.php',
     __DIR__ . '/../vendor/autoload.php'
