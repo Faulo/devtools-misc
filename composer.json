@@ -21,7 +21,8 @@
 	},
 	"autoload" : {
 		"psr-4" : {
-			"Slothsoft\\Devtools\\Misc\\" : "src"
+			"Slothsoft\\Devtools\\Misc\\" : "src",
+			"" : "scripts"
 		},
 		"files" : [
 			"config/modules.php",

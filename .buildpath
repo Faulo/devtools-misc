@@ -10,6 +10,11 @@
 			<attribute name="composer" value="source"/>
 		</attributes>
 	</buildpathentry>
+	<buildpathentry kind="src" path="scripts">
+		<attributes>
+			<attribute name="composer" value="source"/>
+		</attributes>
+	</buildpathentry>
 	<buildpathentry kind="src" path="src">
 		<attributes>
 			<attribute name="composer" value="source"/>
