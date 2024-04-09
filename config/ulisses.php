@@ -82,6 +82,7 @@ $hexxenPackages = [
 
 $projects = [
     'Ulisses.HeXXen1733.Game',
+	'Ulisses.HeXXen1733.Gamescom2023Demo',
     'Ulisses World ISB'
 ];
 

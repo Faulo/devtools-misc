@@ -25,6 +25,7 @@ class Project {
     }
 
     public function chdir(): bool {
+        clearstatcache();
         return is_dir($this->workspace) and chdir($this->workspace);
     }
 
