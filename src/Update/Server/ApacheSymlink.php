@@ -12,7 +12,7 @@ class ApacheSymlink implements UpdateInterface {
         if ($vhosts = realpath(self::VHOSTS)) {
             $vhost = $vhosts . DIRECTORY_SEPARATOR . $project->info['name'];
             if (! file_exists($vhost)) {
-                $command = sprintf('mklink /d %s %s', escapeshellarg($vhost), escapeshellarg($project->workspace));
+                $command = sprintf('mklink /j %s %s', escapeshellarg($vhost), escapeshellarg($project->workspace));
                 passthru($command);
             }
         }
