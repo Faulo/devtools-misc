@@ -82,7 +82,7 @@ $hexxenPackages = [
 
 $projects = [
     'Ulisses.HeXXen1733.Game',
-	'Ulisses.HeXXen1733.Gamescom2023Demo',
+    'Ulisses.HeXXen1733.Gamescom2023Demo',
     'Ulisses World ISB'
 ];
 
@@ -94,6 +94,23 @@ $groups = [
 ];
 
 $manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
+$manager->updateFactories[] = new UnityUpdateFactory();
+
+foreach ($groups as $key => $val) {
+    $manager->addGroup($key, $val);
+}
+
+ProjectDatabase::instance()->groups[] = $manager;
+
+$projects = [
+    'Ulisses.DSK'
+];
+
+$groups = [
+    'project' => $projects
+];
+
+$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
 
 foreach ($groups as $key => $val) {
