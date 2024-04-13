@@ -1,8 +1,8 @@
 <?php
 namespace Slothsoft\Devtools\Misc\Update\Git;
 
-use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 use Slothsoft\Devtools\Misc\Update\Project;
+use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 
 class Commit implements UpdateInterface {
 
@@ -14,7 +14,7 @@ class Commit implements UpdateInterface {
 
     public function runOn(Project $project) {
         if ($project->chdir()) {
-            passthru('git add .');
+            passthru('git add --renormalize .');
             passthru('git commit -m ' . escapeshellarg($this->message));
         }
     }

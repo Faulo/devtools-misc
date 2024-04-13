@@ -1,19 +1,23 @@
 <?php
 namespace Slothsoft\Devtools\Misc\Update\Fix;
 
-use Slothsoft\Devtools\Misc\Composer\ComposerManifest;
-use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 use Slothsoft\Core\FileSystem;
+use Slothsoft\Devtools\Misc\Composer\ComposerManifest;
+use Slothsoft\Devtools\Misc\Update\PHPExecutor;
+use Slothsoft\Devtools\Misc\Update\Project;
+use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 
 class FixComposerJson implements UpdateInterface {
 
-    private $project;
+    private array $project = [];
 
-    private $composer;
+    private PHPExecutor $php;
 
-    private $prodModules;
+    private ComposerManifest $composer;
 
-    private $devModules;
+    private array $prodModules = [];
+
+    private array $devModules = [];
 
     private function getAutoloadFiles() {
         return [
@@ -48,19 +52,25 @@ class FixComposerJson implements UpdateInterface {
         return '';
     }
 
-    public function runOn(array $project) {
-        $this->project = $project;
+    public function runOn(Project $project) {
+        if (! $project->chdir()) {
+            return;
+        }
+
+        $this->project = $project->info;
+        $this->php = new PHPExecutor();
+
         $this->composer = new ComposerManifest($this->project['composerFile']);
 
         $this->composer->load();
 
         $this->composer->setName($this->project['composerId']);
 
-        $this->composer->setVersion('');
+        // $this->composer->setVersion('');
 
-        $this->composer->setLicense('WTFPL');
+        // $this->composer->setLicense('WTFPL');
 
-        $this->composer->setAuthor('Daniel Schulz', 'info.slothsoft@gmail.com');
+        // $this->composer->setAuthor('Daniel Schulz', 'info.slothsoft@gmail.com');
 
         if ($this->isServer()) {
             $this->composer->setHomepage($this->project['homeUrl']);
@@ -68,15 +78,15 @@ class FixComposerJson implements UpdateInterface {
             $this->composer->setHomepage('http://farah.slothsoft.net/modules/' . $this->project['name']);
         }
 
-        $this->composer->setKeywords($this->getKeywords());
+        // $this->composer->setKeywords($this->getKeywords());
 
-        $this->composer->setRequireProd($this->getProdModules());
+        // $this->composer->setRequireProd($this->getProdModules());
 
-        $this->composer->setRequireDev($this->getDevModules());
+        // $this->composer->setRequireDev($this->getDevModules());
 
-        $this->composer->setAutoloadingProd($this->getProdAutoloading());
+        // $this->composer->setAutoloadingProd($this->getProdAutoloading());
 
-        $this->composer->setAutoloadingDev($this->getDevAutoloading());
+        // $this->composer->setAutoloadingDev($this->getDevAutoloading());
 
         $this->composer->setOptimizeAutoloader($this->isServer());
 
@@ -85,6 +95,13 @@ class FixComposerJson implements UpdateInterface {
         $this->composer->setScripts($this->getScripts());
 
         $this->composer->save();
+
+        $this->php->composer('selfupdate');
+        $this->php->composer('require', "php=^{$this->php->version}");
+
+        if ($this->isServer()) {
+            $this->php->composer('require', 'slothsoft/farah', 'slothsoft/core');
+        }
     }
 
     private function getProdModules() {
@@ -224,7 +241,9 @@ class FixComposerJson implements UpdateInterface {
     private function getScripts(): array {
         if ($this->isServer()) {
             return [
-                'post-autoload-dump' => 'Slothsoft\\Core\\ServerEnvironment::cleanCacheDirectory'
+                'post-autoload-dump' => 'composer exec server-clean cache',
+                'farah-asset' => '@php vendor/slothsoft/farah/scripts/farah-asset.php',
+                'farah-page' => '@php vendor/slothsoft/farah/scripts/farah-page.php'
             ];
         } else {
             return [];

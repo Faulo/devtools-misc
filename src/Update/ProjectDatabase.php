@@ -33,7 +33,7 @@ class ProjectDatabase extends Group {
         }
     }
 
-    private function getAllGroups(): iterable {
+    public function getAllGroups(): iterable {
         $set = [];
         yield from self::unroll($this, $set);
     }
@@ -46,6 +46,28 @@ class ProjectDatabase extends Group {
                 yield from self::unroll($g, $set);
             }
         }
+    }
+
+    public function getAllManagers(): iterable {
+        $set = [];
+        foreach ($this->getAllProjects() as $project) {
+            if (! in_array($project->manager, $set, true)) {
+                $set[] = $project->manager;
+                yield $project->manager;
+            }
+        }
+    }
+
+    public function getAllUpdateKeys(): iterable {
+        $set = [];
+        foreach ($this->getAllManagers() as $manager) {
+            foreach ($manager->updateFactories as $factory) {
+                $set = array_merge($set, array_keys($factory->updates));
+            }
+        }
+        $set = array_unique($set);
+        sort($set);
+        return $set;
     }
 
     public function getProjects(string ...$ids): Group {

@@ -13,7 +13,8 @@ $servers = [
     [
         'name' => 'cursedcreations.slothsoft.net',
         'githubUrl' => 'https://github.com/Cursed-Creations/server-cursedcreations.slothsoft.net',
-        'homeUrl' => 'http://cursedcreations.slothsoft.net'
+        'homeUrl' => 'http://cursedcreations.slothsoft.net',
+        'vendor' => 'cursedcreations'
     ],
     [
         'name' => 'daniel-schulz.slothsoft.net',
@@ -58,7 +59,8 @@ $servers = [
     [
         'name' => 'trialoftwo.slothsoft.net',
         'githubUrl' => 'https://github.com/Faulo/server-trialoftwo.slothsoft.net',
-        'homeUrl' => 'http://trialoftwo.slothsoft.net'
+        'homeUrl' => 'http://trialoftwo.slothsoft.net',
+        'vendor' => 'oilcatz'
     ]
 ];
 

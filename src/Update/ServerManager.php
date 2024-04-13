@@ -13,9 +13,9 @@ class ServerManager extends PHPProjectManager {
     }
 
     protected function loadProject(array &$server) {
-        $server['vendor'] = 'slothsoft';
-        $server['workspaceId'] = "server-$server[name]";
-        $server['composerId'] = "slothsoft/$server[name]";
+        $server['vendor'] ??= 'slothsoft';
+        $server['workspaceId'] ??= "server-$server[name]";
+        $server['composerId'] ??= "$server[vendor]/$server[name]";
     }
 }
 

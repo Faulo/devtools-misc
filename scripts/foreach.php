@@ -17,7 +17,26 @@ array_shift($_SERVER['argv']);
 $_SERVER['argc'] --;
 
 if (count($_SERVER['argv']) < 1) {
-    throw new \InvalidArgumentException('Needs project identifier and stuff to do!');
+    echo <<<'EOT'
+    Run custom scripts on a bunch of projects.
+            
+    Usage:
+        composer run foreach "group-id project-id" "do-this do-that"
+    
+    
+    EOT;
+
+    echo 'Available Groups:' . PHP_EOL;
+    foreach (ProjectDatabase::instance()->getAllGroups() as $group) {
+        echo "    $group->id" . PHP_EOL;
+    }
+    echo PHP_EOL;
+
+    echo 'Available Todos:' . PHP_EOL;
+    foreach (ProjectDatabase::instance()->getAllUpdateKeys() as $update) {
+        echo "    $update" . PHP_EOL;
+    }
+    return;
 }
 
 $projects = array_shift($_SERVER['argv']);

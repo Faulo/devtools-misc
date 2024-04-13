@@ -35,7 +35,20 @@ class PHPExecutor {
     }
 
     public function execute(string $command): void {
+        echo "> $this->executable $command" . PHP_EOL;
         passthru("$this->executable $command");
+    }
+
+    public function vexecute(string ...$args): void {
+        foreach ($args as &$arg) {
+            $arg = escapeshellarg($arg);
+        }
+
+        $this->execute(implode(' ', $args));
+    }
+
+    public function composer(string ...$args): void {
+        $this->vexecute('composer.phar', ...$args);
     }
 }
 

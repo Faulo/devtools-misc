@@ -3,19 +3,12 @@ declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update\PHP;
 
 use Slothsoft\Devtools\Misc\Update\UpdateFactory;
-use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 
 class PHPUpdateFactory extends UpdateFactory {
 
-    public function createUpdate(string $id): ?UpdateInterface {
-        switch ($id) {
-            case 'tests':
-                return new RunTests();
-            case 'docs':
-                return new DocsCreate();
-        }
-
-        return null;
+    public function __construct() {
+        $this->updates['tests'] = new RunTests();
+        $this->updates['docs'] = new DocsCreate();
     }
 }
 

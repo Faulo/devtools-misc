@@ -4,6 +4,10 @@ namespace Slothsoft\Devtools\Misc\Update;
 
 abstract class UpdateFactory {
 
-    public abstract function createUpdate(string $id): ?UpdateInterface;
+    public array $updates = [];
+
+    public function createUpdate(string $id): ?UpdateInterface {
+        return $this->updates[$id] ?? null;
+    }
 }
 
