@@ -34,7 +34,8 @@ $gameJams = [
 ];
 
 $projects = [
-    'CursedCreations.CursedBroom'
+    'CursedCreations.CursedBroom',
+    'Slothsoft.Freeblob'
 ];
 
 $groups = [
