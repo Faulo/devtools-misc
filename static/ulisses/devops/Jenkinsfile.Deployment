@@ -1,0 +1,33 @@
+node('npm') {
+    def plastic = checkout scm
+    env.BRANCH_NAME = plastic.PLASTICSCM_BRANCH
+		
+	def packages = []
+	dir('Packages') {
+        findFiles()
+            .findAll{ f -> f.directory && fileExists(f.name + "/package.json") && f.name.contains(".") }
+            .each{ f -> packages.add("Packages/" + f.name) }
+	}
+	
+	for (p in packages) {
+        unityPackage {
+			// define unity package location relative to repository
+			LOCATION = p
+			
+			// assert CHANGELOG.md
+			TEST_CHANGELOG  = '1'
+			
+			// assert .editorconfig
+			TEST_FORMATTING = '0'
+			
+			// assert tests
+			TEST_UNITY = '0'
+			
+			// automatically create C# docs using DocFX
+			BUILD_DOCUMENTATION = '0'
+			
+			// which platforms to deploy to
+			DEPLOY_TO_VERDACCIO = '1'
+		}
+	}
+}

@@ -1,0 +1,51 @@
+node('unity') {
+    def plastic = checkout scm
+    env.BRANCH_NAME = plastic.PLASTICSCM_BRANCH
+	
+	def projects = [
+		'',
+	]
+	
+	def packages = []
+	dir('Packages') {
+        findFiles()
+            .findAll{ f -> f.directory && fileExists(f.name + "/package.json") && f.name.contains(".") }
+            .each{ f -> packages.add("Packages/" + f.name) }
+	}
+	
+	for (p in projects) {	
+		unityProject {
+			// define unity project location relative to repository
+			LOCATION = p
+			
+			// which executables to create
+			BUILD_FOR_WINDOWS = '1'
+			BUILD_FOR_LINUX = '0'
+			BUILD_FOR_MAC = '0'
+			BUILD_FOR_WEBGL = '0'
+			BUILD_FOR_ANDROID = '0'
+		}
+	}
+	
+	for (p in packages) {
+		unityPackage {
+			// define unity package location relative to repository
+			LOCATION = p
+			
+			// assert CHANGELOG.md
+			TEST_CHANGELOG  = '0'
+			
+			// assert .editorconfig
+			TEST_FORMATTING = '1'
+			
+			// assert tests
+			TEST_UNITY = '1'
+			
+			// automatically create C# docs using DocFX
+			BUILD_DOCUMENTATION = '1'
+			
+			// which platforms to deploy to
+			DEPLOY_TO_VERDACCIO = '0'
+		}
+	}
+}
