@@ -9,6 +9,7 @@ class ComposerUpdateFactory extends UpdateFactory {
     public function __construct() {
         $this->updates['update'] = new UpdateUsingCLI();
         $this->updates['dump-autoloader'] = new DumpAutoloader();
+        $this->updates['tests'] = new RunTests();
     }
 }
 

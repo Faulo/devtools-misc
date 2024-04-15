@@ -7,9 +7,9 @@ class ComposerManifest {
 
     private $file;
 
-    private $data = [];
+    public $data = [];
 
-    public function __construct(string $path) {
+    public function __construct(string $path = 'composer.json') {
         $this->file = new JsonFile($path);
     }
 
