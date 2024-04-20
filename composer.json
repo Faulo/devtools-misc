@@ -30,5 +30,8 @@
 			"config/unity.php",
 			"config/ulisses.php"
 		]
+	},
+	"config": {
+		"process-timeout": 3600
 	}
 }
