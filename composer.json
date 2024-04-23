@@ -32,6 +32,6 @@
 		]
 	},
 	"config": {
-		"process-timeout": 3600
+		"process-timeout": 7200
 	}
 }

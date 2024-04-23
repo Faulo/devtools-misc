@@ -67,7 +67,7 @@ $hexxenPackages = [
     'Ulisses.HeXXen1733.LevelLayout',
     'Ulisses.HeXXen1733.Locales',
     'Ulisses.HeXXen1733.MissionGeneration',
-    'Ulisses.HeXXen1733.Module.HeXXenHunters',
+    // 'Ulisses.HeXXen1733.Module.HeXXenHunters',
     'Ulisses.HeXXen1733.NewGame',
     'Ulisses.HeXXen1733.Options',
     'Ulisses.HeXXen1733.Prerequisites',
@@ -149,6 +149,8 @@ $projectManifestRegistries = json_decode(<<<EOT
         "com.arongranberg.astar",
         "com.olegknyazev.softmask",
         "com.acegikmo.shapes",
+		"com.ecasillas.missingrefsfinder",
+		"com.quickeye.icon-browser",
         "com.kronnect.volumetric-fog-mist-2"
       ]
     },
