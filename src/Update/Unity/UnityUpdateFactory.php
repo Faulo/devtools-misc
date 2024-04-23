@@ -8,6 +8,7 @@ class UnityUpdateFactory extends UpdateFactory {
 
     public function __construct() {
         $this->updates['tests'] = new RunTests();
+        $this->updates['format'] = new FormatCode();
     }
 }
 
