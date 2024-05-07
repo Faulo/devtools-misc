@@ -29,6 +29,7 @@ $gameJams = [
     'GameJam.SonarUndDochSoFern',
     'GameJam.SpaceCape',
     'GameJam.SpillTheTea',
+	'GameJam.SuperManual64',
     'GameJam.WatchOut',
     'GameJam.ZooSmashBaseballBash'
 ];

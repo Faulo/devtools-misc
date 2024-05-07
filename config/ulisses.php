@@ -4,6 +4,7 @@ declare(strict_types = 1);
 use Slothsoft\Core\FileSystem;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
+use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 
 $thirdPartyPackages = [
@@ -93,47 +94,6 @@ $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
-$manager->updateFactories[] = new UnityUpdateFactory();
-
-foreach ($groups as $key => $val) {
-    $manager->addGroup($key, $val);
-}
-
-ProjectDatabase::instance()->groups[] = $manager;
-
-$projects = [
-    'Ulisses.DSK'
-];
-
-$groups = [
-    'project' => $projects
-];
-
-$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'git');
-$manager->updateFactories[] = new UnityUpdateFactory();
-
-foreach ($groups as $key => $val) {
-    $manager->addGroup($key, $val);
-}
-
-ProjectDatabase::instance()->groups[] = $manager;
-
-return;
-
-$packages = [
-    'Ulisses.HeXXen1733.System'
-];
-
-$projectManifestDependencies = [
-    "com.unity.ide.rider" => "3.0.28",
-    "com.unity.ide.visualstudio" => "2.0.22",
-    "net.slothsoft.unity-extensions" => "3.1.0"
-];
-$projectManifestForbidden = [
-    "com.unity.test-framework"
-];
-
 $projectManifestRegistries = json_decode(<<<EOT
 [
     {
@@ -171,6 +131,52 @@ $projectManifestRegistries = json_decode(<<<EOT
     }
 ]
 EOT, true);
+
+$projectManifestDependencies = [
+    "com.unity.ide.rider" => "3.0.28",
+    "com.unity.ide.visualstudio" => "2.0.22",
+    "net.slothsoft.unity-extensions" => "3.1.0"
+];
+$projectManifestForbidden = [
+    "com.unity.test-framework"
+];
+
+$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
+$manager->updateFactories[] = (new UnityUpdateFactory())->withFixManifest($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden);
+
+$manager->updateFactories[] = (new StaticFolderFactory())->withTodo('copy-devops', 'static/ulisses/devops')
+    ->withTodo('copy-git', 'static/ulisses/git')
+    ->withTodo('copy-plastic', 'static/ulisses/plastic')
+    ->withTodo('copy-unity', 'static/ulisses/unity-2022');
+
+foreach ($groups as $key => $val) {
+    $manager->addGroup($key, $val);
+}
+
+ProjectDatabase::instance()->groups[] = $manager;
+
+$projects = [
+    'Ulisses.DSK'
+];
+
+$groups = [
+    'project' => $projects
+];
+
+$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'git');
+$manager->updateFactories[] = new UnityUpdateFactory();
+
+foreach ($groups as $key => $val) {
+    $manager->addGroup($key, $val);
+}
+
+ProjectDatabase::instance()->groups[] = $manager;
+
+return;
+
+$packages = [
+    'Ulisses.HeXXen1733.System'
+];
 
 $ulissesPackageManifest = [
     'unity' => '2022.3',

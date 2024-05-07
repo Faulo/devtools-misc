@@ -9,6 +9,7 @@ class PlasticUpdateFactory extends UpdateFactory {
     public function __construct() {
         $this->updates['pull'] = new Pull();
         $this->updates['reset'] = new Reset();
+        $this->updates['commit'] = new Commit('Update project files');
     }
 }
 
