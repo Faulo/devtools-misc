@@ -14,9 +14,13 @@ class FixPackages implements UpdateInterface {
 
     private array $forbiddenDependencies;
 
+    private array $forbiddenDependenciesForScope = [];
+
     private array $requiredDependencies;
 
     private bool $alwaysSave;
+
+    private array $info = [];
 
     public function __construct(string $scope, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = false) {
         $this->scope = $scope;
@@ -25,12 +29,24 @@ class FixPackages implements UpdateInterface {
         $this->alwaysSave = $alwaysSave;
     }
 
+    public function setAuthor(?string $author): void {
+        $this->info['author'] = $author;
+    }
+
+    public function setUnity(?string $unity): void {
+        $this->info['unity'] = $unity;
+    }
+
+    public function addForbiddenDependencyForScope(string $scope, array $forbiddenDependencies): void {
+        $this->forbiddenDependenciesForScope[$scope] = $forbiddenDependencies;
+    }
+
     public function runOn(Project $project) {
         if ($project->chdir()) {
             if ($unity = UnityProjectInfo::find('.', true)) {
                 foreach (UnityPackageInfo::findAll("$unity->path/Packages") as $package) {
                     $packageName = $package->getPackageName();
-                    if (strpos($packageName, $this->scope) === 0) {
+                    if (self::packageMatchesScope($packageName, $this->scope)) {
                         echo $packageName . PHP_EOL;
 
                         $manifest = $package->package;
@@ -49,10 +65,7 @@ class FixPackages implements UpdateInterface {
                             }
                         }
 
-                        foreach ([
-                            ...$this->forbiddenDependencies,
-                            $packageName
-                        ] as $key) {
+                        foreach ($this->getForbiddenDependencies($packageName) as $key) {
                             if (isset($manifest['dependencies'][$key])) {
                                 unset($manifest['dependencies'][$key]);
                                 $hasChanged = true;
@@ -77,6 +90,19 @@ class FixPackages implements UpdateInterface {
                             $hasChanged = true;
                         }
 
+                        foreach ($this->info as $key => $val) {
+                            if ($val) {
+                                if (! isset($manifest[$key]) or $manifest[$key] !== $val) {
+                                    $manifest[$key] = $val;
+                                    $hasChanged = true;
+                                }
+                            } else {
+                                if (isset($manifest[$key])) {
+                                    unset($manifest[$key]);
+                                    $hasChanged = true;
+                                }
+                            }
+                        }
                         if ($hasChanged) {
                             Utils::writeJson($manifestPath, $manifest, 2);
                         }
@@ -84,6 +110,22 @@ class FixPackages implements UpdateInterface {
                 }
             }
         }
+    }
+
+    private static function packageMatchesScope(string $packageName, string $scope): bool {
+        return strpos($packageName, $scope) === 0;
+    }
+
+    private function getForbiddenDependencies(string $packageName): iterable {
+        yield from $this->forbiddenDependencies;
+
+        foreach ($this->forbiddenDependenciesForScope as $scope => $dependencies) {
+            if (self::packageMatchesScope($packageName, $scope)) {
+                yield from $dependencies;
+            }
+        }
+
+        yield $packageName;
     }
 }
 

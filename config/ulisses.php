@@ -140,7 +140,8 @@ $projectManifestDependencies = [
     "net.slothsoft.unity-extensions" => "3.1.0"
 ];
 $projectManifestForbidden = [
-    "com.unity.test-framework"
+    "com.unity.test-framework",
+    "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
     "de.ulisses-spiele.core.utilities" => "4.9.6",
@@ -156,7 +157,11 @@ $manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
 
 $unityUpdates = new UnityUpdateFactory();
 $unityUpdates->addUpdate('fix-manifest', new FixManifest($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden));
-$unityUpdates->addUpdate('fix-packages', new FixPackages('de.ulisses-spiele', $packageManifestDependencies, $packageManifestForbidden));
+$packages = new FixPackages('de.ulisses-spiele', $packageManifestDependencies, $packageManifestForbidden);
+$packages->setAuthor('Ulisses Digital');
+$packages->setUnity('2022.3');
+$packages->addForbiddenDependencyForScope('de.ulisses-spiele.core.logging', ['de.ulisses-spiele.core.utilities']);
+$unityUpdates->addUpdate('fix-packages', $packages);
 $manager->updateFactories[] = $unityUpdates;
 
 $staticUpdates = new StaticFolderFactory();
