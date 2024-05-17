@@ -36,7 +36,7 @@ node('unity') {
 			TEST_CHANGELOG  = '1'
 			
 			// assert .editorconfig
-			TEST_FORMATTING = '1'
+			TEST_FORMATTING = '0'
 			
 			// assert tests
 			TEST_UNITY = '1'

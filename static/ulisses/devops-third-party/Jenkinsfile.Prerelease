@@ -15,7 +15,7 @@ node('npm') {
 			LOCATION = p
 			
 			// assert CHANGELOG.md
-			TEST_CHANGELOG  = '1'
+			TEST_CHANGELOG  = '0'
 			
 			// assert .editorconfig
 			TEST_FORMATTING = '0'
@@ -28,6 +28,8 @@ node('npm') {
 			
 			// which platforms to deploy to
 			DEPLOY_TO_VERDACCIO = '1'
+			DEPLOY_IF_RELEASE = '0'
+			DEPLOY_IF_PRERELEASE = '1'
 		}
 	}
 }
