@@ -9,18 +9,19 @@ use Slothsoft\Unity\UnityProjectInfo;
 
 class FixManifest implements UpdateInterface {
 
-    private array $forbiddenDependencies = [];
+    private array $forbiddenDependencies;
 
-    private array $requiredDependencies = [];
+    private array $requiredDependencies;
 
-    private array $scopedRegistries = [];
+    private array $scopedRegistries;
 
-    private bool $alwaysSave = false;
+    private bool $alwaysSave;
 
-    public function __construct(array $scopedRegistries, array $requiredDependencies, array $forbiddenDependencies) {
+    public function __construct(array $scopedRegistries, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = false) {
         $this->scopedRegistries = $scopedRegistries;
         $this->requiredDependencies = $requiredDependencies;
         $this->forbiddenDependencies = $forbiddenDependencies;
+        $this->alwaysSave = $alwaysSave;
     }
 
     public function runOn(Project $project) {
@@ -36,17 +37,17 @@ class FixManifest implements UpdateInterface {
                         $hasChanged = true;
                     }
 
-                    foreach ($this->forbiddenDependencies as $key) {
-                        if (isset($manifest['dependencies'][$key])) {
-                            unset($manifest['dependencies'][$key]);
-                            $hasChanged = false;
+                    foreach ($this->requiredDependencies as $key => $val) {
+                        if (! isset($manifest['dependencies'][$key]) or $manifest['dependencies'][$key] !== $val) {
+                            $manifest['dependencies'][$key] = $val;
+                            $hasChanged = true;
                         }
                     }
 
-                    foreach ($this->requiredDependencies as $key => $val) {
-                        if (isset($manifest['dependencies'][$key]) and $manifest['dependencies'][$key] !== $val) {
-                            $manifest['dependencies'][$key] = $val;
-                            $hasChanged = false;
+                    foreach ($this->forbiddenDependencies as $key) {
+                        if (isset($manifest['dependencies'][$key])) {
+                            unset($manifest['dependencies'][$key]);
+                            $hasChanged = true;
                         }
                     }
 

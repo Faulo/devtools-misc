@@ -10,11 +10,5 @@ class UnityUpdateFactory extends UpdateFactory {
         $this->updates['tests'] = new RunTests();
         $this->updates['format'] = new FormatCode();
     }
-
-    public function withFixManifest(array $scopedRegistries, array $requiredDependencies = [], array $forbiddenDependencies = []): UnityUpdateFactory {
-        $this->updates['fix-manifest'] = new FixManifest($scopedRegistries, $requiredDependencies, $forbiddenDependencies);
-
-        return $this;
-    }
 }
 

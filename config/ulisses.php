@@ -142,12 +142,21 @@ $projectManifestDependencies = [
 $projectManifestForbidden = [
     "com.unity.test-framework"
 ];
+$packageManifestDependencies = [
+    "de.ulisses-spiele.core.utilities" => "4.9.6",
+    "com.unity.test-framework" => "2.0.1-exp.2"
+];
+$packageManifestForbidden = [
+    "com.unity.ide.rider",
+    "com.unity.ide.visualstudio",
+    "net.slothsoft.unity-extensions"
+];
 
 $manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
 
 $unityUpdates = new UnityUpdateFactory();
 $unityUpdates->addUpdate('fix-manifest', new FixManifest($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden));
-$unityUpdates->addUpdate('fix-packages', new FixPackages($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden));
+$unityUpdates->addUpdate('fix-packages', new FixPackages('de.ulisses-spiele', $packageManifestDependencies, $packageManifestForbidden));
 $manager->updateFactories[] = $unityUpdates;
 
 $staticUpdates = new StaticFolderFactory();

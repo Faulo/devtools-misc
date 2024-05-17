@@ -5,76 +5,81 @@ namespace Slothsoft\Devtools\Misc\Update\Unity;
 use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\UpdateInterface;
+use Slothsoft\Unity\UnityPackageInfo;
 use Slothsoft\Unity\UnityProjectInfo;
 
 class FixPackages implements UpdateInterface {
 
-    private array $forbiddenDependencies = [];
+    private string $scope;
 
-    private array $requiredDependencies = [];
+    private array $forbiddenDependencies;
 
-    private array $scopedRegistries = [];
+    private array $requiredDependencies;
 
-    private bool $alwaysSave = false;
+    private bool $alwaysSave;
 
-    public function __construct(array $scopedRegistries, array $requiredDependencies, array $forbiddenDependencies) {
-        $this->scopedRegistries = $scopedRegistries;
+    public function __construct(string $scope, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = false) {
+        $this->scope = $scope;
         $this->requiredDependencies = $requiredDependencies;
         $this->forbiddenDependencies = $forbiddenDependencies;
+        $this->alwaysSave = $alwaysSave;
     }
 
     public function runOn(Project $project) {
         if ($project->chdir()) {
             if ($unity = UnityProjectInfo::find('.', true)) {
-                if ($manifestPath = realpath($unity->path . '/Packages/manifest.json')) {
-                    $manifest = Utils::readJson($manifestPath);
+                foreach (UnityPackageInfo::findAll("$unity->path/Packages") as $package) {
+                    $packageName = $package->getPackageName();
+                    if (strpos($packageName, $this->scope) === 0) {
+                        echo $packageName . PHP_EOL;
 
-                    $hasChanged = $this->alwaysSave;
+                        $manifest = $package->package;
+                        $manifestPath = $package->path . UnityPackageInfo::FILE_PACKAGE;
 
-                    if (! isset($manifest['dependencies'])) {
-                        $manifest['dependencies'] = [];
-                        $hasChanged = true;
-                    }
+                        $hasChanged = $this->alwaysSave;
 
-                    foreach ($this->forbiddenDependencies as $key) {
-                        if (isset($manifest['dependencies'][$key])) {
-                            unset($manifest['dependencies'][$key]);
-                            $hasChanged = false;
+                        if (! isset($manifest['dependencies'])) {
+                            $manifest['dependencies'] = [];
+                            $hasChanged = true;
                         }
-                    }
-
-                    foreach ($this->requiredDependencies as $key => $val) {
-                        if (isset($manifest['dependencies'][$key]) and $manifest['dependencies'][$key] !== $val) {
-                            $manifest['dependencies'][$key] = $val;
-                            $hasChanged = false;
+                        foreach ($this->requiredDependencies as $key => $val) {
+                            if (! isset($manifest['dependencies'][$key]) or $manifest['dependencies'][$key] !== $val) {
+                                $manifest['dependencies'][$key] = $val;
+                                $hasChanged = true;
+                            }
                         }
-                    }
 
-                    if ($manifest['scopedRegistries'] !== $this->scopedRegistries) {
-                        $manifest['scopedRegistries'] = $this->scopedRegistries;
-                        $hasChanged = true;
-                    }
-
-                    $sortedDependencies = $manifest['dependencies'];
-                    ksort($sortedDependencies);
-                    $dependencies = [];
-                    $modules = [];
-                    foreach ($sortedDependencies as $key => $val) {
-                        if (strpos($key, 'com.unity.modules.') === 0) {
-                            $modules[$key] = $val;
-                        } else {
-                            $dependencies[$key] = $val;
+                        foreach ([
+                            ...$this->forbiddenDependencies,
+                            $packageName
+                        ] as $key) {
+                            if (isset($manifest['dependencies'][$key])) {
+                                unset($manifest['dependencies'][$key]);
+                                $hasChanged = true;
+                            }
                         }
-                    }
-                    $sortedDependencies = $dependencies + $modules;
 
-                    if ($manifest['dependencies'] !== $sortedDependencies) {
-                        $manifest['dependencies'] = $sortedDependencies;
-                        $hasChanged = true;
-                    }
+                        $sortedDependencies = $manifest['dependencies'];
+                        ksort($sortedDependencies);
+                        $dependencies = [];
+                        $modules = [];
+                        foreach ($sortedDependencies as $key => $val) {
+                            if (strpos($key, 'com.unity.modules.') === 0) {
+                                $modules[$key] = $val;
+                            } else {
+                                $dependencies[$key] = $val;
+                            }
+                        }
+                        $sortedDependencies = $dependencies + $modules;
 
-                    if ($hasChanged) {
-                        Utils::writeJson($manifestPath, $manifest, 2, "\n");
+                        if ($manifest['dependencies'] !== $sortedDependencies) {
+                            $manifest['dependencies'] = $sortedDependencies;
+                            $hasChanged = true;
+                        }
+
+                        if ($hasChanged) {
+                            Utils::writeJson($manifestPath, $manifest, 2);
+                        }
                     }
                 }
             }
