@@ -6,10 +6,12 @@ use Slothsoft\Devtools\Misc\Update\UpdateFactory;
 
 class StaticFolderFactory extends UpdateFactory {
 
-    public function addCopy(string $todo, string $sourceFolder): StaticFolderFactory {
+    public function addCopy(string $todo, string $sourceFolder): void {
         $this->updates[$todo] = new StaticFolderUpdate(realpath($sourceFolder));
+    }
 
-        return $this;
+    public function addDelete(string $todo, string ...$globs): void {
+        $this->updates[$todo] = new StaticDeleteUpdate(...$globs);
     }
 }
 

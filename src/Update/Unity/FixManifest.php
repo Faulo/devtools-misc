@@ -17,7 +17,7 @@ class FixManifest implements UpdateInterface {
 
     private bool $alwaysSave;
 
-    public function __construct(array $scopedRegistries, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = false) {
+    public function __construct(array $scopedRegistries, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = true) {
         $this->scopedRegistries = $scopedRegistries;
         $this->requiredDependencies = $requiredDependencies;
         $this->forbiddenDependencies = $forbiddenDependencies;

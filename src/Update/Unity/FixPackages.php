@@ -22,7 +22,7 @@ class FixPackages implements UpdateInterface {
 
     private array $info = [];
 
-    public function __construct(string $scope, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = false) {
+    public function __construct(string $scope, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = true) {
         $this->scope = $scope;
         $this->requiredDependencies = $requiredDependencies;
         $this->forbiddenDependencies = $forbiddenDependencies;

@@ -144,7 +144,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.9.6",
+    "de.ulisses-spiele.core.utilities" => "4.9.7",
     "com.unity.test-framework" => "2.0.1-exp.2"
 ];
 $packageManifestForbidden = [
@@ -160,11 +160,13 @@ $unityUpdates->addUpdate('fix-manifest', new FixManifest($projectManifestRegistr
 $packages = new FixPackages('de.ulisses-spiele', $packageManifestDependencies, $packageManifestForbidden);
 $packages->setAuthor('Ulisses Digital');
 $packages->setUnity('2022.3');
-$packages->addForbiddenDependencyForScope('de.ulisses-spiele.core.logging', ['de.ulisses-spiele.core.utilities']);
 $unityUpdates->addUpdate('fix-packages', $packages);
 $manager->updateFactories[] = $unityUpdates;
 
 $staticUpdates = new StaticFolderFactory();
+$staticUpdates->addDelete('delete-devops', 'Jenkinsfile.*');
+$staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
+$staticUpdates->addDelete('delete-idea', '.idea');
 $staticUpdates->addCopy('copy-devops', 'static/ulisses/devops');
 $staticUpdates->addCopy('copy-devops-third-party', 'static/ulisses/devops-third-party');
 $staticUpdates->addCopy('copy-git', 'static/ulisses/git');

@@ -2,6 +2,7 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc;
 
+use Slothsoft\Core\FileSystem;
 use Symfony\Component\Process\Process;
 
 class Utils {
@@ -14,7 +15,7 @@ class Utils {
     public static function writeJson(string $path, array $data, int $tabLength = 2, $eot = ''): void {
         echo PHP_EOL . '> write json ' . escapeshellarg($path) . PHP_EOL;
 
-        $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+        $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES);
 
         if ($tabLength !== 4) {
             $json = str_replace('    ', str_pad('', $tabLength, ' '), $json);
@@ -60,5 +61,18 @@ class Utils {
         }
 
         return $process->getExitCode();
+    }
+
+    public static function delete(string $file): void {
+        if ($file = realpath($file)) {
+            $name = substr($file, strlen(realpath(getcwd())) + 1);
+            echo "Deleting: $name" . PHP_EOL;
+
+            if (is_dir($file)) {
+                FileSystem::removeDir($file);
+            } else {
+                unlink($file);
+            }
+        }
     }
 }
