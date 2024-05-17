@@ -5,6 +5,8 @@ use Slothsoft\Core\FileSystem;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
+use Slothsoft\Devtools\Misc\Update\Unity\FixManifest;
+use Slothsoft\Devtools\Misc\Update\Unity\FixPackages;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 
 $thirdPartyPackages = [
@@ -142,12 +144,19 @@ $projectManifestForbidden = [
 ];
 
 $manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
-$manager->updateFactories[] = (new UnityUpdateFactory())->withFixManifest($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden);
 
-$manager->updateFactories[] = (new StaticFolderFactory())->withTodo('copy-devops', 'static/ulisses/devops')
-    ->withTodo('copy-git', 'static/ulisses/git')
-    ->withTodo('copy-plastic', 'static/ulisses/plastic')
-    ->withTodo('copy-unity', 'static/ulisses/unity-2022');
+$unityUpdates = new UnityUpdateFactory();
+$unityUpdates->addUpdate('fix-manifest', new FixManifest($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden));
+$unityUpdates->addUpdate('fix-packages', new FixPackages($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden));
+$manager->updateFactories[] = $unityUpdates;
+
+$staticUpdates = new StaticFolderFactory();
+$staticUpdates->addCopy('copy-devops', 'static/ulisses/devops');
+$staticUpdates->addCopy('copy-devops-third-party', 'static/ulisses/devops-third-party');
+$staticUpdates->addCopy('copy-git', 'static/ulisses/git');
+$staticUpdates->addCopy('copy-plastic', 'static/ulisses/plastic');
+$staticUpdates->addCopy('copy-unity', 'static/ulisses/unity-2022');
+$manager->updateFactories[] = $staticUpdates;
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);
