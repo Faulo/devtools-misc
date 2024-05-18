@@ -9,6 +9,8 @@ class UnityUpdateFactory extends UpdateFactory {
     public function __construct() {
         $this->updates['tests'] = new RunTests();
         $this->updates['format'] = new FormatCode();
+        $this->updates['delete-empty'] = new DeleteEmptyFolders();
+        $this->updates['fill-empty'] = new FillEmptyFolders();
     }
 }
 

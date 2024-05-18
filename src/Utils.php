@@ -75,4 +75,13 @@ class Utils {
             }
         }
     }
+
+    public static function getAllDirectories(string $root): iterable {
+        if ($root = realpath($root)) {
+            foreach (glob($root . DIRECTORY_SEPARATOR . '*', GLOB_ONLYDIR | GLOB_NOSORT) as $directory) {
+                yield $directory;
+                yield from self::getAllDirectories($directory);
+            }
+        }
+    }
 }
