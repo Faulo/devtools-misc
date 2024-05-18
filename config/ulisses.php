@@ -152,15 +152,28 @@ $packageManifestForbidden = [
     "com.unity.ide.visualstudio",
     "net.slothsoft.unity-extensions"
 ];
+$optionalUpgrades = [
+    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
+];
 
 $manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
 
 $unityUpdates = new UnityUpdateFactory();
-$unityUpdates->addUpdate('fix-manifest', new FixManifest($projectManifestRegistries, $projectManifestDependencies, $projectManifestForbidden));
-$packages = new FixPackages('de.ulisses-spiele', $packageManifestDependencies, $packageManifestForbidden);
-$packages->setAuthor('Ulisses Digital');
-$packages->setUnity('2022.3');
-$unityUpdates->addUpdate('fix-packages', $packages);
+
+$fix = new FixManifest($projectManifestRegistries);
+$fix->setRequiredDependencies($projectManifestDependencies);
+$fix->setOptionalDependencies($optionalUpgrades);
+$fix->setForbiddenDependencies($projectManifestForbidden);
+$unityUpdates->addUpdate('fix-manifest', $fix);
+
+$fix = new FixPackages('de.ulisses-spiele');
+$fix->setRequiredDependencies($packageManifestDependencies);
+$fix->setOptionalDependencies($optionalUpgrades);
+$fix->setForbiddenDependencies($packageManifestForbidden);
+$fix->setAuthor('Ulisses Digital');
+$fix->setUnity('2022.3');
+$unityUpdates->addUpdate('fix-packages', $fix);
+
 $manager->updateFactories[] = $unityUpdates;
 
 $staticUpdates = new StaticFolderFactory();

@@ -9,19 +9,30 @@ use Slothsoft\Unity\UnityProjectInfo;
 
 class FixManifest implements UpdateInterface {
 
-    private array $forbiddenDependencies;
-
-    private array $requiredDependencies;
-
     private array $scopedRegistries;
 
-    private bool $alwaysSave;
+    private array $requiredDependencies = [];
 
-    public function __construct(array $scopedRegistries, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = true) {
+    private array $optionalDependencies = [];
+
+    private array $forbiddenDependencies = [];
+
+    public bool $alwaysSave = false;
+
+    public function __construct(array $scopedRegistries) {
         $this->scopedRegistries = $scopedRegistries;
+    }
+
+    public function setRequiredDependencies(array $requiredDependencies): void {
         $this->requiredDependencies = $requiredDependencies;
+    }
+
+    public function setOptionalDependencies(array $optionalDependencies): void {
+        $this->optionalDependencies = $optionalDependencies;
+    }
+
+    public function setForbiddenDependencies(array $forbiddenDependencies): void {
         $this->forbiddenDependencies = $forbiddenDependencies;
-        $this->alwaysSave = $alwaysSave;
     }
 
     public function runOn(Project $project) {
@@ -39,6 +50,13 @@ class FixManifest implements UpdateInterface {
 
                     foreach ($this->requiredDependencies as $key => $val) {
                         if (! isset($manifest['dependencies'][$key]) or $manifest['dependencies'][$key] !== $val) {
+                            $manifest['dependencies'][$key] = $val;
+                            $hasChanged = true;
+                        }
+                    }
+
+                    foreach ($this->optionalDependencies as $key => $val) {
+                        if (isset($manifest['dependencies'][$key]) and $manifest['dependencies'][$key] !== $val) {
                             $manifest['dependencies'][$key] = $val;
                             $hasChanged = true;
                         }

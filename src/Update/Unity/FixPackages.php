@@ -12,21 +12,32 @@ class FixPackages implements UpdateInterface {
 
     private string $scope;
 
-    private array $forbiddenDependencies;
+    private array $requiredDependencies = [];
+
+    private array $optionalDependencies = [];
+
+    private array $forbiddenDependencies = [];
 
     private array $forbiddenDependenciesForScope = [];
 
-    private array $requiredDependencies;
-
-    private bool $alwaysSave;
+    public bool $alwaysSave = false;
 
     private array $info = [];
 
-    public function __construct(string $scope, array $requiredDependencies = [], array $forbiddenDependencies = [], bool $alwaysSave = true) {
+    public function __construct(string $scope) {
         $this->scope = $scope;
+    }
+
+    public function setRequiredDependencies(array $requiredDependencies): void {
         $this->requiredDependencies = $requiredDependencies;
+    }
+
+    public function setOptionalDependencies(array $optionalDependencies): void {
+        $this->optionalDependencies = $optionalDependencies;
+    }
+
+    public function setForbiddenDependencies(array $forbiddenDependencies): void {
         $this->forbiddenDependencies = $forbiddenDependencies;
-        $this->alwaysSave = $alwaysSave;
     }
 
     public function setAuthor(?string $author): void {
@@ -58,8 +69,16 @@ class FixPackages implements UpdateInterface {
                             $manifest['dependencies'] = [];
                             $hasChanged = true;
                         }
+
                         foreach ($this->requiredDependencies as $key => $val) {
                             if (! isset($manifest['dependencies'][$key]) or $manifest['dependencies'][$key] !== $val) {
+                                $manifest['dependencies'][$key] = $val;
+                                $hasChanged = true;
+                            }
+                        }
+
+                        foreach ($this->optionalDependencies as $key => $val) {
+                            if (isset($manifest['dependencies'][$key]) and $manifest['dependencies'][$key] !== $val) {
                                 $manifest['dependencies'][$key] = $val;
                                 $hasChanged = true;
                             }
