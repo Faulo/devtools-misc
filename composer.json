@@ -6,6 +6,7 @@
 		"php-ini" : "@php scripts/php-ini.php",
 		"aminet" : "@php scripts/aminet.php",
 		"foreach" : "@php scripts/foreach.php",
+		"rename-jobs" : "@php scripts/rename-jobs.php",
 		"tdd" : "@php scripts/tdd.php",
 		"tdd.create-test-stubs" : "@php scripts/tdd.create-test-stubs.php",
 		"tdd.fix-source-files" : "@php scripts/tdd.fix-source-files.php",

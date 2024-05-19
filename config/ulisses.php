@@ -177,7 +177,7 @@ $unityUpdates->addUpdate('fix-packages', $fix);
 $manager->updateFactories[] = $unityUpdates;
 
 $staticUpdates = new StaticFolderFactory();
-$staticUpdates->addDelete('delete-devops', 'Jenkinsfile.*');
+$staticUpdates->addDelete('delete-deployment', 'Jenkinsfile.Deployment');
 $staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
 $staticUpdates->addDelete('delete-idea', '.idea');
 $staticUpdates->addCopy('copy-devops', 'static/ulisses/devops');
