@@ -20,6 +20,16 @@ class Group {
         return $this->id;
     }
 
+    public function withProject(Project $project): Group {
+        $this->projects[] = $project;
+        return $this;
+    }
+
+    public function withGroup(Group $group): Group {
+        $this->groups[] = $group;
+        return $this;
+    }
+
     public function run(string ...$updates) {
         $cwd = realpath(getcwd()) or die('missing cwd');
 

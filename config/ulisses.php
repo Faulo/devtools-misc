@@ -2,6 +2,7 @@
 declare(strict_types = 1);
 
 use Slothsoft\Core\FileSystem;
+use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
@@ -192,6 +193,7 @@ foreach ($groups as $key => $val) {
 }
 
 ProjectDatabase::instance()->groups[] = $manager;
+ProjectDatabase::instance()->groups[] = (new Group('ulisses-plastic'))->withGroup($manager);
 
 $projects = [
     'Ulisses.DSK'
@@ -209,6 +211,7 @@ foreach ($groups as $key => $val) {
 }
 
 ProjectDatabase::instance()->groups[] = $manager;
+ProjectDatabase::instance()->groups[] = (new Group('ulisses-git'))->withGroup($manager);
 
 return;
 
