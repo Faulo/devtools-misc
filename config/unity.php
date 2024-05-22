@@ -29,7 +29,7 @@ $gameJams = [
     'GameJam.SonarUndDochSoFern',
     'GameJam.SpaceCape',
     'GameJam.SpillTheTea',
-	'GameJam.SuperManual64',
+    'GameJam.SuperManual64',
     'GameJam.WatchOut',
     'GameJam.ZooSmashBaseballBash'
 ];
@@ -44,7 +44,7 @@ $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('unity', 'R:\\Unity', 'git');
+$manager = new UnityProjectManager('unity', realpath('R:/Unity'), 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
 
 foreach ($groups as $key => $val) {

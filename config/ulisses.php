@@ -157,7 +157,7 @@ $optionalUpgrades = [
     "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
 ];
 
-$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'plastic');
+$manager = new UnityProjectManager('ulisses', realpath('R:/Ulisses'), 'plastic');
 
 $unityUpdates = new UnityUpdateFactory();
 
@@ -203,7 +203,7 @@ $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('ulisses', 'R:\\Ulisses', 'git');
+$manager = new UnityProjectManager('ulisses', realpath('R:/Ulisses'), 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
 
 foreach ($groups as $key => $val) {

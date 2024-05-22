@@ -64,4 +64,4 @@ $servers = [
     ]
 ];
 
-ProjectDatabase::instance()->groups[] = new ServerManager('server', 'R:\\Eclipse\\workspace', $servers);
+ProjectDatabase::instance()->groups[] = new ServerManager('server', realpath('R:/PHP'), $servers);

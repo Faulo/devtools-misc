@@ -76,4 +76,4 @@ $modules = [
     ]
 ];
 
-ProjectDatabase::instance()->groups[] = new ModuleManager('module', 'R:\\Eclipse\\workspace', $modules);
+ProjectDatabase::instance()->groups[] = new ModuleManager('module', realpath('R:/PHP'), $modules);
