@@ -3,6 +3,7 @@ declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
 use Slothsoft\Core\DOMHelper;
+use Slothsoft\Devtools\Misc\Utils;
 
 class PHPExecutor {
 
@@ -36,8 +37,7 @@ class PHPExecutor {
     }
 
     public function execute(string $command): void {
-        echo "> $this->executable $command" . PHP_EOL;
-        passthru("$this->executable $command");
+        Utils::execute("$this->executable $command");
     }
 
     public function vexecute(string ...$args): void {
