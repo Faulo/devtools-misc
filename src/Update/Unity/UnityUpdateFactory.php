@@ -7,6 +7,7 @@ use Slothsoft\Devtools\Misc\Update\UpdateFactory;
 class UnityUpdateFactory extends UpdateFactory {
 
     public function __construct() {
+        $this->updates['build'] = new BuildSolution();
         $this->updates['tests'] = new RunTests();
         $this->updates['format'] = new FormatCode();
         $this->updates['delete-empty'] = new DeleteEmptyFolders();

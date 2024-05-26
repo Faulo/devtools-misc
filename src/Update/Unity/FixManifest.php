@@ -74,21 +74,7 @@ class FixManifest implements UpdateInterface {
                         $hasChanged = true;
                     }
 
-                    $sortedDependencies = $manifest['dependencies'];
-                    ksort($sortedDependencies);
-                    $dependencies = [];
-                    $modules = [];
-                    foreach ($sortedDependencies as $key => $val) {
-                        if (strpos($key, 'com.unity.modules.') === 0) {
-                            $modules[$key] = $val;
-                        } else {
-                            $dependencies[$key] = $val;
-                        }
-                    }
-                    $sortedDependencies = $dependencies + $modules;
-
-                    if ($manifest['dependencies'] !== $sortedDependencies) {
-                        $manifest['dependencies'] = $sortedDependencies;
+                    if (ReferenceSorter::sortPackages($manifest['dependencies'])) {
                         $hasChanged = true;
                     }
 

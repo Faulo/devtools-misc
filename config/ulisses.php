@@ -6,6 +6,7 @@ use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
+use Slothsoft\Devtools\Misc\Update\Unity\FixAssemblies;
 use Slothsoft\Devtools\Misc\Update\Unity\FixManifest;
 use Slothsoft\Devtools\Misc\Update\Unity\FixPackages;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
@@ -24,6 +25,7 @@ $corePackages = [
     'Ulisses.Core.Binding',
     'Ulisses.Core.Binding.Utilities',
     'Ulisses.Core.CameraService',
+    'Ulisses.Core.CaptureCamera',
     'Ulisses.Core.Database',
     'Ulisses.Core.FolderCreator',
     'Ulisses.Core.GameServices',
@@ -146,7 +148,8 @@ $projectManifestForbidden = [
 ];
 $packageManifestDependencies = [
     "de.ulisses-spiele.core.utilities" => "4.9.9",
-    "com.unity.test-framework" => "2.0.1-exp.2"
+    "com.unity.test-framework" => "2.0.1-exp.2",
+    "net.tnrd.nsubstitute" => "5.1.0"
 ];
 $packageManifestForbidden = [
     "com.unity.ide.rider",
@@ -156,6 +159,23 @@ $packageManifestForbidden = [
 $optionalUpgrades = [
     "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
 ];
+
+const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
+
+const CLASS_PACKAGE_ASSET_VALIDATION = <<<EOT
+using System.IO;
+using NUnit.Framework;
+using Ulisses.Core.Utilities.Editor;
+
+namespace %s {
+    [TestFixture]
+    internal sealed class PackageAssetValidation : AssetValidationBase<PackageAssetValidation.AssetSource> {
+        internal sealed class AssetSource : AssetSourceBase {
+            protected override string RootDirectory => Path.Combine("Packages", AssemblyInfo.ID);
+        }
+    }
+}
+EOT;
 
 $manager = new UnityProjectManager('ulisses', realpath('R:/Ulisses'), 'plastic');
 
@@ -174,6 +194,11 @@ $fix->setForbiddenDependencies($packageManifestForbidden);
 $fix->setAuthor('Ulisses Digital');
 $fix->setUnity('2022.3');
 $unityUpdates->addUpdate('fix-packages', $fix);
+
+$fix = new FixAssemblies('de.ulisses-spiele');
+$fix->addEditorTestReference("Ulisses.Core.Utilities.Editor");
+$fix->addEditorTestClass(FILE_PACKAGE_ASSET_VALIDATION, CLASS_PACKAGE_ASSET_VALIDATION);
+$unityUpdates->addUpdate('fix-assemblies', $fix);
 
 $manager->updateFactories[] = $unityUpdates;
 
@@ -256,23 +281,6 @@ const TARGET_DIRECTORY = 'R:\\Ulisses';
 const TEMPLATE_DIRECTORY = 'template';
 
 const TEMPLATE_DIRECTORY_THIRD_PARTY = 'template-third-party';
-
-const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
-
-const CLASS_PACKAGE_ASSET_VALIDATION = <<<EOT
-using System.IO;
-using NUnit.Framework;
-using Ulisses.Core.Utilities.Editor;
-
-namespace %s {
-    [TestFixture]
-    internal sealed class PackageAssetValidation : AssetValidationBase<PackageAssetValidation.AssetSource> {
-        internal sealed class AssetSource : AssetSourceBase {
-            protected override string RootDirectory => Path.Combine("Packages", AssemblyInfo.ID);
-        }
-    }
-}
-EOT;
 
 $cwd = realpath(getcwd()) or die('missing cwd');
 
