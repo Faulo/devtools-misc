@@ -4,7 +4,7 @@ namespace Slothsoft\Devtools\Misc\Update\Unity;
 
 class ReferenceSorter {
 
-    public static function sortPackages(array &$packages): bool {
+    public static function sortPackages(array &$packages, $modulesFirst = false): bool {
         $sortedDependencies = $packages;
         ksort($sortedDependencies);
         $dependencies = [];
@@ -16,7 +16,7 @@ class ReferenceSorter {
                 $dependencies[$key] = $val;
             }
         }
-        $sortedDependencies = $dependencies + $modules;
+        $sortedDependencies = $modulesFirst ? $modules + $dependencies : $dependencies + $modules;
 
         if ($packages !== $sortedDependencies) {
             $packages = $sortedDependencies;

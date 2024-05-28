@@ -91,7 +91,7 @@ class FixPackages implements UpdateInterface {
                             }
                         }
 
-                        if (ReferenceSorter::sortPackages($manifest['dependencies'])) {
+                        if (ReferenceSorter::sortPackages($manifest['dependencies'], true)) {
                             $hasChanged = true;
                         }
 
