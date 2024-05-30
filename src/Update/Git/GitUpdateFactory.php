@@ -12,7 +12,9 @@ class GitUpdateFactory extends UpdateFactory {
         $this->updates['commit'] = new Commit('build: update files');
         $this->updates['push'] = new Push();
         $this->updates['flow-init'] = new FlowInit();
-        $this->updates['flow-patch'] = new FlowPatch();
+        $this->updates['flow-patch'] = new FlowPatch(FlowPatch::PATCH_RELEASE, 'minor fixes');
+        $this->updates['flow-minor'] = new FlowPatch(FlowPatch::MINOR_RELEASE, 'new features');
+        $this->updates['flow-major'] = new FlowPatch(FlowPatch::MAJOR_RELEASE, 'major upgrade');
     }
 }
 
