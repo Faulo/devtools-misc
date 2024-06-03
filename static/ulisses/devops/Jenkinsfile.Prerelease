@@ -1,35 +1,40 @@
 node('npm') {
     def plastic = checkout scm
     env.BRANCH_NAME = plastic.PLASTICSCM_BRANCH
-		
-	def packages = []
-	dir('Packages') {
-        findFiles()
-            .findAll{ f -> f.directory && fileExists(f.name + "/package.json") && f.name.contains(".") }
-            .each{ f -> packages.add("Packages/" + f.name) }
-	}
-	
-	for (p in packages) {
+        
+    def packages = []
+    if (fileExists("Jenkinsfile.conf")) {
+        readFile("Jenkinsfile.conf")
+            .eachLine{ p -> packages.add("Packages/" + p) }
+    } else {
+        dir('Packages') {
+            findFiles()
+                .findAll{ f -> f.directory && fileExists(f.name + "/package.json") && f.name.contains(".") }
+                .each{ f -> packages.add("Packages/" + f.name) }
+        }
+    }
+    
+    for (p in packages) {
         unityPackage {
-			// define unity package location relative to repository
-			LOCATION = p
-			
-			// assert CHANGELOG.md
-			TEST_CHANGELOG  = '0'
-			
-			// assert .editorconfig
-			TEST_FORMATTING = '0'
-			
-			// assert tests
-			TEST_UNITY = '0'
-			
-			// automatically create C# docs using DocFX
-			BUILD_DOCUMENTATION = '0'
-			
-			// which platforms to deploy to
-			DEPLOY_TO_VERDACCIO = '1'
-			DEPLOY_IF_RELEASE = '0'
-			DEPLOY_IF_PRERELEASE = '1'
-		}
-	}
+            // define unity package location relative to repository
+            LOCATION = p
+            
+            // assert CHANGELOG.md
+            TEST_CHANGELOG  = '0'
+            
+            // assert .editorconfig
+            TEST_FORMATTING = '0'
+            
+            // assert tests
+            TEST_UNITY = '0'
+            
+            // automatically create C# docs using DocFX
+            BUILD_DOCUMENTATION = '0'
+            
+            // which platforms to deploy to
+            DEPLOY_TO_VERDACCIO = '1'
+            DEPLOY_IF_RELEASE = '0'
+            DEPLOY_IF_PRERELEASE = '1'
+        }
+    }
 }
