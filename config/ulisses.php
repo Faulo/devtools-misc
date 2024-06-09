@@ -94,7 +94,7 @@ $projects = [
 $groups = [
     'third-party' => $thirdPartyPackages,
     'core' => $corePackages,
-    'hexxen' => $hexxenPackages,
+    'hexxen1733' => $hexxenPackages,
     'project' => $projects
 ];
 
@@ -146,7 +146,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.10.1",
+    "de.ulisses-spiele.core.utilities" => "4.10.2",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];

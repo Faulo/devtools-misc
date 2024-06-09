@@ -9,11 +9,13 @@ node('unity') {
     def packages = []
     if (fileExists("Jenkinsfile.conf")) {
         readFile("Jenkinsfile.conf")
-            .eachLine{ p -> packages.add("Packages/" + p) }
+            .trim()
+            .split("\n")
+            .each{ location -> packages.add(location.trim()) }
     } else {
         dir('Packages') {
             findFiles()
-                .findAll{ f -> f.directory && fileExists(f.name + "/package.json") && f.name.contains(".") }
+                .findAll{ f -> f.directory && fileExists(f.name + "/package.json") }
                 .each{ f -> packages.add("Packages/" + f.name) }
         }
     }
