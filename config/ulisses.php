@@ -146,14 +146,22 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.10.2",
+    "de.ulisses-spiele.core.utilities" => "4.10.3",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
 $packageManifestForbidden = [
     "com.unity.ide.rider",
     "com.unity.ide.visualstudio",
-    "net.slothsoft.unity-extensions"
+    "net.slothsoft.unity-extensions",
+    "Packages/de.ulisses-spiele.hexxen1733.art.textures",
+    "de.ulisses-spiele.hexxen1733.art.animals",
+    "de.ulisses-spiele.hexxen1733.art.characters",
+    "de.ulisses-spiele.hexxen1733.art.environment",
+    "de.ulisses-spiele.hexxen1733.art.foliage",
+    "de.ulisses-spiele.hexxen1733.art.misc",
+    "de.ulisses-spiele.hexxen1733.art.props",
+    "de.ulisses-spiele.hexxen1733.art.textures"
 ];
 $optionalUpgrades = [
     "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
