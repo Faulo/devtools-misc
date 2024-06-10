@@ -154,7 +154,6 @@ $packageManifestForbidden = [
     "com.unity.ide.rider",
     "com.unity.ide.visualstudio",
     "net.slothsoft.unity-extensions",
-    "Packages/de.ulisses-spiele.hexxen1733.art.textures",
     "de.ulisses-spiele.hexxen1733.art.animals",
     "de.ulisses-spiele.hexxen1733.art.characters",
     "de.ulisses-spiele.hexxen1733.art.environment",
