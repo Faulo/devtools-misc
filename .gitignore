@@ -18,3 +18,7 @@ $RECYCLE.BIN/
 
 # == Amiga ==
 /Aminet/
+
+# == Misc
+/toggl-input
+/toggl-output
