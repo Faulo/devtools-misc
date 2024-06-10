@@ -56,9 +56,21 @@ class FixManifest implements UpdateInterface {
                     }
 
                     foreach ($this->optionalDependencies as $key => $val) {
-                        if (isset($manifest['dependencies'][$key]) and $manifest['dependencies'][$key] !== $val) {
-                            $manifest['dependencies'][$key] = $val;
-                            $hasChanged = true;
+                        if (isset($manifest['dependencies'][$key])) {
+                            if (is_array($val)) {
+                                unset($manifest['dependencies'][$key]);
+
+                                foreach ($val as $k => $v) {
+                                    $manifest['dependencies'][$k] = $v;
+                                }
+
+                                $hasChanged = true;
+                            } else {
+                                if ($manifest['dependencies'][$key] !== $val) {
+                                    $manifest['dependencies'][$key] = $val;
+                                    $hasChanged = true;
+                                }
+                            }
                         }
                     }
 

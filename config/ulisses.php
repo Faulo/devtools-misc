@@ -8,6 +8,7 @@ use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\FixAssemblies;
 use Slothsoft\Devtools\Misc\Update\Unity\FixManifest;
 use Slothsoft\Devtools\Misc\Update\Unity\FixPackages;
+use Slothsoft\Devtools\Misc\Update\Unity\FixChangelog;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 
 $thirdPartyPackages = [
@@ -136,6 +137,15 @@ $projectManifestRegistries = json_decode(<<<EOT
 ]
 EOT, true);
 
+$artPackage = [
+    "de.ulisses-spiele.hexxen1733.art" => "1.0.0-pre.8"
+];
+$artChangelog = <<<EOT
+### Changed
+
+- [DSZ] Changed art dependency to de.ulisses-spiele.hexxen1733.art.
+EOT;
+
 $projectManifestDependencies = [
     "com.unity.ide.rider" => "3.0.28",
     "com.unity.ide.visualstudio" => "2.0.22",
@@ -153,17 +163,17 @@ $packageManifestDependencies = [
 $packageManifestForbidden = [
     "com.unity.ide.rider",
     "com.unity.ide.visualstudio",
-    "net.slothsoft.unity-extensions",
-    "de.ulisses-spiele.hexxen1733.art.animals",
-    "de.ulisses-spiele.hexxen1733.art.characters",
-    "de.ulisses-spiele.hexxen1733.art.environment",
-    "de.ulisses-spiele.hexxen1733.art.foliage",
-    "de.ulisses-spiele.hexxen1733.art.misc",
-    "de.ulisses-spiele.hexxen1733.art.props",
-    "de.ulisses-spiele.hexxen1733.art.textures"
+    "net.slothsoft.unity-extensions"
 ];
-$optionalUpgrades = [
-    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
+$optionalUpgrades = $artPackage + [
+    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4",
+    "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
+    "de.ulisses-spiele.hexxen1733.art.characters" => $artPackage,
+    "de.ulisses-spiele.hexxen1733.art.environment" => $artPackage,
+    "de.ulisses-spiele.hexxen1733.art.foliage" => $artPackage,
+    "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
+    "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
+    "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
@@ -205,6 +215,10 @@ $fix = new FixAssemblies('de.ulisses-spiele');
 $fix->addEditorTestReference("Ulisses.Core.Utilities.Editor");
 $fix->addEditorTestClass(FILE_PACKAGE_ASSET_VALIDATION, CLASS_PACKAGE_ASSET_VALIDATION);
 $unityUpdates->addUpdate('fix-assemblies', $fix);
+
+$fix = new FixChangelog('de.ulisses-spiele');
+$fix->setChangelogForDependency("de.ulisses-spiele.hexxen1733.art", $artChangelog);
+$unityUpdates->addUpdate('fix-changelog', $fix);
 
 $manager->updateFactories[] = $unityUpdates;
 

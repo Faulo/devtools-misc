@@ -34,7 +34,7 @@ class Utils {
     public static function normalize(string $id): string {
         $id = strtolower($id);
         $id = preg_replace('~\s+~', ' ', $id);
-        return $id;
+        return trim($id);
     }
 
     public static function toId(string $name): string {
