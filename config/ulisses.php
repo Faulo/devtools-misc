@@ -54,6 +54,8 @@ $hexxenPackages = [
     'Ulisses.HeXXen1733.BattleDirection',
     'Ulisses.HeXXen1733.Build',
     'Ulisses.HeXXen1733.Camera',
+    'Ulisses.HeXXen1733.Character.Abbas',
+    'Ulisses.HeXXen1733.Character.Aveline',
     'Ulisses.HeXXen1733.Character.Franziska',
     'Ulisses.HeXXen1733.Character.Goetz',
     'Ulisses.HeXXen1733.Character.Irina',
@@ -156,7 +158,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.10.3",
+    "de.ulisses-spiele.core.utilities" => "4.11.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
@@ -166,14 +168,15 @@ $packageManifestForbidden = [
     "net.slothsoft.unity-extensions"
 ];
 $optionalUpgrades = $artPackage + [
-    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4",
-    "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
-    "de.ulisses-spiele.hexxen1733.art.characters" => $artPackage,
-    "de.ulisses-spiele.hexxen1733.art.environment" => $artPackage,
-    "de.ulisses-spiele.hexxen1733.art.foliage" => $artPackage,
-    "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
-    "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
-    "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage
+    // "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.art.characters" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.art.environment" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.art.foliage" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
+    // "de.ulisses-spiele.hexxen1733.staging" => "0.1.10-pre.3",
+    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
