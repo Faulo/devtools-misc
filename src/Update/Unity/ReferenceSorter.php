@@ -6,7 +6,9 @@ class ReferenceSorter {
 
     public static function sortPackages(array &$packages, $modulesFirst = false): bool {
         $sortedDependencies = $packages;
+
         ksort($sortedDependencies);
+
         $dependencies = [];
         $modules = [];
         foreach ($sortedDependencies as $key => $val) {
@@ -16,6 +18,7 @@ class ReferenceSorter {
                 $dependencies[$key] = $val;
             }
         }
+
         $sortedDependencies = $modulesFirst ? $modules + $dependencies : $dependencies + $modules;
 
         if ($packages !== $sortedDependencies) {
@@ -28,17 +31,27 @@ class ReferenceSorter {
 
     public static function sortAssemblies(array &$assemblies): bool {
         $sortedDependencies = $assemblies;
-        sort($sortedDependencies);
+
+        natcasesort($sortedDependencies);
+
+        $unity = [];
+        $editor = [];
         $dependencies = [];
-        $modules = [];
         foreach ($sortedDependencies as $key) {
-            if (strpos($key, 'Unity') === 0) {
-                $modules[] = $key;
-            } else {
-                $dependencies[] = $key;
+            if (strpos($key, 'UnityEngine') === 0) {
+                $unity[] = $key;
+                continue;
             }
+
+            if (strpos($key, 'UnityEditor') === 0) {
+                $editor[] = $key;
+                continue;
+            }
+
+            $dependencies[] = $key;
         }
-        $sortedDependencies = array_merge($modules, $dependencies);
+
+        $sortedDependencies = array_merge($unity, $editor, $dependencies);
 
         if ($assemblies !== $sortedDependencies) {
             $assemblies = $sortedDependencies;

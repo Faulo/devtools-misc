@@ -14,6 +14,8 @@ class FixAssemblies implements UpdateInterface {
 
     public bool $alwaysSave = false;
 
+    public bool $logMissingEditorTests = true;
+
     public function __construct(string $scope) {
         $this->scope = $scope;
     }
@@ -59,6 +61,8 @@ class FixAssemblies implements UpdateInterface {
 
                         chdir($package->path);
 
+                        $hasEditorTests = false;
+
                         foreach (glob('Tests/*/*.asmdef') as $assemblyPath) {
                             if ($assembly = Utils::readJson($assemblyPath)) {
                                 $previous = $assembly;
@@ -67,6 +71,8 @@ class FixAssemblies implements UpdateInterface {
                                 $isEditorTests = strpos($assemblyPath, '.Tests.Editor.');
 
                                 if ($isEditorTests) {
+                                    $hasEditorTests = true;
+
                                     $assembly['includePlatforms'] = [
                                         "Editor"
                                     ];
@@ -120,6 +126,10 @@ class FixAssemblies implements UpdateInterface {
                                     Utils::writeJson($assemblyPath, $assembly, 4);
                                 }
                             }
+                        }
+
+                        if (! $hasEditorTests and $this->logMissingEditorTests) {
+                            die("Failed to find Editor Tests: $package->path");
                         }
                     }
                 }
