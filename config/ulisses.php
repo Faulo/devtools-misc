@@ -140,7 +140,7 @@ $projectManifestRegistries = json_decode(<<<EOT
 EOT, true);
 
 $artPackage = [
-    "de.ulisses-spiele.hexxen1733.art" => "1.0.0-pre.8"
+    "de.ulisses-spiele.hexxen1733.art" => "1.0.0-pre.10"
 ];
 $artChangelog = <<<EOT
 ### Changed
@@ -158,7 +158,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.11.1",
+    "de.ulisses-spiele.core.utilities" => "4.11.3",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
@@ -176,7 +176,9 @@ $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.staging" => "0.1.10-pre.3",
-    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4"
+    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4",
+    "com.unity.render-pipelines.universal" => "14.0.11",
+    "de.ulisses-spiele.core.logging" => "1.2.3"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
@@ -212,6 +214,7 @@ $fix->setOptionalDependencies($optionalUpgrades);
 $fix->setForbiddenDependencies($packageManifestForbidden);
 $fix->setAuthor('Ulisses Digital');
 $fix->setUnity('2022.3');
+$fix->setUnityRelease('33f1');
 $unityUpdates->addUpdate('fix-packages', $fix);
 
 $fix = new FixAssemblies('de.ulisses-spiele');

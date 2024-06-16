@@ -48,6 +48,10 @@ class FixPackages implements UpdateInterface {
         $this->info['unity'] = $unity;
     }
 
+    public function setUnityRelease(?string $release): void {
+        $this->info['unityRelease'] = $release;
+    }
+
     public function addForbiddenDependencyForScope(string $scope, array $forbiddenDependencies): void {
         $this->forbiddenDependenciesForScope[$scope] = $forbiddenDependencies;
     }
