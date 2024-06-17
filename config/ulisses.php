@@ -159,7 +159,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.12.0",
+    "de.ulisses-spiele.core.utilities" => "4.13.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
