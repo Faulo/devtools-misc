@@ -68,6 +68,7 @@ $hexxenPackages = [
     'Ulisses.HeXXen1733.Essentials',
     'Ulisses.HeXXen1733.Exploration',
     'Ulisses.HeXXen1733.Exploration.Camera',
+    'Ulisses.HeXXen1733.GameMaster',
     'Ulisses.HeXXen1733.InputActionAsset',
     'Ulisses.HeXXen1733.Interactables.Cinematics',
     'Ulisses.HeXXen1733.Interactables.Pickups',
