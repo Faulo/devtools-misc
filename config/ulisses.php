@@ -158,7 +158,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.11.3",
+    "de.ulisses-spiele.core.utilities" => "4.12.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
@@ -232,6 +232,7 @@ $staticUpdates = new StaticFolderFactory();
 $staticUpdates->addDelete('delete-deployment', 'Jenkinsfile.Deployment');
 $staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
 $staticUpdates->addDelete('delete-idea', '.idea');
+$staticUpdates->addDelete('delete-tmpro', 'Assets/TextMesh Pro/Resources/Fonts & Materials*', 'Assets/TextMesh Pro/Shaders*', 'Assets/TextMesh Pro/Fonts*');
 $staticUpdates->addCopy('copy-devops', 'static/ulisses/devops');
 $staticUpdates->addCopy('copy-devops-third-party', 'static/ulisses/devops-third-party');
 $staticUpdates->addCopy('copy-git', 'static/ulisses/git');
