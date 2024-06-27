@@ -150,7 +150,7 @@ $artChangelog = <<<EOT
 EOT;
 
 $projectManifestDependencies = [
-    "com.unity.ide.rider" => "3.0.28",
+    "com.unity.ide.rider" => "3.0.31",
     "com.unity.ide.visualstudio" => "2.0.22",
     "net.slothsoft.unity-extensions" => "3.1.0"
 ];
@@ -159,7 +159,7 @@ $projectManifestForbidden = [
     "unity-dependencies-hunter"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.13.0",
+    "de.ulisses-spiele.core.utilities" => "4.14.1",
     "com.unity.test-framework" => "2.0.1-exp.2",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
