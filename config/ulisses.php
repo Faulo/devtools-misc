@@ -10,6 +10,7 @@ use Slothsoft\Devtools\Misc\Update\Unity\FixManifest;
 use Slothsoft\Devtools\Misc\Update\Unity\FixPackages;
 use Slothsoft\Devtools\Misc\Update\Unity\FixChangelog;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
+use Slothsoft\Devtools\Misc\Update\Unity\AddPackagesToProject;
 
 $thirdPartyPackages = [
     'com.acegikmo.shapes',
@@ -92,7 +93,8 @@ $hexxenPackages = [
 $projects = [
     'Ulisses.HeXXen1733.Game',
     'Ulisses.HeXXen1733.Gamescom2023Demo',
-    'Ulisses World ISB'
+    'Ulisses World ISB',
+    'Ulisses.Sandbox',
 ];
 
 $groups = [
@@ -226,6 +228,9 @@ $unityUpdates->addUpdate('fix-assemblies', $fix);
 $fix = new FixChangelog('de.ulisses-spiele');
 $fix->setChangelogForDependency("de.ulisses-spiele.hexxen1733.art", $artChangelog);
 $unityUpdates->addUpdate('fix-changelog', $fix);
+
+$fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox');
+$unityUpdates->addUpdate('fix-sandbox', $fix);
 
 $manager->updateFactories[] = $unityUpdates;
 

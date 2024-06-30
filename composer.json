@@ -18,7 +18,7 @@
 		"ext-xsl" : "*",
 		"composer/composer" : "*",
 		"slothsoft/core" : "*",
-		"slothsoft/unity" : "*",
+		"slothsoft/unity" : "~2.12",
 		"symfony/process" : "*"
 	},
 	"autoload" : {

@@ -8,7 +8,7 @@ use Slothsoft\Devtools\Misc\Update\Plastic\PlasticUpdateFactory;
 
 class ProjectManager extends Group {
 
-    protected $workspaceDir;
+    public $workspaceDir;
 
     public array $updateFactories = [];
 

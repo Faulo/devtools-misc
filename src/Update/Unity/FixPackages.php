@@ -2,7 +2,6 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update\Unity;
 
-use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 use Slothsoft\Unity\UnityPackageInfo;
@@ -64,8 +63,7 @@ class FixPackages implements UpdateInterface {
                     if (self::packageMatchesScope($packageName, $this->scope)) {
                         echo $packageName . PHP_EOL;
 
-                        $manifest = $package->package;
-                        $manifestPath = $package->path . UnityPackageInfo::FILE_PACKAGE;
+                        $manifest = &$package->package;
 
                         $hasChanged = $this->alwaysSave;
 
@@ -112,8 +110,9 @@ class FixPackages implements UpdateInterface {
                                 }
                             }
                         }
+
                         if ($hasChanged) {
-                            Utils::writeJson($manifestPath, $manifest, 2);
+                            $package->savePackage();
                         }
                     }
                 }
