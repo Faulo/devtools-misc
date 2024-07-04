@@ -25,7 +25,7 @@ class AddPackagesToProject implements UpdateInterface {
                     $id = $package->package['name'];
                     $version = $package->package['version'];
 
-                    if (!isset($manifest['dependencies'][$id]) or $manifest['dependencies'][$id] !== $version) {
+                    if (! isset($manifest['dependencies'][$id]) or $manifest['dependencies'][$id] !== $version) {
                         $manifest['dependencies'][$id] = $version;
                         $hasChanged = true;
                     }

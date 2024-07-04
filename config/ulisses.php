@@ -11,6 +11,7 @@ use Slothsoft\Devtools\Misc\Update\Unity\FixPackages;
 use Slothsoft\Devtools\Misc\Update\Unity\FixChangelog;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\AddPackagesToProject;
+use Slothsoft\Devtools\Misc\Update\Unity\CallMethod;
 
 $thirdPartyPackages = [
     'com.acegikmo.shapes',
@@ -94,7 +95,7 @@ $projects = [
     'Ulisses.HeXXen1733.Game',
     'Ulisses.HeXXen1733.Gamescom2023Demo',
     'Ulisses World ISB',
-    'Ulisses.Sandbox',
+    'Ulisses.Sandbox'
 ];
 
 $groups = [
@@ -142,8 +143,7 @@ $projectManifestRegistries = json_decode(<<<EOT
 ]
 EOT, true);
 
-$artPackage = [
-    "de.ulisses-spiele.hexxen1733.art" => "1.0.0-pre.10"
+$artPackage = [ // "de.ulisses-spiele.hexxen1733.art" => "1.0.0-pre.10"
 ];
 $artChangelog = <<<EOT
 ### Changed
@@ -158,17 +158,20 @@ $projectManifestDependencies = [
 ];
 $projectManifestForbidden = [
     "com.unity.test-framework",
-    "unity-dependencies-hunter"
+    "unity-dependencies-hunter",
+    "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.14.1",
+    "de.ulisses-spiele.core.utilities" => "4.15.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
+    // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
 ];
 $packageManifestForbidden = [
     "com.unity.ide.rider",
     "com.unity.ide.visualstudio",
-    "net.slothsoft.unity-extensions"
+    "net.slothsoft.unity-extensions",
+    "de.ulisses-spiele.hexxen1733.animations"
 ];
 $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
@@ -179,8 +182,9 @@ $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.staging" => "0.1.10-pre.3",
-    "de.ulisses-spiele.hexxen1733.shader" => "1.10.4",
-    "com.unity.render-pipelines.universal" => "14.0.11",
+    // "de.ulisses-spiele.hexxen1733.shader" => "2.0.0",
+    // "com.unity.render-pipelines.universal" => "14.0.11",
+    // "de.ulisses-spiele.hexxen1733.battle" => "0.14.0",
     "de.ulisses-spiele.core.logging" => "1.2.3"
 ];
 
@@ -231,6 +235,9 @@ $unityUpdates->addUpdate('fix-changelog', $fix);
 
 $fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox');
 $unityUpdates->addUpdate('fix-sandbox', $fix);
+
+$fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUpdater.UpdateAll');
+$unityUpdates->addUpdate('update', $fix);
 
 $manager->updateFactories[] = $unityUpdates;
 
