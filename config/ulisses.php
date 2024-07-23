@@ -47,13 +47,13 @@ $corePackages = [
 ];
 
 $hexxenPackages = [
-    'Ulisses.HeXXen1733.Animations',
+    // 'Ulisses.HeXXen1733.Animations',
     'Ulisses.HeXXen1733.Art',
     'Ulisses.HeXXen1733.ArtDevelopment',
     'Ulisses.HeXXen1733.ArtStaging',
     'Ulisses.HeXXen1733.Audio',
     'Ulisses.HeXXen1733.Battle',
-    'Ulisses.HeXXen1733.BattleDirection',
+    // 'Ulisses.HeXXen1733.BattleDirection',
     'Ulisses.HeXXen1733.Build',
     'Ulisses.HeXXen1733.Camera',
     'Ulisses.HeXXen1733.Character.Abbas',
@@ -86,7 +86,7 @@ $hexxenPackages = [
     'Ulisses.HeXXen1733.SharedUI',
     'Ulisses.HeXXen1733.Staging',
     'Ulisses.HeXXen1733.System',
-    'Ulisses.HeXXen1733.UserInterface',
+    // 'Ulisses.HeXXen1733.UserInterface',
     'Ulisses.HeXXen1733.VFX',
     'Ulisses.HeXXen1733.Village'
 ];
@@ -162,7 +162,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.15.0",
+    "de.ulisses-spiele.core.utilities" => "4.16.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -233,7 +233,7 @@ $fix = new FixChangelog('de.ulisses-spiele');
 $fix->setChangelogForDependency("de.ulisses-spiele.hexxen1733.art", $artChangelog);
 $unityUpdates->addUpdate('fix-changelog', $fix);
 
-$fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox');
+$fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.Core');
 $unityUpdates->addUpdate('fix-sandbox', $fix);
 
 $fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUpdater.UpdateAll');

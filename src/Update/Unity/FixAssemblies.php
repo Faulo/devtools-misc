@@ -63,6 +63,27 @@ class FixAssemblies implements UpdateInterface {
 
                         $hasEditorTests = false;
 
+                        foreach (glob('*/*.asmdef') as $assemblyPath) {
+                            if ($assembly = Utils::readJson($assemblyPath)) {
+                                $previous = $assembly;
+                                $hasChanged = $this->alwaysSave;
+
+                                if (ReferenceSorter::sortAssemblies($assembly['references'])) {
+                                    $hasChanged = true;
+                                }
+
+                                $assembly['autoReferenced'] = true;
+
+                                if ($assembly !== $previous) {
+                                    $hasChanged = true;
+                                }
+
+                                if ($hasChanged) {
+                                    Utils::writeJson($assemblyPath, $assembly, 4);
+                                }
+                            }
+                        }
+
                         foreach (glob('Tests/*/*.asmdef') as $assemblyPath) {
                             if ($assembly = Utils::readJson($assemblyPath)) {
                                 $previous = $assembly;
