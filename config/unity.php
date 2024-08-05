@@ -51,6 +51,10 @@ $gameJams = [
         'repository' => 'https://github.com/Faulo/KeepEverybodyHappy'
     ],
     [
+        'name' => 'GameJam.LostNotes',
+        'repository' => 'https://github.com/lowkey42/lost_notes'
+    ],
+    [
         'name' => 'GameJam.MizuKiri',
         'repository' => 'https://github.com/Faulo/MizuKiri'
     ],
