@@ -14,6 +14,8 @@ class Project {
 
     public string $workspace;
 
+    public ?string $repository;
+
     public array $info;
 
     public function __construct(ProjectManager $manager, array $info) {
@@ -21,6 +23,7 @@ class Project {
         $this->name = $info['name'];
         $this->id = $info['id'] ?? Utils::toId($this->name);
         $this->workspace = is_dir($info['workspaceDir']) ? realpath($info['workspaceDir']) : $info['workspaceDir'];
+        $this->repository = $info['repository'] ?? null;
         $this->info = $info;
     }
 

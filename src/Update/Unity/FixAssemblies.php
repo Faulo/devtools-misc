@@ -16,6 +16,14 @@ class FixAssemblies implements UpdateInterface {
 
     public bool $logMissingEditorTests = true;
 
+    public bool $logGUIDs = true;
+
+    public bool $logAssemblies = true;
+
+    public array $assembliesToLog = [
+        'Ulisses.Core.Binding.Utilities.RuntimeUtility'
+    ];
+
     public function __construct(string $scope) {
         $this->scope = $scope;
     }
@@ -64,19 +72,27 @@ class FixAssemblies implements UpdateInterface {
                         $hasEditorTests = false;
 
                         foreach (glob('*/*.asmdef') as $assemblyPath) {
+                            $assemblyName = pathinfo($assemblyPath, PATHINFO_FILENAME);
                             if ($assembly = Utils::readJson($assemblyPath)) {
                                 $previous = $assembly;
                                 $hasChanged = $this->alwaysSave;
 
+                                $assembly['name'] = $assemblyName;
+                                $assembly['autoReferenced'] = true;
+
+                                if (! isset($assembly['references'])) {
+                                    $assembly['references'] = [];
+                                    $hasChanged = true;
+                                }
                                 if (ReferenceSorter::sortAssemblies($assembly['references'])) {
                                     $hasChanged = true;
                                 }
 
-                                $assembly['autoReferenced'] = true;
-
                                 if ($assembly !== $previous) {
                                     $hasChanged = true;
                                 }
+
+                                $this->logWrongAssemblies($assemblyPath, $assembly['references']);
 
                                 if ($hasChanged) {
                                     Utils::writeJson($assemblyPath, $assembly, 4);
@@ -85,9 +101,20 @@ class FixAssemblies implements UpdateInterface {
                         }
 
                         foreach (glob('Tests/*/*.asmdef') as $assemblyPath) {
+                            $assemblyName = pathinfo($assemblyPath, PATHINFO_FILENAME);
                             if ($assembly = Utils::readJson($assemblyPath)) {
                                 $previous = $assembly;
                                 $hasChanged = $this->alwaysSave;
+
+                                $assembly['name'] = $assemblyName;
+                                $assembly['autoReferenced'] = false;
+                                $assembly['excludePlatforms'] = [];
+                                $assembly['overrideReferences'] = true;
+
+                                if (! isset($assembly['references'])) {
+                                    $assembly['references'] = [];
+                                    $hasChanged = true;
+                                }
 
                                 $isEditorTests = strpos($assemblyPath, '.Tests.Editor.');
 
@@ -118,9 +145,6 @@ class FixAssemblies implements UpdateInterface {
                                     $hasChanged = true;
                                 }
 
-                                $assembly['excludePlatforms'] = [];
-                                $assembly['overrideReferences'] = true;
-
                                 foreach ($this->precompiledReferences as $reference) {
                                     if (! in_array($reference, $assembly['precompiledReferences'])) {
                                         $assembly['precompiledReferences'][] = $reference;
@@ -128,8 +152,6 @@ class FixAssemblies implements UpdateInterface {
                                     }
                                 }
                                 sort($assembly['precompiledReferences']);
-
-                                $assembly['autoReferenced'] = false;
 
                                 foreach ($this->defineConstraints as $constraint) {
                                     if (! in_array($constraint, $assembly['defineConstraints'])) {
@@ -143,6 +165,8 @@ class FixAssemblies implements UpdateInterface {
                                     $hasChanged = true;
                                 }
 
+                                $this->logWrongAssemblies($assemblyPath, $assembly['references']);
+
                                 if ($hasChanged) {
                                     Utils::writeJson($assemblyPath, $assembly, 4);
                                 }
@@ -153,6 +177,24 @@ class FixAssemblies implements UpdateInterface {
                             die("Failed to find Editor Tests: $package->path");
                         }
                     }
+                }
+            }
+        }
+    }
+
+    private function logWrongAssemblies(string $assemblyPath, array $references): void {
+        if ($this->logGUIDs) {
+            foreach ($references as $ref) {
+                if (strpos($ref, 'GUID:') === 0) {
+                    die("Found '$ref' in assembly: $assemblyPath");
+                }
+            }
+        }
+
+        if ($this->logAssemblies) {
+            foreach ($this->assembliesToLog as $ref) {
+                if (in_array($ref, $references, true)) {
+                    die("Found '$ref' in assembly: $assemblyPath");
                 }
             }
         }

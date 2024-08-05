@@ -34,12 +34,13 @@ class ReferenceSorter {
 
         natcasesort($sortedDependencies);
 
+        $engine = [];
         $unity = [];
         $editor = [];
         $dependencies = [];
         foreach ($sortedDependencies as $key) {
             if (strpos($key, 'UnityEngine') === 0) {
-                $unity[] = $key;
+                $engine[] = $key;
                 continue;
             }
 
@@ -48,10 +49,15 @@ class ReferenceSorter {
                 continue;
             }
 
+            if (strpos($key, 'Unity') === 0) {
+                $unity[] = $key;
+                continue;
+            }
+
             $dependencies[] = $key;
         }
 
-        $sortedDependencies = array_merge($unity, $editor, $dependencies);
+        $sortedDependencies = array_merge($engine, $editor, $unity, $dependencies);
 
         if ($assemblies !== $sortedDependencies) {
             $assemblies = $sortedDependencies;

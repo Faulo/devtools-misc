@@ -1,6 +1,7 @@
 <?php
 namespace Slothsoft\Devtools\Misc\Update\Git;
 
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 use Slothsoft\Devtools\Misc\Update\Project;
 
@@ -31,8 +32,8 @@ class FlowPatch implements UpdateInterface {
             }
             $version = implode('.', $version);
 
-            passthru("git flow release start $version");
-            passthru("git flow release finish $version -p -m \"$this->message\"");
+            Utils::execute("git flow release start $version");
+            Utils::execute("git flow release finish $version -p -m \"$this->message\"");
         }
     }
 }
