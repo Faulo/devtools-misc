@@ -5,6 +5,8 @@ use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 
+$workspace = realpath('/Unity');
+
 $gameJams = [
     [
         'name' => 'GameJam.BackToTheChicken',
@@ -136,7 +138,7 @@ $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('unity', realpath('R:/Unity'), 'git');
+$manager = new UnityProjectManager('unity', $workspace, 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
 
 foreach ($groups as $key => $val) {

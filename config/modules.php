@@ -4,6 +4,8 @@ declare(strict_types = 1);
 use Slothsoft\Devtools\Misc\Update\ModuleManager;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 
+$workspace = realpath('/PHP');
+
 $modules = [
     [
         'name' => 'amber'
@@ -76,4 +78,4 @@ $modules = [
     ]
 ];
 
-ProjectDatabase::instance()->groups[] = new ModuleManager('module', realpath('R:/PHP'), $modules);
+ProjectDatabase::instance()->groups[] = new ModuleManager('module', $workspace, $modules);

@@ -13,6 +13,8 @@ use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\AddPackagesToProject;
 use Slothsoft\Devtools\Misc\Update\Unity\CallMethod;
 
+$workspace = realpath('/Ulisses');
+
 $thirdPartyPackages = [
     'com.acegikmo.shapes',
     'com.arongranberg.astar',
@@ -205,7 +207,7 @@ namespace %s {
 }
 EOT;
 
-$manager = new UnityProjectManager('ulisses', realpath('R:/Ulisses'), 'plastic');
+$manager = new UnityProjectManager('ulisses', $workspace, 'plastic');
 
 $unityUpdates = new UnityUpdateFactory();
 
@@ -261,14 +263,17 @@ ProjectDatabase::instance()->groups[] = $manager;
 ProjectDatabase::instance()->groups[] = (new Group('ulisses-plastic'))->withGroup($manager);
 
 $projects = [
-    'Ulisses.DSK'
+    [
+        'name' => 'Ulisses.DSK',
+        'repository' => 'https://github.com/UlissesSpieleDigital/DSK-Digital'
+    ]
 ];
 
 $groups = [
     'project' => $projects
 ];
 
-$manager = new UnityProjectManager('ulisses', realpath('R:/Ulisses'), 'git');
+$manager = new UnityProjectManager('ulisses', $workspace, 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
 
 foreach ($groups as $key => $val) {
