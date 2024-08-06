@@ -35,7 +35,7 @@ class Group {
 
         foreach ($this->projects as $project) {
             echo "# $project" . PHP_EOL;
-            $time = microtime(true);
+            $time = new \DateTime();
             foreach ($updates as $update) {
                 $update = $project->manager->getUpdate($update);
                 printf('## %s%s', basename(get_class($update)), PHP_EOL);
@@ -43,8 +43,8 @@ class Group {
                 $update->runOn($project);
                 echo PHP_EOL;
             }
-            $delta = microtime(true) - $time;
-            printf('# %s: %ds%s', $project, 1000 * $delta, PHP_EOL);
+            $delta = $time->diff(new \DateTime());
+            printf('# %s: %s%s', $project, $delta->format('%i:%S'), PHP_EOL);
         }
         echo '...done!';
         echo PHP_EOL;
