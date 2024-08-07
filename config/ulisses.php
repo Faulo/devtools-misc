@@ -2,6 +2,7 @@
 declare(strict_types = 1);
 
 use Slothsoft\Devtools\Misc\Update\Group;
+use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
@@ -248,9 +249,10 @@ $staticUpdates->addDelete('delete-deployment', 'Jenkinsfile.Deployment');
 $staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
 $staticUpdates->addDelete('delete-idea', '.idea');
 $staticUpdates->addDelete('delete-tmpro', 'Assets/TextMesh Pro/Resources/Fonts & Materials*', 'Assets/TextMesh Pro/Shaders*', 'Assets/TextMesh Pro/Fonts*');
-$staticUpdates->addCopy('copy-devops', 'static/ulisses/devops');
-$staticUpdates->addCopy('copy-devops-third-party', 'static/ulisses/devops-third-party');
-$staticUpdates->addCopy('copy-git', 'static/ulisses/git');
+$staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project): ?string {
+    return stripos($project->id, 'ulisses') === 0 ? __DIR__ . '/../static/ulisses/devops' : __DIR__ . '/../static/ulisses/devops-third-party';
+});
+$staticUpdates->addCopy('copy-git', 'static/ulisses/empty');
 $staticUpdates->addCopy('copy-plastic', 'static/ulisses/plastic');
 $staticUpdates->addCopy('copy-unity', 'static/ulisses/unity-2022');
 $manager->updateFactories[] = $staticUpdates;
@@ -275,6 +277,17 @@ $groups = [
 
 $manager = new UnityProjectManager('ulisses', $workspace, 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
+
+$staticUpdates = new StaticFolderFactory();
+$staticUpdates->addDelete('delete-deployment', 'Jenkinsfile.Deployment');
+$staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
+$staticUpdates->addDelete('delete-idea', '.idea');
+$staticUpdates->addDelete('delete-tmpro', 'Assets/TextMesh Pro/Resources/Fonts & Materials*', 'Assets/TextMesh Pro/Shaders*', 'Assets/TextMesh Pro/Fonts*');
+$staticUpdates->addCopy('copy-devops', 'static/ulisses/empty');
+$staticUpdates->addCopy('copy-git', 'static/ulisses/git');
+$staticUpdates->addCopy('copy-plastic', 'static/ulisses/empty');
+$staticUpdates->addCopy('copy-unity', 'static/ulisses/empty');
+$manager->updateFactories[] = $staticUpdates;
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);
