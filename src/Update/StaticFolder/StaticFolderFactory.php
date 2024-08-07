@@ -10,6 +10,10 @@ class StaticFolderFactory extends UpdateFactory {
         $this->updates[$todo] = new StaticFolderUpdate(realpath($sourceFolder));
     }
 
+    public function addCopyWithSwitch(string $todo, $folderDelegate): void {
+        $this->updates[$todo] = new StaticSwitchFolder($folderDelegate);
+    }
+
     public function addDelete(string $todo, string ...$globs): void {
         $this->updates[$todo] = new StaticDeleteUpdate(...$globs);
     }

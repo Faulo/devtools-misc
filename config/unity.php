@@ -1,9 +1,12 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
+use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
+use Slothsoft\Unity\UnityHub;
 
 $workspace = realpath('/Unity');
 
@@ -119,10 +122,10 @@ $gameJams = [
 ];
 
 $projects = [
-    [
-        'name' => 'CursedCreations.CursedBroom',
-        'repository' => 'https://github.com/Cursed-Creations/CursedBroom'
-    ],
+    // [
+    // 'name' => 'CursedCreations.CursedBroom',
+    // 'repository' => 'https://github.com/Cursed-Creations/CursedBroom'
+    // ],
     [
         'name' => 'Slothsoft.Freeblob',
         'repository' => 'https://github.com/Faulo/Freeblob'
@@ -130,6 +133,10 @@ $projects = [
     [
         'name' => 'Slothsoft.ExpositionOfExtraordinaryExperiences',
         'repository' => 'https://github.com/Faulo/ExpositionOfExtraordinaryExperiences'
+    ],
+    [
+        'name' => 'Oilcatz.TrialOfTwo',
+        'repository' => 'https://github.com/Faulo/TrialOfTwo'
     ]
 ];
 
@@ -140,6 +147,23 @@ $groups = [
 
 $manager = new UnityProjectManager('unity', $workspace, 'git');
 $manager->updateFactories[] = new UnityUpdateFactory();
+
+$staticUpdates = new StaticFolderFactory();
+$staticUpdates->addCopyWithSwitch('copy-unity', function (Project $project): ?string {
+    $hub = UnityHub::getInstance();
+    $unity = $hub->findProject($project->workspace, true);
+    if ($unity) {
+        $version = $unity->getEditorVersion();
+        $version = explode('.', $version)[0];
+        $folder = __DIR__ . '/../static/unity/unity-' . $version;
+        if (! is_dir($folder)) {
+            throw new \Exception("Unsupported Unity version '{$unity->getEditorVersion()}'!");
+        }
+        return $folder;
+    }
+    return null;
+});
+$manager->updateFactories[] = $staticUpdates;
 
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);

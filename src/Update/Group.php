@@ -34,17 +34,25 @@ class Group {
         $cwd = realpath(getcwd()) or die('missing cwd');
 
         foreach ($this->projects as $project) {
-            echo "# $project" . PHP_EOL;
+            echo "# $project";
+            echo PHP_EOL;
+
             $time = new \DateTime();
             foreach ($updates as $update) {
                 $update = $project->manager->getUpdate($update);
-                printf('## %s%s', basename(get_class($update)), PHP_EOL);
+                printf('## %s', basename(get_class($update)));
+                echo PHP_EOL;
+
                 chdir($cwd);
                 $update->runOn($project);
+
                 echo PHP_EOL;
             }
+
             $delta = $time->diff(new \DateTime());
-            printf('# %s: %s%s', $project, $delta->format('%i:%S'), PHP_EOL);
+            printf('# %s: %s', $project, $delta->format('%i:%S'));
+            echo PHP_EOL;
+            echo PHP_EOL;
         }
         echo '...done!';
         echo PHP_EOL;
