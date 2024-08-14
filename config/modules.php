@@ -75,6 +75,9 @@ $modules = [
     ],
     [
         'name' => 'webrtc'
+    ],
+    [
+        'name' => 'whatthehell'
     ]
 ];
 

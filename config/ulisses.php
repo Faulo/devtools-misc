@@ -53,7 +53,7 @@ $hexxenPackages = [
     // 'Ulisses.HeXXen1733.Animations',
     'Ulisses.HeXXen1733.Art',
     'Ulisses.HeXXen1733.ArtDevelopment',
-    //'Ulisses.HeXXen1733.ArtStaging',
+    // 'Ulisses.HeXXen1733.ArtStaging',
     'Ulisses.HeXXen1733.Audio',
     'Ulisses.HeXXen1733.Battle',
     // 'Ulisses.HeXXen1733.BattleDirection',
