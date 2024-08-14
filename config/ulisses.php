@@ -53,7 +53,7 @@ $hexxenPackages = [
     // 'Ulisses.HeXXen1733.Animations',
     'Ulisses.HeXXen1733.Art',
     'Ulisses.HeXXen1733.ArtDevelopment',
-    'Ulisses.HeXXen1733.ArtStaging',
+    //'Ulisses.HeXXen1733.ArtStaging',
     'Ulisses.HeXXen1733.Audio',
     'Ulisses.HeXXen1733.Battle',
     // 'Ulisses.HeXXen1733.BattleDirection',
@@ -170,7 +170,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.19.7",
+    "de.ulisses-spiele.core.utilities" => "4.19.9",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"

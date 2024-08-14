@@ -43,7 +43,7 @@ class ProjectManager extends Group {
         return $this->updates[$id];
     }
 
-    protected function createProject(array $info): Project {
+    public function createProject(array $info): Project {
         return new Project($this, $info);
     }
 

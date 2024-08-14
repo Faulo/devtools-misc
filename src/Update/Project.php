@@ -22,7 +22,10 @@ class Project {
         $this->manager = $manager;
         $this->name = $info['name'];
         $this->id = $info['id'] ?? Utils::toId($this->name);
-        $this->workspace = is_dir($info['workspaceDir']) ? realpath($info['workspaceDir']) : $info['workspaceDir'];
+        $this->workspace = $info['workspaceDir'] ?? $manager->workspaceDir . $this->id;
+        if (is_dir($this->workspace)) {
+            $this->workspace = realpath($this->workspace);
+        }
         $this->repository = $info['repository'] ?? null;
         $this->info = $info;
     }
