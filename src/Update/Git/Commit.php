@@ -16,7 +16,7 @@ class Commit implements UpdateInterface {
 
     public function runOn(Project $project) {
         if ($project->chdir()) {
-            Utils::execute('git add --renormalize .');
+            Utils::execute('git add .');
             Utils::execute('git commit -m ' . escapeshellarg($this->message));
         }
     }
