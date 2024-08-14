@@ -100,11 +100,17 @@ $projects = [
     'Ulisses World ISB'
 ];
 
+$sandboxes = [
+    'Ulisses.Sandbox.Core',
+    'Ulisses.Sandbox.HeXXen1733'
+];
+
 $groups = [
     'third-party' => $thirdPartyPackages,
     'core' => $corePackages,
     'hexxen1733' => $hexxenPackages,
-    'project' => $projects
+    'project' => $projects,
+    'sandboxes' => $sandboxes
 ];
 
 $projectManifestRegistries = json_decode(<<<EOT
@@ -164,7 +170,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.19.1",
+    "de.ulisses-spiele.core.utilities" => "4.19.7",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -187,7 +193,8 @@ $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.shader" => "2.0.0",
     // "com.unity.render-pipelines.universal" => "14.0.11",
     // "de.ulisses-spiele.hexxen1733.battle" => "0.14.0",
-    "de.ulisses-spiele.core.logging" => "1.2.3"
+    "de.ulisses-spiele.core.logging" => "1.2.3",
+    "de.ulisses-spiele.hexxen1733.sharedui" => "1.0.0"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
@@ -236,7 +243,9 @@ $fix->setChangelogForDependency("de.ulisses-spiele.hexxen1733.art", $artChangelo
 $unityUpdates->addUpdate('fix-changelog', $fix);
 
 $fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.Core');
-$unityUpdates->addUpdate('fix-sandbox', $fix);
+$unityUpdates->addUpdate('fix-sandbox-core', $fix);
+$fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.HeXXen1733');
+$unityUpdates->addUpdate('fix-sandbox-hexxen1733', $fix);
 
 $fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUpdater.UpdateAll');
 $unityUpdates->addUpdate('update', $fix);
