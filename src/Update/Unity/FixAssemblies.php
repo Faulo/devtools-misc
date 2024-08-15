@@ -28,13 +28,17 @@ class FixAssemblies implements UpdateInterface {
         $this->scope = $scope;
     }
 
-    private $defineConstraints = [
+    private $defineConstraintsEditor = [
         'UNITY_INCLUDE_TESTS'
     ];
 
-    public function addDefineConstraint(string $constraint) {
-        $this->defineConstraints[] = $constraint;
-    }
+    private $defineConstraintsRuntime = [
+        'UNITY_INCLUDE_TESTS'
+    ];
+
+    private $defineConstraintsUtilities = [
+        'UNITY_EDITOR'
+    ];
 
     private $precompiledReferences = [
         'nunit.framework.dll'
@@ -116,29 +120,41 @@ class FixAssemblies implements UpdateInterface {
                                     $hasChanged = true;
                                 }
 
-                                $isEditorTests = strpos($assemblyPath, '.Tests.Editor.');
+                                $type = pathinfo($assemblyPath, PATHINFO_FILENAME);
+                                $type = explode('.', $type);
+                                $type = end($type);
 
-                                if ($isEditorTests) {
-                                    $hasEditorTests = true;
+                                switch ($type) {
+                                    case 'Editor':
+                                        $hasEditorTests = true;
 
-                                    $assembly['includePlatforms'] = [
-                                        "Editor"
-                                    ];
+                                        $assembly['defineConstraints'] = $this->defineConstraintsEditor;
 
-                                    foreach ($this->editorTestReferences as $reference) {
-                                        if (! in_array($reference, $assembly['references'])) {
-                                            $assembly['references'][] = $reference;
-                                            $hasChanged = true;
+                                        $assembly['includePlatforms'] = [
+                                            "Editor"
+                                        ];
+
+                                        foreach ($this->editorTestReferences as $reference) {
+                                            if (! in_array($reference, $assembly['references'])) {
+                                                $assembly['references'][] = $reference;
+                                                $hasChanged = true;
+                                            }
                                         }
-                                    }
 
-                                    foreach ($this->editorTestClasses as $path => $code) {
-                                        $testsFile = dirname($assemblyPath) . DIRECTORY_SEPARATOR . $path;
-                                        $testsClass = sprintf($code, $assembly['name']);
-                                        file_put_contents($testsFile, $testsClass);
-                                    }
-                                } else {
-                                    $assembly['includePlatforms'] = [];
+                                        foreach ($this->editorTestClasses as $path => $code) {
+                                            $testsFile = dirname($assemblyPath) . DIRECTORY_SEPARATOR . $path;
+                                            $testsClass = sprintf($code, $assembly['name']);
+                                            file_put_contents($testsFile, $testsClass);
+                                        }
+                                        break;
+                                    case 'Runtime':
+                                        $assembly['defineConstraints'] = $this->defineConstraintsRuntime;
+                                        $assembly['includePlatforms'] = [];
+                                        break;
+                                    case 'Utilities':
+                                        $assembly['defineConstraints'] = $this->defineConstraintsUtilities;
+                                        $assembly['includePlatforms'] = [];
+                                        break;
                                 }
 
                                 if (ReferenceSorter::sortAssemblies($assembly['references'])) {
@@ -152,14 +168,6 @@ class FixAssemblies implements UpdateInterface {
                                     }
                                 }
                                 sort($assembly['precompiledReferences']);
-
-                                foreach ($this->defineConstraints as $constraint) {
-                                    if (! in_array($constraint, $assembly['defineConstraints'])) {
-                                        $assembly['defineConstraints'][] = $constraint;
-                                        $hasChanged = true;
-                                    }
-                                }
-                                sort($assembly['defineConstraints']);
 
                                 if ($assembly !== $previous) {
                                     $hasChanged = true;

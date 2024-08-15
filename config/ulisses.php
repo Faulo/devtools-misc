@@ -196,8 +196,9 @@ $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.shader" => "2.0.0",
     // "com.unity.render-pipelines.universal" => "14.0.11",
     // "de.ulisses-spiele.hexxen1733.battle" => "0.14.0",
-    "de.ulisses-spiele.core.logging" => "1.2.3",
-    "de.ulisses-spiele.hexxen1733.sharedui" => "1.0.0"
+    // "de.ulisses-spiele.core.logging" => "1.2.3",
+    // "de.ulisses-spiele.hexxen1733.sharedui" => "1.0.0",
+    "de.ulisses-spiele.hexxen1733.art" => "1.0.0"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
