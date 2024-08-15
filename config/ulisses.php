@@ -292,7 +292,7 @@ $staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
 $staticUpdates->addDelete('delete-idea', '.idea');
 $staticUpdates->addDelete('delete-tmpro', 'Assets/TextMesh Pro/Resources/Fonts & Materials*', 'Assets/TextMesh Pro/Shaders*', 'Assets/TextMesh Pro/Fonts*');
 $staticUpdates->addCopy('copy-devops', 'static/ulisses/empty');
-$staticUpdates->addCopy('copy-git', 'static/ulisses/git');
+$staticUpdates->addCopy('copy-git', 'static/ulisses/empty');
 $staticUpdates->addCopy('copy-plastic', 'static/ulisses/empty');
 $staticUpdates->addCopy('copy-unity', 'static/ulisses/empty');
 $manager->updateFactories[] = $staticUpdates;
