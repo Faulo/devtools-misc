@@ -1,16 +1,25 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Update\PHPProjectManager;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ProjectManager;
+use Slothsoft\Devtools\Misc\Update\Group;
 
 $workspace = realpath('/PHP');
 
-$projects = [
+$phps = [
     [
         'name' => 'devtools-misc',
         'repository' => 'https://github.com/Faulo/devtools-php'
     ],
+    [
+        'name' => 'devtools-unity-pp',
+        'repository' => 'https://github.com/Faulo/devtools-unity-pp'
+    ]
+];
+
+$projects = [
     [
         'name' => 'Slothsoft.Docker.Jenkins',
         'repository' => 'https://github.com/Faulo/docker-jenkins'
@@ -29,10 +38,18 @@ $projects = [
     ]
 ];
 
-$devops = new ProjectManager('devops', $workspace, 'git');
+$group = new Group('devops');
+
+$manager = new PHPProjectManager('devops.php', $workspace, $phps);
+
+$group->groups[] = $manager;
+
+$manager = new ProjectManager('devops.jenkins', $workspace, 'git');
 
 foreach ($projects as $project) {
-    $devops->projects[] = $devops->createProject($project);
+    $manager->projects[] = $manager->createProject($project);
 }
 
-ProjectDatabase::instance()->groups[] = $devops;
+$group->groups[] = $manager;
+
+ProjectDatabase::instance()->groups[] = $group;

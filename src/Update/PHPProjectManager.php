@@ -6,7 +6,7 @@ use Slothsoft\Devtools\Misc\Update\Composer\ComposerUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\PHP\PHPUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\Fix\FixUpdateFactory;
 
-abstract class PHPProjectManager extends ProjectManager {
+class PHPProjectManager extends ProjectManager {
 
     public function __construct(string $id, string $workspaceDir, array $projects) {
         parent::__construct($id, $workspaceDir, 'git');
@@ -46,6 +46,8 @@ abstract class PHPProjectManager extends ProjectManager {
         }
     }
 
-    protected abstract function loadProject(array &$project);
+    protected function loadProject(array &$project) {
+        $project['workspaceId'] ??= $project['name'];
+    }
 }
 
