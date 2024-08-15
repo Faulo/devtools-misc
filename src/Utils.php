@@ -41,6 +41,12 @@ class Utils {
         return preg_replace('~\s+~', '', self::normalize($name));
     }
 
+    public static function toUrl(string $name): string {
+        $name = str_replace('_', '_5f', $name);
+        $name = str_replace('.', '_2e', $name);
+        return $name;
+    }
+
     public static function tokenize(string $tokens): array {
         return explode(' ', self::normalize($tokens));
     }
