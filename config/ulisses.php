@@ -1,6 +1,7 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
@@ -13,6 +14,8 @@ use Slothsoft\Devtools\Misc\Update\Unity\FixChangelog;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\AddPackagesToProject;
 use Slothsoft\Devtools\Misc\Update\Unity\CallMethod;
+use Slothsoft\Unity\UnityPackageInfo;
+use Slothsoft\Unity\UnityProjectInfo;
 
 $workspace = realpath('/Ulisses');
 
@@ -231,6 +234,40 @@ $fix->setForbiddenDependencies($packageManifestForbidden);
 $fix->setAuthor('Ulisses Digital');
 $fix->setUnity('2022.3');
 $fix->setUnityRelease('33f1');
+$fix->documentationUrlDelegate = function (Project $project, UnityProjectInfo $unity, UnityPackageInfo $package): string {
+    $packageId = $package->package['name'];
+    return "http://packages.ulisses-spiele.de:4873/-/web/detail/$packageId/";
+};
+$fix->homepageUrlDelegate = function (Project $project, UnityProjectInfo $unity, UnityPackageInfo $package): string {
+    $projectUrl = basename($unity->path);
+
+    $jobUrl = 'packages.third-party';
+    if (stripos($projectUrl, 'ulisses.core') === 0) {
+        $jobUrl = 'packages.ulisses';
+    }
+    if (stripos($projectUrl, 'ulisses.hexxen1733') === 0) {
+        $jobUrl = 'packages.hexxen1733';
+    }
+
+    $packageUrl = Utils::toUrl($package->package['name']);
+
+    return "http://ci.ulisses-spiele.de:8080/job/$jobUrl/job/$projectUrl/$packageUrl/index.html";
+};
+$fix->changelogUrlDelegate = function (Project $project, UnityProjectInfo $unity, UnityPackageInfo $package): string {
+    $projectUrl = basename($unity->path);
+
+    $jobUrl = 'packages.third-party';
+    if (stripos($projectUrl, 'ulisses.core') === 0) {
+        $jobUrl = 'packages.ulisses';
+    }
+    if (stripos($projectUrl, 'ulisses.hexxen1733') === 0) {
+        $jobUrl = 'packages.hexxen1733';
+    }
+
+    $packageUrl = Utils::toUrl($package->package['name']);
+
+    return "http://ci.ulisses-spiele.de:8080/job/$jobUrl/job/$projectUrl/$packageUrl/CHANGELOG.html";
+};
 $unityUpdates->addUpdate('fix-packages', $fix);
 
 $fix = new FixAssemblies('de.ulisses-spiele');

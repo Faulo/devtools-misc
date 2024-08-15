@@ -23,6 +23,12 @@ class FixPackages implements UpdateInterface {
 
     private array $info = [];
 
+    public $homepageUrlDelegate;
+
+    public $documentationUrlDelegate;
+
+    public $changelogUrlDelegate;
+
     public function __construct(string $scope) {
         $this->scope = $scope;
     }
@@ -97,7 +103,22 @@ class FixPackages implements UpdateInterface {
                             $hasChanged = true;
                         }
 
-                        foreach ($this->info as $key => $val) {
+                        $info = $this->info;
+
+                        $delegates = [
+                            'homepage' => $this->homepageUrlDelegate,
+                            'documentationUrl' => $this->documentationUrlDelegate,
+                            'changelogUrl' => $this->changelogUrlDelegate,
+                            'bugs' => $this->changelogUrlDelegate
+                        ];
+
+                        foreach ($delegates as $key => $delegate) {
+                            if ($delegate) {
+                                $info[$key] = $delegate($project, $unity, $package);
+                            }
+                        }
+
+                        foreach ($info as $key => $val) {
                             if ($val) {
                                 if (! isset($manifest[$key]) or $manifest[$key] !== $val) {
                                     $manifest[$key] = $val;
