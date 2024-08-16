@@ -18,7 +18,7 @@ class LabelCommit implements UpdateInterface {
     }
 
     public function runOn(Project $project) {
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.plastic')) {
             $command = sprintf('cm find changesets where %s --format="{changesetid}" --nototal', escapeshellarg($this->condition));
             $ids = [];
             exec($command, $ids);

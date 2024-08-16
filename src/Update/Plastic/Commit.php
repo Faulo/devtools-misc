@@ -15,7 +15,7 @@ class Commit implements UpdateInterface {
     }
 
     public function runOn(Project $project) {
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.plastic')) {
             Utils::execute('cm add . -R');
             Utils::execute('cm ci --all -c=' . escapeshellarg($this->message));
         }

@@ -27,7 +27,7 @@ class TagCommit implements UpdateInterface {
     }
 
     public function runOn(Project $project) {
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.plastic')) {
             $command = sprintf('cm attribute create %s', escapeshellarg($this->attribute));
             Utils::execute($command);
 

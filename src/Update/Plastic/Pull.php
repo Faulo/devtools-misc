@@ -13,7 +13,7 @@ class Pull implements UpdateInterface {
             Utils::execute("cm workspace create \"$project->name\" --server=UlissesDigital@cloud");
         }
 
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.plastic')) {
             Utils::execute("cm update");
         }
     }
