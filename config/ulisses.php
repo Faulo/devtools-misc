@@ -5,8 +5,11 @@ use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
+use Slothsoft\Devtools\Misc\Update\ProjectManager;
 use Slothsoft\Devtools\Misc\Update\StubUpdate;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
+use Slothsoft\Devtools\Misc\Update\UpdateFactory;
+use Slothsoft\Devtools\Misc\Update\Fix\FixJenkins;
 use Slothsoft\Devtools\Misc\Update\Plastic\TagCommit;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\AddPackagesToProject;
@@ -357,3 +360,34 @@ foreach ($groups as $key => $val) {
 
 ProjectDatabase::instance()->groups[] = $manager;
 ProjectDatabase::instance()->groups[] = (new Group('ulisses-git'))->withGroup($manager);
+
+$servers = [
+    [
+        'name' => 'Ulisses.CI-Server',
+        'repository' => 'https://github.com/UlissesSpieleDigital/CI-Server'
+    ]
+];
+
+$groups = [
+    'server' => $servers
+];
+
+$manager = new ProjectManager('ulisses.server', $workspace, 'git');
+$updates = new UpdateFactory();
+$fix = new FixJenkins();
+$fix->alwaysSave = false;
+$fix->clearActions = true;
+$fix->properties['org.jenkinsci.plugins.workflow.job.properties.DisableResumeJobProperty'] = true;
+$fix->elements['//abortPrevious'] = 'false';
+$fix->elements['//cleanup'] = 'STANDARD';
+$fix->elements['//pollOnController'] = 'true';
+$fix->elements['//lightweight'] = 'true';
+$updates->addUpdate('fix-jobs', $fix);
+
+$manager->updateFactories[] = $updates;
+
+foreach ($groups as $key => $val) {
+    $manager->addGroup($key, $val);
+}
+
+ProjectDatabase::instance()->groups[] = $manager;

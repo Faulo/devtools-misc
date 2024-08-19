@@ -2,7 +2,7 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
-abstract class UpdateFactory {
+class UpdateFactory {
 
     public array $updates = [];
 
