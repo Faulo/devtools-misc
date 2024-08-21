@@ -132,6 +132,10 @@ class FixPackages implements UpdateInterface {
                             }
                         }
 
+                        if (self::sortFields($manifest)) {
+                            $hasChanged = true;
+                        }
+
                         if ($hasChanged) {
                             $package->savePackage();
                         }
@@ -155,6 +159,52 @@ class FixPackages implements UpdateInterface {
         }
 
         yield $packageName;
+    }
+
+    private static array $fieldOrder = [
+        "name" => null,
+        "version" => null,
+        "displayName" => null,
+        "description" => "",
+        "documentationUrl" => null,
+        "homepage" => null,
+        "changelogUrl" => null,
+        "bugs" => null,
+        "licensesUrl" => null,
+        "unity" => null,
+        "unityRelease" => null,
+        "type" => "library",
+        "hideInEditor" => false,
+        "dependencies" => [],
+        "keywords" => [],
+        "author" => null,
+        "contributors" => []
+    ];
+
+    private static function sortFields(array &$manifest) {
+        foreach ($manifest as $key => $val) {
+            if (! isset(self::$fieldOrder[$key])) {
+                self::$fieldOrder[$key] = null;
+            }
+        }
+
+        $new = [];
+        foreach (self::$fieldOrder as $key => $val) {
+            if (isset($manifest[$key])) {
+                $val = $manifest[$key];
+            }
+
+            if ($val !== null) {
+                $new[$key] = $val;
+            }
+        }
+
+        if ($manifest === $new) {
+            return false;
+        }
+
+        $manifest = $new;
+        return true;
     }
 }
 

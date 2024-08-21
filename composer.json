@@ -14,7 +14,7 @@
 		"tdd.update-docs" : "@php scripts/tdd.update-docs.php"
 	},
 	"require" : {
-		"php" : "7.2 - 8.1",
+		"php" : "7.2 - 8.2",
 		"ext-xsl" : "*",
 		"composer/composer" : "*",
 		"slothsoft/core" : "*",
@@ -31,7 +31,8 @@
 			"config/modules.php",
 			"config/servers.php",
 			"config/unity.php",
-			"config/ulisses.php"
+			"config/ulisses.php",
+			"config/misc.php"
 		]
 	},
 	"require-dev" : {
