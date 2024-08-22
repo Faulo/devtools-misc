@@ -1,5 +1,4 @@
 <?php
-
 use Slothsoft\Farah\Kernel;
 use Slothsoft\Farah\Http\MessageFactory;
 use Slothsoft\Farah\RequestStrategy\LookupAssetStrategy;
