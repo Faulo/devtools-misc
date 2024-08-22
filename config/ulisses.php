@@ -178,7 +178,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "4.19.9",
+    "de.ulisses-spiele.core.utilities" => "4.19.10",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -197,7 +197,7 @@ $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.staging" => "0.1.10-pre.3",
+    // "de.ulisses-spiele.hexxen1733.staging" => "0.6.0-pre.0",
     // "de.ulisses-spiele.hexxen1733.shader" => "2.0.0",
     // "com.unity.render-pipelines.universal" => "14.0.11",
     // "de.ulisses-spiele.hexxen1733.battle" => "0.14.0",
