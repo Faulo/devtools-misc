@@ -194,6 +194,10 @@ class FixPackages implements UpdateInterface {
                 $val = $manifest[$key];
             }
 
+            if ($val === '') {
+                $val = null;
+            }
+
             if ($val !== null) {
                 $new[$key] = $val;
             }
