@@ -6,6 +6,9 @@ use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ProjectManager;
 
 $workspace = realpath('/CSharp');
+if (! $workspace) {
+    return;
+}
 
 $csharps = [
     [

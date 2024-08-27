@@ -23,6 +23,9 @@ use Slothsoft\Unity\UnityPackageInfo;
 use Slothsoft\Unity\UnityProjectInfo;
 
 $workspace = realpath('/Ulisses');
+if (! $workspace) {
+    return;
+}
 
 $thirdPartyPackages = [
     'com.acegikmo.shapes',

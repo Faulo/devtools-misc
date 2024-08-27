@@ -5,6 +5,9 @@ use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ServerManager;
 
 $workspace = realpath('/PHP');
+if (! $workspace) {
+    return;
+}
 
 $servers = [
     [

@@ -7,6 +7,9 @@ use Slothsoft\Devtools\Misc\Update\ProjectManager;
 use Slothsoft\Devtools\Misc\Update\Group;
 
 $workspace = realpath('/PHP');
+if (! $workspace) {
+    return;
+}
 
 $phps = [
     [

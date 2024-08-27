@@ -5,6 +5,9 @@ use Slothsoft\Devtools\Misc\Update\ModuleManager;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 
 $workspace = realpath('/PHP');
+if (! $workspace) {
+    return;
+}
 
 $modules = [
     [

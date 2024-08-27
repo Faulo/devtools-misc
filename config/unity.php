@@ -9,6 +9,9 @@ use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Unity\UnityHub;
 
 $workspace = realpath('/Unity');
+if (! $workspace) {
+    return;
+}
 
 $gameJams = [
     [
