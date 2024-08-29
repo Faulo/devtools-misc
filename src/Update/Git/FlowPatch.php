@@ -23,7 +23,7 @@ class FlowPatch implements UpdateInterface {
     }
 
     public function runOn(Project $project) {
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.git')) {
             $version = exec('git describe --tags --abbrev=0');
             $version = explode('.', $version);
             $version[$this->release] ++;

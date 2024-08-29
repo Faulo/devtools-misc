@@ -15,7 +15,7 @@ class Commit implements UpdateInterface {
     }
 
     public function runOn(Project $project) {
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.git')) {
             Utils::execute('git add .');
             Utils::execute('git commit -m ' . escapeshellarg($this->message));
         }

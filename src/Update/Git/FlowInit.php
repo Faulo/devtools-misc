@@ -8,7 +8,7 @@ use Slothsoft\Devtools\Misc\Update\Project;
 class FlowInit implements UpdateInterface {
 
     public function runOn(Project $project) {
-        if ($project->chdir()) {
+        if ($project->chdir() and is_dir('.git')) {
             Utils::execute('git flow init -d -f');
             Utils::execute('git merge master');
         }
