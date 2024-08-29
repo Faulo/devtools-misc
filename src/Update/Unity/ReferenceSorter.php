@@ -30,7 +30,7 @@ class ReferenceSorter {
     }
 
     public static function sortAssemblies(array &$assemblies): bool {
-        $sortedDependencies = $assemblies;
+        $sortedDependencies = array_unique($assemblies);
 
         natcasesort($sortedDependencies);
 
