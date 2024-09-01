@@ -5,7 +5,7 @@ use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ProjectManager;
 
-$workspace = realpath('/CSharp');
+$workspace = realpath('/Misc');
 if (! $workspace) {
     return;
 }
@@ -18,6 +18,18 @@ $csharps = [
     [
         'name' => 'Pyrdacor.Ambermoon.net',
         'repository' => 'https://github.com/Pyrdacor/Ambermoon.net'
+    ],
+    [
+        'name' => 'Rare.Banjo-Kazooie',
+        'repository' => 'https://gitlab.com/banjo.decomp/banjo-kazooie'
+    ],
+    [
+        'name' => 'Nintendo.SuperMario64',
+        'repository' => 'https://github.com/n64decomp/sm64'
+    ],
+    [
+        'name' => 'Slothsoft.CI-Server',
+        'repository' => 'https://github.com/Faulo/gil-server'
     ]
 ];
 

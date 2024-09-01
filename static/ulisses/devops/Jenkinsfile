@@ -20,19 +20,19 @@ node('unity') {
         }
     }
     
-    for (p in projects) {   
-        unityProject {
-            // define unity project location relative to repository
-            LOCATION = p
-            
-            // which executables to create
-            BUILD_FOR_WINDOWS = '1'
-            BUILD_FOR_LINUX = '0'
-            BUILD_FOR_MAC = '0'
-            BUILD_FOR_WEBGL = '0'
-            BUILD_FOR_ANDROID = '0'
-        }
-    }
+    // for (p in projects) {   
+    //     unityProject {
+    //         // define unity project location relative to repository
+    //         LOCATION = p
+    //         
+    //         // which executables to create
+    //         BUILD_FOR_WINDOWS = '1'
+    //         BUILD_FOR_LINUX = '0'
+    //         BUILD_FOR_MAC = '0'
+    //         BUILD_FOR_WEBGL = '0'
+    //         BUILD_FOR_ANDROID = '0'
+    //     }
+    // }
     
     for (p in packages) {
         unityPackage {

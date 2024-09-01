@@ -121,7 +121,7 @@ $groups = [
     'core' => $corePackages,
     'hexxen1733' => $hexxenPackages,
     'project' => $projects,
-    'sandboxes' => $sandboxes
+    'sandbox' => $sandboxes
 ];
 
 $projectManifestRegistries = json_decode(<<<EOT
@@ -181,7 +181,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "5.1.0",
+    // "de.ulisses-spiele.core.utilities" => "5.1.1",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -200,15 +200,24 @@ $optionalUpgrades = $artPackage + [
     // "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.staging" => "0.6.0-pre.4",
+    // "de.ulisses-spiele.hexxen1733.character.abbas" => "0.3.0",
+    // "de.ulisses-spiele.hexxen1733.character.aveline" => "0.4.0",
+    // "de.ulisses-spiele.hexxen1733.character.franziska" => "0.9.0",
+    // "de.ulisses-spiele.hexxen1733.character.goetz" => "0.5.0",
+    // "de.ulisses-spiele.hexxen1733.character.irina" => "0.5.0",
+    // "de.ulisses-spiele.hexxen1733.character.magnus" => "0.6.0",
+    // "de.ulisses-spiele.hexxen1733.staging" => "0.6.0",
+    // "de.ulisses-spiele.hexxen1733.dialog" => "0.11.0",
+    "de.ulisses-spiele.hexxen1733.enemies" => "0.2.0",
     // "de.ulisses-spiele.hexxen1733.shader" => "2.1.0",
     // "com.unity.render-pipelines.universal" => "14.0.11",
-    // "de.ulisses-spiele.hexxen1733.battle-abilities" => "1.2.6",
-    // "de.ulisses-spiele.core.datamodels" => "1.3.4",
+    // "de.ulisses-spiele.hexxen1733.battle" => "1.2.8",
+    "de.ulisses-spiele.hexxen1733.battle-abilities" => "1.4.1"
+    // "de.ulisses-spiele.hexxen1733.datamodels" => "2.1.1",
     // "de.ulisses-spiele.core.logging" => "1.2.4",
     // "de.ulisses-spiele.core.mesh2d" => "3.11.6",
     // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
-    "de.ulisses-spiele.hexxen1733.art" => "1.0.0"
+    // "de.ulisses-spiele.hexxen1733.art" => "1.0.1"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
