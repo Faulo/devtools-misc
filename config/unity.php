@@ -119,6 +119,14 @@ $gameJams = [
         'repository' => 'https://github.com/Faulo/WatchOut'
     ],
     [
+        'name' => 'GameJam.DokoDont',
+        'repository' => 'https://github.com/Faulo/DokoDont'
+    ],
+    [
+        'name' => 'GameJam.LiarLiarForestFire',
+        'repository' => 'https://github.com/Faulo/LiarLiarForestFire'
+    ],
+    [
         'name' => 'GameJam.ZooSmashBaseballBash',
         'repository' => 'https://github.com/Faulo/ZooSmashBaseballBash'
     ]
@@ -129,6 +137,10 @@ $projects = [
     // 'name' => 'CursedCreations.CursedBroom',
     // 'repository' => 'https://github.com/Cursed-Creations/CursedBroom'
     // ],
+    [
+        'name' => 'Slothsoft.CursedBroom',
+        'repository' => 'https://github.com/Faulo/CursedBroom'
+    ],
     [
         'name' => 'Slothsoft.Freeblob',
         'repository' => 'https://github.com/Faulo/Freeblob'
@@ -154,7 +166,7 @@ $manager->updateFactories[] = new UnityUpdateFactory();
 $staticUpdates = new StaticFolderFactory();
 $staticUpdates->addCopyWithSwitch('copy-unity', function (Project $project): ?string {
     $hub = UnityHub::getInstance();
-    $unity = $hub->findProject($project->workspace, true);
+    $unity = $hub->findProject($project->workspace, false);
     if ($unity) {
         $version = $unity->getEditorVersion();
         $version = explode('.', $version)[0];

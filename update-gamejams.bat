@@ -1,0 +1,1 @@
+call composer run foreach "unity.gamejam" "reset pull copy-unity build commit push"
