@@ -5,6 +5,7 @@ namespace Slothsoft\Devtools\Misc\Update\Unity;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 use Slothsoft\Unity\UnityHub;
+use Slothsoft\Unity\ExecutionError;
 
 class BuildProject implements UpdateInterface {
 
@@ -22,7 +23,21 @@ class BuildProject implements UpdateInterface {
         $unity = $hub->findProject($project->workspace, true);
 
         if ($unity and chdir($unity->getProjectPath())) {
-            $unity->build($this->target, $this->path);
+            try {
+                $process = $unity->build($this->target, $this->path);
+                $this->echoLines(' > ' . $process->getCommandLine(), $process->getOutput(), $process->getErrorOutput());
+            } catch (ExecutionError $error) {
+                $this->echoLines($error, $error->getStdOut(), $error->getStdErr());
+            }
+        }
+    }
+
+    private function echoLines(string ...$lines) {
+        foreach ($lines as $line) {
+            $line = (string) $line;
+            if (strlen($line)) {
+                echo $line . PHP_EOL;
+            }
         }
     }
 }
