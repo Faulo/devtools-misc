@@ -28,10 +28,27 @@ class FillEmptyFolders implements UpdateInterface {
             if ($unity = UnityProjectInfo::find('.', true)) {
                 foreach ($this->searchPaths as $searchPath) {
                     foreach (Utils::getAllDirectories($unity->path . DIRECTORY_SEPARATOR . $searchPath) as $directory) {
-                        if ($directory = realpath($directory) and ! FileSystem::scanDir($directory) and realpath($directory . '.meta')) {
+                        if ($directory = realpath($directory) and realpath($directory . '.meta')) {
                             $file = $directory . DIRECTORY_SEPARATOR . self::COMMITME_FILE;
-                            echo "Creating: $file" . PHP_EOL;
-                            file_put_contents($file, self::COMMITME_MESSAGE);
+
+                            switch (count(FileSystem::scanDir($directory))) {
+                                case 0:
+                                    echo "Creating: $file" . PHP_EOL;
+                                    file_put_contents($file, self::COMMITME_MESSAGE);
+                                    break;
+                                case 1:
+                                    break;
+                                case 2:
+                                    break;
+                                default:
+                                    if (is_file($file)) {
+                                        unlink($file);
+                                    }
+                                    if (is_file($file . '.meta')) {
+                                        unlink($file . '.meta');
+                                    }
+                                    break;
+                            }
                         }
                     }
                 }
