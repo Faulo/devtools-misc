@@ -6,6 +6,7 @@
 		"toggl" : "@php scripts/toggl.php",
 		"php-ini" : "@php scripts/php-ini.php",
 		"aminet" : "@php scripts/aminet.php",
+		"ffix" : "@php scripts/ffix.php",
 		"foreach" : "@php scripts/foreach.php",
 		"rename-jobs" : "@php scripts/rename-jobs.php",
 		"tdd" : "@php scripts/tdd.php",
