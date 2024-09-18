@@ -1,4 +1,4 @@
-node('npm') {
+node('npm-priority') {
     def plastic = checkout scm
     env.BRANCH_NAME = plastic.PLASTICSCM_BRANCH
 		
@@ -13,6 +13,8 @@ node('npm') {
         unityPackage {
 			// define unity package location relative to repository
 			LOCATION = p
+            
+            UNITY_NODE = 'unity-priority'
 			
 			// assert CHANGELOG.md
 			TEST_CHANGELOG  = '0'

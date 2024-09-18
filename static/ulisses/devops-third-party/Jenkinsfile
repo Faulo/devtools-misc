@@ -1,4 +1,4 @@
-node('unity') {
+node('npm') {
     def plastic = checkout scm
     env.BRANCH_NAME = plastic.PLASTICSCM_BRANCH
 	
@@ -31,6 +31,8 @@ node('unity') {
 		unityPackage {
 			// define unity package location relative to repository
 			LOCATION = p
+            
+            UNITY_NODE = 'unity'
 			
 			// assert CHANGELOG.md
 			TEST_CHANGELOG  = '1'
