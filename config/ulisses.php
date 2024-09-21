@@ -322,8 +322,28 @@ $staticUpdates->addDelete('delete-deployment', 'Jenkinsfile.Deployment');
 $staticUpdates->addDelete('delete-vs', '.vs', '.vsconfig', 'obj');
 $staticUpdates->addDelete('delete-idea', '.idea');
 $staticUpdates->addDelete('delete-tmpro', 'Assets/TextMesh Pro/Resources/Fonts & Materials*', 'Assets/TextMesh Pro/Shaders*', 'Assets/TextMesh Pro/Fonts*');
-$staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project): ?string {
-    return stripos($project->id, 'ulisses') === 0 ? __DIR__ . '/../static/ulisses/devops' : __DIR__ . '/../static/ulisses/devops-third-party';
+$staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use ($groups): ?string {
+    $type = '';
+    foreach ($groups as $key => $group) {
+        foreach ($group as $id) {
+            if (strcasecmp($id, $project->id) === 0) {
+                $type = $key;
+                break 2;
+            }
+        }
+    }
+
+    switch ($type) {
+        case 'core':
+        case 'hexxen1733':
+            return __DIR__ . '/../static/ulisses/devops';
+        case 'third-party':
+            return __DIR__ . '/../static/ulisses/devops-third-party';
+        case 'project':
+            return __DIR__ . '/../static/ulisses/devops-project';
+    }
+
+    return null;
 });
 $staticUpdates->addCopy('copy-git', 'static/ulisses/empty');
 $staticUpdates->addCopy('copy-plastic', 'static/ulisses/plastic');
