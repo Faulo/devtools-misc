@@ -17,6 +17,6 @@
 	<xsl:template match="message">
 		<xsl:value-of select="concat('## [', @datetime, '] ', @speaker-name, $eol)" />
 		<xsl:value-of select="@text" />
-		<xsl:value-of select="concat($eol, $eol)" />
+		<xsl:value-of select="concat($eol, $eol, $eol)" />
 	</xsl:template>
 </xsl:stylesheet>
