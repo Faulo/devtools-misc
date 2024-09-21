@@ -7,6 +7,7 @@
 		"php-ini" : "@php scripts/php-ini.php",
 		"aminet" : "@php scripts/aminet.php",
 		"ffix" : "@php scripts/ffix.php",
+		"chatgpt" : "@php chatgpt/index.php",
 		"foreach" : "@php scripts/foreach.php",
 		"rename-jobs" : "@php scripts/rename-jobs.php",
 		"tdd" : "@php scripts/tdd.php",
@@ -20,7 +21,8 @@
 		"composer/composer" : "*",
 		"slothsoft/core" : "*",
 		"slothsoft/unity" : "~2.12",
-		"symfony/process" : "*"
+		"symfony/process" : "*",
+		"michelf/php-markdown": "^2.0"
 	},
 	"autoload" : {
 		"psr-4" : {
