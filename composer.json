@@ -22,7 +22,7 @@
 		"slothsoft/core" : "*",
 		"slothsoft/unity" : "~2.12",
 		"symfony/process" : "*",
-		"michelf/php-markdown": "^2.0"
+		"michelf/php-markdown" : "^2.0"
 	},
 	"autoload" : {
 		"psr-4" : {

@@ -11,6 +11,7 @@ class GitUpdateFactory extends UpdateFactory {
         $this->updates['reset'] = new Reset();
         $this->updates['commit'] = new Commit('build: update files');
         $this->updates['push'] = new Push();
+        $this->updates['delete-branches'] = new DeleteBranches();
         $this->updates['flow-init'] = new FlowInit();
         $this->updates['flow-patch'] = new FlowPatch(FlowPatch::PATCH_RELEASE, 'minor fixes');
         $this->updates['flow-minor'] = new FlowPatch(FlowPatch::MINOR_RELEASE, 'new features');

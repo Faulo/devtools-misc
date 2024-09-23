@@ -49,7 +49,8 @@ class PHPExecutor {
     }
 
     public function composer(string ...$args): void {
-        $this->vexecute('composer.phar', ...$args);
+        $phar = is_file('composer.phar') ? 'composer.phar' : __DIR__ . DIRECTORY_SEPARATOR . 'composer.phar';
+        $this->vexecute($phar, ...$args);
     }
 }
 

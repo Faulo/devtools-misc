@@ -5,9 +5,11 @@ use Composer\Json\JsonFile;
 
 class ComposerManifest {
 
-    private $file;
+    private JsonFile $file;
 
-    public $data = [];
+    private bool $eclipseCompatible = true;
+
+    public array $data = [];
 
     public function __construct(string $path = 'composer.json') {
         $this->file = new JsonFile($path);
@@ -18,7 +20,17 @@ class ComposerManifest {
     }
 
     public function save() {
-        $this->file->write($this->data);
+        if ($this->eclipseCompatible) {
+            $replace = [];
+            $replace['":'] = '" :';
+            $replace['    '] = "\t";
+            $replace["[\n        {"] = '[{';
+            $json = json_encode($this->data, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+            $json = strtr($json, $replace);
+            file_put_contents($this->file->getPath(), $json);
+        } else {
+            $this->file->write($this->data);
+        }
     }
 
     public function getData(): array {

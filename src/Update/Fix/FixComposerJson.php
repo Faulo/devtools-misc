@@ -94,10 +94,15 @@ class FixComposerJson implements UpdateInterface {
 
         $this->composer->setScripts($this->getScripts());
 
+        if ($version = $this->composer->data['extra']['branch-alias']['dev-develop'] ?? null) {
+            $this->composer->data['extra']['branch-alias'] = [
+                'dev-main' => $version
+            ];
+        }
+
         $this->composer->save();
 
-        $this->php->composer('selfupdate');
-        $this->php->composer('require', "php=^{$this->php->version}");
+        // $this->php->composer('require', "php=^{$this->php->version}");
 
         if ($this->isServer()) {
             $this->php->composer('require', 'slothsoft/farah', 'slothsoft/core');
