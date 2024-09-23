@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns="http://www.w3.org/1999/xhtml" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+
 	<xsl:template match="/conversation">
 		<html>
 			<head>
@@ -96,15 +97,31 @@ h1, h2, h3, strong {
 				]]></style>
 			</head>
 			<body>
-				<h1>
-					<span>
-						<xsl:value-of select="@title" />
-					</span>
-					<time>
-						<xsl:value-of select="@datetime" />
-					</time>
-				</h1>
-				<xsl:apply-templates select="message" />
+				<xsl:variable name="part" select="@part" />
+				<xsl:choose>
+					<xsl:when test="$part">
+						<h1>
+							<span>
+								<xsl:value-of select="@title" />
+							</span>
+							<time>
+								<xsl:value-of select="concat(message[@part = $part]/@datetime, ' - ', message[@part = $part][last()]/@datetime)" />
+							</time>
+						</h1>
+						<xsl:apply-templates select="message[@part = $part]" />
+					</xsl:when>
+					<xsl:otherwise>
+						<h1>
+							<span>
+								<xsl:value-of select="@title" />
+							</span>
+							<time>
+								<xsl:value-of select="concat(message/@datetime, ' - ', message[last()]/@datetime)" />
+							</time>
+						</h1>
+						<xsl:apply-templates select="message" />
+					</xsl:otherwise>
+				</xsl:choose>
 			</body>
 		</html>
 	</xsl:template>

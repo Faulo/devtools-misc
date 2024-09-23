@@ -5,6 +5,7 @@ use Slothsoft\Unity\JsonUtils;
 use Slothsoft\Core\DOMHelper;
 use Slothsoft\Core\Calendar\DateTimeFormatter;
 use Michelf\Markdown;
+use Slothsoft\Core\Calendar\Seconds;
 
 foreach ([
     __DIR__ . '/../../../autoload.php',
@@ -15,6 +16,10 @@ foreach ([
         break;
     }
 }
+
+const CONVERSATION_TIMEOUT = Seconds::HOUR * 18;
+
+const UTF8_BOM = "\xEF\xBB\xBF";
 
 $transformers = [];
 $transformers['xhtml'] = 'to-html.xsl';
@@ -45,15 +50,25 @@ foreach (glob('input/*.json') as $file) {
     $data = JsonUtils::load($file);
     foreach ($data as $i => $conv) {
         $time = (int) $conv['create_time'];
+        $previous = 0;
         $source = new DOMDocument();
         $root = $source->createElement('conversation');
         $root->setAttribute('title', $conv['title']);
         $root->setAttribute('datetime', date(DateTimeFormatter::FORMAT_DATETIME, $time));
+        $part = - 1;
+        $times = [];
         foreach ($conv['mapping'] as $message) {
             $parts = $message['message']['content']['parts'] ?? [];
             $text = implode(PHP_EOL, $parts);
             if ($text) {
                 $time = (int) $message['message']['create_time'];
+
+                if ($time - $previous > CONVERSATION_TIMEOUT) {
+                    $part ++;
+                    $times[$part] = $time;
+                }
+                $previous = $time;
+
                 $node = $source->createElement('message');
                 $node->setAttribute('text', $text);
                 $html = Markdown::defaultTransform(htmlentities($text, ENT_XML1));
@@ -63,6 +78,7 @@ foreach (glob('input/*.json') as $file) {
                 $node->setAttribute('speaker-role', $role);
                 $node->setAttribute('speaker-name', $speakers[$role]);
                 $node->setAttribute('datetime', date(DateTimeFormatter::FORMAT_DATETIME, $time));
+                $node->setAttribute('part', (string) $part);
                 $root->appendChild($node);
             }
         }
@@ -73,10 +89,25 @@ foreach (glob('input/*.json') as $file) {
         touch($file, $time);
 
         foreach ($transformers as $ext => $template) {
-            $file = new SplFileInfo("output/$name.$i.$ext");
+            $file = "output/$name.$i.$ext";
             echo $file . PHP_EOL;
-            $dom->transformToFile($source, $template, [], $file);
-            touch((string) $file, $time);
+            $dom->transformToFile($source, $template, [], new SplFileInfo($file));
+            file_put_contents($file, UTF8_BOM . file_get_contents($file));
+            touch($file, $time);
+
+            if ($part > 0) {
+                for ($j = 0; $j <= $part; $j ++) {
+                    $time = $times[$j];
+                    $date = date('Y-m-d', $time);
+                    $root->setAttribute('part', (string) $j);
+                    $file = "output/$name.$i.$j.$date.$ext";
+                    echo $file . PHP_EOL;
+                    $dom->transformToFile($source, $template, [], new SplFileInfo($file));
+                    file_put_contents($file, UTF8_BOM . file_get_contents($file));
+                    touch($file, $time);
+                    $root->removeAttribute('part');
+                }
+            }
         }
     }
 }
