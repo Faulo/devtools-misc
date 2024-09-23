@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update\Git;
 
 use Slothsoft\Devtools\Misc\Utils;

@@ -1,4 +1,5 @@
 <?php
+declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update\Git;
 
 use Slothsoft\Devtools\Misc\Utils;
@@ -9,7 +10,8 @@ class DeleteBranches implements UpdateInterface {
 
     private array $branches = [
         'develop',
-        'master'
+        'master',
+        'dependabot/github_actions/dot-github/workflows/actions/download-artifact-4.1.7'
     ];
 
     public function runOn(Project $project) {

@@ -16,6 +16,7 @@ class GitUpdateFactory extends UpdateFactory {
         $this->updates['flow-patch'] = new FlowPatch(FlowPatch::PATCH_RELEASE, 'minor fixes');
         $this->updates['flow-minor'] = new FlowPatch(FlowPatch::MINOR_RELEASE, 'new features');
         $this->updates['flow-major'] = new FlowPatch(FlowPatch::MAJOR_RELEASE, 'major upgrade');
+        $this->updates['tag-patch'] = new TagPatch(FlowPatch::PATCH_RELEASE, 'minor fixes');
     }
 }
 
