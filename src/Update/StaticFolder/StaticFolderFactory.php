@@ -7,7 +7,7 @@ use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 
 class StaticFolderFactory extends UpdateFactory {
 
-    public function addCopy(string $todo, string $sourceFolder, bool $create = true): void {
+    public function addCopy(string $todo, string $sourceFolder, bool $create = true, bool $useEnvironment = false): void {
         if (! is_dir($sourceFolder)) {
             if ($create) {
                 mkdir($sourceFolder, 0777, true);
@@ -16,11 +16,11 @@ class StaticFolderFactory extends UpdateFactory {
             }
         }
 
-        $this->updates[$todo] = new StaticFolderUpdate(realpath($sourceFolder));
+        $this->updates[$todo] = new StaticFolderUpdate(realpath($sourceFolder), $useEnvironment);
     }
 
-    public function addCopyWithSwitch(string $todo, $folderDelegate): void {
-        $this->updates[$todo] = new StaticSwitchFolder($folderDelegate);
+    public function addCopyWithSwitch(string $todo, $folderDelegate, bool $useEnvironment = false): void {
+        $this->updates[$todo] = new StaticSwitchFolder($folderDelegate, $useEnvironment);
     }
 
     public function addDelete(string $todo, string ...$globs): void {

@@ -6,6 +6,7 @@ use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ServerManager;
 use Slothsoft\Devtools\Misc\Update\PHP\RunScript;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
+use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticDeleteUpdate;
 
 $workspace = realpath('/PHP');
 if (! $workspace) {
@@ -104,7 +105,9 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
 
     return null;
 });
+$staticUpdates->addCopy('copy-eclipse', 'static/slothsoft/eclipse', true, true);
 $staticUpdates->addUpdate('deploy', new RunScript('server-deploy.bat'));
+$staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar', '.github'));
 $manager->updateFactories[] = $staticUpdates;
 
 ProjectDatabase::instance()->groups[] = $manager;

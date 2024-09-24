@@ -2498,16 +2498,16 @@
         },
         {
             "name": "slothsoft/farah",
-            "version": "1.11.3",
+            "version": "1.11.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-farah.git",
-                "reference": "4a1923f5d7635325be138e66b4bc37499c3c2d19"
+                "reference": "998107e434bfba7271f615c0234c08703684bb52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/4a1923f5d7635325be138e66b4bc37499c3c2d19",
-                "reference": "4a1923f5d7635325be138e66b4bc37499c3c2d19",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-farah/zipball/998107e434bfba7271f615c0234c08703684bb52",
+                "reference": "998107e434bfba7271f615c0234c08703684bb52",
                 "shasum": ""
             },
             "require": {
@@ -2569,9 +2569,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-farah/issues",
-                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.11.3"
+                "source": "https://github.com/Faulo/slothsoft-farah/tree/1.11.4"
             },
-            "time": "2024-09-23T11:08:07+00:00"
+            "time": "2024-09-24T15:37:08+00:00"
         },
         {
             "name": "slothsoft/unity",

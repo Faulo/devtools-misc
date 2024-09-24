@@ -105,7 +105,11 @@ class FixComposerJson implements UpdateInterface {
         unset($this->composer->data['config']);
 
         if (isset($_ENV['PHP_VERSION'])) {
-            $this->composer->data['require']['php'] = '>=' . $_ENV['PHP_VERSION'];
+            // $this->composer->data['require']['php'] = '>=' . $_ENV['PHP_VERSION'];
+        }
+
+        if ($this->isServer()) {
+            unset($this->composer->data['require']['php']);
         }
 
         $this->composer->save();
