@@ -12,6 +12,10 @@ if (! $workspace) {
 
 $csharps = [
     [
+        'name' => 'Slothsoft.VHosts',
+        'repository' => 'https://github.com/Faulo/reverse-proxy.slothsoft.net'
+    ],
+    [
         'name' => 'Pyrdacor.FreeSerf.net',
         'repository' => 'https://github.com/Pyrdacor/freeserf.net'
     ],

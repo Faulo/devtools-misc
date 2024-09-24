@@ -44,8 +44,24 @@ class ProjectManager extends Group {
         return $this->updates[$id];
     }
 
-    public function createProject(array $info): Project {
-        return new Project($this, $info);
+    public function createProject($project): Project {
+        if (! is_array($project)) {
+            $project = [
+                'name' => $project
+            ];
+        }
+
+        $this->loadProject($project);
+
+        return new Project($this, $project);
+    }
+
+    protected function loadProject(array &$project): void {
+        $project['workspaceId'] ??= Utils::toId($project['name']);
+        $project['workspaceDir'] = $this->workspaceDir . $project['name'] . DIRECTORY_SEPARATOR;
+        $project['gitignoreFile'] = $project['workspaceDir'] . '.gitignore';
+        $project['buildpathFile'] = $project['workspaceDir'] . '.buildpath';
+        $project['projectFile'] = $project['workspaceDir'] . '.project';
     }
 
     protected function createUpdate(string $id): ?UpdateInterface {
@@ -62,18 +78,6 @@ class ProjectManager extends Group {
         $group = new Group("$this->id.$id");
 
         foreach ($projects as $project) {
-            if (! is_array($project)) {
-                $project = [
-                    'name' => $project
-                ];
-            }
-
-            $project['workspaceId'] = Utils::toId($project['name']);
-            $project['workspaceDir'] = $this->workspaceDir . $project['name'] . DIRECTORY_SEPARATOR;
-            $project['gitignoreFile'] = $project['workspaceDir'] . '.gitignore';
-            $project['buildpathFile'] = $project['workspaceDir'] . '.buildpath';
-            $project['projectFile'] = $project['workspaceDir'] . '.project';
-
             $group->projects[] = $this->createProject($project);
         }
 
