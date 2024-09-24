@@ -88,7 +88,9 @@ class FixComposerJson implements UpdateInterface {
 
         // $this->composer->setAutoloadingDev($this->getDevAutoloading());
 
-        $this->composer->setOptimizeAutoloader($this->isServer());
+        $this->composer->clearOptimizeAutoloader();
+
+        // $this->composer->setOptimizeAutoloader($this->isServer());
 
         $this->composer->setAllowDevMaster(false);
 
@@ -98,6 +100,12 @@ class FixComposerJson implements UpdateInterface {
             $this->composer->data['extra']['branch-alias'] = [
                 'dev-main' => $version
             ];
+        }
+
+        unset($this->composer->data['config']);
+
+        if (isset($_ENV['PHP_VERSION'])) {
+            $this->composer->data['require']['php'] = '>=' . $_ENV['PHP_VERSION'];
         }
 
         $this->composer->save();
@@ -246,7 +254,7 @@ class FixComposerJson implements UpdateInterface {
     private function getScripts(): array {
         if ($this->isServer()) {
             return [
-                'post-autoload-dump' => 'composer exec server-clean cache',
+                // 'post-autoload-dump' => 'composer exec server-clean cache',
                 'farah-asset' => '@php vendor/slothsoft/farah/scripts/farah-asset.php',
                 'farah-page' => '@php vendor/slothsoft/farah/scripts/farah-page.php'
             ];

@@ -13,6 +13,8 @@ class ServerManager extends PHPProjectManager {
     }
 
     protected function loadProject(array &$project): void {
+        $project['vendor'] ??= 'slothsoft';
+        $project['composerId'] ??= "$project[vendor]/$project[name]";
         $project['workspaceId'] ??= "server-$project[name]";
 
         parent::loadProject($project);

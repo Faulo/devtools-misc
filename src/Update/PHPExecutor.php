@@ -4,6 +4,7 @@ namespace Slothsoft\Devtools\Misc\Update;
 
 use Slothsoft\Core\DOMHelper;
 use Slothsoft\Devtools\Misc\Utils;
+use Symfony\Component\Filesystem\Exception\FileNotFoundException;
 
 class PHPExecutor {
 
@@ -13,11 +14,18 @@ class PHPExecutor {
 
     public string $version = '7.4';
 
-    public string $executable = '/Webserver/php-7.4/php.exe';
+    public string $executable = '';
+
+    private string $executableTemplate = '/Webserver/php-%s/php.exe';
 
     public function __construct(?string $workspace = null) {
         if (! $workspace) {
             $workspace = getcwd();
+        }
+
+        if (isset($_ENV['PHP_VERSION'])) {
+            $this->setVersion($_ENV['PHP_VERSION']);
+            return;
         }
 
         if ($workspace = realpath($workspace)) {
@@ -25,15 +33,23 @@ class PHPExecutor {
             if ($file = realpath($file)) {
                 $document = DOMHelper::loadDocument($file);
                 $xpath = DOMHelper::loadXPath($document);
-                $version = $xpath->evaluate(self::CONFIG_QUERY);
-                if ($version !== '') {
-                    $this->executable = str_replace($this->version, $version, $this->executable);
-                    $this->version = $version;
-                }
+                $this->setVersion($xpath->evaluate(self::CONFIG_QUERY));
+                return;
             }
         }
 
-        $this->executable = realpath($this->executable);
+        $this->setVersion($this->version);
+    }
+
+    public function setVersion(string $version): void {
+        if ($version !== '') {
+            $this->executable = sprintf($this->executableTemplate, $version);
+            $this->version = $version;
+            if (! is_file($this->executable)) {
+                throw new FileNotFoundException($this->executable);
+            }
+            $this->executable = realpath($this->executable);
+        }
     }
 
     public function execute(string $command): void {

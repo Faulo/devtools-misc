@@ -123,7 +123,11 @@ class ComposerManifest {
 
     public function setOptimizeAutoloader(bool $optimize) {
         $this->data['classmap-authoritative'] = $optimize;
+    }
+
+    public function clearOptimizeAutoloader() {
         unset($this->data['optimize-autoloader']);
+        unset($this->data['classmap-authoritative']);
         unset($this->data['apcu-autoloader']);
     }
 

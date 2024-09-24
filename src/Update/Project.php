@@ -2,6 +2,7 @@
 declare(strict_types = 1);
 namespace Slothsoft\Devtools\Misc\Update;
 
+use Dotenv\Dotenv;
 use Slothsoft\Devtools\Misc\Utils;
 
 class Project {
@@ -32,7 +33,17 @@ class Project {
 
     public function chdir(): bool {
         clearstatcache();
-        return is_dir($this->workspace) and chdir($this->workspace);
+        if (is_dir($this->workspace) and chdir($this->workspace)) {
+            $_ENV = [];
+            if (is_file('.env')) {
+                $dotenv = Dotenv::createMutable($this->workspace);
+                $dotenv->load();
+            }
+
+            return true;
+        }
+
+        return false;
     }
 
     public function __toString(): string {

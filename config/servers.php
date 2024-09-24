@@ -4,6 +4,7 @@ declare(strict_types = 1);
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ServerManager;
+use Slothsoft\Devtools\Misc\Update\PHP\RunScript;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 
 $workspace = realpath('/PHP');
@@ -39,11 +40,6 @@ $old = [
         'homeUrl' => 'http://schedule.slothsoft.net'
     ],
     [
-        'name' => 'schema.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-schema.slothsoft.net',
-        'homeUrl' => 'http://schema.slothsoft.net'
-    ],
-    [
         'name' => 'test.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-slothsoft.net',
         'homeUrl' => 'http://test.slothsoft.net'
@@ -57,6 +53,11 @@ $old = [
 ];
 
 $new = [
+    [
+        'name' => 'schema.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-schema.slothsoft.net',
+        'homeUrl' => 'http://schema.slothsoft.net'
+    ],
     [
         'name' => 'daniel-schulz.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-daniel-schulz.slothsoft.net',
@@ -84,7 +85,6 @@ $manager = new ServerManager('server', $workspace);
 foreach ($groups as $key => $val) {
     $manager->addGroup($key, $val);
 }
-
 $staticUpdates = new StaticFolderFactory();
 $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use ($groups): ?string {
     $type = '';
@@ -104,6 +104,7 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
 
     return null;
 });
+$staticUpdates->addUpdate('deploy', new RunScript('server-deploy.bat'));
 $manager->updateFactories[] = $staticUpdates;
 
 ProjectDatabase::instance()->groups[] = $manager;

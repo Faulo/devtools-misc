@@ -37,6 +37,8 @@ class Group {
             echo "# $project";
             echo PHP_EOL;
 
+            $_ENV = [];
+
             $time = new \DateTime();
             foreach ($updates as $update) {
                 $update = $project->manager->getUpdate($update);

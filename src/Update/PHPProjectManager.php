@@ -39,9 +39,6 @@ class PHPProjectManager extends ProjectManager {
         $project['docsDir'] = $project['workspaceDir'] . 'docs' . DIRECTORY_SEPARATOR;
         $project['testsDir'] = $project['workspaceDir'] . 'tests' . DIRECTORY_SEPARATOR;
 
-        $project['vendor'] ??= 'slothsoft';
-        $project['composerId'] ??= "$project[vendor]/$project[name]";
-
         $project['composer'] = null;
         $project['namespace'] = null;
         if (is_file($project['composerFile'])) {
