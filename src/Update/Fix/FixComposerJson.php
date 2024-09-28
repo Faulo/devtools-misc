@@ -138,6 +138,15 @@ class FixComposerJson implements UpdateInterface {
             $this->composer->data['autoload']['files'] = [
                 $target
             ];
+
+            if (isset($_ENV['PHP_NAMESPACE'])) {
+                $this->composer->data['autoload']['psr-4'] = [
+                    $_ENV['PHP_NAMESPACE'] . '\\' => 'src'
+                ];
+                $this->composer->data['autoload-dev']['psr-4'] = [
+                    $_ENV['PHP_NAMESPACE'] . '\\Tests\\' => 'tests'
+                ];
+            }
         }
 
         $this->composer->save();

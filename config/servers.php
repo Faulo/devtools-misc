@@ -14,19 +14,14 @@ if (! $workspace) {
 }
 
 $old = [
+];
+
+$new = [
     [
         'name' => 'mtg.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-mtg.slothsoft.net',
         'homeUrl' => 'http://mtg.slothsoft.net'
     ],
-    [
-        'name' => 'schedule.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-schedule.slothsoft.net',
-        'homeUrl' => 'http://schedule.slothsoft.net'
-    ]
-];
-
-$new = [
     [
         'name' => 'amber.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-amber.slothsoft.net',
@@ -101,7 +96,7 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
 }, true);
 $staticUpdates->addCopy('copy-eclipse', 'static/slothsoft/eclipse', true, true);
 $staticUpdates->addUpdate('deploy', new RunScript('server-deploy.bat'));
-$staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar', '.github', 'apache.conf', 'scripts', 'config.php'));
+$staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar', '.github', 'apache.conf', 'scripts', 'config.php', 'html/index.php'));
 $manager->updateFactories[] = $staticUpdates;
 
 ProjectDatabase::instance()->groups[] = $manager;
