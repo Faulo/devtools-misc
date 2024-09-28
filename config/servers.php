@@ -15,22 +15,6 @@ if (! $workspace) {
 
 $old = [
     [
-        'name' => 'amber.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-amber.slothsoft.net',
-        'homeUrl' => 'http://amber.slothsoft.net'
-    ],
-    [
-        'name' => 'cursedcreations.slothsoft.net',
-        'repository' => 'https://github.com/Cursed-Creations/server-cursedcreations.slothsoft.net',
-        'homeUrl' => 'http://cursedcreations.slothsoft.net',
-        'vendor' => 'cursedcreations'
-    ],
-    [
-        'name' => 'dev.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-dev.slothsoft.net',
-        'homeUrl' => 'http://dev.slothsoft.net'
-    ],
-    [
         'name' => 'mtg.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-mtg.slothsoft.net',
         'homeUrl' => 'http://mtg.slothsoft.net'
@@ -39,21 +23,20 @@ $old = [
         'name' => 'schedule.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-schedule.slothsoft.net',
         'homeUrl' => 'http://schedule.slothsoft.net'
-    ],
-    [
-        'name' => 'test.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-slothsoft.net',
-        'homeUrl' => 'http://test.slothsoft.net'
-    ],
-    [
-        'name' => 'trialoftwo.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-trialoftwo.slothsoft.net',
-        'homeUrl' => 'http://trialoftwo.slothsoft.net',
-        'vendor' => 'oilcatz'
     ]
 ];
 
 $new = [
+    [
+        'name' => 'amber.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-amber.slothsoft.net',
+        'homeUrl' => 'http://amber.slothsoft.net'
+    ],
+    [
+        'name' => 'dev.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-dev.slothsoft.net',
+        'homeUrl' => 'http://dev.slothsoft.net'
+    ],
     [
         'name' => 'schema.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-schema.slothsoft.net',
@@ -73,6 +56,17 @@ $new = [
         'name' => 'historischer-spieleabend.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-historischer-spieleabend.slothsoft.net',
         'homeUrl' => 'http://historischer-spieleabend.slothsoft.net'
+    ],
+    [
+        'name' => 'test.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-slothsoft.net',
+        'homeUrl' => 'http://test.slothsoft.net'
+    ],
+    [
+        'name' => 'trialoftwo.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-trialoftwo.slothsoft.net',
+        'homeUrl' => 'http://trialoftwo.slothsoft.net',
+        'vendor' => 'oilcatz'
     ]
 ];
 
@@ -104,10 +98,10 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
     }
 
     return null;
-});
+}, true);
 $staticUpdates->addCopy('copy-eclipse', 'static/slothsoft/eclipse', true, true);
 $staticUpdates->addUpdate('deploy', new RunScript('server-deploy.bat'));
-$staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar', '.github'));
+$staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar', '.github', 'apache.conf', 'scripts', 'config.php'));
 $manager->updateFactories[] = $staticUpdates;
 
 ProjectDatabase::instance()->groups[] = $manager;

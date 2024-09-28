@@ -110,6 +110,34 @@ class FixComposerJson implements UpdateInterface {
 
         if ($this->isServer()) {
             unset($this->composer->data['require']['php']);
+
+            if (! is_dir('src')) {
+                mkdir('src', 0777);
+            }
+
+            $target = 'src/bootstrap.php';
+            $source = $target;
+            foreach ([
+                'bootstrap.php',
+                'registerModule.php'
+            ] as $file) {
+                foreach ([
+                    'scripts',
+                    'src'
+                ] as $dir) {
+                    if (is_file("$dir/$file")) {
+                        $source = "$dir/$file";
+                        break 2;
+                    }
+                }
+            }
+            if ($source !== $target) {
+                rename($source, $target);
+            }
+
+            $this->composer->data['autoload']['files'] = [
+                $target
+            ];
         }
 
         $this->composer->save();
