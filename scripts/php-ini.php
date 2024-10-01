@@ -13,7 +13,7 @@ foreach ([
 }
 
 function cleanPath(string $path): string {
-    return str_replace('\\', '/', substr(realpath($path), 2));
+    return '${PHP_DRIVE}' . str_replace('\\', '/', substr(realpath($path), 2));
 }
 
 $serverPath = '/Webserver';
