@@ -102,7 +102,7 @@ class FixComposerJson implements UpdateInterface {
             ];
         }
 
-        unset($this->composer->data['config']);
+        // unset($this->composer->data['config']);
 
         if (isset($_ENV['PHP_VERSION'])) {
             // $this->composer->data['require']['php'] = '>=' . $_ENV['PHP_VERSION'];
@@ -148,6 +148,8 @@ class FixComposerJson implements UpdateInterface {
                 ];
             }
         }
+
+        $this->composer->setLicense('MIT');
 
         $this->composer->save();
 

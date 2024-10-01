@@ -13,8 +13,7 @@ if (! $workspace) {
     return;
 }
 
-$old = [
-];
+$old = [];
 
 $new = [
     [

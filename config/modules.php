@@ -3,6 +3,7 @@ declare(strict_types = 1);
 
 use Slothsoft\Devtools\Misc\Update\ModuleManager;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
+use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 
 $workspace = realpath('/PHP');
 if (! $workspace) {
@@ -84,4 +85,13 @@ $modules = [
     ]
 ];
 
-ProjectDatabase::instance()->groups[] = new ModuleManager('module', $workspace, $modules);
+$manager = new ModuleManager('module', $workspace);
+
+$manager->addGroup('module', $modules);
+
+$staticUpdates = new StaticFolderFactory();
+$staticUpdates->addCopy('copy-devops', 'static/slothsoft/module', true, true);
+$staticUpdates->addCopy('copy-eclipse', 'static/slothsoft/eclipse', true, true);
+$manager->updateFactories[] = $staticUpdates;
+
+ProjectDatabase::instance()->groups[] = $manager;
