@@ -61,6 +61,11 @@ $new = [
         'repository' => 'https://github.com/Faulo/server-trialoftwo.slothsoft.net',
         'homeUrl' => 'http://trialoftwo.slothsoft.net',
         'vendor' => 'oilcatz'
+    ],
+    [
+        'name' => 'valheim.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-valheim.slothsoft.net',
+        'homeUrl' => 'http://valheim.slothsoft.net'
     ]
 ];
 

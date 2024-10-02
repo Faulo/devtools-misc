@@ -1,1 +1,1 @@
-call composer run foreach server.new "delete-devops copy-devops fix-manifest update commit push"
+call composer run foreach server "reset pull delete-devops copy-devops copy-eclipse fix-manifest update commit push"
