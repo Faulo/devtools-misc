@@ -13,16 +13,26 @@ if (! $workspace) {
     return;
 }
 
-$docker = [
+$backend = [
     [
-        'name' => 'ci.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-ci.slothsoft.net',
-        'homeUrl' => 'http://ci.slothsoft.net'
+        'name' => 'backend-jenkins',
+        'workspaceId' => 'backend-jenkins',
+        'repository' => 'https://github.com/Faulo/devtools-jenkins'
     ],
     [
-        'name' => 'valheim.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-valheim.slothsoft.net',
-        'homeUrl' => 'http://valheim.slothsoft.net'
+        'name' => 'backend-vhosts',
+        'workspaceId' => 'backend-vhosts',
+        'repository' => 'https://github.com/Faulo/devtools-reverse-proxy'
+    ],
+    [
+        'name' => 'backend-agents',
+        'workspaceId' => 'backend-agents',
+        'repository' => 'https://github.com/Faulo/devtools-jenkins-agents'
+    ],
+    [
+        'name' => 'backend-docker',
+        'workspaceId' => 'backend-docker',
+        'repository' => 'https://github.com/Faulo/backend-docker'
     ]
 ];
 
@@ -72,11 +82,16 @@ $farah = [
         'repository' => 'https://github.com/Faulo/server-trialoftwo.slothsoft.net',
         'homeUrl' => 'http://trialoftwo.slothsoft.net',
         'vendor' => 'oilcatz'
+    ],
+    [
+        'name' => 'valheim.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-valheim.slothsoft.net',
+        'homeUrl' => 'http://valheim.slothsoft.net'
     ]
 ];
 
 $groups = [
-    'docker' => $docker,
+    'backend' => $backend,
     'farah' => $farah
 ];
 
@@ -98,8 +113,8 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
     }
 
     switch ($type) {
-        case 'docker':
-            return __DIR__ . '/../static/slothsoft/devops.server.docker';
+        case 'backend':
+            return __DIR__ . '/../static/slothsoft/devops.server.backend';
         case 'farah':
             return __DIR__ . '/../static/slothsoft/devops.server.farah';
     }

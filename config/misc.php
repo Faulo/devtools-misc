@@ -12,10 +12,6 @@ if (! $workspace) {
 
 $csharps = [
     [
-        'name' => 'Slothsoft.VHosts',
-        'repository' => 'https://github.com/Faulo/reverse-proxy.slothsoft.net'
-    ],
-    [
         'name' => 'Pyrdacor.FreeSerf.net',
         'repository' => 'https://github.com/Pyrdacor/freeserf.net'
     ],
@@ -30,10 +26,6 @@ $csharps = [
     [
         'name' => 'Nintendo.SuperMario64',
         'repository' => 'https://github.com/n64decomp/sm64'
-    ],
-    [
-        'name' => 'Slothsoft.CI-Server',
-        'repository' => 'https://github.com/Faulo/gil-server'
     ]
 ];
 
