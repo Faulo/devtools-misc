@@ -34,7 +34,6 @@ pipeline {
 							def service = "$STACK_NAME_$STACK_NAME"
 							sh "docker stack deploy $STACK_NAME --detach=true --prune --resolve-image=never -c=docker-compose.yml"
 							sh "docker service update --force " + service
-							//sh 'docker exec $(docker ps -q -f name=' + service + ') composer install --no-interaction --no-dev'
 						}
 					}
 				}
