@@ -123,6 +123,7 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
 }, true);
 $staticUpdates->addCopy('copy-eclipse', 'static/slothsoft/eclipse', true, true);
 $staticUpdates->addUpdate('deploy', new RunScript('server-deploy.bat'));
+$staticUpdates->addUpdate('remove', new RunScript('server-remove.bat'));
 $staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar', '.github', 'apache.conf', 'scripts', 'config.php', 'html/index.php'));
 $manager->updateFactories[] = $staticUpdates;
 
