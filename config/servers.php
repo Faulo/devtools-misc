@@ -13,9 +13,20 @@ if (! $workspace) {
     return;
 }
 
-$old = [];
+$docker = [
+    [
+        'name' => 'ci.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-ci.slothsoft.net',
+        'homeUrl' => 'http://ci.slothsoft.net'
+    ],
+    [
+        'name' => 'valheim.slothsoft.net',
+        'repository' => 'https://github.com/Faulo/server-valheim.slothsoft.net',
+        'homeUrl' => 'http://valheim.slothsoft.net'
+    ]
+];
 
-$new = [
+$farah = [
     [
         'name' => 'mtg.slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-mtg.slothsoft.net',
@@ -61,17 +72,12 @@ $new = [
         'repository' => 'https://github.com/Faulo/server-trialoftwo.slothsoft.net',
         'homeUrl' => 'http://trialoftwo.slothsoft.net',
         'vendor' => 'oilcatz'
-    ],
-    [
-        'name' => 'valheim.slothsoft.net',
-        'repository' => 'https://github.com/Faulo/server-valheim.slothsoft.net',
-        'homeUrl' => 'http://valheim.slothsoft.net'
     ]
 ];
 
 $groups = [
-    'old' => $old,
-    'new' => $new
+    'docker' => $docker,
+    'farah' => $farah
 ];
 
 $manager = new ServerManager('server', $workspace);
@@ -92,8 +98,10 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
     }
 
     switch ($type) {
-        case 'new':
-            return __DIR__ . '/../static/slothsoft/server';
+        case 'docker':
+            return __DIR__ . '/../static/slothsoft/devops.server.docker';
+        case 'farah':
+            return __DIR__ . '/../static/slothsoft/devops.server.farah';
     }
 
     return null;
