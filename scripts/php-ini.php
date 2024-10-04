@@ -85,6 +85,8 @@ if ($serverPath = realpath($serverPath)) {
             }
 
             passthru('php --version');
+            passthru('php -r "if (!file_get_contents(\'https://unity.com/releases/editor/archive\')) throw new \Exception(\'HTTPS ERROR\');');
+            passthru('composer selfupdate');
         }
     }
 }
