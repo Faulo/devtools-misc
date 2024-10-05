@@ -9,7 +9,7 @@ use Slothsoft\Devtools\Misc\Update\UpdateInterface;
 class DocsCreate implements UpdateInterface {
 
     public function runOn(Project $project) {
-        if ($project->chdir() and is_file('phpdoc.dist.xml')) {
+        if ($project->chdir() and is_file('phpdoc.xml')) {
             $php = new PHPExecutor();
             if ($documentor = realpath(dirname($php->executable) . '/phpDocumentor.phar')) {
                 $php->vexecute($documentor, '--no-interaction', 'run');

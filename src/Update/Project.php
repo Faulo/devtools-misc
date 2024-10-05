@@ -51,6 +51,9 @@ class Project {
                 }
             }
 
+            $_ENV['PROJECT_ID'] = $this->id;
+            $_ENV['PROJECT_NAME'] = basename($this->workspace);
+
             return true;
         }
 
