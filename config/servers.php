@@ -33,6 +33,11 @@ $backend = [
         'name' => 'backend-docker',
         'workspaceId' => 'backend-docker',
         'repository' => 'https://github.com/Faulo/backend-docker'
+    ],
+    [
+        'name' => 'backend-mysql',
+        'workspaceId' => 'backend-mysql',
+        'repository' => 'https://github.com/Faulo/backend-mysql'
     ]
 ];
 
