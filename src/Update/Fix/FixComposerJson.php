@@ -53,7 +53,7 @@ class FixComposerJson implements UpdateInterface {
     }
 
     public function runOn(Project $project) {
-        if (! $project->chdir()) {
+        if (! $project->chdir() or ! isset($this->project['composerFile'])) {
             return;
         }
 
