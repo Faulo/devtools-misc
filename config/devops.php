@@ -24,16 +24,12 @@ $phps = [
 
 $projects = [
     [
-        'name' => 'Slothsoft.Docker.Farah',
+        'name' => 'docker-farah',
         'repository' => 'https://github.com/Faulo/docker-farah'
     ],
     [
-        'name' => 'Slothsoft.Docker.Jenkins',
+        'name' => 'docker-jenkins',
         'repository' => 'https://github.com/Faulo/docker-jenkins'
-    ],
-    [
-        'name' => 'Slothsoft.Docker.Valheim',
-        'repository' => 'https://github.com/Faulo/docker-valheim'
     ],
     [
         'name' => 'Slothsoft.Jenkins.Slothsoft',
