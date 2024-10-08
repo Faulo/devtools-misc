@@ -56,3 +56,7 @@ foreach ($projects as $project) {
 $group->groups[] = $manager;
 
 ProjectDatabase::instance()->groups[] = $group;
+
+$eclipse = new Group('eclipse');
+$eclipse->groups[] = $group;
+ProjectDatabase::instance()->groups[] = $eclipse;

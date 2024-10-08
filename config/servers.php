@@ -1,6 +1,7 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ServerManager;
@@ -132,3 +133,7 @@ $staticUpdates->addUpdate('delete-devops', new StaticDeleteUpdate('composer.phar
 $manager->updateFactories[] = $staticUpdates;
 
 ProjectDatabase::instance()->groups[] = $manager;
+
+$eclipse = new Group('eclipse');
+$eclipse->groups[] = $manager;
+ProjectDatabase::instance()->groups[] = $eclipse;
