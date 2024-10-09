@@ -11,6 +11,15 @@ if (! $workspace) {
 }
 
 $csharps = [
+
+    [
+        'name' => 'ExOK.Celeste64',
+        'repository' => 'https://github.com/ExOK/Celeste64'
+    ],
+    [
+        'name' => 'Neversoft.TonyHawksUnderground',
+        'repository' => 'https://github.com/RetailGameSourceCode/TonyHawksUnderground'
+    ],
     [
         'name' => 'Pyrdacor.FreeSerf.net',
         'repository' => 'https://github.com/Pyrdacor/freeserf.net'
@@ -24,8 +33,24 @@ $csharps = [
         'repository' => 'https://gitlab.com/banjo.decomp/banjo-kazooie'
     ],
     [
+        'name' => 'Nintendo.MajorasMask',
+        'repository' => 'https://github.com/zeldaret/mm/'
+    ],
+    [
         'name' => 'Nintendo.SuperMario64',
         'repository' => 'https://github.com/n64decomp/sm64'
+    ],
+    [
+        'name' => 'Slothsoft.AdventOfCode',
+        'repository' => 'https://github.com/Faulo/AdventOfCode'
+    ],
+    [
+        'name' => 'Slothsoft.ValheimMods',
+        'repository' => 'https://github.com/Faulo/ValheimMods'
+    ],
+    [
+        'name' => 'Slothsoft.SuperMario64',
+        'repository' => 'https://github.com/Faulo/sm64ex'
     ]
 ];
 
