@@ -133,13 +133,9 @@ $gameJams = [
 ];
 
 $projects = [
-    // [
-    // 'name' => 'CursedCreations.CursedBroom',
-    // 'repository' => 'https://github.com/Cursed-Creations/CursedBroom'
-    // ],
     [
-        'name' => 'Slothsoft.CursedBroom',
-        'repository' => 'https://github.com/Faulo/CursedBroom'
+        'name' => 'Slothsoft.CritterGrove',
+        'repository' => 'https://github.com/Faulo/CritterGrove'
     ],
     [
         'name' => 'Slothsoft.Freeblob',
@@ -152,6 +148,10 @@ $projects = [
     [
         'name' => 'Oilcatz.TrialOfTwo',
         'repository' => 'https://github.com/Faulo/TrialOfTwo'
+    ],
+    [
+        'name' => 'Slothsoft.CursedBroom',
+        'repository' => 'https://github.com/Faulo/CursedBroom'
     ]
 ];
 

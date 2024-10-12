@@ -221,6 +221,8 @@ $optionalUpgrades = $artPackage + [ // "de.ulisses-spiele.hexxen1733.art.animals
                                      // "de.ulisses-spiele.core.mesh2d" => "3.11.6",
                                      // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
                                      // "de.ulisses-spiele.hexxen1733.art" => "1.0.1"
+    "de.ulisses-spiele.hexxen1733.staging" => "0.7.4",
+	"de.ulisses-spiele.hexxen1733.character-controller" => "1.0.1"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
