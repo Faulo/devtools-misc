@@ -76,7 +76,7 @@ foreach (glob('input/*.json') as $file) {
                 $node->appendChild($dom->parse($html, $source, false));
                 $role = $message['message']['author']['role'] ?? 'unknown';
                 $node->setAttribute('speaker-role', $role);
-                $node->setAttribute('speaker-name', $speakers[$role]);
+                $node->setAttribute('speaker-name', $speakers[$role] ?? $role);
                 $node->setAttribute('datetime', date(DateTimeFormatter::FORMAT_DATETIME, $time));
                 $node->setAttribute('part', (string) $part);
                 $root->appendChild($node);
