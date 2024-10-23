@@ -8,7 +8,7 @@ use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Unity\UnityHub;
 
-$workspace = realpath('/Unity');
+$workspace = realpath(getenv('UserProfile') . DIRECTORY_SEPARATOR . 'Desktop');
 if (! $workspace) {
     return;
 }
