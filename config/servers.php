@@ -18,17 +18,17 @@ $backend = [
     [
         'name' => 'backend-jenkins',
         'workspaceId' => 'backend-jenkins',
-        'repository' => 'https://github.com/Faulo/devtools-jenkins'
+        'repository' => 'https://github.com/Faulo/backend-jenkins'
     ],
     [
         'name' => 'backend-vhosts',
         'workspaceId' => 'backend-vhosts',
-        'repository' => 'https://github.com/Faulo/devtools-reverse-proxy'
+        'repository' => 'https://github.com/Faulo/backend-vhosts'
     ],
     [
         'name' => 'backend-agents',
         'workspaceId' => 'backend-agents',
-        'repository' => 'https://github.com/Faulo/devtools-jenkins-agents'
+        'repository' => 'https://github.com/Faulo/backend-agents'
     ],
     [
         'name' => 'backend-docker',
