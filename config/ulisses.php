@@ -175,7 +175,7 @@ $artChangelog = <<<EOT
 EOT;
 
 $projectManifestDependencies = [
-    "com.unity.ide.rider" => "3.0.31",
+    "com.unity.ide.rider" => "3.0.34",
     "com.unity.ide.visualstudio" => "2.0.22",
     "net.slothsoft.unity-extensions" => "3.1.0"
 ];
@@ -185,7 +185,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "5.1.2",
+    "de.ulisses-spiele.core.utilities" => "5.2.1",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -221,7 +221,8 @@ $optionalUpgrades = $artPackage + [ // "de.ulisses-spiele.hexxen1733.art.animals
                                      // "de.ulisses-spiele.core.mesh2d" => "3.11.6",
                                      // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
                                      // "de.ulisses-spiele.hexxen1733.art" => "1.0.1"
-    "de.ulisses-spiele.hexxen1733.staging" => "0.9.0"
+    "de.ulisses-spiele.hexxen1733.character-controller" => "2.1.0-pre.1"
+    //"de.ulisses-spiele.hexxen1733.staging" => "0.9.0"
     // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
 ];
 
