@@ -1,12 +1,15 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Core\Calendar\Seconds;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Unity\UnityHub;
+
+UnityHub::setProcessTimeout(2 * Seconds::HOUR);
 
 $workspace = realpath(getenv('UserProfile') . '/Desktop/Unity');
 if (! $workspace) {
