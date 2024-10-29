@@ -185,7 +185,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "5.2.1",
+    "de.ulisses-spiele.core.utilities" => "5.3.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -221,9 +221,9 @@ $optionalUpgrades = $artPackage + [ // "de.ulisses-spiele.hexxen1733.art.animals
                                      // "de.ulisses-spiele.core.mesh2d" => "3.11.6",
                                      // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
                                      // "de.ulisses-spiele.hexxen1733.art" => "1.0.1"
-    "de.ulisses-spiele.hexxen1733.character-controller" => "2.1.0-pre.1"
-    // "de.ulisses-spiele.hexxen1733.staging" => "0.9.0"
-    // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
+                                     // "de.ulisses-spiele.hexxen1733.character-controller" => "2.1.0-pre.1"
+                                     // "de.ulisses-spiele.hexxen1733.staging" => "0.9.0"
+                                     // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
@@ -316,8 +316,11 @@ $unityUpdates->addUpdate('fix-sandbox-core', $fix);
 $fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.HeXXen1733');
 $unityUpdates->addUpdate('fix-sandbox-hexxen1733', $fix);
 
-$fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUpdater.UpdateAll');
+$fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUtils.UpdateAll');
 $unityUpdates->addUpdate('update', $fix);
+
+$fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUtils.FixDependencies');
+$unityUpdates->addUpdate('fix-dependencies', $fix);
 
 $manager->updateFactories[] = $unityUpdates;
 

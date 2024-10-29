@@ -10,6 +10,7 @@ use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Unity\UnityHub;
 
 UnityHub::setProcessTimeout(2 * Seconds::HOUR);
+UnityHub::setProcessTimeout(10 * Seconds::MINUTE);
 
 $workspace = realpath(getenv('UserProfile') . '/Desktop/Unity');
 if (! $workspace) {
