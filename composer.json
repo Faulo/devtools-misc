@@ -3,6 +3,7 @@
 	"version" : "1.0.0",
 	"description" : "Slothsoft Development Tools",
 	"scripts" : {
+		"measure" : "@php scripts/measure.php",
 		"toggl" : "@php scripts/toggl.php",
 		"php-ini" : "@php scripts/php-ini.php",
 		"aminet" : "@php scripts/aminet.php",
