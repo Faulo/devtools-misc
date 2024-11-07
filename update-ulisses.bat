@@ -1,1 +1,1 @@
-call composer run foreach "ulisses.core ulisses.hexxen1733" "reset pull copy-plastic copy-unity copy-devops fix-manifest fix-packages fix-dependencies fix-packages fix-assemblies fill-empty build commit tag-devops"
+call composer run foreach "ulisses.core ulisses.hexxen1733" "reset pull copy-plastic copy-unity copy-devops fix-manifest fix-packages fix-assemblies fill-empty build commit tag-devops"
