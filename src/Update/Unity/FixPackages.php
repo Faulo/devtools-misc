@@ -146,7 +146,7 @@ class FixPackages implements UpdateInterface {
     }
 
     private static function packageMatchesScope(string $packageName, string $scope): bool {
-        return $scope === '' or strpos($packageName, $scope) === 0;
+        return $scope === '' or stripos($packageName, $scope) === 0;
     }
 
     private function getForbiddenDependencies(string $packageName): iterable {

@@ -10,6 +10,7 @@ use Slothsoft\Devtools\Misc\Update\StubUpdate;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\UpdateFactory;
 use Slothsoft\Devtools\Misc\Update\Fix\FixJenkins;
+use Slothsoft\Devtools\Misc\Update\PHP\RunScript;
 use Slothsoft\Devtools\Misc\Update\Plastic\TagCommit;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\Unity\AddPackagesToProject;
@@ -355,6 +356,8 @@ $staticUpdates->addCopyWithSwitch('copy-devops', function (Project $project) use
 $staticUpdates->addCopy('copy-git', 'static/ulisses/empty');
 $staticUpdates->addCopy('copy-plastic', 'static/ulisses/plastic');
 $staticUpdates->addCopy('copy-unity', 'static/ulisses/unity-2022');
+$staticUpdates->addUpdate('format-packages', new RunScript('dotnet-format-packages.bat'));
+
 $manager->updateFactories[] = $staticUpdates;
 
 foreach ($groups as $key => $val) {
