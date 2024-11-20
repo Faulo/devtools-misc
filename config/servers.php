@@ -79,9 +79,9 @@ $farah = [
         'homeUrl' => 'http://historischer-spieleabend.slothsoft.net'
     ],
     [
-        'name' => 'test.slothsoft.net',
+        'name' => 'slothsoft.net',
         'repository' => 'https://github.com/Faulo/server-slothsoft.net',
-        'homeUrl' => 'http://test.slothsoft.net'
+        'homeUrl' => 'http://slothsoft.net'
     ],
     [
         'name' => 'trialoftwo.slothsoft.net',

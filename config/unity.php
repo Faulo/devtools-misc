@@ -150,6 +150,10 @@ $projects = [
         'repository' => 'https://github.com/Faulo/ExpositionOfExtraordinaryExperiences'
     ],
     [
+        'name' => 'Oilcatz.PowerFantasyVR',
+        'repository' => 'https://github.com/Faulo/PowerFantasyVR'
+    ],
+    [
         'name' => 'Oilcatz.TrialOfTwo',
         'repository' => 'https://github.com/Faulo/TrialOfTwo'
     ],
