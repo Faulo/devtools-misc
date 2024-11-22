@@ -1,16 +1,14 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\ModuleManager;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticDeleteUpdate;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 
-$workspace = realpath('/PHP');
-if (! $workspace) {
-    return;
-}
+$workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Eclipse');
 
 $modules = [
     [

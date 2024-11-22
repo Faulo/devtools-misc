@@ -1,15 +1,13 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\PHPProjectManager;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ProjectManager;
 use Slothsoft\Devtools\Misc\Update\Group;
 
-$workspace = realpath('/PHP');
-if (! $workspace) {
-    return;
-}
+$workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Eclipse');
 
 $phps = [
     [

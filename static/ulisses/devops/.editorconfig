@@ -91,7 +91,6 @@ csharp_space_between_square_brackets = false
 # Einstellungen für neue Zeilen
 trim_trailing_whitespace = true
 end_of_line = crlf
-insert_final_newline = true:none
 
 
 #### Namenskonventionen

@@ -1,6 +1,7 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
@@ -9,10 +10,7 @@ use Slothsoft\Devtools\Misc\Update\PHP\RunScript;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticDeleteUpdate;
 
-$workspace = realpath('/PHP');
-if (! $workspace) {
-    return;
-}
+$workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Eclipse');
 
 $backend = [
     [

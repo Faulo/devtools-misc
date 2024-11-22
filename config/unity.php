@@ -2,6 +2,7 @@
 declare(strict_types = 1);
 
 use Slothsoft\Core\Calendar\Seconds;
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
@@ -12,10 +13,7 @@ use Slothsoft\Unity\UnityHub;
 UnityHub::setProcessTimeout(2 * Seconds::HOUR);
 UnityHub::setProcessTimeout(10 * Seconds::MINUTE);
 
-$workspace = realpath(getenv('UserProfile') . '/Desktop/Unity');
-if (! $workspace) {
-    return;
-}
+$workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Unity');
 
 $gameJams = [
     [

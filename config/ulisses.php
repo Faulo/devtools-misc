@@ -24,10 +24,7 @@ use Slothsoft\Unity\UnityPackageInfo;
 use Slothsoft\Unity\UnityProjectInfo;
 use Slothsoft\Devtools\Misc\Update\UpdateGroup;
 
-$workspace = realpath('/Ulisses');
-if (! $workspace) {
-    return;
-}
+$workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Ulisses');
 
 $thirdPartyPackages = [
     'app.rive.rive-unity',
@@ -223,8 +220,8 @@ $optionalUpgrades = $artPackage + [ // "de.ulisses-spiele.hexxen1733.art.animals
                                      // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
                                      // "de.ulisses-spiele.hexxen1733.art" => "1.0.1"
                                      // "de.ulisses-spiele.hexxen1733.character-controller" => "2.1.0-pre.1"
-                                     "de.ulisses-spiele.hexxen1733.staging" => "0.10.0"
-                                     // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
+    "de.ulisses-spiele.hexxen1733.staging" => "0.10.0"
+    // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
@@ -312,10 +309,14 @@ $fix = new FixChangelog('de.ulisses-spiele');
 $fix->setChangelogForDependency("de.ulisses-spiele.hexxen1733.art", $artChangelog);
 $unityUpdates->addUpdate('fix-changelog', $fix);
 
-$fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.Core');
-$unityUpdates->addUpdate('fix-sandbox-core', $fix);
-$fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.HeXXen1733');
-$unityUpdates->addUpdate('fix-sandbox-hexxen1733', $fix);
+if (is_dir($manager->workspaceDir . 'Ulisses.Sandbox.Core')) {
+    $fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.Core');
+    $unityUpdates->addUpdate('fix-sandbox-core', $fix);
+}
+if (is_dir($manager->workspaceDir . 'Ulisses.Sandbox.HeXXen1733')) {
+    $fix = new AddPackagesToProject($manager->workspaceDir . 'Ulisses.Sandbox.HeXXen1733');
+    $unityUpdates->addUpdate('fix-sandbox-hexxen1733', $fix);
+}
 
 $fix = new CallMethod('Ulisses.Core.Utilities.Editor.PackageCreation.PackageUtils.UpdateAll');
 $unityUpdates->addUpdate('update', $fix);

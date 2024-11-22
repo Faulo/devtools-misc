@@ -7,6 +7,18 @@ use Symfony\Component\Process\Process;
 
 class Utils {
 
+    public static function ensurePath(string $base, string ...$create): string {
+        $root = realpath($base) or die("Failed to find base path '$base'");
+        foreach ($create as $dir) {
+            $root .= DIRECTORY_SEPARATOR . $dir;
+            if (! realpath($root)) {
+                mkdir($root);
+            }
+            $root = realpath($root) or die("Failed to find create directory '$dir' in  '$base'");
+        }
+        return $root;
+    }
+
     public static function readJson(string $path): array {
         echo PHP_EOL . '> read json ' . escapeshellarg($path) . PHP_EOL;
         return json_decode(file_get_contents($path), true);

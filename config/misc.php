@@ -1,14 +1,12 @@
 <?php
 declare(strict_types = 1);
 
+use Slothsoft\Devtools\Misc\Utils;
 use Slothsoft\Devtools\Misc\Update\Group;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\ProjectManager;
 
-$workspace = realpath('/Misc');
-if (! $workspace) {
-    return;
-}
+$workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Misc');
 
 $csharps = [
 
