@@ -37,6 +37,11 @@ $backend = [
         'name' => 'backend-mysql',
         'workspaceId' => 'backend-mysql',
         'repository' => 'https://github.com/Faulo/backend-mysql'
+    ],
+    [
+        'name' => 'backend-emergo',
+        'workspaceId' => 'backend-emergo',
+        'repository' => 'https://github.com/Faulo/backend-emergo'
     ]
 ];
 
