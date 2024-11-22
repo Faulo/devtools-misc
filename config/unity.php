@@ -131,6 +131,10 @@ $gameJams = [
     [
         'name' => 'GameJam.ZooSmashBaseballBash',
         'repository' => 'https://github.com/Faulo/ZooSmashBaseballBash'
+    ],
+    [
+        'name' => 'GameJam.SnailsOnTheRoad',
+        'repository' => 'https://github.com/Faulo/SnailsOnTheRoad'
     ]
 ];
 

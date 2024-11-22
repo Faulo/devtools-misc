@@ -32,9 +32,9 @@
 			"" : "scripts"
 		},
 		"files" : [
-			"config/devops.php",
-			"config/modules.php",
-			"config/servers.php",
+			"config/eclipse.devops.php",
+			"config/eclipse.modules.php",
+			"config/eclipse.servers.php",
 			"config/unity.php",
 			"config/ulisses.php",
 			"config/misc.php"
