@@ -30,11 +30,11 @@ $projects = [
         'repository' => 'https://github.com/Faulo/docker-jenkins'
     ],
     [
-        'name' => 'Slothsoft.Jenkins.Slothsoft',
+        'name' => 'jenkins-slothsoft',
         'repository' => 'https://github.com/Faulo/jenkins-slothsoft'
     ],
     [
-        'name' => 'Slothsoft.Jenkins.Unity',
+        'name' => 'jenkins-unity',
         'repository' => 'https://github.com/Faulo/jenkins-unity'
     ]
 ];
