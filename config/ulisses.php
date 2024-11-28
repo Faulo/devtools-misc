@@ -181,7 +181,7 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "6.0.1",
+    "de.ulisses-spiele.core.utilities" => "6.1.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -237,6 +237,7 @@ namespace %s {
         internal sealed class AssetSource : AssetSourceBase {
             protected override string ValidateAssetsInDirectory => Path.Combine("Packages", AssemblyInfo.ID);
             protected override IEnumerable<string> CheckCircularDependenciesForPackages => new[] { AssemblyInfo.ID };
+            protected override bool ValidateTestAssets => true;
         }
     }
 }
