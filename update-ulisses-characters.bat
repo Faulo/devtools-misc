@@ -1,0 +1,3 @@
+SET packages="Ulisses.HeXXen1733.Character.Abbas Ulisses.HeXXen1733.Character.Aveline Ulisses.HeXXen1733.Character.Franziska Ulisses.HeXXen1733.Character.Goetz Ulisses.HeXXen1733.Character.Irina Ulisses.HeXXen1733.Character.Magnus Ulisses.HeXXen1733.Character.NonPlayerCharacter"
+SET todo="reset pull copy-plastic copy-unity copy-devops fix-manifest fix-packages fix-assemblies build commit tag-devops"
+call composer run foreach %packages% %todo%

@@ -1,0 +1,25 @@
+# == Windows ==
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# == Composer ==
+/vendor/
+
+# == phpDocumentor ==
+/docs/tmp/
+/.phpdoc
+
+# == PHPUnit ==
+/.phpunit.result.cache
+*.log
+*.err
+
+# == Amiga ==
+/Aminet/
+
+# == Misc
+/toggl-input
+/toggl-output
+/chatgpt/*/

@@ -1,0 +1,1 @@
+call composer exec unity-method "R:\Ulisses\Ulisses.HeXXen1733.Battle" Ulisses.Core.Utilities.Editor.PackageCreation.PackageUpdater.UpdateAll

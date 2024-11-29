@@ -1,0 +1,84 @@
+pipeline {
+	agent {
+		label 'npm'
+	}
+	environment {
+		PACKAGE_CONFIG = "Jenkinsfile.conf"
+		PACKAGE_DIRECTORY = "Packages"
+	}
+	stages {
+		stage('Index workspace') {
+			steps {
+				script {
+					if (env.PLASTICSCM_BRANCH) {
+						env.BRANCH_NAME = env.PLASTICSCM_BRANCH
+					}
+
+					def projects = ['']
+
+					def packages = []
+					if (fileExists(env.PACKAGE_CONFIG)) {
+						readFile(env.PACKAGE_CONFIG)
+								.trim()
+								.split("\n")
+								.each{ location ->
+									def path = location.trim()
+									echo "Found package in $PACKAGE_CONFIG: " + path
+									packages.add(path)
+								}
+					} else {
+						dir(env.PACKAGE_DIRECTORY) {
+							findFiles()
+									.findAll{ f -> f.directory && fileExists(f.name + "/package.json") }
+									.each{ f ->
+										def path = "$PACKAGE_DIRECTORY/" + f.name
+										echo "Found package in $PACKAGE_DIRECTORY: " + path
+										packages.add(path)
+									}
+						}
+					}
+
+					// for (p in projects) {
+					//     unityProject {
+					//         // define unity project location relative to repository
+					//         LOCATION = p
+					//
+					//         // which executables to create
+					//         BUILD_FOR_WINDOWS = '1'
+					//         BUILD_FOR_LINUX = '0'
+					//         BUILD_FOR_MAC = '0'
+					//         BUILD_FOR_WEBGL = '0'
+					//         BUILD_FOR_ANDROID = '0'
+					//     }
+					// }
+
+					for (p in packages) {
+						unityPackage {
+							// define unity package location relative to repository
+							LOCATION = p
+
+							UNITY_NODE = 'unity'
+
+							// assert CHANGELOG.md
+							TEST_CHANGELOG  = '1'
+
+							// assert .editorconfig
+							TEST_FORMATTING = '0'
+
+							// assert tests
+							TEST_UNITY = '1'
+
+							// automatically create C# docs using DocFX
+							BUILD_DOCUMENTATION = '0'
+
+							// which platforms to deploy to
+							DEPLOY_TO_VERDACCIO = '1'
+							DEPLOY_IF_RELEASE = '1'
+							DEPLOY_IF_PRERELEASE = '0'
+						}
+					}
+				}
+			}
+		}
+	}
+}

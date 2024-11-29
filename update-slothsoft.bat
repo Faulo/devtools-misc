@@ -1,0 +1,1 @@
+call composer run foreach server "reset pull delete-devops copy-devops copy-eclipse fix-manifest update commit push"
