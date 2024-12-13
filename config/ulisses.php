@@ -54,6 +54,7 @@ $corePackages = [
     'Ulisses.Core.Persistence',
     'Ulisses.Core.PlatformManager',
     'Ulisses.Core.Random',
+    'Ulisses.Core.SteamworksBackend',
     'Ulisses.Core.UIStateService',
     'Ulisses.Core.UIToolkit',
     'Ulisses.Core.UnityUI',
@@ -181,7 +182,9 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.core.utilities" => "6.1.2",
+    "de.ulisses-spiele.hexxen1733.battle-abilities" => "3.0.9",
+    "de.ulisses-spiele.hexxen1733.datamodels" => "12.4.1",
+    "de.ulisses-spiele.core.utilities" => "6.2.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
     "net.tnrd.nsubstitute" => "5.1.0"
@@ -193,7 +196,8 @@ $packageManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $optionalUpgrades = [
-    "de.ulisses-spiele.core.platform-manager" => "1.5.2"
+    // "de.ulisses-spiele.core.options"=> "1.3.0",
+    // "de.ulisses-spiele.core.platform-manager" => "1.5.3"
     // "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.characters" => $artPackage,
     // "de.ulisses-spiele.hexxen1733.art.environment" => $artPackage,
