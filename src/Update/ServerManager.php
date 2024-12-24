@@ -18,6 +18,8 @@ class ServerManager extends PHPProjectManager {
         $project['workspaceId'] ??= "server-$project[name]";
 
         parent::loadProject($project);
+
+        $project['farahId'] ??= "farah://$project[vendor]@$project[name]";
     }
 }
 
