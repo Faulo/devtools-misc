@@ -365,13 +365,13 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": {
-                    "dev-main": "3.x-dev"
-                },
                 "phpstan": {
                     "includes": [
                         "extension.neon"
                     ]
+                },
+                "branch-alias": {
+                    "dev-main": "3.x-dev"
                 }
             },
             "autoload": {
@@ -2592,16 +2592,16 @@
         },
         {
             "name": "slothsoft/unity",
-            "version": "2.13.14",
+            "version": "2.13.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Faulo/slothsoft-unity.git",
-                "reference": "9465551b35e8aba7f200a2c1e0d63123909ae80f"
+                "reference": "5e1291842b76d742e74ea7c1a95a26c0574ab31e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Faulo/slothsoft-unity/zipball/9465551b35e8aba7f200a2c1e0d63123909ae80f",
-                "reference": "9465551b35e8aba7f200a2c1e0d63123909ae80f",
+                "url": "https://api.github.com/repos/Faulo/slothsoft-unity/zipball/5e1291842b76d742e74ea7c1a95a26c0574ab31e",
+                "reference": "5e1291842b76d742e74ea7c1a95a26c0574ab31e",
                 "shasum": ""
             },
             "require": {
@@ -2663,9 +2663,9 @@
             ],
             "support": {
                 "issues": "https://github.com/Faulo/slothsoft-unity/issues",
-                "source": "https://github.com/Faulo/slothsoft-unity/tree/2.13.14"
+                "source": "https://github.com/Faulo/slothsoft-unity/tree/2.13.15"
             },
-            "time": "2024-12-09T18:24:09+00:00"
+            "time": "2024-12-20T14:51:05+00:00"
         },
         {
             "name": "slothsoft/w3c",
