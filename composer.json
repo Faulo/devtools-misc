@@ -3,7 +3,7 @@
 	"version" : "1.0.0",
 	"description" : "Slothsoft Development Tools",
 	"scripts" : {
-		"gamecube" : "@php scripts/gamecube.php",
+		"roms" : "@php scripts/roms.php",
 		"measure" : "@php scripts/measure.php",
 		"toggl" : "@php scripts/toggl.php",
 		"php-ini" : "@php scripts/php-ini.php",
