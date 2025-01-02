@@ -8,6 +8,8 @@ class RomInfo {
 
     public string $name;
 
+    public string $format = '';
+
     public function __construct(string $realpath, string $name) {
         $this->realpath = $realpath;
         $this->name = $name;

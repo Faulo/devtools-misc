@@ -72,7 +72,11 @@ class GameCubeManager extends RomManagerBase {
         foreach (explode(PHP_EOL, $result) as $row) {
             $row = explode(':', $row, 2);
             if (count($row) == 2) {
-                $data[trim($row[0])] = trim($row[1]);
+                $key = trim($row[0]);
+                $value = trim($row[1]);
+                if ($key !== '' and $value !== '') {
+                    $data[$key] = $value;
+                }
             }
         }
 
@@ -80,16 +84,14 @@ class GameCubeManager extends RomManagerBase {
         if (isset(self::TRANSLATIONS[$name])) {
             $name = self::TRANSLATIONS[$name];
         }
-        $id = $data['Game ID'];
-        $region = $data['Country'];
-
         $name = str_replace(': ', ' - ', $name);
         $name = FileSystem::filenameSanitize($name);
 
-        $data['Path'] = $inputFile;
-        $data['Output Name'] = "$name ($region) [$id]$disc";
+        $id = $data['Game ID'];
+        $region = $data['Country'];
+        $name = "$name ($region) [$id]$disc";
 
-        return new RomInfo($data['Path'], $data['Output Name']);
+        return new RomInfo($inputFile, $name);
     }
 
     public function getCommand(string $command): CommandBase {

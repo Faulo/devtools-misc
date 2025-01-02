@@ -2,6 +2,7 @@
 declare(strict_types = 1);
 
 use Slothsoft\Devtools\Misc\Roms\GameCubeManager;
+use Slothsoft\Devtools\Misc\Roms\Nintendo64Manager;
 
 foreach ([
     __DIR__ . '/../../../autoload.php',
@@ -31,6 +32,9 @@ if (count($_SERVER['argv']) < 3) {
 
 $manager = array_shift($_SERVER['argv']);
 switch ($manager) {
+    case 'n64':
+        $manager = new Nintendo64Manager();
+        break;
     case 'gc':
         $manager = new GameCubeManager();
         break;
