@@ -29,6 +29,8 @@ class FixPackages implements UpdateInterface {
 
     public $changelogUrlDelegate;
 
+    public $contributorsDelegate;
+
     public function __construct(string $scope) {
         $this->scope = $scope;
     }
@@ -109,12 +111,16 @@ class FixPackages implements UpdateInterface {
                             'homepage' => $this->homepageUrlDelegate,
                             'documentationUrl' => $this->documentationUrlDelegate,
                             'changelogUrl' => $this->changelogUrlDelegate,
-                            'bugs' => $this->changelogUrlDelegate
+                            'bugs' => $this->changelogUrlDelegate,
+                            'contributors' => $this->contributorsDelegate
                         ];
 
                         foreach ($delegates as $key => $delegate) {
                             if ($delegate) {
-                                $info[$key] = $delegate($project, $unity, $package);
+                                $value = $delegate($project, $unity, $package);
+                                if ($value !== null) {
+                                    $info[$key] = $value;
+                                }
                             }
                         }
 

@@ -26,6 +26,20 @@ use Slothsoft\Devtools\Misc\Update\UpdateGroup;
 
 $workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Ulisses');
 
+$users = [];
+$users['DSZ'] = 'Daniel Schulz <daniel.schulz@ulisses-spiele.de>';
+$users['API'] = "Andreas Podgurski <andreas.podgurski@ulisses-spiele.de>";
+$users['PNS'] = "Philip Nuss <philip.nuss@ulisses-spiele.de>";
+$users['KLW'] = "Kai Bennet Lindow <kai.bennet.lindow@ulisses-spiele.de>";
+$users['CRS'] = 'Christian Rieß <christian.riess@ulisses-spiele.de>';
+$users['MTE'] = 'Maximilian Thiele <maximilian.thiele@ulisses-spiele.de>';
+$users['JML'] = 'Jakob Müller <jakob.mueller@ulisses-spiele.de>';
+$users['BMS'] = 'Bernhard Mies <mies@threaks.com>';
+$users['KWK'] = 'Kai Woitczyk <kai.woitczyk@ulisses-spiele.de>';
+$users['DDR'] = 'Daniel Dinner <daniel.dinner@ulisses-spiele.de>';
+$users['RST'] = 'Richard Schott <richard.schott@ulisses-spiele.de>';
+$users['MSZ'] = 'Magdalena Schmitz <schmitz@threaks.com>';
+
 $thirdPartyPackages = [
     'app.rive.rive-unity',
     'com.acegikmo.shapes',
@@ -182,8 +196,8 @@ $projectManifestForbidden = [
     "de.ulisses-spiele.hexxen1733.animations"
 ];
 $packageManifestDependencies = [
-    "de.ulisses-spiele.hexxen1733.battle-abilities" => "3.0.9",
-    "de.ulisses-spiele.hexxen1733.datamodels" => "12.4.1",
+    // "de.ulisses-spiele.hexxen1733.battle-abilities" => "3.0.9",
+    // "de.ulisses-spiele.hexxen1733.datamodels" => "12.4.1",
     "de.ulisses-spiele.core.utilities" => "6.2.0",
     "com.unity.test-framework" => "2.0.1-exp.2",
     // "jp.magicasoft.magicacloth" => "1.0.0",
@@ -195,37 +209,36 @@ $packageManifestForbidden = [
     "net.slothsoft.unity-extensions",
     "de.ulisses-spiele.hexxen1733.animations"
 ];
-$optionalUpgrades = [
-    // "de.ulisses-spiele.core.options"=> "1.3.0",
-    // "de.ulisses-spiele.core.platform-manager" => "1.5.3"
-    // "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.art.characters" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.art.environment" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.art.foliage" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
-    // "de.ulisses-spiele.hexxen1733.character.abbas" => "0.3.0",
-    // "de.ulisses-spiele.hexxen1733.character.aveline" => "0.4.0",
-    // "de.ulisses-spiele.hexxen1733.character.franziska" => "0.9.0",
-    // "de.ulisses-spiele.hexxen1733.character.goetz" => "0.5.0",
-    // "de.ulisses-spiele.hexxen1733.character.irina" => "0.5.0",
-    // "de.ulisses-spiele.hexxen1733.character.magnus" => "0.6.0",
-    // "de.ulisses-spiele.hexxen1733.staging" => "0.6.0",
-    // "de.ulisses-spiele.hexxen1733.dialog" => "0.11.0",
-    // "de.ulisses-spiele.hexxen1733.enemies" => "0.2.0",
-    // "de.ulisses-spiele.hexxen1733.shader" => "2.1.0",
-    // "com.unity.render-pipelines.universal" => "14.0.11",
-    // "de.ulisses-spiele.hexxen1733.battle" => "1.2.8",
-    // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.2.6",
-    // "de.ulisses-spiele.hexxen1733.datamodels" => "9.1.1",
-    // "de.ulisses-spiele.core.logging" => "1.2.4",
-    // "de.ulisses-spiele.core.mesh2d" => "3.11.6",
-    // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
-    // "de.ulisses-spiele.hexxen1733.art" => "1.0.6-pre.3",
-    // "de.ulisses-spiele.hexxen1733.character-controller" => "2.1.0",
-    // "de.ulisses-spiele.hexxen1733.staging" => "0.10.0"
-    // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
+$optionalUpgrades = [ // "de.ulisses-spiele.core.options"=> "1.3.0",
+                       // "de.ulisses-spiele.core.platform-manager" => "1.5.3"
+                       // "de.ulisses-spiele.hexxen1733.art.animals" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.art.characters" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.art.environment" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.art.foliage" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.art.misc" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.art.props" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.art.textures" => $artPackage,
+                       // "de.ulisses-spiele.hexxen1733.character.abbas" => "0.3.0",
+                       // "de.ulisses-spiele.hexxen1733.character.aveline" => "0.4.0",
+                       // "de.ulisses-spiele.hexxen1733.character.franziska" => "0.9.0",
+                       // "de.ulisses-spiele.hexxen1733.character.goetz" => "0.5.0",
+                       // "de.ulisses-spiele.hexxen1733.character.irina" => "0.5.0",
+                       // "de.ulisses-spiele.hexxen1733.character.magnus" => "0.6.0",
+                       // "de.ulisses-spiele.hexxen1733.staging" => "0.6.0",
+                       // "de.ulisses-spiele.hexxen1733.dialog" => "0.11.0",
+                       // "de.ulisses-spiele.hexxen1733.enemies" => "0.2.0",
+                       // "de.ulisses-spiele.hexxen1733.shader" => "2.1.0",
+                       // "com.unity.render-pipelines.universal" => "14.0.11",
+                       // "de.ulisses-spiele.hexxen1733.battle" => "1.2.8",
+                       // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.2.6",
+                       // "de.ulisses-spiele.hexxen1733.datamodels" => "9.1.1",
+                       // "de.ulisses-spiele.core.logging" => "1.2.4",
+                       // "de.ulisses-spiele.core.mesh2d" => "3.11.6",
+                       // "de.ulisses-spiele.hexxen1733.level-layout" => "5.0.1",
+                       // "de.ulisses-spiele.hexxen1733.art" => "1.0.6-pre.3",
+                       // "de.ulisses-spiele.hexxen1733.character-controller" => "2.1.0",
+                       // "de.ulisses-spiele.hexxen1733.staging" => "0.10.0"
+                       // "de.ulisses-spiele.hexxen1733.battle-abilities" => "2.1.3"
 ];
 
 const FILE_PACKAGE_ASSET_VALIDATION = 'PackageAssetValidation.cs';
@@ -304,6 +317,36 @@ $fixUlisses->changelogUrlDelegate = function (Project $project, UnityProjectInfo
     $packageUrl = Utils::toUrl($package->package['name']);
 
     return "http://ci.ulisses-spiele.de:8080/job/$jobUrl/job/$projectUrl/$packageUrl/CHANGELOG.html";
+};
+$fixUlisses->contributorsDelegate = function (Project $project, UnityProjectInfo $unity, UnityPackageInfo $package) use ($users): ?array {
+    $changelog = $package->path . DIRECTORY_SEPARATOR . 'CHANGELOG.md';
+
+    if (! file_exists($changelog)) {
+        return null;
+    }
+
+    $changelog = file($changelog);
+    $counts = [];
+    foreach ($changelog as $line) {
+        $match = [];
+        if (preg_match('~\[([A-Z]{3})\]~', $line, $match)) {
+            $user = $match[1];
+            if (isset($users[$user])) {
+                $user = $users[$user];
+            } else {
+                throw new Exception("Unknown user: '$user'");
+            }
+
+            if (isset($counts[$user])) {
+                $counts[$user] ++;
+            } else {
+                $counts[$user] = 1;
+            }
+        }
+    }
+    arsort($counts);
+
+    return array_keys($counts);
 };
 $unityUpdates->addUpdate('fix-packages', new UpdateGroup($fixAll, $fixUlisses));
 
