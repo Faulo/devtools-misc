@@ -70,7 +70,7 @@ class Nintendo64Manager extends RomManagerBase {
         $name = str_replace(': ', ' - ', $name);
         $name = FileSystem::filenameSanitize($name);
 
-        $region = $data['Region'];
+        $region = $data['Region'] ?? 'Worldwide';
         $id = $data['ID'];
 
         $name = "$name ($region) [$id]";
