@@ -162,6 +162,10 @@ $projects = [
     [
         'name' => 'Slothsoft.CursedBroom',
         'repository' => 'https://github.com/Faulo/CursedBroom'
+    ],
+    [
+        'name' => 'Slothsoft.AGGamesEngineering',
+        'repository' => 'https://github.com/Faulo/AGGamesEngineering'
     ]
 ];
 
