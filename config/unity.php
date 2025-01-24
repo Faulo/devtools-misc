@@ -18,6 +18,10 @@ $workspace = Utils::ensurePath(getenv('UserProfile') . '/Desktop', 'Unity');
 
 $gameJams = [
     [
+        'name' => 'GameJam.BubbleWand',
+        'repository' => 'https://github.com/Faulo/BubbleWand'
+    ],
+    [
         'name' => 'GameJam.BackToTheChicken',
         'repository' => 'https://github.com/Faulo/BackToTheChicken'
     ],
