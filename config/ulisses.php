@@ -68,7 +68,7 @@ $corePackages = [
     'Ulisses.Core.Persistence',
     'Ulisses.Core.PlatformManager',
     'Ulisses.Core.Random',
-    'Ulisses.Core.SteamworksBackend',
+    //'Ulisses.Core.SteamworksBackend',
     'Ulisses.Core.UIStateService',
     'Ulisses.Core.UIToolkit',
     'Ulisses.Core.UnityUI',

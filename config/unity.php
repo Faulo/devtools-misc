@@ -7,6 +7,7 @@ use Slothsoft\Devtools\Misc\Update\Project;
 use Slothsoft\Devtools\Misc\Update\ProjectDatabase;
 use Slothsoft\Devtools\Misc\Update\UnityProjectManager;
 use Slothsoft\Devtools\Misc\Update\StaticFolder\StaticFolderFactory;
+use Slothsoft\Devtools\Misc\Update\Unity\FixAssemblies;
 use Slothsoft\Devtools\Misc\Update\Unity\UnityUpdateFactory;
 use Slothsoft\Unity\UnityHub;
 
@@ -192,6 +193,10 @@ $staticUpdates->addCopyWithSwitch('copy-unity', function (Project $project): ?st
     }
     return null;
 });
+
+$fix = new FixAssemblies('AGGE');
+$staticUpdates->addUpdate('fix-assemblies', $fix);
+
 $manager->updateFactories[] = $staticUpdates;
 
 foreach ($groups as $key => $val) {
