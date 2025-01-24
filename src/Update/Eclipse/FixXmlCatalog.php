@@ -46,6 +46,7 @@ class FixXmlCatalog implements UpdateInterface {
         }
 
         $urls = [];
+        $systems = [];
 
         foreach (self::getDescendants($asset) as $child) {
             try {
@@ -54,39 +55,67 @@ class FixXmlCatalog implements UpdateInterface {
                     continue;
                 }
 
-                $mime = $child->lookupExecutable()
+                $name = $child->lookupExecutable()
                     ->lookupDefaultResult()
-                    ->lookupMimeType();
-                if ($mime !== 'application/xslt+xml') {
-                    continue;
-                }
+                    ->lookupFileName();
+                $extension = pathinfo($name, PATHINFO_EXTENSION);
 
                 $path = 'file:///' . str_replace('\\', '/', $path);
 
                 $url = (string) $child->createUrl();
 
-                $urls[$url] = $path;
+                switch ($extension) {
+                    case 'xsl':
+                        $urls[$url] = $path;
+                        break;
+                    case 'xsd':
+                        $systems[$url] = $path;
+                        break;
+                }
             } catch (\Throwable $e) {}
         }
 
         $catalog = DOMHelper::loadDocument(self::CATALOG_PATH);
 
-        $nodes = [];
+        $uriNodes = [];
         foreach ($catalog->getElementsByTagName('uri') as $node) {
-            $nodes[$node->getAttribute('name')] = $node;
+            $uriNodes[$node->getAttribute('name')] = $node;
+        }
+
+        $systemNodes = [];
+        foreach ($catalog->getElementsByTagName('system') as $node) {
+            $systemNodes[$node->getAttribute('systemId')] = $node;
         }
 
         $hasChanged = false;
+
         foreach ($urls as $url => $path) {
-            if (isset($nodes[$url])) {
-                if ($nodes[$url]->getAttribute('uri') !== $path) {
-                    $nodes[$url]->setAttribute('uri', $path);
+            if (isset($uriNodes[$url])) {
+                if ($uriNodes[$url]->getAttribute('uri') !== $path) {
+                    $uriNodes[$url]->setAttribute('uri', $path);
                     $hasChanged = true;
                     echo $url . PHP_EOL . " => $path" . PHP_EOL;
                 }
             } else {
                 $node = $catalog->createElement('uri');
                 $node->setAttribute('name', $url);
+                $node->setAttribute('uri', $path);
+                $catalog->documentElement->appendChild($node);
+                $hasChanged = true;
+                echo $url . PHP_EOL . " => $path" . PHP_EOL;
+            }
+        }
+
+        foreach ($systems as $url => $path) {
+            if (isset($systemNodes[$url])) {
+                if ($systemNodes[$url]->getAttribute('uri') !== $path) {
+                    $systemNodes[$url]->setAttribute('uri', $path);
+                    $hasChanged = true;
+                    echo $url . PHP_EOL . " => $path" . PHP_EOL;
+                }
+            } else {
+                $node = $catalog->createElement('system');
+                $node->setAttribute('systemId', $url);
                 $node->setAttribute('uri', $path);
                 $catalog->documentElement->appendChild($node);
                 $hasChanged = true;
