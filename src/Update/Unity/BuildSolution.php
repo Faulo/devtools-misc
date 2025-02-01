@@ -14,7 +14,7 @@ class BuildSolution implements UpdateInterface {
         $unity = $hub->findProject($project->workspace, true);
 
         if ($unity and is_dir($unity->getProjectPath())) {
-            $command = sprintf('composer exec unity-method %s Slothsoft.UnityExtensions.Editor.Build.Solution', escapeshellarg($unity->getProjectPath()));
+            $command = sprintf('compose-unity exec unity-method %s Slothsoft.UnityExtensions.Editor.Build.Solution', escapeshellarg($unity->getProjectPath()));
 
             Utils::execute($command);
         }
