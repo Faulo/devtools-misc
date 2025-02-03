@@ -6,6 +6,7 @@ using UnityEditor.PackageManager;
 
 namespace Ulisses.Sandbox.Tests {
     [TestFixture]
+    [Category("Ulisses.Sandbox.ProjectAssets")]
     internal sealed class ProjectAssetValidation : AssetValidationBase<ProjectAssetValidation.AssetSource> {
         internal sealed class AssetSource : AssetSourceBase {
             protected override string ValidateAssetsInDirectory => "Assets";

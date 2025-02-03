@@ -6,6 +6,7 @@ using UnityEditor.PackageManager;
 
 namespace Ulisses.Sandbox.Tests {
     [TestFixture]
+    [Category("Ulisses.Sandbox.LibraryAssets")]
     internal sealed class LibraryAssetValidation : AssetValidationBase<LibraryAssetValidation.AssetSource> {
         internal sealed class AssetSource : AssetSourceBase {
             protected override string ValidateAssetsInDirectory => "Library/PackageCache";
